@@ -1,0 +1,68 @@
+_id: UIOjC6f1sjUQ8sRH
+name: Brekk
+type: star_system
+img: systems/scum-and-villainy/styles/assets/stars/Brekk.webp
+system:
+  description: >-
+    Considered by many to be more civilized than much of the rest of Procyon,
+    this system is home to many of the finer aspects of the Hegemony: education,
+    art, and culture. Wealth and culture means the Legion presence is strong in
+    the sector, protecting the elite. However, there are many odd,
+    non-Starsmith-maintained hyperspace lanes that bend strangely, making long
+    loops perpendicular to planetary orbits. Pilots map these so-called dark
+    lanes, making it easy to dodge patrols if one is willing to take their time
+    and has the skills necessary to navigate them.
+  visible: true
+  notables: >-
+    <p>Blackstarr: The vast and largely empty Nightspeaker ship where initiates
+    train for their first year. The ship is unlit and moves routinely to prevent
+    discovery. It does not often receive visitors, though exceptions can be made
+    for those that have a favorable relationship to the Cult.</p>
+
+    <p>Dendara: An ancient temple on the fifth moon of Nightfall, Todav. Some
+    say it is an Ur temple, others that it is the remains of a forgotten mystic
+    Cult. Its derelict corridors are tough to tour due to the moons lack of
+    atmosphere and the glitching effect the temple has on drives and
+    electronics.</p>
+
+    <p>Bright Wind: A large gas cloud ejected by the star, now used as a racing
+    grounds by the Echo Wave Riders. Despite it being both lethal and illegal,
+    racers all over the sector compete for cred and fame. Invitations to the
+    races are exclusive and require qualifying in hazardous conditions.
+    Isotropa</p>
+
+    <p>Max Secure: Orbiting near the star, Isotropa is the most notorious prison
+    system in Procyon. Wardens broker audiences with prisoners and grant
+    commutations for the powerful and wealthy. They report to Malklaith, but the
+    prison largely runs itself.</p>
+  heat:
+    value:
+      - 0
+    max: 8
+    max_default: 8
+    name_default: BITD.Heat
+    name: BITD.Heat
+  wanted:
+    value:
+      - 0
+    max: 4
+    max_default: 4
+    name_default: BITD.Wanted
+    name: BITD.Wanted
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!items!UIOjC6f1sjUQ8sRH'

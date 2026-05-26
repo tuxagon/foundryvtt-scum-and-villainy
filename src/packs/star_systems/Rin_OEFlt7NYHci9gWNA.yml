@@ -1,0 +1,69 @@
+_id: OEFlt7NYHci9gWNA
+name: Rin
+type: star_system
+img: systems/scum-and-villainy/styles/assets/stars/Rin.webp
+system:
+  description: >-
+    The entry point to the Procyon sector, Rin was colonized a little over a
+    hundred years ago by House Nim-Amar. It has never been an important sector,
+    so Malklaith has never invested more than a minimum of resources in its
+    development. Instead, it is used to train young House members or as an
+    assignment to punish those who fail the House. Galactic law is more present
+    here than the rest of the sector, as this is the seat of sector
+    administration and contains gates to three systems, including a path towards
+    the rest of the Hegemony.
+  visible: true
+  notables: >-
+    Aleph: Between the poisonous gasses and tectonic instability, Aleph would be
+    a planet to avoid if not for its mineral stores. Most of the wealth dug from
+    the planet is taxed heavily by the Governor, leading to frequent unrest with
+    the miners.
+
+
+    Ashtari Cloud: An Ur ship suffered a mishap here, generating an in-system
+    nebula. Normal propulsion is minimal and nav systems are dodgy. The
+    Maelstrom pirates have figured out how to navigate the cloud and made their
+    base of operations within its protective shroud.
+
+
+    The Straylight: The latest fad, the Straylight is an upscale club and
+    cocktail bar where elites can wine and dine. It usually orbits Aleph, though
+    it can move to other planets and moons in the system. Its owner, Chance,
+    runs a tight establishment, but things can sometimes get out of hand.
+
+
+    Baftoma (aka The Husk): Resource exploitation by the Hegemony is
+    comprehensive and planets incapable of sustaining life are stripped to their
+    core. Baftoma was one such planet; now only scaffolding of rock remains, its
+    broken form only used by folks hiding or dodging pursuit.
+  heat:
+    value:
+      - 0
+    max: 8
+    max_default: 8
+    name_default: BITD.Heat
+    name: BITD.Heat
+  wanted:
+    value:
+      - 0
+    max: 4
+    max_default: 4
+    name_default: BITD.Wanted
+    name: BITD.Wanted
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!items!OEFlt7NYHci9gWNA'

@@ -1,0 +1,57 @@
+_id: f87wExizFEfVZ5sB
+name: (H) Crew Quarters
+type: crew_upgrade
+system:
+  description: >-
+    You can sleep anywhere, but crew quarters are actually meant for it. Crew
+    quarters afford privacy and comfort in a domain where such things are
+    luxuries. Also you don't have to share, and you know the first mate snores.
+  class: Hull
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  crew_type: ''
+  is_damaged: 0
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/bunk-beds.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!f87wExizFEfVZ5sB'

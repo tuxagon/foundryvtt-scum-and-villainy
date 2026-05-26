@@ -1,0 +1,158 @@
+name: Client/Target - Syndicate
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: Syndicate
+results:
+  - _id: MFw1vkP3pBEJDfvM
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Drug Dealer or Supplier
+    name: ''
+    _key: '!tables.results!kJ1biV9OffEa5sKf.MFw1vkP3pBEJDfvM'
+  - _id: pHbSkJ8S2WZksPCG
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Mercenary or Thug
+    name: ''
+    _key: '!tables.results!kJ1biV9OffEa5sKf.pHbSkJ8S2WZksPCG'
+  - _id: KmTAbtVn9jGg99by
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Fence or Gambler
+    name: ''
+    _key: '!tables.results!kJ1biV9OffEa5sKf.KmTAbtVn9jGg99by'
+  - _id: Uy1MZMC8hxwhbS3i
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Spy or Info Broker
+    name: ''
+    _key: '!tables.results!kJ1biV9OffEa5sKf.Uy1MZMC8hxwhbS3i'
+  - _id: ulqpShHXDFBCALsw
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Smuggler or Thief
+    name: ''
+    _key: '!tables.results!kJ1biV9OffEa5sKf.ulqpShHXDFBCALsw'
+  - _id: HzX3vy1YJVjjwbi4
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Pirate
+    name: ''
+    _key: '!tables.results!kJ1biV9OffEa5sKf.HzX3vy1YJVjjwbi4'
+formula: 1d6
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.QpVnZrScizFrFvQF
+  duplicateSource: null
+  exportSource: null
+_id: kJ1biV9OffEa5sKf
+sort: 800000
+_key: '!tables!kJ1biV9OffEa5sKf'

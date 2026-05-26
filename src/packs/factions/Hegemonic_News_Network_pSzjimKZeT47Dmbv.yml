@@ -1,0 +1,69 @@
+name: Hegemonic News Network
+type: faction
+system:
+  description: >-
+    Those who control the media control the mind. Often use this as leverage
+    over other factions. Spies.
+  visible: true
+  type: Hegemony
+  tier: '2'
+  goal: Find blackmail on Governor Malklaith
+  turf: HNN Corporate Offices on Warren (HQ). Field offices on every planet.
+  assets: Sector-wide communications. Many independent journalists feeding them news.
+  quirks: >-
+    The bulk of the HNN's workforce are contractors, selling HNN stories they
+    find. Many reporters are also trained spies.
+  notables: >-
+    <p>Cinszo (owner, ambitious, greedy, untrustworthy).</p>
+
+    <p>Rinsama Kay (chief editor, cynical, demanding, stickler).</p>
+
+    <p>Ooxoo (xeno, press pool manager, curious).</p>
+
+    <p>Stacy Weathers (ace reporter, trained spy, always grinning, nose for
+    trouble).</p>
+  allies: Starless Veil
+  enemies: Dyrinek Gang, Mendicants
+  situation: >-
+    The HNN is effectively the private intelligence agency of Cinszo. The
+    director leverages information coming into the network to blackmail and
+    influence the powerful in the sector. Cinszo has had a taste of the
+    high-life and is looking to find a way into a Noble House, by marriage or
+    appointment.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+effects: []
+_id: pSzjimKZeT47Dmbv
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570032
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!pSzjimKZeT47Dmbv'

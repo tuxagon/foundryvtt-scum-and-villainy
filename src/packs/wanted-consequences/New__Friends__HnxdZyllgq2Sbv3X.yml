@@ -1,0 +1,57 @@
+name: New "Friends"
+flags:
+  core: {}
+_id: HnxdZyllgq2Sbv3X
+pages:
+  - name: New "Friends"
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: >-
+        <p>A neutral faction asks you to do a job that is either extra
+        dangerous, pays little, or gathers more <strong>Heat</strong> than usual
+        (GM’s choice). Accept or lose a status with them.</p>
+
+        <p>The GM should look at their faction goals for job prompts.</p>
+    _id: TlVmnhZJhIr2SAXO
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!HnxdZyllgq2Sbv3X.TlVmnhZJhIr2SAXO'
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: JournalEntry.rBciFjAOP8pO4niq
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+categories: []
+_key: '!journal!HnxdZyllgq2Sbv3X'

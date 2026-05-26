@@ -1,0 +1,446 @@
+name: Firedrake Jobs
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - _id: zQKHnUnMgvLocyPM
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      The Legion is holding an ally in a facility surrounded by toxic waters on
+      Aleph.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.zQKHnUnMgvLocyPM'
+  - _id: YCKjGwp3e5J6hCjf
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      The Hegemony has troops in place to keep local xenos in line. Run a
+      blockade to get them supplies.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.YCKjGwp3e5J6hCjf'
+  - _id: kKU0jeWstrwWMQlJ
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A local faction found your staging base and is using it, but you need it
+      for an upcoming job.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.kKU0jeWstrwWMQlJ'
+  - _id: BmB9sD7V2MxBvDcD
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A Hegemonic bureaucrat with incriminating info wants to defect, but needs
+      help getting out.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.BmB9sD7V2MxBvDcD'
+  - _id: crw637m5oyVcqQiS
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Recruit a hotshot pilot who knows a secret route for your next job.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.crw637m5oyVcqQiS'
+  - _id: IQI1iiJqJ85GQTrI
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      Important sympathizers have clandestine information to hand off at a fancy
+      party.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.IQI1iiJqJ85GQTrI'
+  - _id: 8dbo8gfebf4R0zfq
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: A Hegemonic defector is on the run with blueprints and plans.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.8dbo8gfebf4R0zfq'
+  - _id: DrCeZ6gzhTIyGdzC
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      You hear of an Ur artifact that might help your fight. Just one
+      problem—it’s got weird effects and Way creatures guarding it.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.DrCeZ6gzhTIyGdzC'
+  - _id: VAZd5dgGbirYJEsM
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      Capture the plans for a new prototype Guild weapon from a secure data
+      depot.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.VAZd5dgGbirYJEsM'
+  - _id: BAFvG44TntVOAvR2
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Raid a Guild convoy for much-needed supplies.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.BAFvG44TntVOAvR2'
+  - _id: l6e4cvnt5BELKN1I
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Disable some ground support for a strike against the Legion.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.l6e4cvnt5BELKN1I'
+  - _id: x6BesFM41hjrKfOX
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A Cult needs you to fend off the Church of Stellar Flame so their Chosen
+      One can escape to safety.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.x6BesFM41hjrKfOX'
+  - _id: q3mAKGV6sLeWNwnQ
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A key Noble or dignitary is visiting the sector. Assassinate or kidnap
+      them.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.q3mAKGV6sLeWNwnQ'
+  - _id: EOPAYNe5CIwaXfbI
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      The Memish are rebelling. Can you shut off the gate so the Hegemony
+      doesn’t send battleships to pacify them?
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.EOPAYNe5CIwaXfbI'
+  - _id: yHdWODLlSSnj2FnT
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: A bounty hunter has a rebel leader. Stop them and get the leader back.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.yHdWODLlSSnj2FnT'
+  - _id: ntihIwAn3fyVXaEr
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Help a terraforming settlement the Hegemony has abandoned.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.ntihIwAn3fyVXaEr'
+  - _id: 7xjlw8I4VGrY6c5a
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A rebel leader has been released from prison. He may have key information
+      from the inside, but it’s almost certainly a trap.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.7xjlw8I4VGrY6c5a'
+  - _id: eSX7bFci3LdmRZvk
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A rebel ship is damaged and hiding. They need you to escort them to
+      safety.
+    name: ''
+    _key: '!tables.results!6MEnYerad8VABL79.eSX7bFci3LdmRZvk'
+formula: 1d18
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.wvu5uyICK4nnxXvV
+  duplicateSource: null
+  exportSource: null
+_id: 6MEnYerad8VABL79
+sort: 2000000
+_key: '!tables!6MEnYerad8VABL79'

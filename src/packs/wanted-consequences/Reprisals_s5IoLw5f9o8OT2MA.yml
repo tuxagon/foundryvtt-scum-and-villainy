@@ -1,0 +1,56 @@
+name: Reprisals
+flags:
+  core: {}
+_id: s5IoLw5f9o8OT2MA
+pages:
+  - name: Reprisals
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: >-
+        <p>An enemy faction moves against you or yours. Pay them 1 <strong>Cred
+        </strong>per Tier, allow them to mess with you, or fight back. If you
+        have no faction with negative status, you avoid entanglements right
+        now.</p>
+    _id: SAVIrquN3YkCMgd8
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!s5IoLw5f9o8OT2MA.SAVIrquN3YkCMgd8'
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: JournalEntry.NlZTR3MLtss1acl2
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+categories: []
+_key: '!journal!s5IoLw5f9o8OT2MA'

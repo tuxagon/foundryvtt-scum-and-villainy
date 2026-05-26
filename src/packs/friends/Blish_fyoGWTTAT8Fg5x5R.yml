@@ -1,0 +1,30 @@
+_id: fyoGWTTAT8Fg5x5R
+name: Blish
+type: friend
+system:
+  description: >-
+    A fellow mystic. Walking the same path or with wildly different beliefs
+    about the Way?
+  visible: true
+  class: Mystic
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.2_94.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!fyoGWTTAT8Fg5x5R'

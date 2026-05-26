@@ -1,0 +1,24 @@
+_id: i54QJ7urbIrcfHHz
+name: Ambitious
+type: crew_reputation
+system:
+  description: Having or showing a strong desire and determination to succeed
+  visible: true
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_39.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!i54QJ7urbIrcfHHz'

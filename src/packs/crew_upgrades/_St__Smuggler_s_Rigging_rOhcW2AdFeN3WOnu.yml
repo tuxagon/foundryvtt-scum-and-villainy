@@ -1,0 +1,59 @@
+_id: rOhcW2AdFeN3WOnu
+name: (St) Smuggler's Rigging
+type: crew_upgrade
+system:
+  description: >-
+    Webbing or fake skin used to hold small items close to the body and a great
+    way to sneak them past security. Adds some hands-free carry room while
+    working on the outside of the ship, and lets you smuggle a blaster into a
+    well guarded meeting while keeping the stylish cut of your coat. You can
+    only carry/hide one item of a max of 1 load this way.
+  class: Stardancer
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  crew_type: Stardancer
+  is_damaged: 0
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/spaceship.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!rOhcW2AdFeN3WOnu'

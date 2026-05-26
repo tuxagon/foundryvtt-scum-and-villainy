@@ -1,0 +1,56 @@
+_id: R8U1T12Bkcj5rltq
+name: (W) Particle Cannons
+type: crew_upgrade
+system:
+  description: >-
+    Pew! Pew! Usually fixed in one direction on personal vessels. Often cross
+    linked. Not legal without license.
+  class: Weapons
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  crew_type: ''
+  is_damaged: 0
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/laser-blast.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!R8U1T12Bkcj5rltq'

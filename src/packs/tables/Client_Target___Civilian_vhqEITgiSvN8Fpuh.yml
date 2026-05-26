@@ -1,0 +1,158 @@
+name: Client/Target - Civilian
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: Civilian
+results:
+  - _id: ipYgCDpLNyEuSfk9
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Academic or Scholar
+    name: ''
+    _key: '!tables.results!vhqEITgiSvN8Fpuh.ipYgCDpLNyEuSfk9'
+  - _id: T8vdJ9ibqmymmttF
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Laborer or Professional
+    name: ''
+    _key: '!tables.results!vhqEITgiSvN8Fpuh.T8vdJ9ibqmymmttF'
+  - _id: 4fnAT0tYv7NiWTMK
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Courier or Spacer
+    name: ''
+    _key: '!tables.results!vhqEITgiSvN8Fpuh.4fnAT0tYv7NiWTMK'
+  - _id: V5aIWETD0KAFwx5m
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Shop or Business Owner
+    name: ''
+    _key: '!tables.results!vhqEITgiSvN8Fpuh.V5aIWETD0KAFwx5m'
+  - _id: DkCXtVPKla7BEd3r
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Artist or Writer
+    name: ''
+    _key: '!tables.results!vhqEITgiSvN8Fpuh.DkCXtVPKla7BEd3r'
+  - _id: 4inAAsrwAR1ylHMr
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Doctor or Mechanic
+    name: ''
+    _key: '!tables.results!vhqEITgiSvN8Fpuh.4inAAsrwAR1ylHMr'
+formula: 1d6
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.XQZgB4Quako9kffD
+  duplicateSource: null
+  exportSource: null
+_id: vhqEITgiSvN8Fpuh
+sort: 900000
+_key: '!tables!vhqEITgiSvN8Fpuh'

@@ -1,0 +1,62 @@
+_id: JBeWGoGRfeBRh57E
+name: (Sp) Xeno
+type: ability
+system:
+  description: >-
+    You may spend Stress (0-2) to perform an inhuman feat only members of your
+    species can do. (See page 296)
+
+    Aside from diplomats, xeno Speakers are somewhat unusual in the Hegemony.
+    Amongst the Syndicates, xenos are far more accepted and in some, even
+    preferred. Space adventure has plenty of examples of natural empaths,
+    species with advanced cognitive functions, or even protocol robots that
+    serve as Speakers for their crew. When considering your xeno heritage, think
+    about how your species communicates and work with your GM to figure out how
+    those styles of communication might manifest in play.
+  class: Speaker
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.5_53.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!JBeWGoGRfeBRh57E'

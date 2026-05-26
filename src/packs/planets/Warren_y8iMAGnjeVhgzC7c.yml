@@ -1,0 +1,82 @@
+_id: y8iMAGnjeVhgzC7c
+name: Warren
+type: planet
+img: systems/scum-and-villainy/styles/assets/planets/Warren.webp
+system:
+  description: >-
+    Warren is home to an ecumenopolis: a city spanning the entire surface of the
+    moon. It is the capitol for the system and the system Governor, Ritam
+    al'Malklaith, makes his residence here. On Warren, you can find anything you
+    need, for a price.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  system: Rin
+  scene: >-
+    A bustling street market with neon signs promising foods of all kinds.
+    Hovercars streaming between towering buildings. The bass beat of a basement
+    club playing the latest mix. Patrons stumbling out onto the street, singing.
+    Socialites attending a fancy gala at the Governors mansion.
+  notables: >-
+    <p>Ritam al'Malklaith: Governor of the Rin system, but in disgrace within
+    House Malklaith. He seeks to improve his position in the House by acquiring
+    illegal Ur artifacts. (callous, ambitious, strange)</p>
+
+    <p>Liara Curia: Owner and operator of the Lock Luna, the most infamous bar
+    in the undercity. (cunning, unforgiving, popular)</p>
+
+    <p>Rocco Apple: Ship designer extraordinaire. Only makes one of each ship
+    designed. (artistic, brilliant, aloof)</p>
+
+    <p>Pasha Qu'olin: Once a feared assassin among the Knives, now a cunning
+    Syndicate leader. Loves good food and pit fights. (sly, corpulent,
+    sartorial, decadent)</p>
+  rule: >-
+    Warren is a wretched hive of villainy, yet also the Hegemonic seat of power
+    in the system. You can take +1d to Acquire Assets here, if you also accept
+    +2 Heat.
+  wealth: '2'
+  crime: '3'
+  tech: '2'
+  weird: '1'
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5H0P3gze7LwRrpV3: 3
+_key: '!items!y8iMAGnjeVhgzC7c'

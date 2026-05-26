@@ -1,0 +1,67 @@
+name: Guild of Engineers
+type: faction
+system:
+  description: >-
+    One of the Hegemonic High Guilds, responsible for resource acquisition,
+    cybernetics, AI, tech advancement, and research. Often have the best toys.
+  visible: true
+  type: Hegemony
+  tier: '5'
+  goal: Convert trade platform into a way siphon
+  turf: >-
+    SB-176 (HQ). Mining concerns in every system in Procyon. Advanced research
+    facilities in Rin, Iota, and Brekk.
+  assets: >-
+    Technology even the Hegemon is unaware of, stored in the Grand Archive.
+    Secret research laboratories.
+  quirks: Many high-ranking Guild members sport custom cybernetics.
+  notables: |-
+    <p>Avalon Riat (chief executive, cybernetic spider legs, megalomaniac).</p>
+    <p>Thiel Kharrat (operations head, brutal, connected, influential).</p>
+    <p>Oevers Star (head researcher, genius, reclusive, overworked).</p>
+    <p>Yast Jor (commanding, shrewd, bold).</p>
+  allies: 51st Legion, Isotropa Max Secure
+  enemies: Borniko Syndicate, Cobalt Syndicate, Conclave 01, Counters Guild
+  situation: >-
+    Decadent and powerful, the Guild of Engineers are beyond the ability of the
+    Governor to police. The Guild is exploiting this, using this remote sector
+    to perform experiments banned by the Cults and the Hegemon. Their current
+    project involves converting Way energy into a highly unstable but physical
+    compound.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+effects: []
+_id: 1qOSVE34gWUbfX3u
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570008
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!1qOSVE34gWUbfX3u'

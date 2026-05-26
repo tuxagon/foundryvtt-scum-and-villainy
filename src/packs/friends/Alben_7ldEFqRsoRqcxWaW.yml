@@ -1,0 +1,28 @@
+_id: 7ldEFqRsoRqcxWaW
+name: Alben
+type: friend
+system:
+  description: A former patient. What did you treat them for? How can they help you now?
+  visible: true
+  class: Stitch
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_84.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!7ldEFqRsoRqcxWaW'

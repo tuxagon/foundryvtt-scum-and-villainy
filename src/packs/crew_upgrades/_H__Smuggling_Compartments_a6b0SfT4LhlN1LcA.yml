@@ -1,0 +1,57 @@
+_id: a6b0SfT4LhlN1LcA
+name: (H) Smuggling Compartments
+type: crew_upgrade
+system:
+  description: >-
+    Like a cargo hold (can carry a small shipment), but it won't show up on
+    routine scans or visual inspections of the ship. At 3+ hull rating, has life
+    support for smuggling people too.
+  class: Hull
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  crew_type: ''
+  is_damaged: 0
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_44.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!a6b0SfT4LhlN1LcA'

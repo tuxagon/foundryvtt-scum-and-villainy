@@ -1,0 +1,158 @@
+name: Job Location
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - _id: B2sAR8zEuTYVSJvQ
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Rin
+    name: ''
+    _key: '!tables.results!pYx9WVogbZFXjqFW.B2sAR8zEuTYVSJvQ'
+  - _id: JDYE4Ol1KBTvkKS3
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Holt
+    name: ''
+    _key: '!tables.results!pYx9WVogbZFXjqFW.JDYE4Ol1KBTvkKS3'
+  - _id: vk9IWPJRmfkdTY01
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Iota
+    name: ''
+    _key: '!tables.results!pYx9WVogbZFXjqFW.vk9IWPJRmfkdTY01'
+  - _id: sLrp2iBjKtRlvS9n
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Brekk
+    name: ''
+    _key: '!tables.results!pYx9WVogbZFXjqFW.sLrp2iBjKtRlvS9n'
+  - _id: GZGJSvzPeRuWjroF
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Same Planet
+    name: ''
+    _key: '!tables.results!pYx9WVogbZFXjqFW.GZGJSvzPeRuWjroF'
+  - _id: TvX1ZBXfXPYK1Izr
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Several Systems Away
+    name: ''
+    _key: '!tables.results!pYx9WVogbZFXjqFW.TvX1ZBXfXPYK1Izr'
+formula: 1d6
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.l5Z10Yygw8G3U1Ut
+  duplicateSource: null
+  exportSource: null
+_id: pYx9WVogbZFXjqFW
+sort: 1300000
+_key: '!tables!pYx9WVogbZFXjqFW'

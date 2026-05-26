@@ -1,0 +1,55 @@
+_id: UofI79CJN2LDmw0S
+name: (Sc) Shoot First
+type: ability
+system:
+  description: >-
+    When you attack from hiding or spring a trap, take +1d. When there's a
+    question about who acts first, the answer is you (two characters with Shoot
+    First act simultaneously).
+  class: Scoundrel
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.4_06.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!UofI79CJN2LDmw0S'

@@ -1,0 +1,69 @@
+name: Nightspeakers
+type: faction
+system:
+  description: >-
+    Mystics with dark proclivities bent on finding a set of dangerous Precursor
+    artifacts.
+  visible: true
+  type: Weirdness
+  tier: '2'
+  goal: Quietly gain Aleph Key
+  turf: Blackstarr, a dreadnought hidden in the Brekk system (HQ).
+  assets: >-
+    Mystical powers such as the Night Voice, which strips an area of the Way and
+    creates darkness and gravitational effects. A dreadnought.
+  quirks: >-
+    Nightspeakers have pitch-black eyes and resonating voices after training in
+    the Night Voice. Most wear masks. Some say they speak to voices from beyond
+    the stars.
+  notables: >-
+    <p>Doraam (masked, mysterious, driven).</p>
+
+    <p>Oin-rai (fighter, physical, huge, brutal).</p>
+
+    <p>Ismissa (robed, unarmed, mystically potent). All count as small gangs in
+    battle.</p>
+  allies: House Malklaith
+  enemies: 51st Legion, Church of Stellar Flame
+  situation: >-
+    Though few, each member is a potent mystic. They hire themselves out to
+    powerful individuals while searching for a set of Precursor artifacts called
+    the Raiment of Night. Doraam has become the Governor's personal mystic and
+    advisor after sensing a piece of the Raiment, the Aleph key.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.1_49.png
+effects: []
+_id: TUwgmL9eDnrACkG8
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570026
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!TUwgmL9eDnrACkG8'

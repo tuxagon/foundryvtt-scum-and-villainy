@@ -1,0 +1,67 @@
+_id: utVXbwqIRaQZODO7
+name: Church of Stellar Flame
+type: faction
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+system:
+  description: >-
+    One of the official Hegemonic Cults. Religious zealots with only a few
+    powerful members. Stretched thin, they're using their power and influence to
+    seek out  and eradicate dangerous artifacts and mystic activity in the
+    sector.
+  visible: true
+  type: Hegemony
+  tier: '4'
+  goal: Root out heretics and dangerous elements
+  turf: The Way of Light, a battle cruiser orbiting incredibly close to a star (HQ).
+  assets: >-
+    Handfuls of zealots willing to die for the cause. An imperial seal letting
+    them do pretty much whatever they want. A powerful battle cruiser.
+  quirks: >-
+    Each member is branded with a mark of the Church. It's referred to as the
+    Kiss of Light. Faithful pray by bathing in as much light as they can bear.
+  notables: |-
+    <p>Alaana (Noble, high priestess, mystic, driven, exheretic).</p>
+    <p>Battle Sister Diana (battle-scarred, exo-suited, unstoppable).</p>
+    <p>Iraam the Kind (inquisitor, plain, quiet, cruel).</p>
+  allies: None. Most folks are leary of zealots.
+  enemies: Most mystic factions.
+  situation: >-
+    Alaana has few but elite resources in the sector. This far out, the Church
+    does not have widespread followers to report happenings, so Alaana has to
+    rely on her attuned prayers and instincts to guide her. The Church is
+    focusing on finding key targets rather than widespread action.
+  goal_clock:
+    value: '0'
+    max: '6'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 6
+effects: []
+folder: null
+sort: 0
+flags: {}
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570033
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!utVXbwqIRaQZODO7'

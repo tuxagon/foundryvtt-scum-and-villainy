@@ -1,0 +1,66 @@
+name: Wreckers
+type: faction
+system:
+  description: >-
+    Scavengers and thieves with a few brilliant hackers, who incite factions to
+    fight so that they may pick the battlefields clean later.
+  visible: true
+  type: Criminal
+  tier: '1'
+  goal: Repair the Derelict-8
+  turf: Makeshift base inside a derelict ship near Baftoma (HQ).
+  assets: >-
+    A series of fake transponders, booby traps, and mock ships used to lure in
+    unsuspecting marks. The Derelict-8, a derelict frigate they found after a
+    battle between Draxler's Raiders and the Legion.
+  quirks: >-
+    Wreckers pick members from folks already fleeing from someone or hiding in
+    Baftoma. They often trade air and water as a means of scoping folks out.
+  notables: |-
+    <p>Bobby-O (wizard-class hacker, arrogant, trickster).</p>
+    <p>Meshkilarn (mechanic, muscled, grimy).</p>
+    <p>Qord (xeno, thief, delicate, one-handed).</p>
+  allies: Borniko Syndicate
+  enemies: Draxler's Raiders, Echo Wave Riders
+  situation: >-
+    The crew has hit several targets in the system by sowing confusion between
+    the Rin factions, and cleaning up after pirates. Their goal is to salvage
+    enough to repair their current home, the ship they call the Derelict-8. To
+    do that, many more ships are going to need to be destroyed.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_10.png
+effects: []
+_id: trW8wQqHGdH5erpx
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570032
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!trW8wQqHGdH5erpx'

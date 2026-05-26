@@ -1,0 +1,52 @@
+name: Bounty Hunter
+flags:
+  core: {}
+_id: iwND2KVIoa5z3gdO
+pages:
+  - name: Bounty Hunter
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: "<p>An enemy faction hires a bounty hunter. Fight, evade, or pay them off.\_ If you have no faction with negative status, you avoid entanglements right now.</p>\n<p>Bounty hunters are strong fighters, with armor, drones, and weapons that grant them <strong>potency</strong> in combat. Base their Tier on the hiring faction and how angry they are. Pay them off with 3 <strong>Cred</strong>.</p>"
+    _id: qq9SL0Q5l7BO581m
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!iwND2KVIoa5z3gdO.qq9SL0Q5l7BO581m'
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: JournalEntry.oKhxhbNS08oAsJ7k
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+categories: []
+_key: '!journal!iwND2KVIoa5z3gdO'

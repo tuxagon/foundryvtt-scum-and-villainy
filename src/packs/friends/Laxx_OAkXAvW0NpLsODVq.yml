@@ -1,0 +1,30 @@
+_id: OAkXAvW0NpLsODVq
+name: Laxx
+type: friend
+system:
+  description: >-
+    A xeno. Unusual friend or a dangerous foe? Way sensitive or your "normal"
+    friend?
+  visible: true
+  class: Mystic
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.2_94.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!OAkXAvW0NpLsODVq'

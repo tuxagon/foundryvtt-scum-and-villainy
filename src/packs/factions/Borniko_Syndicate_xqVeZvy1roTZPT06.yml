@@ -1,0 +1,67 @@
+_id: xqVeZvy1roTZPT06
+name: Borniko Syndicate
+type: faction
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_10.png
+system:
+  description: >-
+    A tightly knit group of thieves who steal high-end technological supplies.
+    Man, the Guild hates these guys.
+  visible: true
+  type: Criminal
+  tier: '3'
+  goal: Steal Governor Malklaith's rings
+  turf: >-
+    A former Counters Guild shadow repository that the Syndicate managed to
+    erase from the Guild ledgers.
+  assets: An entire vault of Guild technology.
+  quirks: >-
+    Joining the Borniko Syndicate involves pulling off a heist that impresses
+    the leadership.
+  notables: |-
+    <p>Ria "Keycard" (wizard-class hacker, ambitious, daring).</p>
+    <p>Nals E (Urboticist, gearhead, muscled).</p>
+    <p>MaxiMillions (arrogant, expert infiltrator, gorgeous).</p>
+    <p>Pip (mystic, xeno, small, unsettling).</p>
+  allies: Conclave 01, Echo Wave Riders, Wreckers
+  enemies: Counters Guild, Guild of Engineers, Starsmiths Guild
+  situation: >-
+    The Borniko have been working on bigger and bigger heists, making numerous
+    enemies and allies along the way. Their jobs often have folks from other
+    factions playing different roles. They focus on Hegemony targets and are
+    looking to find a way into House Malklaith's private holdings for a big
+    heist, power in the sector be damned.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+effects: []
+folder: null
+sort: 0
+flags: {}
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570034
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!xqVeZvy1roTZPT06'

@@ -1,0 +1,30 @@
+_id: tWtHTCtyD2m5ljru
+name: Yattu
+type: friend
+system:
+  description: >-
+    A gang boss. Did you use to fly for them? Did you leave them in the lurch on
+    a job?
+  visible: true
+  class: Pilot
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/rocket-flight.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!tWtHTCtyD2m5ljru'

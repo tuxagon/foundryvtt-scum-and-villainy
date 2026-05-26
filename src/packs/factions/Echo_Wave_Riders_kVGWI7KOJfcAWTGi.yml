@@ -1,0 +1,69 @@
+name: Echo Wave Riders
+type: faction
+system:
+  description: >-
+    Pilots. Many organize illegal races. Many take dangerous jobs for pay, and a
+    few test dangerous new engine/flight technologies for the Guild. They wear a
+    pin that shows how many races they've won.
+  visible: true
+  type: Criminal
+  tier: '2'
+  goal: Organize system-wide race in Brekk
+  turf: >-
+    A secluded hanger on Nightfall (HQ). A near permanent presence at Bright
+    Wind in Brekk.
+  assets: >-
+    A host of ships of their own, and access to far more. Substantial mechanical
+    facilities on Nightfall.
+  quirks: >-
+    Echo Wave Riders don't respect those who don't know how to pilot their own
+    ship, and settle all scores with races.
+  notables: |-
+    <p>Garge Ztar (risk-taker, ambitious, charismatic).</p>
+    <p>Elen (engineer, analytical, race-winner).</p>
+    <p>Inofra (stunt pilot, compassionate, veteran).</p>
+    <p>Dom (ex-Starsmith, mechanic, genius, family man, lives to race).</p>
+  allies: Borniko Syndicate, Starsmiths Guild
+  enemies: Wreckers
+  situation: >-
+    The Riders are left alone by authorities if their races are kept far enough
+    from civilization (and claiming Bright Wind takes care of that). They plan
+    to put on an epic race among system pilots for prestige and cash prizes,
+    starting and ending in the plasma cloud. Buy-in will be expensive.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_10.png
+effects: []
+_id: kVGWI7KOJfcAWTGi
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570030
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!kVGWI7KOJfcAWTGi'

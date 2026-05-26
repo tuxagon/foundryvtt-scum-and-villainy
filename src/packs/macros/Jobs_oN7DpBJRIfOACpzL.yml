@@ -1,0 +1,121 @@
+name: Jobs
+type: script
+author: FIR7wPEGx1wVISuV
+img: icons/environment/people/commoner.webp
+scope: global
+command: |-
+  /* - v1.1
+  Source: brunocalado
+  Icon: icons/environment/people/commoner.webp
+  */
+
+  (async () => {
+    const faction1 = await drawFromTable('Factions');
+    const faction2 = await drawFromTable('Factions');
+    const client = await drawFromTable('Client / Target');
+    const target = await drawFromTable('Client / Target');
+    const twist = await drawFromTable('Twist');
+    const place = await drawFromTable('Job Location');
+    const task = await drawFromTable('Work');
+    const connection = await drawFromTable('Connection');
+
+    let msg1 = `<h2>Job</h2>`;
+    let msg2 = `<ul><li>Faction 1: <b>${faction1}</b></li>`;
+    msg2 += `<li>Faction 2: <b>${faction2}</b></li>`;
+    msg2 += `<li>Client: <b>${client}</b></li>`;
+    msg2 += `<li>Target: <b>${target}</b></li>`;
+    msg2 += `<li>Twist: <b>${twist}</b></li>`;
+    msg2 += `<li>Job Location: <b>${place}</b></li>`;
+    msg2 += `<li>Job: <b>${task}</b></li>`;
+    msg2 += `<li>Connection: <b>${connection}</b></li></ul>`;
+
+    let message=msg1 + msg2;
+    let msgId = foundry.utils.randomID();
+
+    let data = {
+      name: `${task}`,
+      content: message
+    };          
+    
+    message+=`<button style="background:#d10000;color:white" id="createJob-`
+    message+=msgId;
+    message+=`">Save As Journal Entry</button>`;
+
+    let chatData = {
+      content: message,
+      whisper : ChatMessage.getWhisperRecipients("GM")
+    };  
+    ChatMessage.create(chatData, {});  
+    
+    addEventListenerOnHtmlElement("#createJob-" + msgId, 'click', (e) => {
+      createJob(data, "Job", msg2);    
+    });
+  })()
+
+  /* Functions */
+  async function drawFromTable(tableName) {
+
+    let roll_compendiums;
+    let job_compendiums;
+    roll_compendiums = game.packs.filter( p => p.documentName === 'RollTable');
+    job_compendiums = await roll_compendiums.filter( p => p.metadata.label === 'Job Tables' )[0].getDocuments();
+    const table = await job_compendiums.filter( p=> p.name === tableName )[0];        
+    
+    if (!table) {
+      ui.notifications.warn(`Table ${tableName} not found.`, {});
+      return;
+    }
+    const output = await table.roll();
+    const result = output.results[0].text;
+    return result;  
+  }
+
+  function addEventListenerOnHtmlElement(element, event, func){    
+    Hooks.on("renderChatMessage", (chatItem, html, data) => {
+      if( html[0].querySelector(element) !== null ) {
+        html[0].querySelector(element).addEventListener(event, func);
+      }
+    });
+  }
+
+  async function createJob(data, msg1, msg2) {
+
+    let folder;
+    if( game.folders.find( f => f.name === "Job Ideas") === undefined ) {
+      folder = await Folder.create( {
+        name: "Job Ideas",
+        type: "JournalEntry"
+      } );
+    } else {
+      folder = game.folders.find( f => f.name === "Job Ideas");
+    }
+    data.folder = folder;
+
+    const instantAdventure = await JournalEntry.create({"name": msg1, "folder": data.folder});
+    
+    data.type = "text";
+    data.text = {}
+    data.text.content = msg2;
+    
+    await instantAdventure.createEmbeddedDocuments("JournalEntryPage", [data]);
+    await instantAdventure.sheet.render(true);    
+  }
+folder: null
+sort: 0
+flags:
+  core: {}
+_id: oN7DpBJRIfOACpzL
+ownership:
+  default: 0
+  FIR7wPEGx1wVISuV: 3
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1713479145005
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Macro.GVICe576rSbJ1REF
+  duplicateSource: null
+  exportSource: null
+_key: '!macros!oN7DpBJRIfOACpzL'

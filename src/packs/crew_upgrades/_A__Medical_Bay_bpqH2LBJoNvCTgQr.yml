@@ -1,0 +1,57 @@
+_id: bpqH2LBJoNvCTgQr
+name: (A) Medical Bay
+type: crew_upgrade
+system:
+  description: >-
+    A clean room with medical equipment. No hospital, but sufficient to patch
+    most injuries. Storage for drugs and medical scanners. Add +1d to recovery
+    rolls.
+  class: Auxiliary
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  crew_type: ''
+  is_damaged: 0
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_86.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!bpqH2LBJoNvCTgQr'

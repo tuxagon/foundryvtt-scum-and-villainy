@@ -1,0 +1,94 @@
+_id: m60Gv2VG0isBtm7D
+name: (C) Quantum Encryptor
+type: crew_upgrade
+img: systems/scum-and-villainy/styles/assets/icons/Icon.5_32.png
+system:
+  description: >-
+    Encrypts comms and system storage. Grants special armor against interception
+    of digital communications. Data on the ship is in a secure state until
+    unlocked.
+  class: Comms
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  crew_type: ''
+  is_damaged: 0
+effects:
+  - _id: nQzhHQw6qSTcG5mE
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Compendium.scum-and-villainy.crew_upgrade.m60Gv2VG0isBtm7D
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    _stats:
+      coreVersion: '14.360'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Encryptor upgrade
+    img: systems/scum-and-villainy/styles/assets/icons/Icon.5_32.png
+    type: base
+    system:
+      changes:
+        - key: system.systems.encryptor.max
+          value: 1
+          priority: null
+          type: override
+    description: ''
+    statuses: []
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!m60Gv2VG0isBtm7D.nQzhHQw6qSTcG5mE'
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '14.360'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!items!m60Gv2VG0isBtm7D'

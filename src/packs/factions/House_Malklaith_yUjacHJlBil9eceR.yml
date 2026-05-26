@@ -1,0 +1,68 @@
+name: House Malklaith
+type: faction
+system:
+  description: >-
+    A powerful Noble House of the Hegemony, ostensibly owns the sector.
+    Represented by the Governor, who lives on Warren.
+  visible: true
+  type: Hegemony
+  tier: '3'
+  goal: Acquire Aleph Key
+  turf: >-
+    Malklaith owns the sector, but the Governor rarely leaves Warren. His people
+    can be found in major positions in every system of the sector.
+  assets: >-
+    Procyon sector taxes, generating vast coffers. A growing collection of
+    Precursor artifacts.
+  quirks: >-
+    Governor Malklaith wears a number of strange rings of Precursor origin:
+    their powers are not fully known, even to him.
+  notables: |-
+    <p>Governor Ritam al'Malklaith (Noble, intense, obsessed, well-spoken).</p>
+    <p>Jerrem (guard captain, tactical, scarred, loyal).</p>
+    <p>Shim (judge, corrupt, greedy, ambitious).</p>
+  allies: 51st Legion, Nightspeakers, Turner Society
+  enemies: The Agony, Ashen Knives, Lost Legion, The Maelstrom
+  situation: >-
+    Disgraced after a famous duel, Governor Malklaith is convinced the way to
+    regain his rightful place is by gathering Precursor secrets (Nightspeaker
+    Doraam whispers this in his ear regularly). He hopes this will give him the
+    edge in the cloak and dagger world of imperial politics; this pursuit is
+    highly illegal.
+  goal_clock:
+    value: '0'
+    max: '6'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 6
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+effects: []
+_id: yUjacHJlBil9eceR
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570035
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!yUjacHJlBil9eceR'

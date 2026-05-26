@@ -1,0 +1,67 @@
+name: Starsmiths Guild
+type: faction
+system:
+  description: >-
+    Maintain the jumpgates and hyperspace lanes and build ships. All ships in
+    Hegemonic space must be certified and registered with the Starsmiths Guild,
+    but forged papers are all too common.
+  visible: true
+  type: Hegemony
+  tier: '3'
+  goal: Find another Key for tuning Rin-Holt
+  turf: Iota Shipyards (HQ). All major spaceports.
+  assets: >-
+    Jump drives for use in new ships. A shipyard. Hyperspace lane beacons and
+    charts. Trading stations on every route.
+  quirks: >-
+    All ships in Hegemonic space, by law, must be registered, certified, and
+    maintained by the Starsmiths Guild. False papers abound, though.
+  notables: |-
+    <p>Dorae White (chief executive, industrious, trustworthy, workaholic).</p>
+    <p>Kir M'rikk'lik (technical officer, xeno, gadgeteer, experimenter).</p>
+    <p>Nash (operations chief, gruff, overworked).</p>
+    <p>Rip Onister (gate expert, curious, shy, reclusive).</p>
+  allies: Cult of the Seekers, Echo Wave Riders
+  enemies: Borniko Syndicate, Cobalt Syndicate
+  situation: >-
+    When the Rin-Holt gate was first opened, several Ur artifacts were used to
+    stabilize the connection. The Guild has speculated the gate can go to a
+    second system if another key could be found to retune the gate. The Guild is
+    searching every Ur site they get access to for such a device.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+effects: []
+_id: 0IUBfTs63k0pH8Oq
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570007
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!0IUBfTs63k0pH8Oq'

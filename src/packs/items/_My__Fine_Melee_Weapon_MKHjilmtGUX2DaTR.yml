@@ -1,0 +1,56 @@
+_id: MKHjilmtGUX2DaTR
+name: (My) Fine Melee Weapon
+type: item
+system:
+  description: >-
+    Antiquated weapon that acts as an extension of your body. In the age of
+    blasters, swords and polearms are quaint remnants of culture and custom for
+    the most part. But Way powers seem to interact stubbornly with advanced
+    technology. Each mystic order keeps anachronistic items, and uses them in
+    different ways.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  class: Mystic
+  load: '2'
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.2_94.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!MKHjilmtGUX2DaTR'

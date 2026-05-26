@@ -1,0 +1,51 @@
+_id: O49orNhgDGU7Z6eF
+name: (My) Memento Of Your Travels
+type: item
+system:
+  description: A small statue, outdated currency, a lock of hair, a picture.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  class: Mystic
+  load: '0'
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.2_94.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!O49orNhgDGU7Z6eF'

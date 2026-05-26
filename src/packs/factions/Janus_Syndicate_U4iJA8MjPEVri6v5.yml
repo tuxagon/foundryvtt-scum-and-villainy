@@ -1,0 +1,68 @@
+name: Janus Syndicate
+type: faction
+system:
+  description: >-
+    Weapons dealers that specialize in ship weapons, headed up by the ruthless
+    Viktor Bax, who insists on doing the first deal with every client in person.
+  visible: true
+  type: Criminal
+  tier: '2'
+  goal: Acquire source for capital weapons
+  turf: >-
+    Weapons camp on Sonhandra (HQ). A sizable operation at Aketi's Base Camp
+    One.
+  assets: >-
+    A large stockpile of weapons, particularly ship weapons. Several small but
+    well-armed ships. A map of the current dark hyperspace lanes.
+  quirks: >-
+    Viktor Bax insists on meeting every client the Syndicate does business with
+    in person.
+  notables: |-
+    <p>Viktor Bax (ambitious, charming, distrustful, ruthless).</p>
+    <p>Baruk (xeno, bodyguard, huge).</p>
+    <p>Wendel (nervous, technical, loyal).</p>
+    <p>Faye Null (unmarked Yaru, pilot, adventurous, foolhardy).</p>
+  allies: Draxler's Raiders
+  enemies: Vigilance
+  situation: >-
+    Viktor wants to grow beyond the outposts the Syndicate currently runs to a
+    sector-wide affair. As part of his plan to scale up, he's looking to poach
+    the Legion for some capital weapons. Viktor's currently digging up dirt on
+    Tallon and secret Legion projects in the sector.
+  goal_clock:
+    value: '0'
+    max: '10'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 10
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_10.png
+effects: []
+_id: U4iJA8MjPEVri6v5
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570027
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!U4iJA8MjPEVri6v5'

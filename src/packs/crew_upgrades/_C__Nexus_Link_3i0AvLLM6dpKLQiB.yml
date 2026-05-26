@@ -1,0 +1,57 @@
+_id: 3i0AvLLM6dpKLQiB
+name: (C) Nexus Link
+type: crew_upgrade
+system:
+  description: >-
+    A link to the Hegemonic System Network. Allows for news updates, realtime
+    messages, and tapping into system-wide sensor grids. Others may be able to
+    hack into your ship remotely via the same channel.
+  class: Comms
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  crew_type: ''
+  is_damaged: 0
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/satellite-communication.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!3i0AvLLM6dpKLQiB'

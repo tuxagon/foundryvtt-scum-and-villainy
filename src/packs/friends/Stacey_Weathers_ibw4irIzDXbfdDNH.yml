@@ -1,0 +1,30 @@
+name: Stacey Weathers
+type: friend
+system:
+  description: >-
+    Ace reporter. Has all sorts of hot leads, but what does she ask for in
+    return?
+  visible: true
+  class: Cerberus
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/scout-ship.png
+effects: []
+_id: ibw4irIzDXbfdDNH
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!ibw4irIzDXbfdDNH'

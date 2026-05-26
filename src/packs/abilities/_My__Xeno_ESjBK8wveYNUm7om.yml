@@ -1,0 +1,61 @@
+_id: ESjBK8wveYNUm7om
+name: (My) Xeno
+type: ability
+system:
+  description: >-
+    You may spend Stress (0-2) to perform an inhuman feat only members of your
+    species can do. (See page 296)
+
+    The sector is rife with species that are uniquely attuned to the Way. Some
+    claim ancestry to the Ur, while others claim evolution on a Way-ridden
+    planet. Regardless, as a xeno Mystic, you're giving up a key starting
+    ability and should consider how it influences your development as a Mystic.
+    Work with your GM and table to define special abilities and permissions for
+    the specific mystic tradition of your people.
+  class: Mystic
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.2_94.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!ESjBK8wveYNUm7om'

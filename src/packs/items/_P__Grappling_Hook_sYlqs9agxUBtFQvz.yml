@@ -1,0 +1,53 @@
+_id: sYlqs9agxUBtFQvz
+name: (P) Grappling Hook
+type: item
+system:
+  description: >-
+    Small, but mechanized. Can pull you up. Fits in your belt. Makes you look
+    dashing when you swing to the rescue.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  class: Pilot
+  load: '1'
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/rocket-flight.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!sYlqs9agxUBtFQvz'

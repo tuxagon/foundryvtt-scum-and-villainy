@@ -1,0 +1,66 @@
+name: Wanted Level 4
+flags:
+  core: {}
+_id: npYCvTsMYoIEnl6X
+pages:
+  - name: Wanted Level 4
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: >-
+        <p>Warship!</p>
+
+        <p>The Governor sends a Legion or Malklaith warship to capture your
+        ship. When you hit <strong>Wanted Level</strong> 4 in a system, the
+        Governor’s personal guard is sent out to bring you to justice, and you
+        will have to find a way to get away. You cannot bribe them, and fighting
+        them would be foolhardy. In any case, if you survive the encounter, your
+        <strong>Wanted Level</strong> drops by 1 (resources for your pursuit
+        aren’t infinite).</p>
+
+        <p>Generally the ship will be a well-armed frigate with a few personal
+        fighters. You may want to consider repainting or modifying your ship, or
+        getting fake papers and transponders to help shake similar experiences
+        off your tail.</p>
+    _id: jtPBX0ciB59I69Yf
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!npYCvTsMYoIEnl6X.jtPBX0ciB59I69Yf'
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: JournalEntry.rciMmrZ585vP1pWc
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+categories: []
+_key: '!journal!npYCvTsMYoIEnl6X'

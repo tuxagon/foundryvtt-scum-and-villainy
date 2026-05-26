@@ -1,0 +1,69 @@
+name: Yaru (Makers Guild)
+type: faction
+system:
+  description: >-
+    Guild that force-grows clones for labor. Clones are short-lived, have a
+    symbol on their foreheads, and are supposedly only barely sentient. Folks
+    are distinctly uncomfortable around the clones.
+  visible: true
+  type: Hegemony
+  tier: '2'
+  goal: Breed clone soldiers for Lost Legion
+  turf: Sanctioned Yaru creche on Lithios (HQ). Secret research facility on Amerath.
+  assets: >-
+    Cloning facilities. Clones placed in several important households and
+    facilities, which report back. Powerful capacity for genetic manipulation.
+  quirks: >-
+    The Makers Guild doesn't accept new members. The progenitors have
+    self-perfected and are frozen; only so many are allowed to be active at
+    once. The Yaru (as the clones are called) make many people in their presence
+    uneasy.
+  notables: |-
+    <p>Foler Atherton (biologist, concealed).</p>
+    <p>Bal Yn (geneticist, haughty).</p>
+    <p>Rech (savant, cold).</p>
+    <p>All unmarked progenitor clones.</p>
+  allies: Lost Legion
+  enemies: Cobalt Syndicate
+  situation: >-
+    When the Hegemon ascended, the Yaru sided with a competitor and their
+    numbers, strictly regulated by the Hegemon, have been severely reduced.
+    Unsatisfied, they have thrown in with the Lost Legion and are secretly
+    working to restore the previous Hegemon to power.
+  goal_clock:
+    value: '0'
+    max: '10'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 10
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+effects: []
+_id: SCt2eljYc5Gy2XFF
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570025
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!SCt2eljYc5Gy2XFF'

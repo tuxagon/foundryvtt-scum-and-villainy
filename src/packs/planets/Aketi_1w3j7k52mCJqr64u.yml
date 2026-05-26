@@ -1,0 +1,82 @@
+_id: 1w3j7k52mCJqr64u
+name: Aketi
+type: planet
+img: systems/scum-and-villainy/styles/assets/planets/Aketi.webp
+system:
+  description: >-
+    This verdant jungle-world would be more settled, were it not for the
+    incredibly hostile natural life. Between rapidly spreading carnivorous
+    plants, seasonally rampaging beasts, and hyper-aggressive fish, only a few
+    distinct types visit Aketi: researchers, poachers, and criminals hiding from
+    the law. The planet is labeled a Malklaith "nature preserve."
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  system: Brekk
+  scene: >-
+    Heavily armed guards patrolling the tall walls of Base Camp One, nervously
+    eyeing the jungle. Research crews packing for their next expedition across
+    from poachers doing the same. A smuggler discussing arrangements with a
+    client in a tent while a personal barista makes them drinks.
+  notables: >-
+    <p>Razor: A hunter mounting an expedition to catch the deadly Grand
+    Phereniki for a rich client. (callous, experienced, gambler)</p>
+
+    <p>Zokar Pava: Lost Legionnaire dealing in military-grade weapons.
+    (cautious, meticulous, dissident)</p>
+
+    <p>Intal Brel: Psy-blade-wielding Concordiat Knight. Travels with a
+    nine-foot-tall xeno, an ex-priest, and an Urbot. Recently lost a party
+    member and hopes to replace them. (religious, vigilant, honorable)</p>
+
+    <p>Asha Ravann: Base Camp One commander. Instituted a wall-mounted
+    flamethrower measure that's kept the jungle at bay. (tired, jaded,
+    relentless)</p>
+  rule: >-
+    Nobody comes here who doesn't have to. The planet hates you and jobs are
+    hard to find. Even bounty hunters pass it by. When you Lay Low, take +1d.
+  wealth: '0'
+  crime: '3'
+  tech: '1'
+  weird: '1'
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5H0P3gze7LwRrpV3: 3
+_key: '!items!1w3j7k52mCJqr64u'

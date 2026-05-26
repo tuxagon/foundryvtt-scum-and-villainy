@@ -1,0 +1,118 @@
+name: Work
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - _id: vFg3Rn0ZaZcjQjYb
+    flags: {}
+    type: document
+    img: icons/svg/d20-grey.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Work - Covert
+    documentUuid: Compendium.scum-and-villainy.job_tables.RollTable.GL7zz0zE1FYY28XI
+    description: ''
+    _key: '!tables.results!uDQn6zFKEFzrTMft.vFg3Rn0ZaZcjQjYb'
+  - _id: 7wTyrDSOBEH0MPkv
+    flags: {}
+    type: document
+    img: icons/svg/d20-grey.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Work - Violence
+    documentUuid: Compendium.scum-and-villainy.job_tables.RollTable.CkNUWHjp8N62wZOJ
+    description: ''
+    _key: '!tables.results!uDQn6zFKEFzrTMft.7wTyrDSOBEH0MPkv'
+  - _id: 8S1et2Nj2E48ixGf
+    flags: {}
+    type: document
+    img: icons/svg/d20-grey.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Work - Underworld
+    documentUuid: Compendium.scum-and-villainy.job_tables.RollTable.tGEMnzhbjpk3JVH5
+    description: ''
+    _key: '!tables.results!uDQn6zFKEFzrTMft.8S1et2Nj2E48ixGf'
+  - _id: 0JvXu9pygNEjMF6s
+    flags: {}
+    type: document
+    img: icons/svg/d20-grey.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Work - Other
+    documentUuid: Compendium.scum-and-villainy.job_tables.RollTable.T0gyuQ0CnCIN2Muh
+    description: ''
+    _key: '!tables.results!uDQn6zFKEFzrTMft.0JvXu9pygNEjMF6s'
+formula: 1d4
+replacement: true
+displayRoll: false
+folder: null
+flags:
+  core: {}
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685743025280
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.uM9tW3UimCXNTj10
+  duplicateSource: null
+  exportSource: null
+_id: uDQn6zFKEFzrTMft
+sort: 1800000
+_key: '!tables!uDQn6zFKEFzrTMft'

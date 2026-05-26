@@ -1,0 +1,140 @@
+_id: MlkLJ8c18chpkkTZ
+name: Wanted 3
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - _id: a1ElVqgeCMeqUDyl
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Ur Field
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.aslj0MhKSMxrcf9X
+    description: ''
+    _key: '!tables.results!MlkLJ8c18chpkkTZ.a1ElVqgeCMeqUDyl'
+  - _id: LEyq7lMjRBGnhhtj
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Pirates!
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.pv1KieJ826c5uTUP
+    description: ''
+    _key: '!tables.results!MlkLJ8c18chpkkTZ.LEyq7lMjRBGnhhtj'
+  - _id: torQ4Wjjoqfs7ycd
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Out of Gas
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.vNqFmmIVFLHoHaRK
+    description: ''
+    _key: '!tables.results!MlkLJ8c18chpkkTZ.torQ4Wjjoqfs7ycd'
+  - _id: fC5hatOfI5WWouGr
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Arrest
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.iP2JabMLeS3yrFD1
+    description: ''
+    _key: '!tables.results!MlkLJ8c18chpkkTZ.fC5hatOfI5WWouGr'
+  - _id: dK8XCVmHInzncRLV
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Wanted Level 4
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.npYCvTsMYoIEnl6X
+    description: ''
+    _key: '!tables.results!MlkLJ8c18chpkkTZ.dK8XCVmHInzncRLV'
+formula: 1d6
+replacement: true
+displayRoll: false
+folder: null
+sort: 0
+flags:
+  core: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: RollTable.eSaGa1eJAQK6h8LM
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!tables!MlkLJ8c18chpkkTZ'

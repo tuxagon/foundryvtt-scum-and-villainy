@@ -1,0 +1,67 @@
+name: Cobalt Syndicate
+type: faction
+system:
+  description: >-
+    Organized labor union dabbling in a little crime to fund their demands for a
+    better life. Usually display a blue stripe somewhere on their clothes.
+  visible: true
+  type: Criminal
+  tier: '1'
+  goal: Unify the labor force
+  turf: >-
+    The Pit, a mining quarry on Aleph (HQ). A major berth and associated docks
+    on Warren.
+  assets: >-
+    A fleet of private ships used for smuggling. Toughs and laborers on almost
+    every planet and station who wear the Cobalt stripe.
+  quirks: >-
+    Every member wears a solid blue stripe somewhere on their clothing. A blue
+    stripe on the walls of docks and warehouses is a call to action.
+  notables: |-
+    <p>Jax (leader, cold, killer, arrogant).</p>
+    <p>Keve (captain, augmented, defiant, enterprising).</p>
+    <p>Sephua (Jax's sibling, thug, daring, envious, gambler).</p>
+  allies: Dyrinek Gang, The Maelstrom
+  enemies: Ashen Knives, Guild of Engineers, Starsmiths, Yaru
+  situation: >-
+    Jax has taken over shipping lanes between Aleph and the Core worlds. He's
+    angered a number of powerful Guild factions and the secret wars between them
+    are nearing a violent outburst. Jax has been stockpiling weapons and
+    vehicles for what he sees as an inevitable and bloody fight.
+  goal_clock:
+    value: '0'
+    max: '6'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 6
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_10.png
+effects: []
+_id: LVpaM7vaR4BOxe0G
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570014
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!LVpaM7vaR4BOxe0G'

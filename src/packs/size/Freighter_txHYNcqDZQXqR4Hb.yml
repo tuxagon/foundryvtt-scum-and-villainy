@@ -1,0 +1,86 @@
+_id: txHYNcqDZQXqR4Hb
+name: Freighter
+type: ship_size
+img: systems/scum-and-villainy/styles/assets/icons/fishing-boat.png
+system:
+  description: Medium ships, can land on planets, most common ship size
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+effects:
+  - _id: UGn31Y79vw0ytdZt
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Compendium.scum-and-villainy.ship_size.txHYNcqDZQXqR4Hb
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    _stats:
+      coreVersion: '14.360'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Freighter size
+    img: systems/scum-and-villainy/styles/assets/icons/fishing-boat.png
+    type: base
+    system:
+      changes:
+        - key: system.size
+          value: 1
+          priority: null
+          type: override
+    description: ''
+    statuses: []
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!txHYNcqDZQXqR4Hb.UGn31Y79vw0ytdZt'
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '14.360'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!items!txHYNcqDZQXqR4Hb'

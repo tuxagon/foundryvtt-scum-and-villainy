@@ -1,0 +1,54 @@
+_id: Wqy4PcKb97GvqZct
+name: (S) The Getaway
+type: crew_ability
+img: systems/scum-and-villainy/styles/assets/icons/spaceship.png
+system:
+  description: >-
+    You gain potency when you Scramble or Helm to avoid capture or run a
+    blockade. When doing a delivery job, take +1d to the engagement roll.
+  class: Stardancer
+  price: '1'
+  starting: false
+  recommended: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!items!Wqy4PcKb97GvqZct'

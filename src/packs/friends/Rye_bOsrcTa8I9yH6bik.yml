@@ -1,0 +1,28 @@
+_id: bOsrcTa8I9yH6bik
+name: Rye
+type: friend
+system:
+  description: An unrequited love. Was it your training and customs that got between you?
+  visible: true
+  class: Mystic
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.2_94.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!bOsrcTa8I9yH6bik'

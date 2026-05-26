@@ -1,0 +1,67 @@
+_id: JPokaxBwTiCGxn2l
+name: Acolytes of Brashkadesh
+type: faction
+img: systems/scum-and-villainy/styles/assets/icons/Icon.1_49.png
+system:
+  description: >-
+    A collective that eschews individuality. Initiates adopt the same garb and
+    the same name, in the pursuit of perfection at any cost.
+  visible: true
+  type: Weirdness
+  tier: '1'
+  goal: Convert an entire factory to their religion
+  turf: A large number of meditation rooms throughout Indri.
+  assets: >-
+    An Ur artifact that all the Acolytes have attuned to, called the Pillar of
+    Truth.
+  quirks: >-
+    Attuning to the Pillar allows the Acolytes to communicate with each other
+    and invoke the skills and memories of other Acolytes, who can act through
+    them.
+  notables: |-
+    <p>Ashkad (charismatic, passionate, idealistic).</p>
+    <p>Ashkad (ambitious, underhanded, muscled).</p>
+    <p>Ashkad (mystic, devout, artistic).</p>
+    <p>Ashkad (technician, skilled, liar, wealthy).</p>
+  allies: Mendicants
+  enemies: Ashen Knives, Guild of Engineers
+  situation: >-
+    The Acolytes are ready to begin the next phase of growing their following,
+    but the Pillar requires massive reserves of energy to keep attuning to more
+    people.  They plan to indoctrinate an entire power plant's workforce, so
+    they can repurpose the plant to power the Pillar of Truth.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+effects: []
+folder: null
+sort: 0
+flags: {}
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570013
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!JPokaxBwTiCGxn2l'

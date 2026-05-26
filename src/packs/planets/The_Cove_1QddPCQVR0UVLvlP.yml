@@ -1,0 +1,80 @@
+_id: 1QddPCQVR0UVLvlP
+name: The Cove
+type: planet
+img: systems/scum-and-villainy/styles/assets/planets/The%20Cove.webp
+system:
+  description: >-
+    The Maelstrom pirates have made a station out of derelict freighters, cargo
+    containers, and stolen scrap metal. They call this home "the Cove."
+    Enterprising individuals can discover where it is located if they have the
+    tenacity or contacts, though it moves about within the Ashtari Cloud.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  system: Rin
+  scene: >-
+    Quick bets taken on an open brawl between two captains over slights.
+    Blue-white sparks of maintenance workers welding on a new ship. Fresh water
+    misting over rows of hydroponics. A station-wide broadcast of the Banshee's
+    latest conquest, followed by cheers throughout the halls.
+  notables: >-
+    <p>Pirate Queen Alanda "The Banshee" Ryle: Tough and violent, she enforces a
+    pirate code on those who would follow her. Once stranded a first lieutenant
+    on a barren world for mutiny. (proud, demanding, honorable)</p>
+
+    <p>Praxis Ivanov: Merchant always willing to make a deal. His tentacles are
+    tattooed with the story of his several-hundred-year life. (xeno,
+    experienced, shrewd, loves to barter)</p>
+
+    <p>Kai Quag: Mid-level Cobalt boss. Arranges protection for Cobalt smuggling
+    runs and meets with potential clients at the Cove. (cautious, charming,
+    confident)</p>
+  rule: >-
+    Conflicts are rampant, but by Banshee's decree, no murder is allowed. Those
+    needing to settle blood feuds resort to kidnapping and killing folks
+    elsewhere.
+  wealth: '1'
+  crime: '1'
+  tech: '2'
+  weird: '2'
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5H0P3gze7LwRrpV3: 3
+_key: '!items!1QddPCQVR0UVLvlP'

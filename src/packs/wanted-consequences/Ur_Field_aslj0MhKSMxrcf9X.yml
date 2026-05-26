@@ -1,0 +1,58 @@
+name: Ur Field
+flags:
+  core: {}
+_id: aslj0MhKSMxrcf9X
+pages:
+  - name: Ur Field
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: >-
+        <p>The closest jumpgate calls to each of you in a language you cannot
+        understand. Resist with <strong>Resolve</strong> or take level 1
+        <strong>Harm</strong> from the visions you cannot escape.</p>
+
+        <p>What you choose to do with the visions is up to you. They end after
+        you leave the system or the next downtime, whichever comes first.</p>
+    _id: I9scsw92pOSRP8xg
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!aslj0MhKSMxrcf9X.I9scsw92pOSRP8xg'
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: JournalEntry.LaIM6d7Py6WOG2Zu
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+categories: []
+_key: '!journal!aslj0MhKSMxrcf9X'

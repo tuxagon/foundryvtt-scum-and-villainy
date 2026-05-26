@@ -1,0 +1,52 @@
+name: Ship Trouble
+flags:
+  core: {}
+_id: yVlyH8pgNclpbi33
+pages:
+  - name: Ship Trouble
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: "<p>A ship system acts up. Damage a system (the GM will tell you which).</p>\n<p>You may repair the system as normal, though you have to deal with the consequences of the damage at the time it occurs.\_ This entanglement can happen while in flight between planets or systems, or on the way to or from a job.</p>"
+    _id: lSrvL0ASCvUtZp5T
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!yVlyH8pgNclpbi33.lSrvL0ASCvUtZp5T'
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: JournalEntry.rfr7C2v9WOcqe7rY
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+categories: []
+_key: '!journal!yVlyH8pgNclpbi33'

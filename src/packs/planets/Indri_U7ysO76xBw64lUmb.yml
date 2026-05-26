@@ -1,0 +1,80 @@
+_id: U7ysO76xBw64lUmb
+name: Indri
+type: planet
+img: systems/scum-and-villainy/styles/assets/planets/Indri.webp
+system:
+  description: >-
+    Over 25 percent of all goods manufactured in the Procyon Sector come from
+    this incredibly industrialized planet. Thick, rust-colored clouds create
+    dusk even during the day. From the warehouse-surrounded spaceport of Reves,
+    one can view the impressive skyline of smokestacks and flames from gas
+    burn-offs.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  system: Iota
+  scene: >-
+    Hovercar traffic reflecting adverts on buildings. Gas-masked pedestrians
+    walking hurriedly down metal sidewalks with umbrellas treated to prevent
+    acid rain damage. Slow-moving containers being shuttled to warehouses. Storm
+    clouds with multi-hued lightning rolling in.
+  notables: >-
+    <p>Piro Locke: Owns a number of discrete, well-guarded storage spaces in
+    orbit, and maintains a strict no-questions policy. If it's illegal, it's
+    certainly stored by Locke. (honorable, wealthy, confident)</p>
+
+    <p>Zo O Yun Ta Ri: Xeno weapons dealer known for prototypes and specialty
+    armaments. Recently acquired an Ur ship weapon and plans to auction it under
+    the cover of a storm. (xeno, connected, cautious, meticulous)</p>
+
+    <p>Pasha "The Roc" Lensarr: Local Ashen Knives head. Known for a brutal
+    approach to criminal organization. Wears custom-tailored suits that allows
+    his wings to unfurl as needed. (xeno, fierce, ruthless, demanding)</p>
+  rule: >-
+    Anyone spending any amount of time outside without proper equipment or xeno
+    abilities gains Level 2 Harm "Indri Lung."
+  wealth: '1'
+  crime: '2'
+  tech: '2'
+  weird: '0'
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5H0P3gze7LwRrpV3: 3
+_key: '!items!U7ysO76xBw64lUmb'

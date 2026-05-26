@@ -99,6 +99,44 @@ Clock Tiles are useful for quick, disposable clocks you'd like to drop onto the 
 ## Troubleshooting
 - If you can't find an item added to your sheet, refer to "All Items" tab on each sheet.
 
+## Development
+
+Compendium content is kept as YAML source under `src/packs/<pack>/*.yml`, one file per document. The runtime `packs/<pack>/` LevelDB directories that Foundry reads are a build output and are gitignored.
+
+### One-time setup
+
+```bash
+npm install
+```
+
+This installs dependencies, runs `tools/create-symlinks.mjs`, and builds `packs/` from `src/packs/` via the `postinstall` hook so Foundry can read the compendia immediately.
+
+### Editing compendium content
+
+The recommended flow is to edit YAML directly in `src/packs/` and rebuild:
+
+```bash
+npm run pack    # src/packs/*.yml -> packs/*/ LevelDB
+```
+
+If you'd rather make changes inside Foundry's compendium UI, those edits land in the gitignored `packs/` LevelDB. Bring them back into the source tree before committing:
+
+```bash
+npm run unpack  # packs/*/ LevelDB -> src/packs/*.yml
+```
+
+Important: edits made in Foundry are not visible to git until you run `npm run unpack`. Do this before staging a commit.
+
+### Notes on the live LevelDB
+
+- Foundry holds an exclusive `LOCK` on each pack while it is running. Close Foundry before running `npm run pack` or `npm run unpack` to avoid `LEVEL_LOCKED` errors.
+- `tools/unpack-packs.mjs` and `tools/pack-packs.mjs` both accept the `SAV_PACKS_SOURCE_DIR` / `SAV_PACKS_DEST_DIR` env vars to point at an alternate LevelDB location (useful when recovering from a locked or backed-up snapshot).
+- Pack/unpack are driven by the `packs` array in [system.json](system.json), so adding a new compendium only requires adding it there and creating the matching `src/packs/<name>/` directory.
+
+### Releases
+
+The `.github/workflows/main.yml` release workflow installs Node, runs `npm ci`, and `npm run pack` before zipping `packs/` into `system.zip`, so published releases continue to ship the LevelDB packs that Foundry expects.
+
 ## Credits
 - Initial system forked from megastruktur's Blades in the Dark
 - Clock UI is adapted from the Clocks module by TyrannosaurusRoy (troygoode) under the MIT license

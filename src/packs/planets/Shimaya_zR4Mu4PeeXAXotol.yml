@@ -1,0 +1,84 @@
+_id: zR4Mu4PeeXAXotol
+name: Shimaya
+type: planet
+img: systems/scum-and-villainy/styles/assets/planets/Shimaya.webp
+system:
+  description: >-
+    This desert planet is ravaged by electrical storms that occasionally clear
+    colored sand off mineral deposits essential to space travel, or turn it to
+    glass, giving a view to the ruins beneath. There is a substantial civilian
+    population, including the sector's preeminent educational institution,
+    Khalud Academy.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  system: Brekk
+  scene: >-
+    Professors walking down the marble paths of the Academy. A market street
+    with insistent vendors selling sandworm kebabs to hungry miners. Excavators
+    packing furiously onto sand-skiffs, ready to take advantage of a
+    storm-cleared deposit. The storm alert blaring citywide.
+  notables: >-
+    <p>Hondo Suzuka: An HNN reporter looking for evidence of conspiracy at
+    Khalud Academy, where several top students have vanished. (ambitious,
+    vigilant, charming)</p>
+
+    <p>Ed Ursis: Guild Engineer that works on the orbital array and the
+    electrostatic generators it powers them to keep the storms away from the
+    capital. Collects colored glass statues. (dedicated, brilliant,
+    overworked)</p>
+
+    <p>Miranda Kasur: Minerals trader with a load of stolen goods she needs to
+    move. In hiding after her first deal went wrong. (scared, cunning,
+    proud)</p>
+
+    <p>Sahar: Strange-suited mystic that lives in the desert. (odd, blue-eyed,
+    ancient)</p>
+  rule: >-
+    Although only students and professors can technically use the Khalud Academy
+    archives, all Study rolls using them at the university gain +1d.
+  wealth: '2'
+  crime: '1'
+  tech: '2'
+  weird: '0'
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5H0P3gze7LwRrpV3: 3
+_key: '!items!zR4Mu4PeeXAXotol'

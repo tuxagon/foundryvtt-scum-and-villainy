@@ -1,0 +1,61 @@
+name: Unquiet Black
+flags:
+  core: {}
+_id: wyLno63260DGXUVt
+pages:
+  - name: Unquiet Black
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: >-
+        <p>An alien or Way creature finds its way on board. Acquire the services
+        of a mystic or exterminator to destroy or banish it, or deal with it
+        yourself.</p>
+
+        <p>Treat the magnitude (see page 278) of the Way creature as equal to
+        the crew’s <strong>Wanted Level</strong> in the system. Parasites, cargo
+        you weren’t told was alive, strange creatures hiding in unmapped lanes,
+        and bizarre physics effects from using your jump drives way past
+        capacity can all apply here.</p>
+    _id: K5TLLtSZadx0gw2C
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!wyLno63260DGXUVt.K5TLLtSZadx0gw2C'
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: JournalEntry.jZO37zioZJr3N2ai
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+categories: []
+_key: '!journal!wyLno63260DGXUVt'

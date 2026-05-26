@@ -1,0 +1,158 @@
+name: Work - Other
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: Other
+results:
+  - _id: MO6UOSMA9MV51wVo
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Infect or Cure
+    name: ''
+    _key: '!tables.results!T0gyuQ0CnCIN2Muh.MO6UOSMA9MV51wVo'
+  - _id: 9JmnDJA3RSwH2UD0
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Broadcast or Record
+    name: ''
+    _key: '!tables.results!T0gyuQ0CnCIN2Muh.9JmnDJA3RSwH2UD0'
+  - _id: Cl0qRunOhC28NwTz
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Capture or Tag
+    name: ''
+    _key: '!tables.results!T0gyuQ0CnCIN2Muh.Cl0qRunOhC28NwTz'
+  - _id: ZdvynsswsfGOIZ2R
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Explore or Move
+    name: ''
+    _key: '!tables.results!T0gyuQ0CnCIN2Muh.ZdvynsswsfGOIZ2R'
+  - _id: Uq7Gscd4MBrIqTL2
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Turn On or Off
+    name: ''
+    _key: '!tables.results!T0gyuQ0CnCIN2Muh.Uq7Gscd4MBrIqTL2'
+  - _id: 3Wq4oIplWqNNeqqw
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Hack or Download
+    name: ''
+    _key: '!tables.results!T0gyuQ0CnCIN2Muh.3Wq4oIplWqNNeqqw'
+formula: 1d6
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.gSgkycrWuYP5ZuU5
+  duplicateSource: null
+  exportSource: null
+_id: T0gyuQ0CnCIN2Muh
+sort: 1100000
+_key: '!tables!T0gyuQ0CnCIN2Muh'

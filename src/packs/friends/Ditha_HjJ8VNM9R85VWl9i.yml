@@ -1,0 +1,30 @@
+_id: HjJ8VNM9R85VWl9i
+name: Ditha
+type: friend
+system:
+  description: >-
+    A family member. Are they supportive of your work? Or are they trying to get
+    you to come home?
+  visible: true
+  class: Stitch
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_84.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!HjJ8VNM9R85VWl9i'

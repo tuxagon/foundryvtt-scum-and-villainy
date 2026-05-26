@@ -1,0 +1,93 @@
+_id: 6TAi7TnANWmnqeSQ
+name: (Fi) Driven
+type: crew_upgrade
+img: systems/scum-and-villainy/styles/assets/icons/starfighter.png
+system:
+  description: >-
+    Each PC gets +1 trauma box. This can bring a PC with 4 trauma back into play
+    if you wish.
+  class: Firedrake
+  price: '3'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  crew_type: Firedrake
+  is_damaged: 0
+effects:
+  - _id: 5mhqaOPXBtq3HOoX
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Compendium.scum-and-villainy.crew_upgrade.6TAi7TnANWmnqeSQ
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    _stats:
+      coreVersion: '14.360'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Driven upgrade
+    img: systems/scum-and-villainy/styles/assets/icons/starfighter.png
+    type: base
+    system:
+      changes:
+        - key: system.installs.trauma_max_up
+          value: 1
+          priority: null
+          type: upgrade
+    description: ''
+    statuses: []
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!6TAi7TnANWmnqeSQ.5mhqaOPXBtq3HOoX'
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '14.360'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!items!6TAi7TnANWmnqeSQ'

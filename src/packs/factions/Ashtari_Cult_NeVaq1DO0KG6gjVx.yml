@@ -1,0 +1,66 @@
+_id: NeVaq1DO0KG6gjVx
+name: Ashtari Cult
+type: faction
+img: systems/scum-and-villainy/styles/assets/icons/Icon.1_49.png
+system:
+  description: >-
+    A Cult of Precursor worshipers claiming Ur descent. They carry vials of
+    gases from the Ashtari Cloud, which they inhale to connect to their presumed
+    ancestors.
+  visible: true
+  type: Weirdness
+  tier: '3'
+  goal: Align the moons of Nightfall
+  turf: An undocumented Ur ruin on Lithios. A moon base on a Nightfall moon (HQ).
+  assets: A bevy of Ur artifacts. Stockpile of Ashtari gas.
+  quirks: >-
+    Each member of the Cult wears a small vial of Ashtari gas to allow them to
+    "commune" with their "Ur past." These visions of lives eons ago have
+    unearthed previously unknown ruins.
+  notables: |-
+    <p>Urmak Theon (compassionate, educated, well spoken).</p>
+    <p>Urmak Lesh (artificer, ex-Guilder, researcher).</p>
+    <p>Urley Fean (Noble, cautious, hidden, influential).</p>
+    <p>Rokono Maex (captain, scavenger, coarse, nonbeliever, stoic).</p>
+  allies: Ghosts, Mendicants
+  enemies: Church of Stellar Flame
+  situation: >-
+    Visions granted when inhaling Ashtari gas in sacred places about the sector
+    indicate that Ur sites on the various moons of Nightfall can be used to
+    control the  planetoids. The visions are unclear as to what will happen when
+    the moons are aligned, but that's not going to stop the Cult.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+effects: []
+folder: null
+sort: 0
+flags: {}
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570016
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!NeVaq1DO0KG6gjVx'

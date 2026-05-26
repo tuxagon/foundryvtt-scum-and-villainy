@@ -1,0 +1,71 @@
+name: Ghosts
+type: faction
+system:
+  description: >-
+    Scientists who, due to a mishap, live exo-suited in a half-phased state. The
+    Church of Stellar Flame offers a significant bounty on them and their ghost
+    ship, the Skeleton Key, dead or destroyed (but certainly not alive).
+  visible: true
+  type: Weirdness
+  tier: '2'
+  goal: Hire Memish to make bomb for Holt Gate
+  turf: >-
+    The Skeleton Key, a half-phased corvette (HQ). A secret research facility on
+    Lithios.
+  assets: >-
+    A corvette that can travel along Way lines. The ability to phase on top of
+    people, possessing them, though the body dies a few days later.
+  quirks: >-
+    Before the mishap, the Ghosts were scientists. All are intelligent and
+    educated. They phase out of reality if too long outside their suits (or
+    people).
+  notables: |-
+    <p>Nils Boyer (physicist, brilliant, remorseful).</p>
+    <p>Roy Stanz (biologist, bitter, driven).</p>
+    <p>Eegon Mark (engineer, genius, suit designer).</p>
+    <p>Pol Venker (engineer, self-indulgent, cavalier).</p>
+  allies: Ashtari Cult, Suneaters
+  enemies: Church of Stellar Flame, Cult of the Seekers
+  situation: >-
+    A mishap with the Holt gate phased the Ghosts. Upon their return, they
+    possessed those that boarded. The Hegemony has been hunting them since.
+    Recently their exo-suits have allowed them to act without harming others.
+    They theorize that destroying the Holt gate will restore them to their
+    original forms.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.1_49.png
+effects: []
+_id: 28lM04LlkY4L0t4J
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570009
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!28lM04LlkY4L0t4J'

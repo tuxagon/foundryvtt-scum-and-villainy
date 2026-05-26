@@ -1,0 +1,30 @@
+_id: y4CwIzGUxJA04z22
+name: Aya
+type: friend
+system:
+  description: >-
+    An assassin. An old lover still fond of you? A heart spurned? Or are you the
+    target that got away?
+  visible: true
+  class: Muscle
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.4_64.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!y4CwIzGUxJA04z22'

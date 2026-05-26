@@ -1,0 +1,55 @@
+name: Collectors
+flags:
+  core: {}
+_id: YzXh9sLukJQR8u3R
+pages:
+  - name: Collectors
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: >-
+        <p>A collection agency claims part of your ship. Pay them 2
+        <strong>Cred</strong>, give them the components (remove a ship module),
+        or make them leave another way.</p>
+    _id: qq8LMLK4R2elmwIX
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!YzXh9sLukJQR8u3R.qq8LMLK4R2elmwIX'
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: JournalEntry.Fg3HsbvwCRbSGbdq
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+categories: []
+_key: '!journal!YzXh9sLukJQR8u3R'

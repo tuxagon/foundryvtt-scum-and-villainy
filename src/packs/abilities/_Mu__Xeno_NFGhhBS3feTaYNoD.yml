@@ -1,0 +1,61 @@
+_id: NFGhhBS3feTaYNoD
+name: (Mu) Xeno
+type: ability
+system:
+  description: >-
+    You may spend Stress (0-2) to perform an inhuman feat only members of your
+    species can do. (See page 296)
+
+    From Worf to D'Argo to Chewbacca, aliens mighty in a fight have been a
+    staple of the space opera genre. The Muscle's starting ability is
+    significant, but many xenos have strength far beyond that of a normal human.
+    Some may have more limbs, or adaptations for harsh environments. Consider
+    how your xeno heritage might make you a more useful Muscle, and talk with
+    your table about how you want to use your Xeno ability.
+  class: Muscle
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.4_64.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!NFGhhBS3feTaYNoD'

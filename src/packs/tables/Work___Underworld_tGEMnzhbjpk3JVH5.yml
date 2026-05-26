@@ -1,0 +1,158 @@
+name: Work - Underworld
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: Underworld
+results:
+  - _id: lZWOBrubVhi6L7s9
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Escort or Guard
+    name: ''
+    _key: '!tables.results!tGEMnzhbjpk3JVH5.lZWOBrubVhi6L7s9'
+  - _id: ZDw1wv0q6Us4N7Uy
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Smuggle or Courier
+    name: ''
+    _key: '!tables.results!tGEMnzhbjpk3JVH5.ZDw1wv0q6Us4N7Uy'
+  - _id: aaeYk6O7IuZZ2GA3
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Blackmail or Discredit
+    name: ''
+    _key: '!tables.results!tGEMnzhbjpk3JVH5.aaeYk6O7IuZZ2GA3'
+  - _id: w5ZilDZTpl74V1Ro
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Con or Espionage
+    name: ''
+    _key: '!tables.results!tGEMnzhbjpk3JVH5.w5ZilDZTpl74V1Ro'
+  - _id: jq9cYK4QKJ1nNU95
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Locate or Hide
+    name: ''
+    _key: '!tables.results!tGEMnzhbjpk3JVH5.jq9cYK4QKJ1nNU95'
+  - _id: fbk94GCtnJS96eHh
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Negotiate or Threaten
+    name: ''
+    _key: '!tables.results!tGEMnzhbjpk3JVH5.fbk94GCtnJS96eHh'
+formula: 1d6
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.EKs4UbugMiMxiGsO
+  duplicateSource: null
+  exportSource: null
+_id: tGEMnzhbjpk3JVH5
+sort: 500000
+_key: '!tables!tGEMnzhbjpk3JVH5'

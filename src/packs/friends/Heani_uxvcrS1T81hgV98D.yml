@@ -1,0 +1,30 @@
+name: Heani
+type: friend
+system:
+  description: >-
+    A tugboat captain. How often do you pass each other in the black? When did
+    they bring you back to safety?
+  visible: true
+  class: Stardancer
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/spaceship.png
+effects: []
+_id: uxvcrS1T81hgV98D
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!uxvcrS1T81hgV98D'

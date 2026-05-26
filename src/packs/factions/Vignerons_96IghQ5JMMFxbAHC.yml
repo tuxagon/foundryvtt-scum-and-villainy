@@ -1,0 +1,70 @@
+name: Vignerons
+type: faction
+system:
+  description: >-
+    A small handful of immortality seekers using artifact tech implants and
+    chemicals distilled from the living; several of them have been around for
+    hundreds of  years. Most were powerful before their transformation, though
+    they now conceal their true identities.
+  visible: true
+  type: Weirdness
+  tier: '3'
+  goal: Abduct and convert elite warriors
+  turf: >-
+    Anodyne, a pleasure den on Amerath (HQ). Rust, an auction house on
+    Sonhandra.
+  assets: >-
+    A few sophisticated frigates. Centuries of experience. A small stockpile of
+    life-extension fluid. Gain potency for a while after taking the substance.
+  quirks: >-
+    Because the genetic material harvested from their kills must be suitable for
+    the recipient, Vignerons only hunt human targets.
+  notables: |-
+    <p>Asphodel (general, flawless, calculating, ravenous).</p>
+    <p>Nehemiah (warrior, ancient, brutal, huge, fast).</p>
+    <p>Morwenna (mystic, selective, enthralling).</p>
+  allies: The Agony
+  enemies: Church of Stellar Flame, Vigilance
+  situation: >-
+    The Vignerons distill life essence from living victims and use it to extend
+    their own lives. With this technology, their founders have lived for
+    hundreds of years. Owing to its highly illegal nature, the Vignerons operate
+    in secret, augmenting themselves and manipulating people behind the scenes.
+    They wish to grow,  converting a number of superior bodies to their cause.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.1_49.png
+effects: []
+_id: 96IghQ5JMMFxbAHC
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570010
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!96IghQ5JMMFxbAHC'

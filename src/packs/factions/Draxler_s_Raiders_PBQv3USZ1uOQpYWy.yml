@@ -1,0 +1,65 @@
+name: Draxler's Raiders
+type: faction
+system:
+  description: >-
+    Fierce individualistic pirates who specialize in disabling ships before
+    boarding. Mostly found in Iota and Brekk.
+  visible: true
+  type: Criminal
+  tier: '3'
+  goal: Pull off jailbreak at Isotropa Max Secure
+  turf: Abandoned mining station in an Iota asteroid belt (HQ).
+  assets: >-
+    Mining ships retrofitted with grapplers. Heat shields for surviving in the
+    Ring of Fire. Draxler's cloaking corvette, the Manta. Power armor for
+    boarding. Prisoners for ransom. Caches of goods stolen from raided ships.
+  quirks: Almost all members of Draxler's Raiders are wanted for crimes.
+  notables: |-
+    <p>Draxler (leader, killer, vengeful).</p>
+    <p>Wudu "Starhawk" (captain, loyal, vicious, wary).</p>
+    <p>Samara "She Wolf" Red (captain, enforcer, cold, physical).</p>
+  allies: Janus Syndicate, Lost Legion
+  enemies: 51st Legion, Isotropa Max Secure, The Maelstrom, Vigilance
+  situation: >-
+    Draxler has made a lot of waves since taking over the Raiders. The crew has
+    a decidedly anarchist views. A few bad fights with the 51st have landed a
+    number of Raiders captains in Isotropa Max Secure, and they have set their
+    eyes on eliminating the supermax prison from Procyon altogether, killing two
+    birds with one stone.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_10.png
+effects: []
+_id: PBQv3USZ1uOQpYWy
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570022
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!PBQv3USZ1uOQpYWy'

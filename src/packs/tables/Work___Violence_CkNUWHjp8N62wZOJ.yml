@@ -1,0 +1,158 @@
+name: Work - Violence
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: Violence
+results:
+  - _id: HxgKinOYvRay6SXK
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Assassinate
+    name: ''
+    _key: '!tables.results!CkNUWHjp8N62wZOJ.HxgKinOYvRay6SXK'
+  - _id: Ph59nV03ME9OE31Y
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Liberate or Ransom
+    name: ''
+    _key: '!tables.results!CkNUWHjp8N62wZOJ.Ph59nV03ME9OE31Y'
+  - _id: zCAqPuMu1YwIMPm5
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Terrorize or Escort
+    name: ''
+    _key: '!tables.results!CkNUWHjp8N62wZOJ.zCAqPuMu1YwIMPm5'
+  - _id: 026xumo3RjAxJlzQ
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Destroy or Deface
+    name: ''
+    _key: '!tables.results!CkNUWHjp8N62wZOJ.026xumo3RjAxJlzQ'
+  - _id: 6B1Qm4BwPdDkfUkJ
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Raid or Defend
+    name: ''
+    _key: '!tables.results!CkNUWHjp8N62wZOJ.6B1Qm4BwPdDkfUkJ'
+  - _id: wVjbKaaF4iNM9glH
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Rob or Strong-arm
+    name: ''
+    _key: '!tables.results!CkNUWHjp8N62wZOJ.wVjbKaaF4iNM9glH'
+formula: 1d6
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.AqotKaaEqcc0uf6P
+  duplicateSource: null
+  exportSource: null
+_id: CkNUWHjp8N62wZOJ
+sort: 400000
+_key: '!tables!CkNUWHjp8N62wZOJ'

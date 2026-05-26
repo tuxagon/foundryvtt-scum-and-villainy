@@ -1,0 +1,82 @@
+_id: Dsu01B7LUcqV5B6z
+name: Nightfall
+type: planet
+img: systems/scum-and-villainy/styles/assets/planets/Nightfall.webp
+system:
+  description: >-
+    Named for frequent eclipses caused by the planet's 13 moons. Their erratic
+    movements make night only predictable by computer. The city of Yaw is
+    nestled where night and day last between 2 and 12 hours each. It bustles
+    with economic activity and is a frequent destination for tourists and
+    traders.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  system: Brekk
+  scene: >-
+    Highrises lighting up block by block as the city goes from day to night in
+    the span of minutes. A rowdy night club spilling dancers clad in black,
+    glow-accented outfits onto a sun-lit street. The blue glow of a public data
+    kiosk projecting tomorrow's night schedule and market changes.
+  notables: >-
+    <p>Saren Galia: Data broker and bookie. When you can't pay your debts, you
+    become her informant. (paranoid, fast, connected)</p>
+
+    <p>Lotus: Fashionista and taste-maker, dressed in elaborate costumes.
+    Secretly a high-powered fixer. Has been known to take charity cases when the
+    cause appeals to her. (popular, passionate, meticulous)</p>
+
+    <p>Jet Wolffe: Scarlet Wolves assassin. Can be hired for the right price,
+    but only takes off-world jobs. Travels with a large, blue-skinned alien
+    animal of unknown origin.(aloof, confident, unforgiving)</p>
+
+    <p>Sol Brighton: Best lawyer in the sector. (cunning, connected,
+    expensive)</p>
+  rule: >-
+    The center of culture in the system and here it's about who you know.
+    Acquire Assets with Consort instead of Crew Quality.
+  wealth: '2'
+  crime: '1'
+  tech: '2'
+  weird: '1'
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5H0P3gze7LwRrpV3: 3
+_key: '!items!Dsu01B7LUcqV5B6z'

@@ -1,0 +1,30 @@
+_id: GSl5jMdoMlg7JTnC
+name: Rhin
+type: friend
+system:
+  description: >-
+    A smuggler. A trustworthy source that passes on tips? A rogue that came up
+    in the ranks with you? Or a rival in your line of work?
+  visible: true
+  class: Scoundrel
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.4_06.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!GSl5jMdoMlg7JTnC'

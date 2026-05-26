@@ -1,0 +1,57 @@
+name: (Sp) Medium Luxury Item
+type: item
+img: systems/scum-and-villainy/styles/assets/icons/Icon.5_53.png
+system:
+  description: >-
+    Fine brandies, small but thoughtful gifts, spices and perfumes, fine
+    instruments, popular games, etc. These can come in varied sizes. Each time
+    you bring one of these on the job, explain what it is and why it's
+    luxurious.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  class: Speaker
+  load: '1'
+effects: []
+folder: null
+sort: 0
+flags:
+  core: {}
+_id: ewZZmAqh39kjeGTs
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: Compendium.scum-and-villainy.item.6dYzFvoVSKDSikxw
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  FIR7wPEGx1wVISuV: 3
+_key: '!items!ewZZmAqh39kjeGTs'

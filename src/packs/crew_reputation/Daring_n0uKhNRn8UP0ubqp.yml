@@ -1,0 +1,24 @@
+_id: n0uKhNRn8UP0ubqp
+name: Daring
+type: crew_reputation
+system:
+  description: Adventurous or audaciously bold
+  visible: true
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icons8_08.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!n0uKhNRn8UP0ubqp'

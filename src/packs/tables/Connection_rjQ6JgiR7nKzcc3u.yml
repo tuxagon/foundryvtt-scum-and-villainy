@@ -1,0 +1,158 @@
+name: Connection
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - _id: ynOOWeAd4oW4pgJh
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: PC Friend
+    name: ''
+    _key: '!tables.results!rjQ6JgiR7nKzcc3u.ynOOWeAd4oW4pgJh'
+  - _id: MZwA2xKVEjhJLXde
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: PC Rival
+    name: ''
+    _key: '!tables.results!rjQ6JgiR7nKzcc3u.MZwA2xKVEjhJLXde'
+  - _id: WkSHrGOuHKyxYUYh
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: PC Heritage NPC
+    name: ''
+    _key: '!tables.results!rjQ6JgiR7nKzcc3u.WkSHrGOuHKyxYUYh'
+  - _id: qgNWPfVNm6m1pLJU
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Crew Contact
+    name: ''
+    _key: '!tables.results!rjQ6JgiR7nKzcc3u.qgNWPfVNm6m1pLJU'
+  - _id: jiDCbBVwCdXSO746
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Planet Notable
+    name: ''
+    _key: '!tables.results!rjQ6JgiR7nKzcc3u.jiDCbBVwCdXSO746'
+  - _id: yFHThCG00xIGBqrj
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Faction Notable NPC
+    name: ''
+    _key: '!tables.results!rjQ6JgiR7nKzcc3u.yFHThCG00xIGBqrj'
+formula: 1d6
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.IBCGDopYNIf9UPfB
+  duplicateSource: null
+  exportSource: null
+_id: rjQ6JgiR7nKzcc3u
+sort: 600000
+_key: '!tables!rjQ6JgiR7nKzcc3u'

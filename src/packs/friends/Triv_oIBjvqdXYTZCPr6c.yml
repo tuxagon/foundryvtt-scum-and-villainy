@@ -1,0 +1,30 @@
+_id: oIBjvqdXYTZCPr6c
+name: Triv
+type: friend
+system:
+  description: >-
+    A ship mechanic. Have they always helped you with your ship? Did you
+    "forget" to pay them for a big upgrade?
+  visible: true
+  class: Pilot
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/rocket-flight.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!oIBjvqdXYTZCPr6c'

@@ -1,0 +1,61 @@
+_id: nbhjzXV0TbSNYXX9
+name: (P) Xeno
+type: ability
+system:
+  description: >-
+    You may spend Stress (0-2) to perform an inhuman feat only members of your
+    species can do. (See page 296)
+
+    Xeno Pilots are usually associated with xeno ships. If you pursue the
+    option, ask your GM about modifications that you might be able to make to
+    your ship, or unusual upgrades your people might have access to. When
+    developing your people, think of ways their piloting might be affected by
+    having uncommon senses (perhaps they can see gravity or other spectrums), or
+    unique ways of interfacing (such as direct neural connections).
+  class: Pilot
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/rocket-flight.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!nbhjzXV0TbSNYXX9'

@@ -1,0 +1,69 @@
+name: Sah'iir
+type: faction
+system:
+  description: >-
+    Tall, ebon-skinned xenos who travel with blindfolded servants that speak for
+    them. Gave the Hegemony their ansible network. Have creepy black metal
+    ships. Very rich and work as merchant families.
+  visible: true
+  type: Weirdness
+  tier: '4'
+  goal: Find the Ur Ansible
+  turf: >-
+    The Sah'iir Embassy, purchased recently on Warren (HQ). Workstations at
+    every ansible network point.
+  assets: >-
+    A fleet of black metal merchant ships. Private ansible networks. Extensive
+    funds from trading.
+  quirks: >-
+    The Sah'iir communicate via special hosts they control, called Echoes. Each
+    may have up to a dozen of such Echoes. It's said they sense who is suitable
+    to be their Echo, regardless of distance.
+  notables: |-
+    <p>Ren 3-Meti (matriarch, xeno, cunning, commanding).</p>
+    <p>Iisoo 7-Chim (trader, explorer, xeno, humanitarian).</p>
+    <p>Wi 13-Meti (Ren's clutchmate, xeno, ambitious, underhanded, marked).</p>
+  allies: Counters Guild
+  enemies: Guild of Engineers, Suneaters
+  situation: >-
+    The Sah'iir have earned their place by being too important to the Hegemony
+    to get rid of. While not technically a Guild, they guard the secrets of
+    ansibles as if they were one. They have detected a signal from Procyon when
+    a Precursor ansible was activated and have come to investigate.
+  goal_clock:
+    value: '0'
+    max: '10'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 10
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.1_49.png
+effects: []
+_id: WvKmQn4CDRZQcncW
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570028
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!WvKmQn4CDRZQcncW'

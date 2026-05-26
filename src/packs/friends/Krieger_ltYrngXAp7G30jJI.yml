@@ -1,0 +1,30 @@
+_id: ltYrngXAp7G30jJI
+name: Krieger
+type: friend
+system:
+  description: >-
+    A blaster pistol. Is this your favorite sidearm? Or is a rival carrying it
+    to use on you?
+  visible: true
+  class: Muscle
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.4_64.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!ltYrngXAp7G30jJI'

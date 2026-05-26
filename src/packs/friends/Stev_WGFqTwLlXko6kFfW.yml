@@ -1,0 +1,30 @@
+_id: WGFqTwLlXko6kFfW
+name: Stev
+type: friend
+system:
+  description: >-
+    A gambler of ill repute. Are you long-standing friends? Did you cheat at
+    their table?
+  visible: true
+  class: Mechanic
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.3_89.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!WGFqTwLlXko6kFfW'

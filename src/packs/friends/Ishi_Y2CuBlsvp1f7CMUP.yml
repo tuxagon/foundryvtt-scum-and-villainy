@@ -1,0 +1,30 @@
+name: Ishi
+type: friend
+system:
+  description: >-
+    A weapons dealer. Bounties come armed, and Ishi evens the field. Do they
+    tune your ship?
+  visible: true
+  class: Cerberus
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/scout-ship.png
+effects: []
+_id: Y2CuBlsvp1f7CMUP
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!Y2CuBlsvp1f7CMUP'

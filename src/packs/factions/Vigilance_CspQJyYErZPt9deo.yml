@@ -1,0 +1,65 @@
+name: Vigilance
+type: faction
+system:
+  description: >-
+    Warrior mystics bearing artifact blades, who seek to enforce an ancient code
+    of justice on any they find wanting.
+  visible: true
+  type: Weirdness
+  tier: '1'
+  goal: Burn down Base Camp One
+  turf: The First Temple on Aketi (HQ).
+  assets: >-
+    Hidden forest temple. Temple archives going back to the early days of the
+    Hegemony. Mystic tools. A handful of powerful mystic warriors.
+  quirks: >-
+    Each member is trained by one elder mentor. Becoming a Vigilance member
+    means receiving an artifact blade as a mark of your progress.
+  notables: |-
+    <p>Quai-Rosh (elder, mystic, judgmental).</p>
+    <p>Aayli Spacerunner (elder, stoic, warrior).</p>
+    <p>Ulek Spacedancer (apprentice, rash, friendly).</p>
+  allies: Concordiat Knights
+  enemies: Draxler's Raiders, Janus Syndicate, Nightspeakers, Turner Society
+  situation: >-
+    Though the Hegemony colonized the sector a hundred years ago, Vigilance was
+    founded thousands of years ago. The current members are all human, since the
+    original practitioners were wiped out when Nim-Amar pacified Procyon. They
+    have judged the gunrunners and drug makers of Aketi unworthy.
+  goal_clock:
+    value: '0'
+    max: '10'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 10
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.1_49.png
+effects: []
+_id: CspQJyYErZPt9deo
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570011
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!CspQJyYErZPt9deo'

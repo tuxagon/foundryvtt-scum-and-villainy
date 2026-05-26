@@ -1,0 +1,56 @@
+_id: jN6jzGTAD4b2mSys
+name: (Sc) I Know a Guy
+type: ability
+system:
+  description: >-
+    When you first dock at a port after being away, pick one and ask the GM
+    about a job: it's not deadly OR it pays well enough OR it's not a rush job
+    OR it comes from a faction you trust OR it targets an enemy you have. You
+    may spend 1 cred per additional feature.
+  class: Scoundrel
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.4_06.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!jN6jzGTAD4b2mSys'

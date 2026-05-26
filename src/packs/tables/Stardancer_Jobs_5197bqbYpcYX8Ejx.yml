@@ -1,0 +1,452 @@
+name: Stardancer Jobs
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - _id: 9ThnHOfbPQh4IVlX
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A faction war needs a delivery of weapons and supplies past the enemy
+      line.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.9ThnHOfbPQh4IVlX'
+  - _id: M9FwT3likFAsBjme
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: A fugitive will pay to be smuggled into the next system.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.M9FwT3likFAsBjme'
+  - _id: 222YZOL6KSQVj1eq
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A Cult wants you to move their Chosen One past a Church/ Legion
+      checkpoint.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.222YZOL6KSQVj1eq'
+  - _id: sAJSztVRuUG4oYnh
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      Living cargo needs to be transported, but is hard to contain and pin down
+      once loose.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.sAJSztVRuUG4oYnh'
+  - _id: ViAd9ldae8wFE3I3
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A client wants you to move a package for two weeks straight. No stopping.
+      No peeking.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.ViAd9ldae8wFE3I3'
+  - _id: UZy9sZyNU4I1I0Qe
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      Transporting the goods is easy, but can you convince a socialite to give
+      you the job?
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.UZy9sZyNU4I1I0Qe'
+  - _id: cPJnyzh79lFtzPEr
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      Someone wants you to accept a job for a faction, but give them the goods
+      instead.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.cPJnyzh79lFtzPEr'
+  - _id: LwzxMy9P6kOchGnd
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      An ace pilot wants you to smuggle their custom, illegally modified racing
+      ship to the start line past Guild inspections.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.LwzxMy9P6kOchGnd'
+  - _id: pGnMMF8nYTaM9IA0
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A simple job, except the cargo isn’t what they said it was, and it gets
+      dangerous mid-trip.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.pGnMMF8nYTaM9IA0'
+  - _id: kzyoFaL45dTwcoQi
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      Smuggle a Way creature to a planetside mystic. Just one problem—it has to
+      be carried inside one of the crew.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.kzyoFaL45dTwcoQi'
+  - _id: qeNaR2Mc1CPODuWn
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Smuggle an artifact out of an archaeological dig.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.qeNaR2Mc1CPODuWn'
+  - _id: y7Aym2DuUoc4cJ6F
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Run a Guild trade embargo to get a key scientist off the planet.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.y7Aym2DuUoc4cJ6F'
+  - _id: 1QymuYovDaieZbAI
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      Transport of cargo requires a path through a pirate’s boobytrapped and
+      patrolled turf.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.1QymuYovDaieZbAI'
+  - _id: K6Ddu2d6LXAIn2MX
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      An exiled ex-pirate stashed a treasure on Baftoma and will split it with
+      whoever can get them there past pirates and back.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.K6Ddu2d6LXAIn2MX'
+  - _id: 9hlWSYk1jyRdNS3K
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A mystic needs a crew to explore a newly formed Way line. Way beasties
+      guaranteed.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.9hlWSYk1jyRdNS3K'
+  - _id: xX66uFOsKccosjFt
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A Sah’iir wishes to adopt xeno children as servants. They must be moved
+      before they are registered with the Hegemony.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.xX66uFOsKccosjFt'
+  - _id: 38J4UzOTWecalSX5
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      Priority shipment from Indri to Amerath can only make it in time if you
+      cut through the Belt of Fire.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.38J4UzOTWecalSX5'
+  - _id: 2BxnI6Fj1nJ8t3D7
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A criminal gang needs to smuggle a message to a lifer in Isotropa Max
+      Secure.
+    name: ''
+    _key: '!tables.results!5197bqbYpcYX8Ejx.2BxnI6Fj1nJ8t3D7'
+formula: 1d18
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.ppJ4bFVkTv4LFcyO
+  duplicateSource: null
+  exportSource: null
+_id: 5197bqbYpcYX8Ejx
+sort: 1500000
+_key: '!tables!5197bqbYpcYX8Ejx'

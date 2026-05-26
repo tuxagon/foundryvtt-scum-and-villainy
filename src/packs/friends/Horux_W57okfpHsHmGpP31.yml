@@ -1,0 +1,30 @@
+_id: W57okfpHsHmGpP31
+name: Horux
+type: friend
+system:
+  description: >-
+    A former teacher. Do you go to them for advice even now? Or do they feel
+    you've misused their teachings?
+  visible: true
+  class: Mystic
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.2_94.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!W57okfpHsHmGpP31'

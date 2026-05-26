@@ -1,0 +1,422 @@
+name: Twist
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - _id: 7pjuSX545a0Iiq1J
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: An element is a cover for a Hegemonic Cult
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.7pjuSX545a0Iiq1J'
+  - _id: hcXsp1WpT8Aorqtc
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: A mystic or visions have alerted your target ahead of time
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.hcXsp1WpT8Aorqtc'
+  - _id: AcX18wBVTm6M8PYK
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Someone on the job isn’t who they say they are.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.AcX18wBVTm6M8PYK'
+  - _id: Bu1YrvZuUMU9DddA
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The location is guarded or watched by Hegemonic forces.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.Bu1YrvZuUMU9DddA'
+  - _id: 3PNRrIyApxHYAAf0
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: This job furthers a mystic or xeno group’s agenda.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.3PNRrIyApxHYAAf0'
+  - _id: YwGYNxjpuKoUosp1
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: This job furthers a Guild’s agenda.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.YwGYNxjpuKoUosp1'
+  - _id: IBSjZ1awTwlcqbfd
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The target is a front or member of a criminal group.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.IBSjZ1awTwlcqbfd'
+  - _id: OSBBEiHleKyuchIh
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The job is on a dangerous gang’s turf.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.OSBBEiHleKyuchIh'
+  - _id: HaKL9mbBok9gUGBN
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The job is a trap laid by your enemies.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.HaKL9mbBok9gUGBN'
+  - _id: 3uG6MKdiO6h23k7b
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The job is a test for another job.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.3uG6MKdiO6h23k7b'
+  - _id: ga7eyWKKuCfTga1D
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The job furthers pirate goals and agendas.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.ga7eyWKKuCfTga1D'
+  - _id: PIEQ92S0gBoix8Ov
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The job is being closely watched by a wealthy patron.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.PIEQ92S0gBoix8Ov'
+  - _id: qFci1KiESCz4KZy5
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The job has a strong Precursor or Way line presence.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.qFci1KiESCz4KZy5'
+  - _id: 9tJTcfoLIKrwLXpz
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The job is in the middle of actively contested turf.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.9tJTcfoLIKrwLXpz'
+  - _id: Wn50k6LCXWNKF9KM
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The job is not planetside, or easy to get to.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.Wn50k6LCXWNKF9KM'
+  - _id: ud9LgdakKipLAOQX
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The location moves (it’s not where you expect it to be).
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.ud9LgdakKipLAOQX'
+  - _id: h6efpU1UPrcX4DB6
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The job aids a rebellious cause.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.h6efpU1UPrcX4DB6'
+  - _id: ZX8n4ss1yBmHKygR
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The job directly affects the Governor.
+    name: ''
+    _key: '!tables.results!kDZ3nAEQccX0am0q.ZX8n4ss1yBmHKygR'
+formula: 1d18
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.nrvVzZ5RNeoXJcvc
+  duplicateSource: null
+  exportSource: null
+_id: kDZ3nAEQccX0am0q
+sort: 1400000
+_key: '!tables!kDZ3nAEQccX0am0q'

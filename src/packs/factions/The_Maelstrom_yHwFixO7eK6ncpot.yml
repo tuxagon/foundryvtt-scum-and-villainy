@@ -1,0 +1,70 @@
+name: The Maelstrom
+type: faction
+system:
+  description: >-
+    Rowdy space pirates living in a nebula that's difficult to navigate. Often
+    clash with the Legion.
+  visible: true
+  type: Criminal
+  tier: '3'
+  goal: Seize control of a jumpgate
+  turf: >-
+    The Nightbreaker (capital ship, HQ). The Cove (made of lashed-together
+    ships). The Ashtari Cloud.
+  assets: >-
+    The Nightbreaker (a capital ship with a jumpgate inside it). Storm drives
+    (engines capable of navigating the Ashtari Cloud). A fleet of pirate ships.
+  quirks: >-
+    The pirates lash together old or damaged ships to make the Cove. The Cove is
+    the size of a planetoid, rotating near the center of the Ashtari Cloud.
+  notables: >-
+    <p>Alanda "the Banshee" Ryle (Pirate Queen, beautiful, mirthful,
+    risk-taker).</p>
+
+    <p>Yorgar "Thorn" (captain, quiet, calculating, deadly).</p>
+
+    <p>Hunter Black (captain, ex-Noble, daring, space savvy).</p>
+  allies: Ashen Knives, Cobalt Syndicate, Nightspeakers
+  enemies: 51st Legion, Draxler's Raiders, The Guilds, House Malklaith
+  situation: >-
+    The Maelstrom raids shipping lanes and sells goods via the Ashen Knives.
+    Alanda is scheming to find a way to jump systems with her entire crew by
+    taking over a jumpgate, preferably without incurring fullscale Hegemonic
+    retribution.
+  goal_clock:
+    value: '0'
+    max: '10'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 10
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_10.png
+effects: []
+_id: yHwFixO7eK6ncpot
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570034
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!yHwFixO7eK6ncpot'

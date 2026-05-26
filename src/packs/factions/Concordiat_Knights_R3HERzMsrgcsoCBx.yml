@@ -1,0 +1,70 @@
+name: Concordiat Knights
+type: faction
+system:
+  description: >-
+    Often accompanied by a motley crew of adventurers, these dozen or so
+    colorful characters have the Hegemonic Churches' blessing to pursue a quest
+    for  something called the Light of the World.
+  visible: true
+  type: Hegemony
+  tier: '1'
+  goal: Find first Ur site on their map
+  turf: >-
+    None. Knights travel on private vessels. The Grail (a bar on Sonhandra) is
+    where they leave messages for each other.
+  assets: >-
+    A map of Procyon from before the Hegemony. Exploration ships. Significant
+    personal power and funds.
+  quirks: >-
+    Each Knight is as distinct as they can be from each other. This tight-knit
+    group is comprised of unique, colorful characters.
+  notables: |-
+    <p>Nicols al'Nim-Amar (leader, glib, hopeful).</p>
+    <p>Vnipe al'Vorron (priestess, renowned, bejeweled).</p>
+    <p>Junrai (explorer, death wish, restless).</p>
+    <p>Intal Brel (religious, vigilant, honorable).</p>
+  allies: Mendicants, Vigilance
+  enemies: Acolytes of Brashkadesh
+  situation: >-
+    A retrieved message about a powerful artifact that could terraform
+    previously dead worlds ignited a fervor in a number of Hegemonic youths.
+    Taking an oath blessed by the Hegemon to find it, they're looking all over
+    the Galaxy. Nicols recently found a marked map of Procyon predating the
+    Hegemony and the Knights seek to unravel its mystery.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+effects: []
+_id: R3HERzMsrgcsoCBx
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570024
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!R3HERzMsrgcsoCBx'

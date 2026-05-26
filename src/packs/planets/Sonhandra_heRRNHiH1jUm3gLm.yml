@@ -1,0 +1,81 @@
+_id: heRRNHiH1jUm3gLm
+name: Sonhandra
+type: planet
+img: systems/scum-and-villainy/styles/assets/planets/Sonhandra.webp
+system:
+  description: >-
+    This planet is tidally locked: the same side of the planet faces the star at
+    all times. Oddly, all light sources extinguish about a kilometer into the
+    night side. Most of the settlements are in the twilight border zone,
+    including the capital city of Ugar. Known for its lax policies regulating
+    trade, it's become a choice destination for smugglers and fences alike.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  system: Holt
+  scene: >-
+    Perpetual twilight amid paved streets and concrete buildings. Howling of
+    frequent wind storms. Masked and cloaked strangers congregating around a
+    steel warehouse before an auction begins. Row after row of ships landed in
+    the open dirt on the outskirts of Ugar.
+  notables: >-
+    <p>Del Hex: Outlaw and gunslinger. Has some obvious cybernetics from his
+    Guild days. Wanted in several systems. Runs a vibro-weapon fighting ring
+    deep in the day side. (ruthless, fast, cautious)</p>
+
+    <p>Abra Drake: Fixer for hire and auctioneer. If she can't get it or sell
+    it, she knows someone who can. (connected, confident, bold)</p>
+
+    <p>Zaeed "Tank" Marak: Mercenary turned Nyct farmer. Knows where and how to
+    hide ships on the night side. (gambler, commanding, experienced)</p>
+
+    <p>Osha: Nyct-smoking, grizzled ex-Legionnaire. Runs the Three Suns, a
+    gambling den and the biggest local dive. (deadly, retired, steely)</p>
+  rule: >-
+    Everything is available here for a price. You can always take +1d to Acquire
+    Assets, but on a 1-3, the asset also comes with strings.
+  wealth: '2'
+  crime: '2'
+  tech: '2'
+  weird: '2'
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5H0P3gze7LwRrpV3: 3
+_key: '!items!heRRNHiH1jUm3gLm'

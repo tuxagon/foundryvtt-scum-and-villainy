@@ -1,0 +1,30 @@
+name: Tiko Lux
+type: friend
+system:
+  description: >-
+    A hotshot pilot. The best, but kicked out of the Legion. A getaway driver
+    for you?
+  visible: true
+  class: Firedrake
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/starfighter.png
+effects: []
+_id: OeNjJZVWSe8J9yXa
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!OeNjJZVWSe8J9yXa'

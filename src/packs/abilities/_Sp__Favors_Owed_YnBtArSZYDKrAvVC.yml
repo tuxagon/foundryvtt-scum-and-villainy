@@ -1,0 +1,54 @@
+_id: YnBtArSZYDKrAvVC
+name: (Sp) Favors Owed
+type: ability
+img: systems/scum-and-villainy/styles/assets/icons/Icon.5_53.png
+system:
+  description: >-
+    During downtime, you get +1d when you acquire assets or lay low. Any time
+    you gather info, take +1d.
+  class: Speaker
+  price: '1'
+  starting: false
+  recommended: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!items!YnBtArSZYDKrAvVC'

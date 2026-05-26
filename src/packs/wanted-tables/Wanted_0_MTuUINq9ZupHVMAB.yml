@@ -1,0 +1,140 @@
+_id: MTuUINq9ZupHVMAB
+name: Wanted 0
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - _id: V6z8iCslibWIKJP3
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Ship Trouble
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.yVlyH8pgNclpbi33
+    description: ''
+    _key: '!tables.results!MTuUINq9ZupHVMAB.V6z8iCslibWIKJP3'
+  - _id: lDR4vy2ERiGNVMwv
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Unquiet Black
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.wyLno63260DGXUVt
+    description: ''
+    _key: '!tables.results!MTuUINq9ZupHVMAB.lDR4vy2ERiGNVMwv'
+  - _id: jRDFRzzJDdg9jIrp
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: New "Friends"
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.HnxdZyllgq2Sbv3X
+    description: ''
+    _key: '!tables.results!MTuUINq9ZupHVMAB.jRDFRzzJDdg9jIrp'
+  - _id: in34t3jIFClSmnC4
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Cooperation
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.mgoUhYt9kr0rCN7y
+    description: ''
+    _key: '!tables.results!MTuUINq9ZupHVMAB.in34t3jIFClSmnC4'
+  - _id: h672NnxOtjRBDNVG
+    flags: {}
+    type: document
+    img: icons/svg/d20-grey.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Wanted 1
+    documentUuid: Compendium.scum-and-villainy.wanted_tables.RollTable.urSdIXbr1fItxAmD
+    description: ''
+    _key: '!tables.results!MTuUINq9ZupHVMAB.h672NnxOtjRBDNVG'
+formula: 1d6
+replacement: true
+displayRoll: false
+folder: null
+sort: 0
+flags:
+  core: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: RollTable.4RLV01xWnn2A1Vwj
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!tables!MTuUINq9ZupHVMAB'

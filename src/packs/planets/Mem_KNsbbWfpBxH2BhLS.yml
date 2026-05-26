@@ -1,0 +1,81 @@
+_id: KNsbbWfpBxH2BhLS
+name: Mem
+type: planet
+img: systems/scum-and-villainy/styles/assets/planets/Mem.webp
+system:
+  description: >-
+    This ocean planet was colonized by the Hegemony for almost a hundred years
+    before aquatic xenos made themselves (and their planetary claims) known.
+    Hegemonic forces broke the Memish military and incorporated them into the
+    Hegemony. Exploration of Mem has proven difficult because of the
+    free-standing gravity wells deep beneath the waves.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  system: Holt
+  scene: >-
+    Hegemonic officials in sashes, talking with Memish labor bosses. See-through
+    spires rising from the underwater government palace to open-air pavilions.
+    Tourists embarking on submersibles to take in the local sea life. Scientists
+    in exo-suits on deep-sea missions while the Memish watch from the waters.
+  notables: >-
+    <p>Victor Kromyl: Planetary Governor. Seeks proof of Memish rebellion after
+    a few subordinates vanished. Always with his Legion bodyguard. (vigilant,
+    meticulous, paranoid)</p>
+
+    <p>Espa Nur: Memish labor boss. His scars are packed with deep-ocean
+    bioluminescence. Reports to Kromyl on seditious behaviour, but hides his
+    knowledge of Memish occultism. (xeno, ambitious, cunning, treacherous)</p>
+
+    <p>Wyndam Zahn: Biology researcher seeking a connection between the Mem and
+    other planetary life, with little success. Gathering an exploration of the
+    ancient Mem city of Bok-Dar. (wealthy, brilliant, passionate)</p>
+  rule: >-
+    The deeps are littered with Ur sites and strange glows. When in the deeps,
+    using Attune for long-term projects grants +1d. Failures may attract Way
+    attention.
+  wealth: '2'
+  crime: '2'
+  tech: '2'
+  weird: '3'
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5H0P3gze7LwRrpV3: 3
+_key: '!items!KNsbbWfpBxH2BhLS'

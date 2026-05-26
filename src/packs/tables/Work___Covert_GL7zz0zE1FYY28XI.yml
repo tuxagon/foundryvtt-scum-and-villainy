@@ -1,0 +1,158 @@
+name: Work - Covert
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: Covert
+results:
+  - _id: jMIxDfEazFpTBBcY
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Stalking or Surveillance
+    name: ''
+    _key: '!tables.results!GL7zz0zE1FYY28XI.jMIxDfEazFpTBBcY'
+  - _id: rJPj1LIdRRcKOdZM
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Sabotage or Arson
+    name: ''
+    _key: '!tables.results!GL7zz0zE1FYY28XI.rJPj1LIdRRcKOdZM'
+  - _id: WhxeAfqIAY2Wcx6r
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Poison or "Accident"
+    name: ''
+    _key: '!tables.results!GL7zz0zE1FYY28XI.WhxeAfqIAY2Wcx6r'
+  - _id: YbEWV0DNJevGRG36
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Steal or Replace
+    name: ''
+    _key: '!tables.results!GL7zz0zE1FYY28XI.YbEWV0DNJevGRG36'
+  - _id: uONRshrrfjHa7314
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Lift or Plant
+    name: ''
+    _key: '!tables.results!GL7zz0zE1FYY28XI.uONRshrrfjHa7314'
+  - _id: w36cTaWu2kVleNDX
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Impersonate or Trick
+    name: ''
+    _key: '!tables.results!GL7zz0zE1FYY28XI.w36cTaWu2kVleNDX'
+formula: 1d6
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.7EmXN8Z3vYZT9AMn
+  duplicateSource: null
+  exportSource: null
+_id: GL7zz0zE1FYY28XI
+sort: 100000
+_key: '!tables!GL7zz0zE1FYY28XI'

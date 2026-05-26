@@ -1,0 +1,68 @@
+name: Mendicants
+type: faction
+system:
+  description: >-
+    Originally the Church of the Emerald Heart, their organization was
+    politically destroyed. Now they wander the stars as traveling physicians and
+    healers.
+  visible: true
+  type: Weirdness
+  tier: '2'
+  goal: Find new Emerald Hearts
+  turf: The Temple on Amerath (HQ).
+  assets: >-
+    A small but dedicated crew of Mendicant physicians capable of healing with
+    science and Way powers alike. An ancient and powerful Mendicant mystic.
+  quirks: >-
+    Mendicant physicians implant themselves with Ur artifacts (Emerald Hearts),
+    which change them but also let them heal others.
+  notables: |-
+    <p>Ammon (physician, compassionate, changed).</p>
+    <p>Kambree (researcher, cheerful, organized).</p>
+    <p>Kairi (xeno, physician, somber).</p>
+    <p>Tar Hawkson (mystic, ancient, changed, powerful).</p>
+  allies: Concordiat Knights, Lost Legion, The Maelstrom
+  enemies: Church of Stellar Flame, Hegemonic News Network
+  situation: >-
+    An ancient Mendicant once healed a dying Stellar Flame abbot, who proclaimed
+    them an abomination. In the last Hegemonic Ascension, the Church traded
+    battle might for the right to wipe out most of the Mendicants. Many Emerald
+    Hearts were lost; the Mendicants now seek a cache of them rumored to be
+    hidden deep beneath the ruined ancient temples of Amerath.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.1_49.png
+effects: []
+_id: nOJVKfUQM3ojw7gP
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570030
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!nOJVKfUQM3ojw7gP'

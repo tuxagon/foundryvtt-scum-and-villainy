@@ -1,0 +1,67 @@
+name: Suneaters
+type: faction
+system:
+  description: >-
+    Ur-archaeologists and scientists obsessed with recreating jumpgate
+    technology. Looking to extinguish a star in pursuit of their goals.
+  visible: true
+  type: Weirdness
+  tier: '4'
+  goal: Devour Iota-2 and store energy
+  turf: An Ur ruin on Lithios (HQ). Several Nightfall-based warehouses.
+  assets: >-
+    A few well-armed, unmarked ships. Armed troops. Mystics painfully trained to
+    Way-bend gravity. Parts to build a jumpgate with activated Ur beacon. Solar
+    siphon.
+  quirks: >-
+    Suneaters spend most of their days handling Ur artifacts and have all
+    learned how to handle them safely.
+  notables: |-
+    <p>Elil (astrophysicist, fanatic, brilliant).</p>
+    <p>Ruba (archaeologist, mystic, seer).</p>
+    <p>Racel (engineer, loyal, conflicted).</p>
+    <p>Rygar Z'tann (mystic, guard, gravity bender).</p>
+  allies: Ghosts
+  enemies: Sah'iir
+  situation: >-
+    Many are ex-Guilders or mystics, who have poured decades of money and study
+    into their cause. If successful in their mission to mine Iota-2 for energy,
+    the Hegemon would instantly grant the Suneaters Guild status, even if
+    everyone in Iota perishes. The Suneaters consider it worth the risk.
+  goal_clock:
+    value: '0'
+    max: '12'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 12
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.1_49.png
+effects: []
+_id: b3OF9wcqO6uvMMtf
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570029
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!b3OF9wcqO6uvMMtf'

@@ -1,0 +1,81 @@
+_id: JCBlzP7iDq4Kk53L
+name: Outpost SB-176
+type: planet
+img: systems/scum-and-villainy/styles/assets/planets/Outpost%20SB-176.webp
+system:
+  description: >-
+    You don't need a planet in order to mine. Or at least, you don't need
+    ground. This combination "mining" platform and space colony is responsible
+    for extracting resources from Vet, the gas planet below. Most of those are
+    packaged and fired towards the Rin-Ecliptis gate.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  system: Rin
+  scene: >-
+    Cold clacking of footsteps on the brilliantly clean main concourse. Quiet
+    whispers of politicos taking tea at a parlor. Children running down halls,
+    laughing. The hum of generators in the darkened side passages leading to the
+    lower levels. Dingy workers shouting in the cramped quarters of the mining
+    rigs.
+  notables: >-
+    <p>Yast Jor: Guilder head of the outpost. Jor is known for getting things
+    done, even if it means bending the rules. A bit of a thrill-seeker, he keeps
+    a Guild-enhanced racing ship for rare days off. (commanding, shrewd,
+    bold)</p>
+
+    <p>Kasumi Ortcutt: A mystic who claims to hear the voice of Vet, the gas
+    giant the platform is mining. Trades information, including esoterica on the
+    Ur. (passionate, strange, religious)</p>
+
+    <p>Espa "Bolt" Wu: Labor organizer for the Guilder miners. Rabble-rouser
+    beloved by the workers. Has been incarcerated numerous times for crimes both
+    real and fabricated. (popular, dissident, ambitious)</p>
+  rule: >-
+    Engagement rolls are at -1d due to ever-present station monitoring. Any jobs
+    run against Guilders are considered on hostile turf.
+  wealth: '2'
+  crime: '0'
+  tech: '3'
+  weird: '1'
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5H0P3gze7LwRrpV3: 3
+_key: '!items!JCBlzP7iDq4Kk53L'

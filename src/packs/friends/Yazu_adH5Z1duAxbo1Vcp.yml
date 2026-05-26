@@ -1,0 +1,30 @@
+_id: adH5Z1duAxbo1Vcp
+name: Yazu
+type: friend
+system:
+  description: >-
+    A crooked cop. Family to cover up your tracks or someone who still hunts you
+    for getting them in trouble?
+  visible: true
+  class: Muscle
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.4_64.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!adH5Z1duAxbo1Vcp'

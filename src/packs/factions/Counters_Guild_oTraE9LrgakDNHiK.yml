@@ -1,0 +1,69 @@
+name: Counters Guild
+type: faction
+system:
+  description: >-
+    Officials who maintain the galactic currency network and build shadow
+    repositories in any system the Guild has a presence in, storing mysterious
+    items and securing auctions and commerce.
+  visible: true
+  type: Hegemony
+  tier: '4'
+  goal: Disrupt Guild of Engineers' mining operation
+  turf: >-
+    Numerous shadow repositories that store mysterious items in high-tech
+    vaults. A currency exchange on Warren built on the Hegemonic ansible network
+    (HQ).
+  assets: >-
+    Shadow vaults unknown even to the Hegemon. An ansible network relay. Vast
+    wealth.
+  quirks: >-
+    Counters Guild members sign a contract for cycles of labor at a time and are
+    paid up-front. Any breach of that contract can be punished harshly.
+  notables: |-
+    <p>Torx Verron (chief executive, calculating, ruthless, expansionary).</p>
+    <p>Rintar Ix (operations head, conniving, jealous, sly).</p>
+    <p>Broq Vsigh (repository head, honorable, meticulous).</p>
+  allies: Sah'iir, Scarlet Wolves, Starless Veil
+  enemies: Borniko Syndicate, Guild of Engineers, Vorex
+  situation: >-
+    Torx is playing Guild politics. He hopes to show that the Guild of Engineers
+    has too much to handle, and the Counters should handle sales of their raw
+    materials and lab resupplies in Procyon. He's spent vast sums on this,
+    betting he'll get it back once the Counters take over.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+effects: []
+_id: oTraE9LrgakDNHiK
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570031
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!oTraE9LrgakDNHiK'

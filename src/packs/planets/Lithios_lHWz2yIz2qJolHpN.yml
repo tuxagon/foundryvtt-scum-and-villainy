@@ -1,0 +1,83 @@
+_id: lHWz2yIz2qJolHpN
+name: Lithios
+type: planet
+img: systems/scum-and-villainy/styles/assets/planets/Lithios.webp
+system:
+  description: >-
+    Ancient ice palaces dot the surface of this frozen planet, but the race to
+    which they belong has long since passed. Entry to the palaces has been
+    restricted after a string of mysterious deaths. Orbital mirrors shine like
+    artificial suns, keeping a few larger settlements warm and powering large
+    mining rigs for extracting water and liquefied gasses.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  system: Iota
+  scene: >-
+    A purple and green aurora shining over the freezing cold sky. Ice explorers
+    whispering about the Yaru creche. Heated vapors escaping around Solitude
+    Colony. Colonists in full parkas, riding large, many-eyed canids. Farmers
+    pulling gas-eels and ice-mushroom wine crates in sail-sporting snow
+    skimmers.
+  notables: >-
+    <p>Asha Munzen: Ex-lover of the Governor, ice climber, mystic, and frequent
+    explorer of the ice palaces and gas caves. Only returns with visions, never
+    artifacts. Attempting to find the "First Message." (mystic, ambitious,
+    fit)</p>
+
+    <p>Ren Larana: Xenobiologist attempting to revive an ancient xeno found
+    frozen but alive within the ice, despite Hegemonic law forbidding it.
+    Currently trying to sneak the xeno off-world. (bold, brilliant,
+    confident)</p>
+
+    <p>Raf Urich: Ice pirate, currently stranded on planet. Used his ship
+    weapons to cut a berth in the ice. Has been hiding out, stealing parts to
+    repair his ship. (experienced, cautious, shrewd)</p>
+  rule: >-
+    When you explore the ice palaces, you must make a Resolve Resist if you
+    don't want to heed the echoes urging you to wander into the frozen wastes.
+  wealth: '0'
+  crime: '1'
+  tech: '2'
+  weird: '3'
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5H0P3gze7LwRrpV3: 3
+_key: '!items!lHWz2yIz2qJolHpN'

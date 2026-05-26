@@ -1,0 +1,60 @@
+_id: EGzmAGA6HWE3Po7q
+name: (St) Dark Hyperspace Lane Maps
+type: crew_upgrade
+system:
+  description: >-
+    These are routes through systems that aren't officially maintained.
+    Sometimes they are faster. They are always less patrolled. Often they are
+    full of Way creatures, pirates, and other scoundrels. The ride is never as
+    smooth as it is along the Starsmith-maintained routes. You don't want to
+    think too hard about the poor fools that died or got lost forever mapping
+    these routes.
+  class: Stardancer
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  crew_type: Stardancer
+  is_damaged: 0
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/spaceship.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!EGzmAGA6HWE3Po7q'

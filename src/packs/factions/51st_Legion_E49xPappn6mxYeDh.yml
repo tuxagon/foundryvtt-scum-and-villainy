@@ -1,0 +1,64 @@
+_id: E49xPappn6mxYeDh
+name: 51st Legion
+type: faction
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+system:
+  description: Hegemonic military that represents the law anywhere off-planet.
+  visible: true
+  type: Hegemony
+  tier: '3'
+  goal: Cleanse legion of anyone disloyal
+  turf: >-
+    The Scorpio (dreadnought, HQ). Naval yards throughout the sector. Outposts
+    at government and public installations and trade lanes.
+  assets: >-
+    A legion of the Hegemonic Guard. The Scorpio (dreadnought). An illegal
+    psychic.
+  quirks: There are oddly few xenos among the Legion.
+  notables: |-
+    <p>Tallon "the Butcher" (commander, disciplined, imposing, vicious).</p>
+    <p>Liyara (lieutenant, psychic, changed, eerie, loyal).</p>
+    <p>Thrace (ace pilot, reckless, gambler, loyal).</p>
+    <p>Wick (spy, xeno, unreadable, mysterious, loyal).</p>
+  allies: House Malklaith, Starsmiths Guild
+  enemies: Ashen Knives, Church of Stellar Flame, Lost Legion, The Maelstrom
+  situation: >-
+    Tallon earned many commendations on the battlefield, but swore to cleanse
+    the Hegemonic military of nepotism when his command was sacrificed to a
+    Noble's daughter. He uses his secretly psychic lieutenant Liyara to vet
+    officers and quietly place Legionnaires loyal to him in positions of power.
+  goal_clock:
+    value: '0'
+    max: '6'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 6
+effects: []
+folder: null
+sort: 0
+flags: {}
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570011
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!E49xPappn6mxYeDh'

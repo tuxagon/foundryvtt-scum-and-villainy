@@ -1,0 +1,66 @@
+name: Conclave 01
+type: faction
+system:
+  description: >-
+    Independent, sentient Urbots led by an ancient Urbot known as the Prime.
+    Working to control the mining sites and gain control over Precursor AI
+    modules  required to generate true sentient machines.
+  visible: true
+  type: Weirdness
+  tier: '1'
+  goal: Take control of Iota factory
+  turf: Secret bases on Baftoma and the Indri Wastelands (HQ).
+  assets: >-
+    Deep understanding of Urbots and Ur tech. A supply of dormant AI cores.
+    Rana-Daiyu, a powerful spaceship controlled by three sister Urbot cores. A
+    network of Urbot spies posing as everyday servants about the sector.
+  quirks: All members of the Conclave are currently Urbots of varied shapes and sizes.
+  notables: |-
+    <p>The Prime (ancient, powerful, mysterious, wise).</p>
+    <p>Bar-Hazuk (gardener, huge, kind).</p>
+    <p>Delta-7 (architect, weapons platform, massive).</p>
+    <p>Sp-d3r (hacker, infiltrator, cloaked, tiny).</p>
+  allies: Concordiat Knights, The Maelstrom (who have an Urbot captain), Sah'iir
+  enemies: 51st Legion, Guild of Engineers
+  situation: >-
+    The Prime wants to found an Urbot homeland, but he needs numbers to do so.
+    Having spent years freeing cores, he must manufacture bodies for them and
+    grow them safely. He hopes to take over abandoned factories on Iota and
+    start doing so secretly.
+  goal_clock:
+    value: '0'
+    max: '6'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 6
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.1_49.png
+effects: []
+_id: HRnTMiGjk3NFKn8c
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570012
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!HRnTMiGjk3NFKn8c'

@@ -1,0 +1,30 @@
+name: Alor
+type: friend
+system:
+  description: >-
+    A keen-eared barkeep. A good source of jobs, and a good source of drinks.
+    What do you bring him from your travels?
+  visible: true
+  class: Stardancer
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/spaceship.png
+effects: []
+_id: OFtCKjHx16zTv3Bn
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!OFtCKjHx16zTv3Bn'

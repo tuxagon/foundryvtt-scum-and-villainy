@@ -1,0 +1,69 @@
+_id: GNaI5CZGOPTaGIWo
+name: Iota
+type: star_system
+img: systems/scum-and-villainy/styles/assets/stars/Iota%20A.webp
+system:
+  description: >-
+    The planets in Iota orbit a pair of semi-detached binary stars: a yellow sun
+    (Iota-1) and a brown dwarf (Iota-2). By the time the Hegemony arrived, there
+    were two asteroid belts. One of these belts still has a large portion of a
+    shattered planet remaining in its midst. Although both belts were clearly
+    planets once upon a time, nobody is sure what sort of calamity could have
+    shattered them. Not to look a gift horse in the mouth, the Guild wasted no
+    time in setting up the Iota shipyards, which service many ships in the
+    sector.
+  visible: true
+  notables: >-
+    Shipyards: While the primary yard is run by the Starsmiths, many smaller,
+    licensed hubs work on repairs and ship refits. These stations are full of
+    bored spacers looking for any distraction from the wait. Starsmiths
+    sometimes hire foolhardy pilots for prototype tests.
+
+
+    Belt of Fire: The region of superheated plasma currents that lies between
+    the Iota binary stars. Spacers spin yarns about the Old Dragon, a vast space
+    creature living there. While the name is whimsical, the Hegemony issued a
+    Quarantine order for the area after several ships disappeared.
+
+
+    Way Line: The Iota gates produce a region between them where engines can
+    produce more thrust, akin to the winds of a planetary sea. The path itself
+    is hard to find and switches direction. Pilots in the know use this to gain
+    an advantage against each other on rush deliveries (or daring escapes).
+
+
+    ZX-1138: A long-period comet that recently diverged from its course, taking
+    it much closer to Indri. Reasons for the course change are unclear, but the
+    locals have requested the Governor investigate. Mystics claim this has
+    shifted the system Way Lines, making the Way act unpredictably.
+  heat:
+    value:
+      - 0
+    max: 8
+    max_default: 8
+    name_default: BITD.Heat
+    name: BITD.Heat
+  wanted:
+    value:
+      - 0
+    max: 4
+    max_default: 4
+    name_default: BITD.Wanted
+    name: BITD.Wanted
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!items!GNaI5CZGOPTaGIWo'

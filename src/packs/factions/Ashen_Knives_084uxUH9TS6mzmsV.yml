@@ -1,0 +1,65 @@
+_id: 084uxUH9TS6mzmsV
+name: Ashen Knives
+type: faction
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_10.png
+system:
+  description: >-
+    Dangerous criminal Syndicate known for their control of gambling and
+    assassination in the sector.
+  visible: true
+  type: Criminal
+  tier: '3'
+  goal: Control major planetary crimes in Rin
+  turf: Drug dens. Gambling houses. A hidden and reinforced bunker on Warren (HQ).
+  assets: >-
+    A crew of well-trained assassins, often with a Precursor artifact or two up
+    their sleeves. Heavy coffers. Bribed judges. Crews of thugs.
+  quirks: >-
+    To join the Syndicate, Knives must take a life. Being promoted requires
+    doing unsavory tasks. Their regional leaders are titled "Pashas."
+  notables: |-
+    <p>Pasha Qo'iin (sly, corpulent, sartorial, decadent).</p>
+    <p>Knife Lirik (assassin, xeno, gambler, deadly, graceful).</p>
+    <p>Oya (high ranking, greedy, well armed, natural leader).</p>
+  allies: The Maelstrom
+  enemies: Cobalt Syndicate, House Malklaith
+  situation: >-
+    The Ashen Knives' power on Warren often eclipses that of House Malklaith.
+    This hasn't become a problem yet, since the Governor is more focused on the
+    Core.  A recent alliance with the Maelstrom (fencing goods) has filled the
+    Knives' coffers, and now their sights are set on expanding.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+effects: []
+folder: null
+sort: 0
+flags: {}
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570006
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!084uxUH9TS6mzmsV'

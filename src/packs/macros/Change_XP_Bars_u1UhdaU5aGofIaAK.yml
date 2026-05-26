@@ -1,0 +1,119 @@
+name: Change XP Bars
+type: script
+author: DndvQQR4KOtSK1iV
+img: icons/sundries/misc/lock-open-yellow.webp
+scope: global
+command: >-
+  const version = '1.1';
+
+
+  /*
+
+  https://raw.githubusercontent.com/brunocalado/mestre-digital/master/Foundry%20VTT/Macros/Forged%20in%20the%20Dark/BladesintheDark-XpBar.js
+
+  icon: icons/sundries/misc/lock-open-yellow.webp
+
+  */
+
+
+  let tokenD;
+
+
+  if (canvas.tokens.controlled[0] === undefined){
+    ui.notifications.warn("You must select a token!");    
+  } else {
+    tokenD = canvas.tokens.controlled[0].actor;
+    main();
+  }
+
+
+  async function main() {
+    let attribute = [];
+    if(tokenD.type === 'character'){
+      attribute = Object.keys( game.model.Actor.character.attributes );
+      attribute.push("class");
+      attribute.push("stress");
+    } else if(tokenD.type === 'ship'){
+      attribute = ["crew"];
+    }
+
+    let attributeList = ``;
+    attribute.map((t) => {
+      attributeList += `<option value="${t}">${t}</option>`;
+    });
+    
+    new Dialog({
+      title: `XP/Stress Bar - Manager - v${version}`,
+      content: `
+      <h2>Bar Size</h2>
+      <p>      
+        <input type="number" min=1 max=12 id="xpBarSize" value="6"/>
+      </p><br>
+      <h2>Choose Bar</h2>
+      <p>    
+        <select id="attribute" type="text" style="width: 100px;">
+          ${attributeList}
+        </select>  
+      </p>    
+      `,
+      buttons: {
+        roll: {
+          label: "Change",
+          callback: (html) => {
+            changeActorSheetBar(html);
+          }
+        }, 
+        cancel: {
+          label: "Cancel"
+        }
+      }
+    }).render(true)
+  }
+
+
+  async function changeActorSheetBar(html) {
+    const xpBarSize = parseInt( html.find("#xpBarSize")[0].value );  
+    let attribute = html.find("#attribute")[0].value;
+    let updated;  
+   
+    switch( attribute ){
+      case 'class':
+        updated = await Actor.updateDocuments([{_id: tokenD.id, "system.experienceMax": xpBarSize}]);
+        break;
+      case 'crew':
+        updated = await Actor.updateDocuments([{_id: tokenD.id, "system.crew_experienceMax": xpBarSize}]);
+        break;
+      case 'stress':
+        updated = await Actor.updateDocuments([{_id: tokenD.id, "system.stress.max": xpBarSize, "system.stress.max_default": xpBarSize}]);
+        break;
+      default:
+        let key = "system.attributes." + attribute + ".expMax"; 
+        updated = await Actor.updateDocuments([{_id: tokenD.id, [key]: xpBarSize}]);
+      }
+  }
+folder: null
+sort: 0
+flags:
+  advanced-macros:
+    runAsGM: false
+  core: {}
+_id: u1UhdaU5aGofIaAK
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: 1713479737365
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Macro.R5S30v5UU19PIynf
+  duplicateSource: null
+  exportSource:
+    worldId: sav
+    uuid: null
+    coreVersion: 0.8.9
+    systemId: scum-and-villainy
+    systemVersion: 1.9.4
+ownership:
+  default: 0
+  DndvQQR4KOtSK1iV: 3
+_key: '!macros!u1UhdaU5aGofIaAK'

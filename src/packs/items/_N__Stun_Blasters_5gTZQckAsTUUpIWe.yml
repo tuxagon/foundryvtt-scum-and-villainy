@@ -1,0 +1,53 @@
+_id: 5gTZQckAsTUUpIWe
+name: (N) Stun Blasters
+type: item
+system:
+  description: >-
+    Regular blasters with bonus stun settings, for when your important VIP won't
+    cooperate
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  class: Non-Lethal
+  load: '1'
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/tesla-turret.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!5gTZQckAsTUUpIWe'

@@ -1,0 +1,158 @@
+name: Client/Target - Hegemonic
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: Hegemonic
+results:
+  - _id: 80gPFZpHBgI5heiO
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Executive or Diplomat
+    name: ''
+    _key: '!tables.results!woDK11UHSgiPn2xm.80gPFZpHBgI5heiO'
+  - _id: 3EJoTlRoFSukh27H
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Accountant or Pilot
+    name: ''
+    _key: '!tables.results!woDK11UHSgiPn2xm.3EJoTlRoFSukh27H'
+  - _id: 4XNqsMSL5Rw521J5
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Saboteur or Refugee
+    name: ''
+    _key: '!tables.results!woDK11UHSgiPn2xm.4XNqsMSL5Rw521J5'
+  - _id: L3h0QA2RYBpejBwn
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Cop or Detective
+    name: ''
+    _key: '!tables.results!woDK11UHSgiPn2xm.L3h0QA2RYBpejBwn'
+  - _id: Se010TlJPmhsQ2YS
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Agent or Scientist
+    name: ''
+    _key: '!tables.results!woDK11UHSgiPn2xm.Se010TlJPmhsQ2YS'
+  - _id: OvnVytzXT8av95f2
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Judge or Governor
+    name: ''
+    _key: '!tables.results!woDK11UHSgiPn2xm.OvnVytzXT8av95f2'
+formula: 1d6
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.gI87JJ1druirZBlF
+  duplicateSource: null
+  exportSource: null
+_id: woDK11UHSgiPn2xm
+sort: 1000000
+_key: '!tables!woDK11UHSgiPn2xm'

@@ -1,0 +1,60 @@
+_id: 3EQQh6309Fd45q48
+name: (Fi) Black Market Contacts
+type: crew_upgrade
+system:
+  description: >-
+    Able to get you all the modules (even illegal ones) your ship needs, even
+    when you're wanted. Resourceful. Mobile. Illegal modules (as usual) may
+    require you to run a job to acquire them. Your contact may know where to
+    find them, and give you a leg up, but it's up to you to get things that just
+    aren't available at any price (prototypes, rare devices, and incredibly
+    illegal things like coherence cannons).
+  class: Firedrake
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  crew_type: Firedrake
+  is_damaged: 0
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/starfighter.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!3EQQh6309Fd45q48'

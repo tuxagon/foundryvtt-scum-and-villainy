@@ -1,0 +1,120 @@
+_id: 42DmbQDb9LTvOhtN
+name: Cerberus (E4)
+type: crew_type
+img: systems/scum-and-villainy/styles/assets/icons/scout-ship.png
+system:
+  description: >-
+    <p>Bounty hunters and extraction specialists</p>
+
+    <p>(This version of the Cerberus Ship Type has a Engines Max of 4 to reflect
+    the book value.)</p>
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  def_abilities: >-
+    (C) Long-Range Scanner, (E) Jump Drive, (W) Grappling Hooks, (A) Brig, (T)
+    Prowess, Freighter, Stacey Weathers, Arlox, Ishi, Lix, Jezri
+  experience_clues: You executed a successful extraction operation or capture of a bounty.
+effects:
+  - _id: NKYuuxlVQP8eOrKK
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Compendium.scum-and-villainy.crew_type.AZuHZQHQpUVrDg4o
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    _stats:
+      coreVersion: '14.360'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Cerberus type
+    img: systems/scum-and-villainy/styles/assets/icons/scout-ship.png
+    type: base
+    system:
+      changes:
+        - key: system.systems.hull.max
+          value: 2
+          priority: null
+          type: override
+        - key: system.systems.engines.max
+          value: 4
+          priority: null
+          type: override
+        - key: system.systems.comms.max
+          value: 4
+          priority: null
+          type: override
+        - key: system.systems.weapons.max
+          value: 3
+          priority: null
+          type: override
+        - key: system.gambits.refresh
+          value: 1
+          priority: null
+          type: add
+        - key: system.designation
+          value: R-29 Firebrand-type Patrol Craft
+          priority: null
+          type: override
+        - key: system.ship_class
+          value: Cerberus
+          priority: null
+          type: override
+    description: ''
+    statuses: []
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!42DmbQDb9LTvOhtN.NKYuuxlVQP8eOrKK'
+folder: null
+sort: 0
+flags:
+  core: {}
+_stats:
+  coreVersion: '14.360'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: Compendium.scum-and-villainy.crew_type.AZuHZQHQpUVrDg4o
+  duplicateSource: null
+  exportSource: null
+ownership:
+  FIR7wPEGx1wVISuV: 3
+  default: 0
+_key: '!items!42DmbQDb9LTvOhtN'

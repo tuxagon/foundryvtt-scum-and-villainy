@@ -1,0 +1,56 @@
+_id: qwhz0yXCM8wJJFfh
+name: (My) Visions
+type: ability
+system:
+  description: >-
+    Spend 1 stress to remotely view a distant place or person tied to you in
+    some intimate way. Spend 1 stress for each extra feature: it lasts for a
+    minute rather than a moment OR your target can also see and hear you OR you
+    may see something only familiar to you, not intimate.
+  class: Mystic
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.2_94.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!qwhz0yXCM8wJJFfh'

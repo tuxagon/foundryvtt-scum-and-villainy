@@ -72,6 +72,25 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4.1.6
 
+      # Set up Node so we can build the compendium LevelDB packs from the
+      # YAML sources committed under src/packs/.
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # Install dev dependencies (foundryvtt-cli) without running postinstall,
+      # which would also try to build symlinks and packs locally. We invoke
+      # `npm run pack` explicitly in the next step.
+      - name: Install Dependencies
+        run: npm ci --ignore-scripts
+
+      # Build packs/<name>/ LevelDB databases from src/packs/<name>/*.yml so
+      # the existing zip step below picks them up.
+      - name: Build Compendium Packs
+        run: npm run pack
+
 
       # Extract version embedded in the tag.
       # This step expects the tag to be one of the following formats:

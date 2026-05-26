@@ -1,0 +1,28 @@
+_id: naDNf4SA0YCI13Hz
+name: Nisa
+type: friend
+system:
+  description: A previous employer. A captain or a business owner? Did it end well?
+  visible: true
+  class: Mechanic
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.3_89.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!naDNf4SA0YCI13Hz'

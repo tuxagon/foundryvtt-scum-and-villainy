@@ -1,0 +1,30 @@
+name: Rakka
+type: friend
+system:
+  description: >-
+    A diplomat. Which faction do they represent? How did you befriend someone so
+    influential?
+  visible: true
+  class: Stardancer
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/spaceship.png
+effects: []
+_id: EybLngPXym3QOD0O
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!EybLngPXym3QOD0O'

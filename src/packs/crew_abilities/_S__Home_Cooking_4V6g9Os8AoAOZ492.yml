@@ -1,0 +1,94 @@
+_id: 4V6g9Os8AoAOZ492
+name: (S) Home Cooking
+type: crew_ability
+img: systems/scum-and-villainy/styles/assets/icons/spaceship.png
+system:
+  description: >-
+    Your whole crew gains Home Cooking as a vice. Right after a job, you may
+    spend 1 cred and a downtime activity to cook for everyone, allowing the
+    whole crew present to make a vice roll. If anyone overindulges, a fight
+    erupts, and everyone gains 1 stress after the vice roll. Requires a galley
+    module.
+  class: Stardancer
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+effects:
+  - _id: LPlhyra8fwanNzd4
+    disabled: false
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    origin: Compendium.scum-and-villainy.crew_ability.4V6g9Os8AoAOZ492
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    _stats:
+      coreVersion: '14.360'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Home Cooking ability
+    img: systems/scum-and-villainy/styles/assets/icons/spaceship.png
+    type: base
+    system:
+      changes:
+        - key: system.installs.cooking_inst
+          value: 1
+          priority: null
+          type: upgrade
+    description: ''
+    statuses: []
+    sort: 0
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!4V6g9Os8AoAOZ492.LPlhyra8fwanNzd4'
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '14.360'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!items!4V6g9Os8AoAOZ492'

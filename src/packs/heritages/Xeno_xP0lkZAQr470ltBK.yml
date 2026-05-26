@@ -1,0 +1,51 @@
+_id: xP0lkZAQr470ltBK
+name: Xeno
+type: heritage
+system:
+  description: >-
+    Xeno families are as diverse as the countless kinds of xenos in the galaxy.
+    You were raised in a non-human culture. Xenos struggle to find acceptance in
+    the Hegemony, and many of their practices are seen as strange or unusual.
+  visible: true
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/alien-stare.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!xP0lkZAQr470ltBK'

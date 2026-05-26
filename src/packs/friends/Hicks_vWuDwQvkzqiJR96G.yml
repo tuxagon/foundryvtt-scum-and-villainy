@@ -1,0 +1,30 @@
+_id: vWuDwQvkzqiJR96G
+name: Hicks
+type: friend
+system:
+  description: >-
+    A mystic goods supplier. A reliable supplier of Vosian crystals, or a
+    callous opportunist preying on your faith?
+  visible: true
+  class: Mystic
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.2_94.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!vWuDwQvkzqiJR96G'

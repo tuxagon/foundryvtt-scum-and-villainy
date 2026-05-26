@@ -1,0 +1,69 @@
+_id: qVIkY0adOoLCT3RQ
+name: Holt
+type: star_system
+img: systems/scum-and-villainy/styles/assets/stars/Holt.webp
+system:
+  description: >-
+    Holt was the second Procyon system to be colonized, though the Rin-Holt gate
+    was troublesome to stabilize. Hegemonic scientists eventually found a series
+    of Ur keys in the system that forced the gate to consistently lead to Holt.
+    The gate remains temperamental, however, and has been known to open on its
+    own. No ships have come through during these spontaneous openings, so far.
+    The Holt system star burns white, though it is far older than stars of this
+    type should be, which Hegemonic scientists attribute to ancient Ur
+    manipulation.
+  visible: true
+  notables: >-
+    Jerecs Junkyard: A free-floating mass of ships, parts, and sheeting
+    connected via magnetism and cabling. If you are looking for equipment on the
+    cheap, the Junkyard is your place, though it will likely be missing a piece
+    or unreliable. Jerec also buys, but is a canny haggler.
+
+
+    Hantu Gate: The Hegemony has never been able to activate this jumpgate.
+    Compared to other gates, it seems to be missing a few small, but key,
+    pieces. It has been speculated that the Ur locked the gate and hid the keys
+    somewhere, though its anyones guess as to why.
+
+
+    Trade Platform Auto #4: The Guild has set up an automated trading platform
+    for selling fuel, covered in defensive systems to deter theft. Because of
+    this, some parties conduct negotiations here to discourage escalation.
+    Nobody knows what happened to the first three platforms.
+
+
+    Planet Omega: Three survey crews and one military expedition vanished before
+    the Legion quarantined this planet. It is overrun by a deadly life form that
+    nests within Ur ruins and can resist nukes from orbit. The Hegemony
+    considers it hostile, but insignificant to its plans.
+  heat:
+    value:
+      - 0
+    max: 8
+    max_default: 8
+    name_default: BITD.Heat
+    name: BITD.Heat
+  wanted:
+    value:
+      - 0
+    max: 4
+    max_default: 4
+    name_default: BITD.Wanted
+    name: BITD.Wanted
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!items!qVIkY0adOoLCT3RQ'

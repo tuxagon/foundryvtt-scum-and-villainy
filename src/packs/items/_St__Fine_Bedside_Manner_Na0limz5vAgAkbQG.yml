@@ -1,0 +1,51 @@
+_id: Na0limz5vAgAkbQG
+name: (St) Fine Bedside Manner
+type: item
+system:
+  description: Charm that sets patients at ease. Some Stitches never bother to bring this.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  class: Stitch
+  load: '0'
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_84.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!Na0limz5vAgAkbQG'

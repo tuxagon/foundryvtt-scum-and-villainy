@@ -1,0 +1,67 @@
+name: Cult of the Seekers
+type: faction
+system:
+  description: >-
+    Wandering mystics studying artifacts and seeking new places. Members include
+    the Hegemon's mother. They want to open the Hantu gate.
+  visible: true
+  type: Hegemony
+  tier: '2'
+  goal: Find missing Hantu Gate keys
+  turf: >-
+    Small island with a research station on Mem (HQ), near the Hantu gate. A dig
+    site in the desert on Shimaya.
+  assets: >-
+    Extensive Guild schematics of other gates. Hegemonic sanction to retrieve
+    artifacts. A large stockpile of artifacts.
+  quirks: >-
+    Many of the Cult are young ex-Legionnaires that have been personally drafted
+    by the Hegemon's mother and inspired by the cause.
+  notables: |-
+    <p>Lasaya al'Nim-Amar (Noble, mystic, brilliant, obsessed).</p>
+    <p>Yor Brah-Rahim (explorer, hot-tempered, stressed).</p>
+    <p>Qulocct (Memish, researcher, sharp, obsequious).</p>
+  allies: Hegemonic News Network, Starsmiths Guild
+  enemies: Church of Stellar Flame, Ghosts
+  situation: >-
+    The Seekers believe they have a holy imperative to expand the Hegemony to
+    the farthest reaches of space. Having found a lead on Shimaya, they've set
+    up a dig site that promises to unearth at least some of the missing pieces
+    of the Hantu gate.
+  goal_clock:
+    value: '0'
+    max: '10'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 10
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+effects: []
+_id: zNLPTvJtfyKDoEc8
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570036
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!zNLPTvJtfyKDoEc8'

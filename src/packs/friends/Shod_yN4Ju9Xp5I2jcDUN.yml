@@ -1,0 +1,30 @@
+_id: yN4Ju9Xp5I2jcDUN
+name: Shod
+type: friend
+system:
+  description: >-
+    A weapons dealer. A mentor or former partner who cashed out? Someone you
+    owe?
+  visible: true
+  class: Muscle
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.4_64.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!yN4Ju9Xp5I2jcDUN'

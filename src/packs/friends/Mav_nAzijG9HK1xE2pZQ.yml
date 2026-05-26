@@ -1,0 +1,30 @@
+_id: nAzijG9HK1xE2pZQ
+name: Mav
+type: friend
+system:
+  description: >-
+    A former mentor. What tricks did they teach you? Are they now jealous of
+    your skill?
+  visible: true
+  class: Pilot
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/rocket-flight.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!nAzijG9HK1xE2pZQ'

@@ -1,0 +1,30 @@
+_id: J2tYAPCCz5OMyLpd
+name: Choss
+type: friend
+system:
+  description: >-
+    A professional racer. Do you have hot tips for each other? Or are you always
+    striving to outdo each other?
+  visible: true
+  class: Pilot
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/rocket-flight.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!J2tYAPCCz5OMyLpd'

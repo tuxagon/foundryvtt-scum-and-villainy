@@ -1,0 +1,55 @@
+_id: 3WI4ah08fY4PC1Uk
+name: (Mu) Predator
+type: ability
+system:
+  description: >-
+    Take +1d to rolls against weakened or vulnerable targets. Whenever you
+    gather information on a weakness or vulnerability, the worst you can get is
+    a 4/5 result.
+  class: Muscle
+  price: '1'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.4_64.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!3WI4ah08fY4PC1Uk'

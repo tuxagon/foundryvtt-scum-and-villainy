@@ -1,0 +1,69 @@
+name: Lost Legion
+type: faction
+system:
+  description: >-
+    Formerly the Hegemon's personal guard, they rebelled when the current
+    Hegemon rose to power. They seek to see the Hegemon dethroned and have been
+    guns for hire ever since the schism.
+  visible: true
+  type: Criminal
+  tier: '4'
+  goal: Capture Alaana of the Stellar Flame
+  turf: >-
+    Ascension (dreadnought, HQ). A host of berths in the Iota Shipyards staffed
+    with loyalists.
+  assets: >-
+    A dreadnought. Hegemony access codes for many things in the sector. Many
+    highly trained soldiers.
+  quirks: >-
+    All Legionnaires have been branded as traitors. Many bear the tattoo of a
+    phoenix (the last Hegemon's sigil, now a sign of rebirth).
+  notables: |-
+    <p>Commander Eterin (disciplined, veteran, inspiring).</p>
+    <p>Captain Rowan (tough, stoic, unhesitating).</p>
+    <p>Her Excellency, the One True Hegemon (elite, royal, resplendent).</p>
+    <p>Haya (royal guard, potent, unstoppable).</p>
+  allies: Draxler's Raiders, Mendicants, Yaru
+  enemies: Most Hegemony Factions
+  situation: >-
+    The 1st Legion (the Hegemon's private guard) rebelled when the current
+    Hegemon ascended. They protect a young girl, heir to the last Hegemon, whom
+    they hope to reinstate. They plan to capture the head of the Church of
+    Stellar Flame and convince her to bless the girl as required.
+  goal_clock:
+    value: '0'
+    max: '10'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 10
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_10.png
+effects: []
+_id: 8LHDPTis8QivZvak
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570009
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!8LHDPTis8QivZvak'

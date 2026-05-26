@@ -1,0 +1,67 @@
+name: Vorex
+type: faction
+system:
+  description: >-
+    The most successful information broker to ever live. Can access any terminal
+    in the system, though no one can explain how. Frantically seeking her
+    sister, who the Counters Guild took hostage.
+  visible: true
+  type: Criminal
+  tier: '4'
+  goal: Figure out who has her sister
+  turf: An automated HNN satellite orbiting Warren (HQ).
+  assets: >-
+    An artifact AI core designed to interface with a living being, allowing
+    temporary connection to computers in the same system. A massive information
+    network. Dirt on pretty much everyone in the sector.
+  quirks: >-
+    Few have met Vorex in person; most talk to her through a random terminal or
+    Urbot-delivered message.
+  notables: |-
+    <p>Vorex (wizard-class hacker, stressed, careful, selfmodified).</p>
+    <p>A-0M (maintenance Urbot, cheerful, non-verbal).</p>
+    <p>Tock (security Urbot, protective, staticky, well armed).</p>
+  allies: None. Vorex is mercenary, but she will help Conclave 01 on the cheap.
+  enemies: Counters Guild
+  situation: >-
+    Vorex has been an information broker for years. Using an Ur artifact, she's
+    developed a massive network for buying and selling information. The Counters
+    Guild kidnapped her sister to make Vorex access the Guild of Engineers'
+    network. Vorex seeks to free her sister without tipping her hand.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_10.png
+effects: []
+_id: yLa3TynRyeqJaErn
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570035
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!yLa3TynRyeqJaErn'

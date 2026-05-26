@@ -1,0 +1,59 @@
+_id: ZRxBiRkJVQnxeWYw
+name: (Ce) Personal Vehicles
+type: crew_upgrade
+system:
+  description: >-
+    Your crew has a few (perhaps one per crew member) sleek single-seater craft
+    that can fold up tight enough to fit into a reasonable parking space.
+    Limited fuel, but can break atmo. Can carry basic weapons, though they can't
+    seriously damage anything freighter-sized or larger. You may want a landing
+    bay on your ship.
+  class: Cerberus
+  price: '2'
+  starting: false
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  crew_type: Cerberus
+  is_damaged: 0
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/scout-ship.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!ZRxBiRkJVQnxeWYw'

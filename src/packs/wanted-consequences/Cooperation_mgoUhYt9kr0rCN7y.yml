@@ -1,0 +1,57 @@
+name: Cooperation
+flags:
+  core: {}
+_id: mgoUhYt9kr0rCN7y
+pages:
+  - name: Cooperation
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: >-
+        <p>A faction you have +2 or +3 status with asks you for a “favor.” Agree
+        to it or lose a status with them. If you don’t have a +2 or +3 faction
+        status, you avoid entanglements right now.</p>
+
+        <p>The GM should look at the faction’s goals for job prompts.</p>
+    _id: TXSAZzYiOFOI1rEu
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!mgoUhYt9kr0rCN7y.TXSAZzYiOFOI1rEu'
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: JournalEntry.qs6MZ60Fa7w9KYfW
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+categories: []
+_key: '!journal!mgoUhYt9kr0rCN7y'

@@ -1,0 +1,30 @@
+_id: 3WgXzR7qLE2oGPkZ
+name: Kenn
+type: friend
+system:
+  description: >-
+    A family member. Are they also a mechanic? Were you both vying for a
+    parent's attentions?
+  visible: true
+  class: Mechanic
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.3_89.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!3WgXzR7qLE2oGPkZ'

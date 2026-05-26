@@ -1,0 +1,158 @@
+name: Client/Target - Esoteric
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: Esoteric
+results:
+  - _id: AmsXrrPT1Kb3lupe
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Artifact or Way Line
+    name: ''
+    _key: '!tables.results!V27foHRu3gnLf5UU.AmsXrrPT1Kb3lupe'
+  - _id: Hnsju2rP87XfFPzp
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Occult Collector
+    name: ''
+    _key: '!tables.results!V27foHRu3gnLf5UU.Hnsju2rP87XfFPzp'
+  - _id: 1NF4H3h89PIFECpt
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Wormhole or Beacon
+    name: ''
+    _key: '!tables.results!V27foHRu3gnLf5UU.1NF4H3h89PIFECpt'
+  - _id: 0m8xd82MyUjyCPU8
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Xeno or AI
+    name: ''
+    _key: '!tables.results!V27foHRu3gnLf5UU.0m8xd82MyUjyCPU8'
+  - _id: vtsUiLaPCxZSBmwn
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Renegade Urbot
+    name: ''
+    _key: '!tables.results!V27foHRu3gnLf5UU.vtsUiLaPCxZSBmwn'
+  - _id: XG5f310dtGc3Hl38
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Mystic or Cultist
+    name: ''
+    _key: '!tables.results!V27foHRu3gnLf5UU.XG5f310dtGc3Hl38'
+formula: 1d6
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.hm7UPoevFkPiMPDI
+  duplicateSource: null
+  exportSource: null
+_id: V27foHRu3gnLf5UU
+sort: 1200000
+_key: '!tables!V27foHRu3gnLf5UU'

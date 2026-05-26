@@ -1,0 +1,818 @@
+name: Factions
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - _id: q5iZMZvZe2dqEcty
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: 51st Legion
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.q5iZMZvZe2dqEcty'
+  - _id: GMFDzj5283rEBpq3
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Acolytes of Brashkadesh
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.GMFDzj5283rEBpq3'
+  - _id: GrLQz4CkYHfEzM54
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The Agony
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.GrLQz4CkYHfEzM54'
+  - _id: jkVUB89PYVqZFe7b
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Ashen Knives
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.jkVUB89PYVqZFe7b'
+  - _id: rWPIrSRpZL48h6O7
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Ashtari Cult
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.rWPIrSRpZL48h6O7'
+  - _id: 1j2hd823tShVpIL7
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Borniko Syndicate
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.1j2hd823tShVpIL7'
+  - _id: BqtO1LSklGWWC044
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Church of Stellar Flame
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.BqtO1LSklGWWC044'
+  - _id: nx74fvUmZpDsXChO
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Cobalt Syndicate
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.nx74fvUmZpDsXChO'
+  - _id: 4lXsAjapXgyd8gZK
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Conclave 01
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.4lXsAjapXgyd8gZK'
+  - _id: gdbQ6d2w99L2xaSG
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Concordiat Knights
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.gdbQ6d2w99L2xaSG'
+  - _id: DaFGSPZNx0aLExkb
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Counters Guild
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.DaFGSPZNx0aLExkb'
+  - _id: us8DTGcK8LHdUceR
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Cult of the Seekers
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.us8DTGcK8LHdUceR'
+  - _id: vPYc4X8tfAUv0VZg
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Draxler's Raiders
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.vPYc4X8tfAUv0VZg'
+  - _id: NkVqxjkFT3zUf3OU
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Dyrinek Gang
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.NkVqxjkFT3zUf3OU'
+  - _id: pfd9L9BBjDKdHdwQ
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Echo Wave Riders
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.pfd9L9BBjDKdHdwQ'
+  - _id: bPsUL7PeFmeSZ02c
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Ghosts
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.bPsUL7PeFmeSZ02c'
+  - _id: f7IQ5amf5yAGgmzN
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Guild of Engineers
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.f7IQ5amf5yAGgmzN'
+  - _id: as57GXFVupyNoZCn
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Hegemonic News Network
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.as57GXFVupyNoZCn'
+  - _id: qN8djp4CC3G6I1MF
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: House Malkiath
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.qN8djp4CC3G6I1MF'
+  - _id: ZYIdGIjULxp0VmrW
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Isotropa Max Secure
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.ZYIdGIjULxp0VmrW'
+  - _id: 1Dck9ETNjWBIQB3W
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 21
+      - 21
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Janus Syndicate
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.1Dck9ETNjWBIQB3W'
+  - _id: 42t4oIgmjEdEVj4M
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 22
+      - 22
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Lost Legion
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.42t4oIgmjEdEVj4M'
+  - _id: pc4zPxLnMyvY6F1H
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 23
+      - 23
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: The Maelstrom
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.pc4zPxLnMyvY6F1H'
+  - _id: f3XVQ3XJQLPad6SR
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 24
+      - 24
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Mendicants
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.f3XVQ3XJQLPad6SR'
+  - _id: DCzyFqLnF1tuOzN0
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 25
+      - 25
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Nightspeakers
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.DCzyFqLnF1tuOzN0'
+  - _id: ORjRPKxFoyKfA4Du
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 26
+      - 26
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Sah'iir
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.ORjRPKxFoyKfA4Du'
+  - _id: enW9ujRrCOKYySPn
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 27
+      - 27
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Scarlet Wolves
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.enW9ujRrCOKYySPn'
+  - _id: H7yPFI5oO8hKbxlk
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 28
+      - 28
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Starless Veil
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.H7yPFI5oO8hKbxlk'
+  - _id: Z10aBFpAd2YHfHdJ
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 29
+      - 29
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Starsmiths Guild
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.Z10aBFpAd2YHfHdJ'
+  - _id: vWyvbuBpy9sqyBUC
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 30
+      - 30
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Suneaters
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.vWyvbuBpy9sqyBUC'
+  - _id: yQqYDqNNHF3EdMqq
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 31
+      - 31
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Turner Society
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.yQqYDqNNHF3EdMqq'
+  - _id: KoaPPswhP2J9zEmr
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 32
+      - 32
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Vigilance
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.KoaPPswhP2J9zEmr'
+  - _id: umZjhwvZWZJWuY8F
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 33
+      - 33
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Vignerons
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.umZjhwvZWZJWuY8F'
+  - _id: xRULLOm4LhOQTLFw
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 34
+      - 34
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Vorex
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.xRULLOm4LhOQTLFw'
+  - _id: JrmUJPgEbctWxFrY
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 35
+      - 35
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Wreckers
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.JrmUJPgEbctWxFrY'
+  - _id: GElbukGh3LP6jrUX
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 36
+      - 36
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Yaru (Makers Guild)
+    name: ''
+    _key: '!tables.results!xUx83298cFoC8vaM.GElbukGh3LP6jrUX'
+formula: 1d36
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.7MfW8xiY3vyoqK5S
+  duplicateSource: null
+  exportSource: null
+_id: xUx83298cFoC8vaM
+sort: 200000
+_key: '!tables!xUx83298cFoC8vaM'

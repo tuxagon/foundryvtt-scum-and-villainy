@@ -1,0 +1,58 @@
+name: Pirates!
+flags:
+  core: {}
+_id: pv1KieJ826c5uTUP
+pages:
+  - name: Pirates!
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: >-
+        <p>Pirates attempt to take over your ship by force. Outrun, fight, or
+        cut a deal. If you didn’t use your ship at all on the last job, you
+        avoid entanglements right now.</p>
+
+        <p>This entanglement can happen while in flight between planets or
+        systems, or on the way to or from a job.</p>
+    _id: sUQqLV7c64IlyOjQ
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!pv1KieJ826c5uTUP.sUQqLV7c64IlyOjQ'
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: JournalEntry.nstag7t1WUhBqxTb
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+categories: []
+_key: '!journal!pv1KieJ826c5uTUP'

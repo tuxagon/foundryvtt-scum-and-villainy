@@ -1,0 +1,140 @@
+_id: F08jWlyXLEjDY9M1
+name: Wanted 2
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - _id: c9GhTWCCM2itsRvP
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Collectors
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.YzXh9sLukJQR8u3R
+    description: ''
+    _key: '!tables.results!F08jWlyXLEjDY9M1.c9GhTWCCM2itsRvP'
+  - _id: yuHqA0hjtqSsAu29
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Impounded
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.HKfLVHRPrjMO5qi6
+    description: ''
+    _key: '!tables.results!F08jWlyXLEjDY9M1.yuHqA0hjtqSsAu29'
+  - _id: pFc7irT0x6A5bB9S
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Bounty Hunter
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.iwND2KVIoa5z3gdO
+    description: ''
+    _key: '!tables.results!F08jWlyXLEjDY9M1.pFc7irT0x6A5bB9S'
+  - _id: X8k9W396RoRPY77E
+    flags: {}
+    type: document
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Interrogation
+    documentUuid: Compendium.scum-and-villainy.wanted.JournalEntry.5NdDWbDu3xmkXXLn
+    description: ''
+    _key: '!tables.results!F08jWlyXLEjDY9M1.X8k9W396RoRPY77E'
+  - _id: QNCADcsTat9v6TAW
+    flags: {}
+    type: document
+    img: icons/svg/d20-grey.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Wanted 3
+    documentUuid: Compendium.scum-and-villainy.wanted_tables.RollTable.MlkLJ8c18chpkkTZ
+    description: ''
+    _key: '!tables.results!F08jWlyXLEjDY9M1.QNCADcsTat9v6TAW'
+formula: 1d6
+replacement: true
+displayRoll: false
+folder: null
+sort: 0
+flags:
+  core: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: RollTable.2k56vXwPG9J8eXFo
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!tables!F08jWlyXLEjDY9M1'

@@ -1,0 +1,446 @@
+name: Cerberus Jobs
+flags:
+  core: {}
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - _id: TCrON3Kp7d0Wkd7D
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A Syndicate courier ran with his package. Nab him before he sells it to
+      another Syndicate.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.TCrON3Kp7d0Wkd7D'
+  - _id: dKYR1ZkAmDNXJie3
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A Noble’s servant (with secrets) is running. Fight any others who want to
+      claim the bounty.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.dKYR1ZkAmDNXJie3'
+  - _id: B9WbMFifIpzVwGbL
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Someone stole the Starsmith’s prototype vessel. Hunt them down.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.B9WbMFifIpzVwGbL'
+  - _id: B97jVHckst70fjod
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A Legionnaire defector has been missing for years, but a rumor of their
+      location surfaces.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.B97jVHckst70fjod'
+  - _id: Dde4qgmt5zw9j8Qw
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      The child of a diplomat was kidnapped in transit. Spring them from
+      pirates.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.Dde4qgmt5zw9j8Qw'
+  - _id: w75o2Q0QNEhM96gO
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: A bounty is placed on a dangerous Way creature on Aketi.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.w75o2Q0QNEhM96gO'
+  - _id: c4DDpJA4dCE3IXXT
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A large prison breakout happens on Isotropa Max Secure. Gotta catch them
+      all.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.c4DDpJA4dCE3IXXT'
+  - _id: gAwg1odVHXtwhHyw
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A Scarlet Wolf assassin just inexplicably killed a large number of people.
+      Get them.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.gAwg1odVHXtwhHyw'
+  - _id: 5iRPEng0jl9sVKec
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A large bounty is out for someone who just blew up a chunk of a jumpgate.
+      The person blamed claims they didn’t do it.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.5iRPEng0jl9sVKec'
+  - _id: r2PWoYZBHnsW8J7U
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      Find a lost researcher for the Guild (whether they want to come back or
+      not).
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.r2PWoYZBHnsW8J7U'
+  - _id: fv0JpgTIz63TCYMC
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Mendicants are hiding a former pirate. Fetch them for the Vignerons.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.fv0JpgTIz63TCYMC'
+  - _id: OaOrYsDR7UP9eTS0
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Extract a Guild member from the local Guild headquarters. Good luck.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.OaOrYsDR7UP9eTS0'
+  - _id: 1nFPgf7YazeJPeXE
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: Catch a Noble’s escaped pet and deal with it on the transport back.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.1nFPgf7YazeJPeXE'
+  - _id: vtiQ6v0WDfnE4Ufe
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A Syndicate leader wants to make an example of a gambler not making good
+      on some large debts. No disintegrations.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.vtiQ6v0WDfnE4Ufe'
+  - _id: bsYLam5OBIPmp9SI
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A fugitive has gone to ground on an inhospitable planet or region of
+      space.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.bsYLam5OBIPmp9SI'
+  - _id: xNMWll1EQS9Iwaqm
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: A Cobalt Syndicate rabble-rouser is being hidden by his people.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.xNMWll1EQS9Iwaqm'
+  - _id: GeK9eyIUTy09Arrc
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      Retrieve an item from a vessel captured by pirates. (Crew rescue
+      optional.)
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.GeK9eyIUTy09Arrc'
+  - _id: cIPMjaRVu9pRgrT9
+    flags: {}
+    type: text
+    img: icons/svg/d20-black.svg
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    description: >-
+      A hacker has taken over some satellites. Disable their hacking and capture
+      them.
+    name: ''
+    _key: '!tables.results!Hycg9wm5t4lZ93Xj.cIPMjaRVu9pRgrT9'
+formula: 1d18
+replacement: true
+displayRoll: false
+ownership:
+  default: 0
+  soXq28xXIcGBjPmX: 3
+folder: null
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: 2.1.6
+  coreVersion: '13.341'
+  createdTime: 1685194348027
+  modifiedTime: 1685195266530
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: Compendium.scum-and-villainy.job_tables.RollTable.9OjZwb0r21b3s757
+  duplicateSource: null
+  exportSource: null
+_id: Hycg9wm5t4lZ93Xj
+sort: 300000
+_key: '!tables!Hycg9wm5t4lZ93Xj'

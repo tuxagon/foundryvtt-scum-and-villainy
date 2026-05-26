@@ -1,0 +1,58 @@
+name: Interrogation
+flags:
+  core: {}
+_id: 5NdDWbDu3xmkXXLn
+pages:
+  - name: Interrogation
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: >-
+        <p>System officers round up one of the PCs to question them about the
+        crew’s crimes. How did they manage to capture you? Either pay them off
+        with 2 <strong>Cred</strong>, or they sweat it out of you (level 2
+        <strong>Harm</strong>) AND you tell them what they want to know (+2
+        <strong>Heat</strong> ). You can resist each of those consequences
+        separately.</p>
+    _id: IWheloN8Xt9aQV3q
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!5NdDWbDu3xmkXXLn.IWheloN8Xt9aQV3q'
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: JournalEntry.PNw3e4kuXZjUciXn
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+categories: []
+_key: '!journal!5NdDWbDu3xmkXXLn'

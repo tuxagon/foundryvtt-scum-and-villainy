@@ -1,0 +1,68 @@
+name: The Agony
+type: faction
+system:
+  description: >-
+    Cult of humans who infect themselves with Way creatures to access the
+    universe in unsettling ways. Named after the pain most endure for their
+    abilities.
+  visible: true
+  type: Weirdness
+  tier: '3'
+  goal: Move planet Omega towards Mem
+  turf: >-
+    A platform orbiting Planet Omega (HQ). Secret chantries on Mem, Sonhandra,
+    and Lithios.
+  assets: >-
+    Potent mystic powers. A menagerie of undocumented Way creatures. A
+    laboratory for producing Way-infused drugs.
+  quirks: >-
+    Each member of the Agony is changed in some highly visible way, either with
+    extra limbs, semi-spectral forms, or many new mouths and eyes.
+  notables: |-
+    <p>Lexal (mystic, addicted, power-hungry, winged).</p>
+    <p>Iritha (mystic, many-limbed, glowing, powerful, potent).</p>
+    <p>Noro (mystic, calculating, enrapturing, elongated).</p>
+  allies: Dyrinek Gang, The Maelstrom
+  enemies: Church of Stellar Flame, House Malklaith
+  situation: >-
+    Having harvested horrors from Omega's surface, the Agony have a plan to
+    develop the living planet. By activating sites on the surface they intend to
+    move it  within reach of Mem, feeding the oceans to Omega and starting a new
+    era of its evolution.
+  goal_clock:
+    value: '0'
+    max: '12'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 12
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.1_49.png
+effects: []
+_id: Za7kh80nQtKFc4zG
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570028
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!Za7kh80nQtKFc4zG'

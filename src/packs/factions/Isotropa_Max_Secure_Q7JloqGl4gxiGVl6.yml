@@ -1,0 +1,67 @@
+name: Isotropa Max Secure
+type: faction
+system:
+  description: >-
+    The most notorious prison system in the Procyon sector, housing the worst of
+    the worst. Brokers audiences with its population grants commutations for
+    those with power and wealth.
+  visible: true
+  type: Hegemony
+  tier: '3'
+  goal: Get more prisoners (repeating)
+  turf: Isotropa Max Secure in Brekk (HQ).
+  assets: >-
+    The biggest supermax prison in Procyon. An organized file of dirt on anyone
+    they do business with.
+  quirks: >-
+    The staff of Isotropa are all corrupt and will take bribes for almost
+    anything.
+  notables: |-
+    <p>Bafma F'rozz (warden, haughty, confident, wealthy).</p>
+    <p>Kreel (guard captain, muscled, angry).</p>
+    <p>Dr. Xhu (psychotherapist, corrupt, gambler).</p>
+  allies: Guild of Engineers
+  enemies: Draxler's Raiders
+  situation: >-
+    Between the Warden's excessive spending habits, Dr. Xhu's gambling problem,
+    and Kreel's "educating" the prisoners, Isotropa always needs more funds and
+    bodies. The prison spends a lot of time lobbying local planetary Governors
+    to increase sentencing or acquiring "special guests" from factions, and just
+    as much time looking for bribes.
+  goal_clock:
+    value: '0'
+    max: '6'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 6
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+effects: []
+_id: Q7JloqGl4gxiGVl6
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570023
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!Q7JloqGl4gxiGVl6'

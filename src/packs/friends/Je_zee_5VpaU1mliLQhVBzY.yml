@@ -1,0 +1,28 @@
+_id: 5VpaU1mliLQhVBzY
+name: Je-zee
+type: friend
+system:
+  description: A diplomat. Were you from allied factions or of opposing goals?
+  visible: true
+  class: Speaker
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.5_53.png
+effects: []
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!5VpaU1mliLQhVBzY'

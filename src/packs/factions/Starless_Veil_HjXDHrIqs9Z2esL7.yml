@@ -1,0 +1,67 @@
+name: Starless Veil
+type: faction
+system:
+  description: >-
+    Hegemonic counterintelligence and spies. Currently at odds with House
+    Malklaith. They seek to undermine the Governor in order to make a case for
+    change in House control.
+  visible: true
+  type: Hegemony
+  tier: '4'
+  goal: Cause civil unrest on Warren
+  turf: >-
+    The Veil holds no turf except the occasional safe house or place to reload
+    and rearm on missions.
+  assets: A network of spies. High-tech gadgets. A few ships with cloaking devices.
+  quirks: >-
+    All members of the Veil have had advanced mental training to resist
+    interrogation and Way powers.
+  notables: |-
+    <p>Joina Starlight (leader, analyst, tactician, charming).</p>
+    <p>Agent Phasic (infiltrator, engineer, risk-taker).</p>
+    <p>Agent N'Paya Wayline (diplomat, connected, collector).</p>
+  allies: Hegemonic News Network. Unwitting factions they've embedded agents in.
+  enemies: House Malklaith. Lost Legion.
+  situation: >-
+    The Veil serves the Hegemony itself, even above the Hegemon. When power
+    struggles from the Core spill out into the rim, the Veil follows. Their eyes
+    are locked on the Guilds and Malklaith's inability to control them, so
+    they've been carefully trying to engineer his downfall without destabilizing
+    the sector, hoping a different House will have more luck.
+  goal_clock:
+    value: '0'
+    max: '8'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 8
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_40.png
+effects: []
+_id: HjXDHrIqs9Z2esL7
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570013
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!HjXDHrIqs9Z2esL7'

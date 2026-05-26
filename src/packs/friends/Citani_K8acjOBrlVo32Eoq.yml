@@ -1,0 +1,30 @@
+name: Citani
+type: friend
+system:
+  description: >-
+    A reclusive info broker. Who's their boss when they're not with the crew?
+    What type of info do they commonly broker?
+  visible: true
+  class: Stardancer
+  status:
+    value:
+      - 1
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/spaceship.png
+effects: []
+_id: K8acjOBrlVo32Eoq
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+folder: null
+sort: 0
+_key: '!items!K8acjOBrlVo32Eoq'

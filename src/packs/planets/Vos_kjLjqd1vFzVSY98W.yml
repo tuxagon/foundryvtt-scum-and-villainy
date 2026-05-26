@@ -1,0 +1,82 @@
+_id: kjLjqd1vFzVSY98W
+name: Vos
+type: planet
+img: systems/scum-and-villainy/styles/assets/planets/Vos.webp
+system:
+  description: >-
+    Known throughout the system as "Glimmer," the surface of this enormous
+    planet is made up of carbon compounds such as graphite and diamond. At
+    night, the largest crystal formations glow with an unearthly light, an
+    exotic property many of the crystals retain after being cut.
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  system: Holt
+  scene: >-
+    A well-armed, permanent blockade in space, with many ships waiting for
+    clearance. Smooth walls of dense carbon brick, looking out onto the black
+    surface. Diamond-scarred and sooty-faced miners, drinking by their bulky
+    sonic cutters. Chiming music floating out from the pristine shops of the
+    visitor settlement.
+  notables: >-
+    <p>Morek and Ra-na: Most-feared bounty hunter in the sector. Ra-na, his AI
+    partner, helms his artifact ship and runs ops on his missions via the
+    strange armor he wears. On retainer to hunt any who loot Vos. (ruthless,
+    vigilant, commanding)</p>
+
+    <p>Impera Evazan: High-ranking Guild logistics officer, responsible for
+    crystal mining. Privy to much of the Guild's supply structure. (popular,
+    demanding, shrewd)</p>
+
+    <p>Yola Sprekk: Jeweler known for using the unique properties of Vos
+    crystals. Her creations may be the most artful pieces in Procyon. A Sprekk
+    piece can open doors in the most elite circles. (artistic, charming,
+    proud)</p>
+  rule: >-
+    Vos is full of money, but also closely monitored by the Guild. When you do a
+    job on Vos, you get +1 Cred and +1 Heat.
+  wealth: '3'
+  crime: '0'
+  tech: '2'
+  weird: '1'
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  5H0P3gze7LwRrpV3: 3
+_key: '!items!kjLjqd1vFzVSY98W'

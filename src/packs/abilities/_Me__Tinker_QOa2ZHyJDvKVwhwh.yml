@@ -1,0 +1,57 @@
+_id: QOa2ZHyJDvKVwhwh
+name: (Me) Tinker
+type: ability
+img: systems/scum-and-villainy/styles/assets/icons/Icon.3_89.png
+system:
+  description: >-
+    When you work on a clock with Rig or Hack or when you Study a schematic,
+    fill +1 segment.
+
+
+    Not eligible for selection as a Veteran advance.
+  class: Mechanic
+  price: '1'
+  starting: true
+  recommended: false
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+_key: '!items!QOa2ZHyJDvKVwhwh'

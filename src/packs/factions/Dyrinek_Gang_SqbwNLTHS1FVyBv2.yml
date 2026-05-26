@@ -1,0 +1,69 @@
+name: Dyrinek Gang
+type: faction
+system:
+  description: >-
+    Mostly young, disenfranchised xenos who have turned to crime and found
+    strength and solidarity with each other. Based on Warren but looking to
+    expand  wherever there are other like-minded folks.
+  visible: true
+  type: Criminal
+  tier: '1'
+  goal: Take over HNN broadcast on Warren
+  turf: >-
+    Lost Paradise, a club with an attached warehouse where the gang does its
+    business (HQ).
+  assets: >-
+    A collection of high-end hoverbikes used to cruise through their territory.
+    A few minor artifacts some of the leaders have attached to themselves.
+  quirks: >-
+    When a new member joins the gang, they all go out on a drunken tear across
+    the city, leaving a swath of wreckage in their wake.
+  notables: |-
+    <p>Dyrinek (xeno, revolutionary, proud).</p>
+    <p>Burn (Memish mystic, xeno, fast, overconfident, untrained).</p>
+    <p>Radds (human, hacker, smart).</p>
+    <p>Myrk (xeno, gun enthusiast, hothead).</p>
+  allies: Cobalt Syndicate
+  enemies: Hegemonic News Network, House Malklaith
+  situation: >-
+    The gang has had its run-ins with System police and the HNN paints them as
+    lowlifes with no future. Dyrinek wants to send a message that they won't be
+    so easily dismissed, and plans to take over the airwaves to broadcast the
+    gang's punk ideology. All they need is the opportunity.
+  goal_clock:
+    value: '0'
+    max: '6'
+  status:
+    value: 4
+    max: 7
+    name: BITD.Status
+    max_default: 7
+    name_default: BITD.Status
+  jobs:
+    value:
+      - 0
+    max: 3
+    name: BITD.Jobs
+    max_default: 3
+    name_default: BITD.Jobs
+  goal_clock_max: 6
+flags: {}
+img: systems/scum-and-villainy/styles/assets/icons/Icon.6_10.png
+effects: []
+_id: SqbwNLTHS1FVyBv2
+ownership:
+  default: 0
+  Ykoaszt2KQdxS1qf: 3
+folder: null
+sort: 0
+_stats:
+  systemId: scum-and-villainy
+  systemVersion: '#{VERSION}#'
+  coreVersion: '13.341'
+  createdTime: null
+  modifiedTime: 1700007570025
+  lastModifiedBy: soXq28xXIcGBjPmX
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!SqbwNLTHS1FVyBv2'
