@@ -20,3 +20,11 @@ run = "bunx vitest run"
 [tasks."test:watch"]
 description = "Run vitest in watch mode"
 run = "bunx vitest"
+
+[tasks.pack]
+description = "Compile packs/_source/<pack> -> packs/<pack> (LevelDB)"
+run = "bun run ./scripts/packs.js pack"
+
+[tasks.unpack]
+description = "Extract packs/<pack> (LevelDB) -> packs/_source/<pack>/*.yaml"
+run = "bun run ./scripts/packs.js unpack"

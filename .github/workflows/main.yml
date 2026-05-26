@@ -1,3 +1,10 @@
+# ⚠ DO NOT DISPATCH ⚠
+# This workflow reads YAML pack sources from `src/packs/`, which no longer
+# exists — pack sources have moved to `packs/_source/`. Running this workflow
+# in its current form will fail at the "Build Compendium Packs" step. It will
+# be replaced wholesale by `release.yml` in an upcoming commit. Until then,
+# do not click "Run workflow" on this file.
+#
 # GitHub Actions workflow for creating a FoundryVTT system release.
 #
 # Trigger: manual only. Run from Actions -> "Create Module Files For GitHub

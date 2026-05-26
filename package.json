@@ -4,10 +4,6 @@
     "js-yaml": "^4.1.0",
     "roughjs": "^4.6.6"
   },
-  "scripts": {
-    "unpack": "node ./tools/unpack-packs.mjs",
-    "pack": "node ./tools/pack-packs.mjs"
-  },
   "devDependencies": {
     "@biomejs/biome": "^2.4.15",
     "@foundryvtt/foundryvtt-cli": "^3.0.3",
