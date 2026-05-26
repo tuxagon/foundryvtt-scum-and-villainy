@@ -28,3 +28,11 @@ run = "bun run ./scripts/packs.js pack"
 [tasks.unpack]
 description = "Extract packs/<pack> (LevelDB) -> packs/_source/<pack>/*.yaml"
 run = "bun run ./scripts/packs.js unpack"
+
+[tasks."build:code"]
+description = "Bundle module/sav.js + module/ deps -> dist/scum-and-villainy.compiled.js"
+run = "bun build ./module/sav.js --outdir ./dist --entry-naming scum-and-villainy.compiled.js --target browser --sourcemap"
+
+[tasks.watch]
+description = "Rebuild JS on every save"
+run = "bun build ./module/sav.js --outdir ./dist --entry-naming scum-and-villainy.compiled.js --target browser --sourcemap --watch"
