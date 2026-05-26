@@ -9,6 +9,9 @@
     "pack": "node ./tools/pack-packs.mjs"
   },
   "devDependencies": {
-    "@foundryvtt/foundryvtt-cli": "^3.0.3"
+    "@biomejs/biome": "^2.4.15",
+    "@foundryvtt/foundryvtt-cli": "^3.0.3",
+    "prettier": "^3.8.3",
+    "vitest": "^4.1.7"
   }
 }

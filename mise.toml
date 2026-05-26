@@ -1,3 +1,22 @@
 [tools]
 node = "22.14"
 bun = "latest"
+
+[tasks.lint]
+description = "Lint with biome"
+run = "bunx biome check ."
+
+[tasks.format]
+description = "Format JS with biome and SCSS with prettier"
+run = """
+bunx biome format --write .
+bunx prettier --write '**/*.scss'
+"""
+
+[tasks.test]
+description = "Run vitest once"
+run = "bunx vitest run"
+
+[tasks."test:watch"]
+description = "Run vitest in watch mode"
+run = "bunx vitest"
