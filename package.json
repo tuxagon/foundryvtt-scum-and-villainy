@@ -2,7 +2,8 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "js-yaml": "^4.1.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "roughjs": "^4.6.6"
   },
   "scripts": {
     "createSymlinks": "node ./tools/create-symlinks.mjs",

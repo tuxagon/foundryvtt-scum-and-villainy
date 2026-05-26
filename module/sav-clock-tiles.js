@@ -82,7 +82,7 @@ export default {
         _id: t.id,
         texture: { src: newClock.image.texture.src },
         flags: newClock.flags
-      }], {parent: canvas.scene});
+      }], { parent: canvas.scene, animate: false, animation: { duration: 0 } });
     });
 
     html.querySelector("div.right").insertAdjacentHTML('beforeend', button2HTML);
@@ -116,7 +116,7 @@ export default {
         _id: t.id,
         texture: { src: newClock.image.texture.src },
         flags: newClock.flags
-      }], {parent: canvas.scene});
+      }], { parent: canvas.scene, animate: false, animation: { duration: 0 } });
     });
   }
 };

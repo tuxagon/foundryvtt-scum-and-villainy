@@ -1,3 +1,5 @@
+import { buildClockDataUrl } from "./clocks/sav-clock-image.js";
+
 const nextIndexInArray = (arr, el) => {
   const idx = arr.indexOf(el);
   return (idx < 0 || idx >= arr.length) ? 0 : idx + 1;
@@ -44,7 +46,7 @@ export class SaVClock {
 
   get image () {
     return {
-      texture: { src: `systems/scum-and-villainy/themes/${this.theme}/${this.size}clock_${this.progress}.webp` },
+      texture: { src: buildClockDataUrl({ theme: this.theme, size: this.size, progress: this.progress }) },
       widthTile: 200,
       heightTile: 200,
 	    widthSheet: 350,

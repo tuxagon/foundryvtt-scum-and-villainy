@@ -365,5 +365,18 @@
   "BITD.IncrementClock": "Increment Clock",
   "BITD.DecrementClock": "Decrement Clock",
   "BITD.CycleClockSize": "Cycle Clock Size",
-  "BITD.CycleClockTheme": "Cycle Clock Theme"
+  "BITD.CycleClockTheme": "Cycle Clock Theme",
+
+  "BITD.ClockRenderStyle": "Clock Render Style:",
+  "BITD.ClockRenderStyleHint": "How clocks are drawn. Rough is hand-drawn / sketchy, Clean is geometric.",
+  "BITD.ClockRenderStyleRough": "Rough (hand-drawn)",
+  "BITD.ClockRenderStyleClean": "Clean (geometric)",
+  "BITD.ClockTone": "Clock Tone:",
+  "BITD.ClockToneHint": "Stroke and empty-segment color tone for clocks.",
+  "BITD.ClockToneLight": "Light",
+  "BITD.ClockToneDark": "Dark",
+  "BITD.ClockBackgroundStyle": "Clock Background:",
+  "BITD.ClockBackgroundStyleHint": "Whether unfilled segments are transparent or filled with the tone background.",
+  "BITD.ClockBackgroundTransparent": "Transparent",
+  "BITD.ClockBackgroundSolid": "Solid"
 }

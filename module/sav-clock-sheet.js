@@ -22,8 +22,8 @@ export class SaVClockSheet extends foundry.appv1.sheets.ActorSheet {
       {
         classes: ["clocks", "sheet", `clocks-system-${game.system.id}`, "actor", "npc"],
         template: "systems/scum-and-villainy/templates/sav-clock-sheet.html",
-        width: 360,
-        height: 550,
+        width: 400,
+        height: 460,
         ...supportedSystem.sheetDefaultOptions
       }
     );
@@ -79,28 +79,6 @@ export class SaVClockSheet extends foundry.appv1.sheets.ActorSheet {
 
   activateListeners (html) {
     super.activateListeners(html);
-
-    html.find("button[name=minus]").click(async (ev) => {
-      ev.preventDefault();
-      let oldClock = new SaVClock(this.system.loadClockFromActor({ actor: this.actor }));
-      await this.updateClock(oldClock.decrement());
-    });
-
-    html.find("button[name=plus]").click(async (ev) => {
-      ev.preventDefault();
-      let oldClock = new SaVClock(this.system.loadClockFromActor({ actor: this.actor }));
-      await this.updateClock(oldClock.increment());
-    });
-
-    html.find("button[name=reset]").click(async (ev) => {
-      ev.preventDefault();
-      let oldClock = new SaVClock(this.system.loadClockFromActor({ actor: this.actor }));
-      await this.updateClock(new SaVClock({
-        theme: oldClock.theme,
-        progress: 0,
-        size: oldClock.size
-      }));
-    });
   }
 
   async _updateObject(_event, form) {
@@ -109,8 +87,12 @@ export class SaVClockSheet extends foundry.appv1.sheets.ActorSheet {
     });
 
     let oldClock = new SaVClock(this.system.loadClockFromActor({ actor: this.actor }));
+    const progressFromForm = form?.flags?.["scum-and-villainy"]?.clocks?.progress;
+    const progress = progressFromForm === undefined || progressFromForm === null
+      ? oldClock.progress
+      : parseInt(progressFromForm, 10);
     let newClock = new SaVClock({
-      progress: oldClock.progress,
+      progress,
       size: form.size,
       theme: form.theme
     });
@@ -134,7 +116,7 @@ export class SaVClockSheet extends foundry.appv1.sheets.ActorSheet {
         };
         update.push( tokenObj );
       }
-      await TokenDocument.updateDocuments( update, { parent: game.scenes.current } );
+      await TokenDocument.updateDocuments( update, { parent: game.scenes.current, animate: false, animation: { duration: 0 } } );
     }
     // update the Actor
     const persistObj = await this.system.persistClockToActor({ actor, clock });
@@ -228,7 +210,7 @@ export default {
         };
         update.push( tokenObj );
       }
-      await TokenDocument.updateDocuments( update, { parent: game.scenes.current } );
+      await TokenDocument.updateDocuments( update, { parent: game.scenes.current, animate: false, animation: { duration: 0 } } );
     }
   });
 
@@ -297,7 +279,7 @@ export default {
         };
         update.push( tokenObj );
       }
-      await TokenDocument.updateDocuments( update, { parent: game.scenes.current } );
+      await TokenDocument.updateDocuments( update, { parent: game.scenes.current, animate: false, animation: { duration: 0 } } );
     }
   });
   return true;

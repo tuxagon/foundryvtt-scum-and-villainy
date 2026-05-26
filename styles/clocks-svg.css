@@ -1,0 +1,67 @@
+.sav-clock-wrap {
+  display: inline-block;
+  line-height: 0;
+}
+
+.sav-clock-wrap .sav-clock-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.clock-image .sav-clock-wrap,
+.clock-image .sav-clock-svg {
+  width: 220px;
+  height: 220px;
+}
+
+.sav-clock-segment {
+  cursor: pointer;
+}
+
+/* Force pointer events on segment paths so transparent (unfilled) wedges still receive clicks. */
+.sav-clock-segment > path,
+.sav-clock-segment > g > path {
+  pointer-events: all;
+}
+
+.sav-clock-svg[data-style="clean"] .sav-clock-segment > path {
+  transition: filter 0.12s ease;
+}
+
+.sav-clock-svg[data-style="clean"] .sav-clock-segment:hover > path {
+  filter: brightness(1.35);
+}
+
+.sav-clock-svg[data-style="rough"] .sav-clock-segment {
+  transition: opacity 0.12s ease;
+}
+
+.sav-clock-svg[data-style="rough"] .sav-clock-segment:hover {
+  opacity: 0.85;
+}
+
+.sav-clock-segment-hit {
+  pointer-events: all;
+}
+
+.clock-form .clock-image {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.clock-form .clock-config {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.clock-form .clock-config-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

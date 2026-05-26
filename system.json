@@ -32,7 +32,8 @@
   ],
   "styles": [
     "styles/sav.css",
-    "styles/hide-ui.css"
+    "styles/hide-ui.css",
+    "styles/clocks-svg.css"
   ],
   "languages": [
     {

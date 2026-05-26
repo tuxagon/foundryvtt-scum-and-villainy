@@ -23,6 +23,11 @@ import { SaVClockSheet } from "./sav-clock-sheet.js";
 import ClockTiles from "./sav-clock-tiles.js";
 import ClockSheet from "./sav-clock-sheet.js";
 import { log } from "./sav-clock-util.js";
+import { registerClockHelper } from "./clocks/sav-clock-helper.js";
+import { registerClockInteractions } from "./clocks/sav-clock-interactions.js";
+import { refreshAllClockSurfaces } from "./clocks/sav-clock-refresh.js";
+import { SaVClock } from "./sav-clock.js";
+import { CLOCK_ACTOR_TYPE } from "./clocks/clocks.js";
 
 window.SaVHelpers = SaVHelpers;
 
@@ -252,42 +257,8 @@ Hooks.once("init", async function() {
   });
 
 
-  /**
-   * Create appropriate clock
-   */
-
-  Handlebars.registerHelper('sav-clock', function(parameter_name, type, current_value, uniq_id, theme ) {
-
-    theme = typeof theme !== 'object' ? theme: game.system.savclocks.themes[game.settings.get("scum-and-villainy", "defaultClockTheme")];
-
-    let html = '';
-
-    if (current_value === null) {
-      current_value = 0;
-    }
-
-    if (parseInt(current_value) > parseInt(type)) {
-      current_value = type;
-    }
-
-    // Label for 0
-    html += `<label class="clock-zero-label" for="clock-0-${uniq_id}}"><i class="fab fa-creative-commons-zero nullifier"></i></label>`;
-    html += `<div id="sav-clock-${uniq_id}" class="sav-clock clock-${type} clock-${type}-${current_value}" style="background-image:url('/systems/scum-and-villainy/themes/${theme}/${type}clock_${current_value}.webp');">`;
-
-    let zero_checked = (parseInt(current_value) === 0) ? 'checked="checked"' : '';
-    html += `<input type="radio" value="0" id="clock-0-${uniq_id}}" name="${parameter_name}" ${zero_checked}>`;
-
-    for (let i = 1; i <= parseInt(type); i++) {
-      let checked = (parseInt(current_value) === i) ? 'checked="checked"' : '';
-      html += `
-        <input type="radio" value="${i}" id="clock-${i}-${uniq_id}" name="${parameter_name}" ${checked}>
-        <label for="clock-${i}-${uniq_id}"></label>
-      `;
-    }
-
-    html += `</div>`;
-    return html;
-  });
+  registerClockHelper();
+  registerClockInteractions();
 
   Handlebars.registerHelper('pc', function( string ) {
     return SaVHelpers.getProperCase( string );
@@ -310,6 +281,12 @@ Hooks.once("ready", async function() {
   // Perform the migration
   if ( needMigration && game.user.isGM ) {
     //migrations.migrateWorld();
+  }
+
+  // Rebuild any clock actor/token/tile texture.src that still points at the old WebP assets.
+  // refreshAllClockSurfaces is idempotent — it skips updates where src is already correct.
+  if ( game.user.isGM ) {
+    await refreshAllClockSurfaces();
   }
 });
 
@@ -437,6 +414,58 @@ Hooks.on("renderTokenHUD", async (hud, html, token) => {
   } else {
     rootElement.classList.remove('hide-ui');
   }
+});
+
+Hooks.on("updateActor", async (actor, changes, _options, userId) => {
+  if (actor.type !== CLOCK_ACTOR_TYPE) return;
+  if (game.user.id !== userId) return;
+  const clockChanges = changes?.flags?.["scum-and-villainy"]?.clocks;
+  if (!clockChanges) return;
+
+  const clock = new SaVClock(actor.flags?.["scum-and-villainy"]?.clocks);
+  const src = clock.image.texture.src;
+
+  const actorUpdates = {};
+  if (actor.img !== src) actorUpdates.img = src;
+  if (actor.prototypeToken?.texture?.src !== src) actorUpdates["prototypeToken.texture.src"] = src;
+  if (Object.keys(actorUpdates).length) {
+    await actor.update(actorUpdates);
+  }
+
+  if (game.user.isGM) {
+    for (const scene of game.scenes) {
+      const tokenUpdates = [];
+      for (const tokenDoc of scene.tokens) {
+        if (tokenDoc.actorId !== actor.id) continue;
+        if (tokenDoc.texture?.src === src) continue;
+        tokenUpdates.push({ _id: tokenDoc.id, texture: { src } });
+      }
+      if (tokenUpdates.length) {
+        await scene.updateEmbeddedDocuments("Token", tokenUpdates, { animate: false, animation: { duration: 0 } });
+      }
+    }
+  }
+});
+
+Hooks.on("createActor", async (actor, _options, userId) => {
+  if (actor.type !== CLOCK_ACTOR_TYPE) return;
+  if (game.user.id !== userId) return;
+  const clock = new SaVClock(actor.flags?.["scum-and-villainy"]?.clocks);
+  const src = clock.image.texture.src;
+  await actor.update({
+    img: src,
+    "prototypeToken.texture.src": src,
+    "prototypeToken.actorLink": true,
+    flags: {
+      "scum-and-villainy": {
+        clocks: {
+          theme: clock.theme,
+          size: clock.size,
+          progress: clock.progress
+        }
+      }
+    }
+  });
 });
 
 Hooks.on("dropCanvasData", async (canvas, data) => {

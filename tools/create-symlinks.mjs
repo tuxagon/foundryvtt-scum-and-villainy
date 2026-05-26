@@ -4,6 +4,19 @@ import path from "path";
 
 console.log("Reforging Symlinks");
 
+const VENDORED = [
+  {
+    from: path.join("node_modules", "roughjs", "bundled", "rough.esm.js"),
+    to: path.join("module", "vendor", "rough.esm.js"),
+  },
+];
+
+for (const { from, to } of VENDORED) {
+  if (!fs.existsSync(from)) continue;
+  await fs.promises.mkdir(path.dirname(to), { recursive: true });
+  await fs.promises.copyFile(from, to);
+}
+
 if (fs.existsSync("foundry-config.yaml")) {
   let fileRoot = "";
   try {
