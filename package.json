@@ -1,15 +1,12 @@
 {
+  "type": "module",
   "dependencies": {
-    "fs": "^0.0.1-security",
     "js-yaml": "^4.1.0",
-    "path": "^0.12.7",
     "roughjs": "^4.6.6"
   },
   "scripts": {
-    "createSymlinks": "node ./tools/create-symlinks.mjs",
     "unpack": "node ./tools/unpack-packs.mjs",
-    "pack": "node ./tools/pack-packs.mjs",
-    "postinstall": "npm run createSymlinks && npm run pack"
+    "pack": "node ./tools/pack-packs.mjs"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^3.0.3"
