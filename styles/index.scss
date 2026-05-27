@@ -29,7 +29,8 @@
   // type class here. (Avoids applying to v1 sheets that still carry
   // .scum-and-villainy but render the old DOM.)
   &.npc,
-  &.item {
+  &.item,
+  &.clock {
     .sheet-header {
       display: flex;
       align-items: center;
@@ -86,6 +87,22 @@
         align-items: center;
         justify-content: center;
       }
+    }
+  }
+
+  &.clock {
+    .clock-name input {
+      font-size: var(--font-size-24);
+      height: auto;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--color-dark-2);
+      width: 100%;
+    }
+
+    .clock-name.editable input:hover,
+    .clock-name.editable input:focus {
+      border: 1px solid var(--color-dark-2);
     }
   }
 }
