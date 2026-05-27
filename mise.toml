@@ -36,3 +36,7 @@ run = "bun build ./module/sav.js --outdir ./dist --entry-naming scum-and-villain
 [tasks.watch]
 description = "Rebuild JS on every save"
 run = "bun build ./module/sav.js --outdir ./dist --entry-naming scum-and-villainy.compiled.js --target browser --sourcemap --watch"
+
+[tasks."link:foundry"]
+description = "Symlink Foundry source into ./foundry/ for IDE IntelliSense (reads foundry-config.yaml)"
+run = "bun run ./scripts/link-foundry.js"

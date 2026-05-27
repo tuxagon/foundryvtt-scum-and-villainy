@@ -15,7 +15,7 @@
   "flags": {
     "hotReload": {
       "extensions": ["css", "html", "json", "js"],
-      "paths": ["module", "templates", "lang", "styles"]
+      "paths": ["dist", "templates", "lang", "styles"]
     }
   },
   "version": "#{VERSION}#",
@@ -28,7 +28,7 @@
   "download": "#{DOWNLOAD}#",
   "protected": false,
   "esmodules": [
-    "module/sav.js"
+    "dist/scum-and-villainy.compiled.js"
   ],
   "styles": [
     "styles/sav.css",
