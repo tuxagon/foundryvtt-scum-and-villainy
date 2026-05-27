@@ -65,6 +65,55 @@
 * .scum-and-villainy form.actor-sheet {
   padding: 20px;
 }
+.scum-and-villainy.npc .sheet-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.scum-and-villainy.npc .sheet-header img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border: none;
+  flex: 0 0 48px;
+}
+.scum-and-villainy.npc .sheet-header .header-fields {
+  flex: 1;
+}
+.scum-and-villainy.npc .sheet-header h1.charname {
+  margin: 0;
+  border-bottom: none;
+}
+.scum-and-villainy.npc .sheet-header h1.charname input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--color-dark-2);
+  font-size: var(--font-size-24);
+  height: auto;
+}
+.scum-and-villainy.npc input[type="text"],
+.scum-and-villainy.npc textarea,
+.scum-and-villainy.npc select {
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--color-dark-2);
+  border-color: var(--color-dark-4);
+}
+.scum-and-villainy.npc .sheet-header h1.charname input {
+  background: transparent;
+}
+.scum-and-villainy.npc prose-mirror {
+  --min-height: 200px;
+}
+.scum-and-villainy.npc prose-mirror:hover button.toggle:enabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scum-and-villainy.npc prose-mirror .editor-content {
+  min-height: unset;
+}
 * .scum-and-villainy form .form-group.roll > * {
     flex: 3;
     flex-grow: 3;
@@ -75,6 +124,7 @@
   margin-top: 8px;
 }
 .window-app .window-content,
+.scum-and-villainy .window-content,
 .chat-message,
 .sheet.journal-entry .journal-entry-content {
 	background: linear-gradient(rgba(216, 227, 230, 0.75), rgba(121, 129, 130, 0.75)),
@@ -82,21 +132,27 @@
   color: var(--color-dark-2);
 }
 .window-app .window-content h1,
+.scum-and-villainy .window-content h1,
 .chat-message h1,
 .sheet.journal-entry .journal-entry-content h1,
 .window-app .window-content h2,
+.scum-and-villainy .window-content h2,
 .chat-message h2,
 .sheet.journal-entry .journal-entry-content h2,
 .window-app .window-content h3,
+.scum-and-villainy .window-content h3,
 .chat-message h3,
 .sheet.journal-entry .journal-entry-content h3,
 .window-app .window-content h4,
+.scum-and-villainy .window-content h4,
 .chat-message h4,
 .sheet.journal-entry .journal-entry-content h4,
 .window-app .window-content h5,
+.scum-and-villainy .window-content h5,
 .chat-message h5,
 .sheet.journal-entry .journal-entry-content h5,
 .window-app .window-content h6,
+.scum-and-villainy .window-content h6,
 .chat-message h6,
 .sheet.journal-entry .journal-entry-content h6 {
   color: var(--color-dark-2);

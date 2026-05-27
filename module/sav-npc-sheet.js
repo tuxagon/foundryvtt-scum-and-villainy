@@ -1,52 +1,28 @@
-
-import { SaVSheet } from "./sav-sheet.js";
 import { SaVHelpers } from "./sav-helpers.js";
+import { SaVSheetV2 } from "./sav-sheet-v2.js";
 
-/**
- * Extend the basic ActorSheet with some very simple modifications
- * @extends {SaVSheet}
- */
-export class SaVNPCSheet extends SaVSheet {
+export class SaVNPCSheet extends SaVSheetV2 {
+  static DEFAULT_OPTIONS = {
+    classes: [...SaVSheetV2.DEFAULT_OPTIONS.classes, "npc"],
+    position: { width: 800, height: 970 },
+  };
 
-  /** @override */
-  static get defaultOptions() {
-		return foundry.utils.mergeObject(super.defaultOptions, {
-  	  classes: [ "scum-and-villainy", "sheet", "actor" ],
-  	  template: "systems/scum-and-villainy/templates/npc-sheet.html",
-      width: 800,
-      height: 970,
-	    scrollY: [".description"]
-    });
+  static PARTS = {
+    body: { template: "systems/scum-and-villainy/templates/npc-sheet.html" },
+  };
+
+  async _prepareContext(options) {
+    const context = await super._prepareContext(options);
+    context.size_list = SaVHelpers.createListOfClockSizes(
+      game.system.savclocks.sizes,
+      parseInt(context.system.goal_clock.max, 10),
+      parseInt(context.system.goal_clock.max, 10),
+    );
+    context.enrichedNotes =
+      await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+        context.system.notes,
+        { secrets: context.owner },
+      );
+    return context;
   }
-
-  /* -------------------------------------------- */
-
-  /** @override */
-  async getData(options) {
-    const superData = super.getData( options );
-    const sheetData = superData.data;
-    //sheetData.document = superData.actor;
-    sheetData.owner = superData.owner;
-    sheetData.editable = superData.editable;
-    sheetData.isGM = game.user.isGM;
-
-    sheetData.size_list = SaVHelpers.createListOfClockSizes( game.system.savclocks.sizes, parseInt( sheetData.system.goal_clock.max ), parseInt( sheetData.system.goal_clock.max ) );
-    sheetData.system.notes = await foundry.applications.ux.TextEditor.implementation.enrichHTML(sheetData.system.notes, {secrets: sheetData.owner, async: true});
-
-    return sheetData;
-  }
-
-  /* -------------------------------------------- */
-
-  /** @override */
-	activateListeners(html) {
-    super.activateListeners( html );
-
-    // Everything below here is only needed if the sheet is editable
-    if ( !this.options.editable ) return;
-
-	}
-
-  /* -------------------------------------------- */
-
 }
