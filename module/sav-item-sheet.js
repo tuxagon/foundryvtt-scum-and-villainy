@@ -51,6 +51,13 @@ export class SaVItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
           { secrets: context.owner },
         );
     }
+    if (context.system.experience_clues !== undefined) {
+      context.enrichedExperienceClues =
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+          context.system.experience_clues ?? "",
+          { secrets: context.owner },
+        );
+    }
     return context;
   }
 }
