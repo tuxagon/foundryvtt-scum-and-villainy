@@ -11,7 +11,7 @@
   .window-content {
     background:
       linear-gradient(rgba(216, 227, 230, 0.75), rgba(121, 129, 130, 0.75)),
-      url("assets/brushed_metal.jpg") repeat;
+      url("../styles/assets/brushed_metal.jpg") repeat;
     color: var(--color-dark-2);
     overflow: hidden auto;
 
@@ -30,7 +30,8 @@
   // .scum-and-villainy but render the old DOM.)
   &.npc,
   &.item,
-  &.clock {
+  &.clock,
+  &.universe {
     .sheet-header {
       display: flex;
       align-items: center;
