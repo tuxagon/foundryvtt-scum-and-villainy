@@ -24,7 +24,11 @@
     }
   }
 
-  &.npc {
+  // Shared layout/styling across V2 sheets. As more sheets port, add their
+  // type class here. (Avoids applying to v1 sheets that still carry
+  // .scum-and-villainy but render the old DOM.)
+  &.npc,
+  &.item {
     .sheet-header {
       display: flex;
       align-items: center;
