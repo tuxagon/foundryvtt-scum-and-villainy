@@ -70,6 +70,11 @@
       border-color: var(--color-dark-4);
     }
 
+    input[type="checkbox"] {
+      --checkbox-background-color: rgba(255, 255, 255, 0.5);
+      --checkbox-checked-color: var(--color-dark-2);
+    }
+
     prose-mirror {
       &:hover button.toggle:enabled {
         display: flex;
