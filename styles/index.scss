@@ -76,6 +76,10 @@
       --checkbox-checked-color: var(--color-dark-2);
     }
 
+    table {
+      background: transparent;
+    }
+
     prose-mirror {
       &:hover button.toggle:enabled {
         display: flex;
