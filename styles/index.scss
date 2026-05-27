@@ -1,0 +1,77 @@
+/*
+ * V2 ApplicationV2 sheet styles.
+ *
+ * Sourced from styles/index.scss → compiled to dist/styles.compiled.css.
+ * Loaded alongside the legacy styles/sav.css during the v1→V2 sheet
+ * transition. As each sheet is ported, its rules migrate from sav.css
+ * into this file. Once all sheets are V2, sav.css can be retired.
+ */
+
+.scum-and-villainy {
+  .window-content {
+    background:
+      linear-gradient(rgba(216, 227, 230, 0.75), rgba(121, 129, 130, 0.75)),
+      url("assets/brushed_metal.jpg") repeat;
+    color: var(--color-dark-2);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--color-dark-2);
+    }
+  }
+
+  &.npc {
+    .sheet-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+
+      img {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border: none;
+        flex: 0 0 48px;
+      }
+
+      .header-fields {
+        flex: 1;
+      }
+
+      h1.charname {
+        margin: 0;
+        border-bottom: none;
+
+        input {
+          width: 100%;
+          background: transparent;
+          border: none;
+          color: var(--color-dark-2);
+          font-size: var(--font-size-24);
+          height: auto;
+        }
+      }
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      background: rgba(255, 255, 255, 0.5);
+      color: var(--color-dark-2);
+      border-color: var(--color-dark-4);
+    }
+
+    prose-mirror {
+      &:hover button.toggle:enabled {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

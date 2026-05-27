@@ -29,13 +29,25 @@ run = "bun run ./scripts/packs.js pack"
 description = "Extract packs/<pack> (LevelDB) -> packs/_source/<pack>/*.yaml"
 run = "bun run ./scripts/packs.js unpack"
 
+[tasks.build]
+description = "Build code and styles"
+depends = ["build:code", "build:styles"]
+
 [tasks."build:code"]
 description = "Bundle module/sav.js + module/ deps -> dist/scum-and-villainy.compiled.js"
 run = "bun build ./module/sav.js --outdir ./dist --entry-naming scum-and-villainy.compiled.js --target browser --sourcemap"
 
+[tasks."build:styles"]
+description = "Compile styles/index.scss -> dist/styles.compiled.css"
+run = "bunx sass styles/index.scss dist/styles.compiled.css --no-source-map"
+
 [tasks.watch]
 description = "Rebuild JS on every save"
 run = "bun build ./module/sav.js --outdir ./dist --entry-naming scum-and-villainy.compiled.js --target browser --sourcemap --watch"
+
+[tasks."watch:styles"]
+description = "Rebuild CSS on every save"
+run = "bunx sass styles/index.scss dist/styles.compiled.css --no-source-map --watch"
 
 [tasks."link:foundry"]
 description = "Symlink Foundry source into ./foundry/ for IDE IntelliSense (reads foundry-config.yaml)"
