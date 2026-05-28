@@ -1,0 +1,98 @@
+_id: 4ursNBiXPkXM4JDP
+name: Pilot
+type: class
+img: systems/scum-and-villainy/styles/assets/icons/rocket-flight.png
+system:
+  description: A ship-handling wizard and danger addict
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  def_abilities: (P) Ace Pilot, Yattu, Triv, Choss, Meris, Mav
+  experience_clues: You addressed a tough challenge with speed or flair.
+effects:
+  - _id: tRpnx4vp5WRLg7vh
+    changes:
+      - key: system.character_class
+        mode: 5
+        value: Pilot
+        priority: null
+      - key: system.attributes.insight.skills.rig.min
+        mode: 2
+        value: '1'
+        priority: null
+      - key: system.attributes.prowess.skills.helm.min
+        mode: 2
+        value: '2'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Item.lqZRLbfF2hZO2oIx
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: 1719614657715
+      lastModifiedBy: soXq28xXIcGBjPmX
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Pilot class
+    img: systems/scum-and-villainy/styles/assets/icons/rocket-flight.png
+    type: base
+    system: {}
+    description: ''
+    statuses: []
+    sort: 0
+    _key: '!items.effects!4ursNBiXPkXM4JDP.tRpnx4vp5WRLg7vh'
+folder: null
+sort: 0
+flags:
+  core: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: Compendium.scum-and-villainy.class.ppl97fxZDlMYAogz
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  0qXppfGRqIVi7Lgc: 3
+_key: '!items!4ursNBiXPkXM4JDP'

@@ -1,0 +1,98 @@
+_id: kotqccpsoTqs7RiL
+name: Mystic
+type: class
+img: systems/scum-and-villainy/styles/assets/icons/Icon.2_94.png
+system:
+  description: A galactic wanderer in touch with the Way
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  def_abilities: (My) The Way, Horux, Hicks, Laxx, Rye, Blish
+  experience_clues: You addressed a tough challenge with wisdom or the Way.
+effects:
+  - _id: aoSSvhNuxmpKmuxK
+    changes:
+      - key: system.character_class
+        mode: 5
+        value: Mystic
+        priority: null
+      - key: system.attributes.resolve.skills.attune.min
+        mode: 2
+        value: '2'
+        priority: null
+      - key: system.attributes.prowess.skills.scramble.min
+        mode: 2
+        value: '1'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Item.yIbL86oSRKgVMqIS
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: 1719614619083
+      lastModifiedBy: soXq28xXIcGBjPmX
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Mystic class
+    img: systems/scum-and-villainy/styles/assets/icons/Icon.2_94.png
+    type: base
+    system: {}
+    description: ''
+    statuses: []
+    sort: 0
+    _key: '!items.effects!kotqccpsoTqs7RiL.aoSSvhNuxmpKmuxK'
+folder: null
+sort: 0
+flags:
+  core: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: Compendium.scum-and-villainy.class.ZEbq3hXyriAWUVOl
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  0qXppfGRqIVi7Lgc: 3
+_key: '!items!kotqccpsoTqs7RiL'

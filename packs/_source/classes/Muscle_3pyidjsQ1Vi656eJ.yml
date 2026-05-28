@@ -1,0 +1,98 @@
+_id: 3pyidjsQ1Vi656eJ
+name: Muscle
+type: class
+img: systems/scum-and-villainy/styles/assets/icons/Icon.4_64.png
+system:
+  description: A dangerous and intimidating fighter
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  def_abilities: (Mu) Unstoppable, Krieger, Shod, Chon-zek, Yazu, Aya
+  experience_clues: You addressed a tough challenge with force or threats.
+effects:
+  - _id: Saz0ZrJeqIcuBso0
+    changes:
+      - key: system.character_class
+        mode: 5
+        value: Muscle
+        priority: null
+      - key: system.attributes.prowess.skills.scrap.min
+        mode: 2
+        value: '2'
+        priority: null
+      - key: system.attributes.resolve.skills.command.min
+        mode: 2
+        value: '1'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Item.OS1Tr791PeY6nUP0
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: 1719614557474
+      lastModifiedBy: soXq28xXIcGBjPmX
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Muscle class
+    img: systems/scum-and-villainy/styles/assets/icons/Icon.4_64.png
+    type: base
+    system: {}
+    description: ''
+    statuses: []
+    sort: 0
+    _key: '!items.effects!3pyidjsQ1Vi656eJ.Saz0ZrJeqIcuBso0'
+folder: null
+sort: 0
+flags:
+  core: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: Compendium.scum-and-villainy.class.CjzxaYvNhEqUXTGT
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  0qXppfGRqIVi7Lgc: 3
+_key: '!items!3pyidjsQ1Vi656eJ'
