@@ -1,11 +1,12 @@
 /*
- * V2 ApplicationV2 sheet styles.
- *
- * Sourced from styles/index.scss → compiled to dist/styles.compiled.css.
- * Loaded alongside the legacy styles/sav.css during the v1→V2 sheet
- * transition. As each sheet is ported, its rules migrate from sav.css
- * into this file. Once all sheets are V2, sav.css can be retired.
+ * Compiled to dist/styles.compiled.css, loaded alongside the legacy
+ * styles/sav.css during the v1→V2 transition. Migration in progress —
+ * sav.css will be retired once parity is reached.
  */
+
+@use "hide-ui";
+@use "clocks-svg";
+@use "legacy";
 
 .scum-and-villainy {
   .window-content {
