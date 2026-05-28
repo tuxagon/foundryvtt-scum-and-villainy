@@ -3,6 +3,14 @@ import { SaVHelpers } from "./sav-helpers.js";
 const { HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
 
+function escapeAttr(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
 export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
     classes: ["scum-and-villainy", "sheet", "actor"],
@@ -10,6 +18,7 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
     window: { resizable: true },
     actions: {
       addItemPopup: SaVSheetV2.onAddItemPopup,
+      addFlagPopup: SaVSheetV2.onAddFlagPopup,
       updateItems: SaVSheetV2.onUpdateItems,
       updateBox: SaVSheetV2.onUpdateBox,
       openItem: SaVSheetV2.onOpenItem,
@@ -98,7 +107,7 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
           html += `<label class="flex-horizontal" for="select-item-${e._id}">`;
           html += `${game.i18n.localize(e.name)}</label></div>`;
           html += `<div class="flex one">${addition_price_load}</div>`;
-          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${game.i18n.localize(e.system.description)}"></i>`;
+          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${escapeAttr(game.i18n.localize(e.system.description))}"></i>`;
           html += `</div></div>`;
         }
       } else if (e.type === "crew_ability") {
@@ -110,7 +119,7 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
           html += `<div class="flex ten new-item"><input id="select-item-${e._id}" type="${inputType}" name="select_items" value="${e._id}">`;
           html += `<label class="flex-horizontal" for="select-item-${e._id}">`;
           html += `${game.i18n.localize(e.name)}</label></div>`;
-          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${game.i18n.localize(e.system.description)}"></i>`;
+          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${escapeAttr(game.i18n.localize(e.system.description))}"></i>`;
           html += `</div></div>`;
         }
       } else if (e.type === "ability") {
@@ -125,7 +134,7 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
           html += `<div class="flex ten new-item"><input id="select-item-${e._id}" type="${inputType}" name="select_items" value="${e._id}">`;
           html += `<label class="flex-horizontal" for="select-item-${e._id}">`;
           html += `${game.i18n.localize(e.name)}</label></div>`;
-          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${game.i18n.localize(e.system.description)}"></i>`;
+          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${escapeAttr(game.i18n.localize(e.system.description))}"></i>`;
           html += `</div></div>`;
         }
       } else if (e.type === "item") {
@@ -140,7 +149,7 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
           html += `<label class="flex-horizontal" for="select-item-${e._id}">`;
           html += `${game.i18n.localize(e.name)}</label></div>`;
           html += `<div class="flex one">${addition_price_load}</div>`;
-          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${game.i18n.localize(e.system.description)}"></i>`;
+          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${escapeAttr(game.i18n.localize(e.system.description))}"></i>`;
           html += `</div></div>`;
         }
       } else if (e.type === "friend") {
@@ -152,7 +161,7 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
           html += `<div class="flex ten new-item"><input id="select-item-${e._id}" type="${inputType}" name="select_items" value="${e._id}">`;
           html += `<label class="flex-horizontal" for="select-item-${e._id}">`;
           html += `${game.i18n.localize(e.name)}</label></div>`;
-          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${game.i18n.localize(e.system.description)}"></i>`;
+          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${escapeAttr(game.i18n.localize(e.system.description))}"></i>`;
           html += `</div></div>`;
         }
       } else if (e.type === "faction") {
@@ -160,7 +169,7 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
         html += `<div class="flex ten new-item"><input id="select-item-${e._id}" type="${inputType}" name="select_items" value="${e._id}">`;
         html += `<label class="flex-horizontal" for="select-item-${e._id}">`;
         html += `${game.i18n.localize(e.name)}</label></div>`;
-        html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${game.i18n.localize(e.system.description)}"></i>`;
+        html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${escapeAttr(game.i18n.localize(e.system.description))}"></i>`;
         html += `</div></div>`;
       } else if (e.type === "planet") {
         if (e.system.system === limiter) {
@@ -168,7 +177,7 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
           html += `<div class="flex ten new-item"><input id="select-item-${e._id}" type="${inputType}" name="select_items" value="${e._id}">`;
           html += `<label class="flex-horizontal" for="select-item-${e._id}">`;
           html += `${game.i18n.localize(e.name)}</label></div>`;
-          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${game.i18n.localize(e.system.description)}"></i>`;
+          html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${escapeAttr(game.i18n.localize(e.system.description))}"></i>`;
           html += `</div></div>`;
         }
       } else {
@@ -177,7 +186,7 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
         html += `<label class="flex-horizontal" for="select-item-${e._id}">`;
         html += `${game.i18n.localize(e.name)}</label></div>`;
         html += `<div class="flex one">${addition_price_load}</div>`;
-        html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${game.i18n.localize(e.system.description)}"></i>`;
+        html += `<div class="flex one"><i class="fas fa-question-circle" data-tooltip="${escapeAttr(game.i18n.localize(e.system.description))}"></i>`;
         html += `</div></div>`;
       }
     });
@@ -272,6 +281,63 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
     await this.actor.updateEmbeddedDocuments("Item", [
       { _id: item.id, system: { visible: !item.system.visible } },
     ]);
+  }
+
+  static async onAddFlagPopup(event, target) {
+    event.preventDefault();
+    if (!this.actor.isOwner) return;
+
+    const itemType = target.dataset.itemType;
+    const distinct = typeof target.dataset.distinct !== "undefined";
+    const inputType = distinct ? "radio" : "checkbox";
+
+    const items = await SaVHelpers.getAllActorsByType(itemType, game);
+    let html = `<div class="scum-and-villainy" id="items-to-add">`;
+    items.forEach((e) => {
+      if (e.type !== itemType) return;
+      html += `<input id="select-item-${e.id}" type="${inputType}" name="select_items" value="${e.id}">`;
+      html += `<label class="flex-horizontal" for="select-item-${e.id}">`;
+      html += `${escapeAttr(game.i18n.localize(e.name))} <i class="fas fa-question-circle" data-tooltip="${escapeAttr(game.i18n.localize(e.system.designation ?? ""))}"></i>`;
+      html += `</label>`;
+    });
+    html += `</div>`;
+
+    await DialogV2.wait({
+      classes: ["scum-and-villainy"],
+      window: {
+        title: `${game.i18n.localize("BITD.Add")} ${game.i18n.localize(`BITD.${SaVHelpers.getProperCase(itemType)}`)}`,
+      },
+      position: { width: 500, height: 400 },
+      content: html,
+      buttons: [
+        {
+          action: "add",
+          icon: "fas fa-check",
+          label: game.i18n.localize("BITD.Add"),
+          default: true,
+          callback: async (_ev, button) => {
+            const checked = button.form.querySelectorAll("input:checked");
+            const ids = Array.from(checked).map((i) => i.value);
+            const itemsToAdd = ids
+              .map((id) => items.find((e) => e.id === id))
+              .filter(Boolean);
+            if (this.actor.isOwner && itemsToAdd.length) {
+              await this.actor.setFlag(
+                "scum-and-villainy",
+                itemType,
+                itemsToAdd,
+              );
+            }
+          },
+        },
+        {
+          action: "cancel",
+          icon: "fas fa-times",
+          label: game.i18n.localize("BITD.Cancel"),
+        },
+      ],
+      rejectClose: false,
+    });
   }
 
   static async onRollAttribute(event, target) {

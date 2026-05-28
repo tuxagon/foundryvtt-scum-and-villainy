@@ -33,7 +33,8 @@
   &.clock,
   &.universe,
   &.faction-status,
-  &.ship {
+  &.ship,
+  &.character {
     .sheet-header {
       display: flex;
       align-items: center;
