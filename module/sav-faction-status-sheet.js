@@ -1,176 +1,90 @@
-import { SaVSheet } from "./sav-sheet.js";
+import { SaVSheetV2 } from "./sav-sheet-v2.js";
 
-/**
- * @extends {SaVSheet}
- */
-export class SaVFactionStatusSheet extends SaVSheet {
-  /** @override */
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["scum-and-villainy", "sheet", "actor", "fs-faction-dialog"],
+export class SaVFactionStatusSheet extends SaVSheetV2 {
+  static DEFAULT_OPTIONS = {
+    classes: [
+      ...SaVSheetV2.DEFAULT_OPTIONS.classes,
+      "faction-status",
+      "fs-faction-dialog",
+    ],
+    position: { width: 1400, height: 700 },
+    window: { resizable: true },
+    actions: {
+      factionUp: SaVFactionStatusSheet.onFactionUp,
+      factionDown: SaVFactionStatusSheet.onFactionDown,
+      jobsUp: SaVFactionStatusSheet.onJobsUp,
+      jobsDown: SaVFactionStatusSheet.onJobsDown,
+    },
+  };
+
+  static PARTS = {
+    body: {
       template: "systems/scum-and-villainy/templates/faction-status-sheet.hbs",
-      width: 1280,
-      height: "auto",
-      resizable: false,
-      tabs: [{ navSelector: ".tabs", contentSelector: ".tab-content" }],
-    });
-  }
+    },
+  };
 
-  /** @override */
-  async getData(options) {
-    const superData = super.getData(options);
-    const sheetData = superData.data;
-    sheetData.owner = superData.owner;
-    sheetData.editable = superData.editable;
-    sheetData.isGM = game.user.isGM;
-
-    sheetData.exposeActorName = game.settings.get( "scum-and-villainy", "exposeActorName" );
-
-    sheetData.system.description = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
-      sheetData.system.description,
-      { secrets: sheetData.owner, async: true }
+  async _prepareContext(options) {
+    const context = await super._prepareContext(options);
+    context.exposeActorName = game.settings.get(
+      "scum-and-villainy",
+      "exposeActorName",
     );
-
-    let total = 0;
-    sheetData.items.forEach((i) => {
-      if (i.type === "star_system") {
-        total += 1;
-      }
-    });
-    sheetData.totalSystems = total;
-    sheetData.items.sort(
-      (a, b) => parseInt(b.system.tier) - parseInt(a.system.tier)
+    context.enrichedDescription =
+      await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+        context.system.description ?? "",
+        { secrets: context.owner },
+      );
+    context.items = [...this.actor.items].sort(
+      (a, b) => parseInt(b.system.tier, 10) - parseInt(a.system.tier, 10),
     );
-    return sheetData;
+    return context;
   }
 
-  /** @override */
-  // a separate copy of the add function
-
-  async addItemsToSheet(item_type, el) {
-    //el is the list of items to add
-    let items = await SaVHelpers.getAllItemsByType(item_type, game);
-    let items_to_add = [];
-
-    el.find("div.new-item input:checked").each(function () {
-      items_to_add.push(items.find((e) => e._id === $(this).val()));
-    });
-
-    //seems like system.status.value is an array???
-    /*
-    items_to_add.forEach((obj) => {
-      obj.system.status.value = [4];
-    });
-    */
-    if (this.actor.isOwner) {
-      await Item.create(items_to_add, { parent: this.document });
-    }
-  }
-  //flags too?
-  async addFlagsToSheet(item_type, el) {
-    let items = await SaVHelpers.getAllActorsByType(item_type, game);
-    let items_to_add = [];
-
-    el.find("input:checked").each(function () {
-      items_to_add.push(items.find((e) => e.id === $(this).val()));
-    });
-
-    if (this.actor.isOwner) {
-      await this.actor.setFlag("scum-and-villainy", item_type, items_to_add);
+  static async onFactionUp(_event, target) {
+    const element = target.closest(".item");
+    const item = this.actor.items.get(element?.dataset.itemId);
+    if (!item) return;
+    const status = item.system.status;
+    if (status.value < status.max) {
+      await this.actor.updateEmbeddedDocuments("Item", [
+        { _id: item.id, system: { status: { value: status.value + 1 } } },
+      ]);
     }
   }
 
-  /** @override */
-  activateListeners(html) {
-    super.activateListeners(html);
-
-    // Everything below here is only needed if the sheet is editable
-    if (!this.options.editable) return;
-
-    // Update Inventory Item
-    html.find(".fs-item-body").click((ev) => {
-      const element = $(ev.currentTarget).parents(".item");
-      let item = this.actor.items.get(element.data("itemId"));
-      item.sheet.render(true);
-    });
-
-    // Delete Inventory Item
-    html.find(".item-delete").click(async (ev) => {
-      const element = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(element.data("itemId"));
-      await this.actor.deleteEmbeddedDocuments("Item", [item.id]);
-      element.slideUp(200, () => this.render(false));
-    });
-
-    // Post item to chat
-    html.find(".item-post").click((ev) => {
-      const element = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(element.data("itemId"));
-      item.sendToChat();
-    });
-
-    // Modify player visibility
-    html.find(".item-visible").click(async (ev) => {
-      const element = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(element.data("itemId"));
-      const itemVisible = !item.system.visible;
+  static async onFactionDown(_event, target) {
+    const element = target.closest(".item");
+    const item = this.actor.items.get(element?.dataset.itemId);
+    if (!item) return;
+    const status = item.system.status;
+    if (status.value > 1) {
       await this.actor.updateEmbeddedDocuments("Item", [
-        { _id: item.id, system: { visible: itemVisible } },
+        { _id: item.id, system: { status: { value: status.value - 1 } } },
       ]);
-    });
+    }
+  }
 
-    // increase faction status
-    html.find(".faction-up").click(async (ev) => {
-      const element = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(element.data("itemId"));
-      //console.dir (element);
-      //console.dir (item);
-      const statusUpdate = item.system.status;
-      if (statusUpdate.value < statusUpdate.max) {
-        statusUpdate.value++;
-      }
+  static async onJobsUp(_event, target) {
+    const element = target.closest(".item");
+    const item = this.actor.items.get(element?.dataset.itemId);
+    if (!item) return;
+    const jobs = item.system.jobs;
+    if (jobs.value < jobs.max) {
       await this.actor.updateEmbeddedDocuments("Item", [
-        { _id: item.id, system: { status: statusUpdate } },
+        { _id: item.id, system: { jobs: { value: jobs.value + 1 } } },
       ]);
-    });
+    }
+  }
 
-    // decrease faction status
-    html.find(".faction-down").click(async (ev) => {
-      const element = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(element.data("itemId"));
-      const statusUpdate = item.system.status;
-      if (statusUpdate.value > 1) {
-        statusUpdate.value--;
-      }
+  static async onJobsDown(_event, target) {
+    const element = target.closest(".item");
+    const item = this.actor.items.get(element?.dataset.itemId);
+    if (!item) return;
+    const jobs = item.system.jobs;
+    if (jobs.value > 0) {
       await this.actor.updateEmbeddedDocuments("Item", [
-        { _id: item.id, system: { status: statusUpdate } },
+        { _id: item.id, system: { jobs: { value: jobs.value - 1 } } },
       ]);
-    });
-
-    // increase faction jobs
-    html.find(".jobs-up").click(async (ev) => {
-      const element = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(element.data("itemId"));
-      const jobsUpdate = item.system.jobs;
-      if (jobsUpdate.value < jobsUpdate.max) {
-        jobsUpdate.value++;
-      }
-      await this.actor.updateEmbeddedDocuments("Item", [
-        { _id: item.id, system: { jobs: jobsUpdate } },
-      ]);
-    });
-
-    // decrease faction status
-    html.find(".jobs-down").click(async (ev) => {
-      const element = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(element.data("itemId"));
-      const jobsUpdate = item.system.jobs;
-      if (jobsUpdate.value > 0) {
-        jobsUpdate.value--;
-      }
-      await this.actor.updateEmbeddedDocuments("Item", [
-        { _id: item.id, system: { jobs: jobsUpdate } },
-      ]);
-    });
+    }
   }
 }

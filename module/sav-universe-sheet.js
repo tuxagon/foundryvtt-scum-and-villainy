@@ -5,10 +5,6 @@ export class SaVUniverseSheet extends SaVSheetV2 {
     classes: [...SaVSheetV2.DEFAULT_OPTIONS.classes, "universe"],
     position: { width: 800, height: 700 },
     actions: {
-      openItem: SaVUniverseSheet.onOpenItem,
-      deleteItem: SaVUniverseSheet.onDeleteItem,
-      postItem: SaVUniverseSheet.onPostItem,
-      toggleVisible: SaVUniverseSheet.onToggleVisible,
       rollWanted: SaVUniverseSheet.onRollWanted,
     },
   };
@@ -33,34 +29,6 @@ export class SaVUniverseSheet extends SaVSheetV2 {
     });
     context.totalSystems = total;
     return context;
-  }
-
-  static async onOpenItem(_event, target) {
-    const element = target.closest(".item");
-    const item = this.actor.items.get(element?.dataset.itemId);
-    item?.sheet.render(true);
-  }
-
-  static async onDeleteItem(_event, target) {
-    const element = target.closest(".item");
-    const item = this.actor.items.get(element?.dataset.itemId);
-    if (!item) return;
-    await this.actor.deleteEmbeddedDocuments("Item", [item.id]);
-  }
-
-  static async onPostItem(_event, target) {
-    const element = target.closest(".item");
-    const item = this.actor.items.get(element?.dataset.itemId);
-    item?.sendToChat();
-  }
-
-  static async onToggleVisible(_event, target) {
-    const element = target.closest(".item");
-    const item = this.actor.items.get(element?.dataset.itemId);
-    if (!item) return;
-    await this.actor.updateEmbeddedDocuments("Item", [
-      { _id: item.id, system: { visible: !item.system.visible } },
-    ]);
   }
 
   static async onRollWanted(_event, target) {

@@ -12,6 +12,10 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
       addItemPopup: SaVSheetV2.onAddItemPopup,
       updateItems: SaVSheetV2.onUpdateItems,
       updateBox: SaVSheetV2.onUpdateBox,
+      openItem: SaVSheetV2.onOpenItem,
+      deleteItem: SaVSheetV2.onDeleteItem,
+      postItem: SaVSheetV2.onPostItem,
+      toggleVisible: SaVSheetV2.onToggleVisible,
     },
   };
 
@@ -206,10 +210,11 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
     });
 
     await DialogV2.wait({
+      classes: ["scum-and-villainy"],
       window: {
         title: `${game.i18n.localize("BITD.Add")} ${game.i18n.localize(`BITD.${itemType}`)}`,
       },
-      position: { width: 500 },
+      position: { width: 500, height: 600 },
       content,
       buttons: [
         {
@@ -238,6 +243,34 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
       ],
       rejectClose: false,
     });
+  }
+
+  static async onOpenItem(_event, target) {
+    const element = target.closest(".item");
+    const item = this.actor.items.get(element?.dataset.itemId);
+    item?.sheet.render(true);
+  }
+
+  static async onDeleteItem(_event, target) {
+    const element = target.closest(".item");
+    const item = this.actor.items.get(element?.dataset.itemId);
+    if (!item) return;
+    await this.actor.deleteEmbeddedDocuments("Item", [item.id]);
+  }
+
+  static async onPostItem(_event, target) {
+    const element = target.closest(".item");
+    const item = this.actor.items.get(element?.dataset.itemId);
+    item?.sendToChat();
+  }
+
+  static async onToggleVisible(_event, target) {
+    const element = target.closest(".item");
+    const item = this.actor.items.get(element?.dataset.itemId);
+    if (!item) return;
+    await this.actor.updateEmbeddedDocuments("Item", [
+      { _id: item.id, system: { visible: !item.system.visible } },
+    ]);
   }
 
   static async onUpdateItems(event, target) {

@@ -31,7 +31,8 @@
   &.npc,
   &.item,
   &.clock,
-  &.universe {
+  &.universe,
+  &.faction-status {
     .sheet-header {
       display: flex;
       align-items: center;
@@ -89,6 +90,24 @@
         justify-content: center;
       }
     }
+  }
+
+  &.faction-status {
+    // Dark control color so caret arrows show on the brushed-metal background
+    // (v1 used #c1c1c1 which disappears against this background).
+    .fs-control {
+      color: var(--color-dark-2);
+    }
+
+    // Center the arrow controls horizontally above/below the value (v1's
+    // `justify-content: left` is meaningless for column flex).
+    .fs-control-arrows {
+      align-items: center;
+    }
+
+    // "Neutral" status reuses --fs-neutral which is a light gray; override
+    // to a readable dark variant against the brushed-metal background.
+    --fs-neutral: hsl(0, 0%, 30%);
   }
 
   &.clock {
