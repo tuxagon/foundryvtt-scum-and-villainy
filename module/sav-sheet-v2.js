@@ -16,6 +16,7 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
       deleteItem: SaVSheetV2.onDeleteItem,
       postItem: SaVSheetV2.onPostItem,
       toggleVisible: SaVSheetV2.onToggleVisible,
+      rollAttribute: SaVSheetV2.onRollAttribute,
     },
   };
 
@@ -271,6 +272,32 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
     await this.actor.updateEmbeddedDocuments("Item", [
       { _id: item.id, system: { visible: !item.system.visible } },
     ]);
+  }
+
+  static async onRollAttribute(event, target) {
+    event.preventDefault();
+    const attribute_name = target.dataset.rollAttribute;
+    const att_obj = game.model.Actor.character.attributes;
+    const sys_obj = game.model.Actor.ship.systems;
+    let systems = Object.keys(sys_obj);
+    const resistance = Object.keys(att_obj);
+    const remove = ["crew", "upkeep"];
+    let actions = [];
+    resistance.forEach((a) => {
+      actions.push(Object.keys(att_obj[a].skills));
+    });
+    systems = systems.filter((system) => !remove.includes(system));
+    actions.push(systems);
+    actions = actions.flat();
+
+    if (actions.includes(attribute_name)) {
+      this.actor.rollActionPopup(attribute_name);
+    } else {
+      const roll_type = resistance.includes(attribute_name)
+        ? "resistance"
+        : attribute_name;
+      this.actor.rollSimplePopup(attribute_name, roll_type);
+    }
   }
 
   static async onUpdateItems(event, target) {

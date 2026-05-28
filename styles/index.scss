@@ -32,7 +32,8 @@
   &.item,
   &.clock,
   &.universe,
-  &.faction-status {
+  &.faction-status,
+  &.ship {
     .sheet-header {
       display: flex;
       align-items: center;
@@ -83,12 +84,61 @@
       background: transparent;
     }
 
+    // Hide inactive tab content. V2 wires the `.active` class on the
+    // currently-selected tab via _prepareTabs/changeTab.
+    .tab:not(.active) {
+      display: none;
+    }
+
+    // V14 defaults tab text to the warm "emphatic" hue (a light yellow).
+    // Override to the dark heading color for legibility on brushed metal.
+    nav.tabs [data-tab] {
+      color: var(--color-dark-4);
+    }
+    nav.tabs [data-tab]:hover {
+      color: var(--color-dark-2);
+      text-shadow: none;
+    }
+    nav.tabs [data-tab].active {
+      color: var(--color-dark-2);
+      text-shadow: none;
+      font-weight: bold;
+    }
+
     prose-mirror {
       &:hover button.toggle:enabled {
         display: flex;
         align-items: center;
         justify-content: center;
       }
+    }
+  }
+
+  &.ship {
+    // Each item row: item-body fills available space, controls sit right.
+    // Inner item-body packs image + name + description from the left.
+    .tab .item.flex-horizontal > .item-body {
+      flex: 1;
+      justify-content: flex-start;
+      gap: 8px;
+    }
+
+    // Override legacy `#abilities .item-description { width: 300px }` etc.
+    // so the description fills the remaining width of item-body.
+    .tab .item.flex-horizontal > .item-body > .item-description {
+      width: auto;
+      flex: 1;
+    }
+
+    .tab .item.flex-horizontal > .item-control {
+      flex: 0 0 auto;
+    }
+
+    // .friend-tracker is a flex row of [status radios] + [.item.flex-horizontal].
+    // Make the item row grow so its inner item-body+controls layout fills the
+    // remaining width, matching the other tabs.
+    .tab .friend-tracker > .item.flex-horizontal {
+      flex: 1;
     }
   }
 
