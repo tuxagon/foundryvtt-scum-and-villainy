@@ -4,13 +4,13 @@ import {
   DEFAULT_FILL_COLOR,
   DEFAULT_RENDER_STYLE,
   DEFAULT_TONE,
+  paletteFor,
   RENDER_STYLES,
+  snapToValidSegments,
   TONES,
   VALID_BACKGROUND_STYLES,
   VALID_RENDER_STYLES,
   VALID_TONES,
-  paletteFor,
-  snapToValidSegments,
 } from "./clocks.js";
 
 export const SYSTEM_ID = "scum-and-villainy";
@@ -45,8 +45,13 @@ export function currentRenderStyle() {
 }
 
 export function currentBackgroundStyle() {
-  const value = safeGetSetting(SETTING_BACKGROUND_STYLE, DEFAULT_BACKGROUND_STYLE);
-  return VALID_BACKGROUND_STYLES.includes(value) ? value : DEFAULT_BACKGROUND_STYLE;
+  const value = safeGetSetting(
+    SETTING_BACKGROUND_STYLE,
+    DEFAULT_BACKGROUND_STYLE,
+  );
+  return VALID_BACKGROUND_STYLES.includes(value)
+    ? value
+    : DEFAULT_BACKGROUND_STYLE;
 }
 
 export function currentTone() {
@@ -73,7 +78,10 @@ export function buildPalette(theme) {
 
 export function toCoreClock({ theme, size, progress }) {
   const segments = snapToValidSegments(size);
-  const filled = Math.max(0, Math.min(segments, Math.floor(Number(progress) || 0)));
+  const filled = Math.max(
+    0,
+    Math.min(segments, Math.floor(Number(progress) || 0)),
+  );
   return {
     segments,
     filled,
@@ -83,12 +91,12 @@ export function toCoreClock({ theme, size, progress }) {
 
 export {
   BACKGROUND_STYLES,
+  DEFAULT_BACKGROUND_STYLE,
+  DEFAULT_RENDER_STYLE,
+  DEFAULT_TONE,
   RENDER_STYLES,
   TONES,
   VALID_BACKGROUND_STYLES,
   VALID_RENDER_STYLES,
   VALID_TONES,
-  DEFAULT_BACKGROUND_STYLE,
-  DEFAULT_RENDER_STYLE,
-  DEFAULT_TONE,
 };

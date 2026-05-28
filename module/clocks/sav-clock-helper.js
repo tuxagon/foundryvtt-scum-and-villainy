@@ -10,7 +10,8 @@ function escapeAttr(value) {
 
 function defaultTheme() {
   try {
-    const idx = game?.settings?.get("scum-and-villainy", "defaultClockTheme") ?? 0;
+    const idx =
+      game?.settings?.get("scum-and-villainy", "defaultClockTheme") ?? 0;
     return game?.system?.savclocks?.themes?.[idx] ?? "blue";
   } catch {
     return "blue";
@@ -37,21 +38,25 @@ function renderClockMarkup({ parameterName, size, current, uniqId, theme }) {
 }
 
 export function registerClockHelper() {
-  Handlebars.registerHelper("sav-clock", function (parameterName, type, currentValue, uniqId, theme) {
-    const size = parseInt(type, 10);
-    let current = parseInt(currentValue, 10);
-    if (!Number.isFinite(current) || current < 0) current = 0;
-    if (current > size) current = size;
+  Handlebars.registerHelper(
+    "sav-clock",
+    (parameterName, type, currentValue, uniqId, theme) => {
+      const size = parseInt(type, 10);
+      let current = parseInt(currentValue, 10);
+      if (!Number.isFinite(current) || current < 0) current = 0;
+      if (current > size) current = size;
 
-    const resolvedTheme = typeof theme === "string" && theme.length ? theme : defaultTheme();
+      const resolvedTheme =
+        typeof theme === "string" && theme.length ? theme : defaultTheme();
 
-    const markup = renderClockMarkup({
-      parameterName,
-      size,
-      current,
-      uniqId,
-      theme: resolvedTheme,
-    });
-    return new Handlebars.SafeString(markup);
-  });
+      const markup = renderClockMarkup({
+        parameterName,
+        size,
+        current,
+        uniqId,
+        theme: resolvedTheme,
+      });
+      return new Handlebars.SafeString(markup);
+    },
+  );
 }

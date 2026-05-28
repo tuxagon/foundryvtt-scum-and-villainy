@@ -1,11 +1,20 @@
 import { renderClockSvgString } from "./clocks-rough.js";
-import { buildPalette, currentStyleContext, toCoreClock } from "./sav-clock-adapter.js";
+import {
+  buildPalette,
+  currentStyleContext,
+  toCoreClock,
+} from "./sav-clock-adapter.js";
 
 export function buildClockSvgString(savClock) {
   const coreClock = toCoreClock(savClock);
   const palette = buildPalette(savClock.theme);
   const { renderStyle, tone, backgroundStyle } = currentStyleContext();
-  return renderClockSvgString(coreClock, { palette, renderStyle, tone, backgroundStyle });
+  return renderClockSvgString(coreClock, {
+    palette,
+    renderStyle,
+    tone,
+    backgroundStyle,
+  });
 }
 
 export function buildClockDataUrl(savClock) {

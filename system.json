@@ -27,9 +27,34 @@
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
   "protected": false,
-  "esmodules": [
-    "dist/scum-and-villainy.compiled.js"
-  ],
+  "esmodules": ["dist/scum-and-villainy.compiled.js"],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {},
+      "ship": {},
+      "🕛 clock": {},
+      "universe": {},
+      "faction-status": {}
+    },
+    "Item": {
+      "item": {},
+      "class": {},
+      "ability": {},
+      "heritage": {},
+      "background": {},
+      "vice": {},
+      "crew_type": {},
+      "crew_reputation": {},
+      "crew_upgrade": {},
+      "crew_ability": {},
+      "star_system": {},
+      "planet": {},
+      "faction": {},
+      "ship_size": {},
+      "friend": {}
+    }
+  },
   "styles": [
     "styles/sav.css",
     "styles/hide-ui.css",
@@ -230,21 +255,12 @@
     {
       "name": "Universe Options",
       "sorting": "m",
-      "packs": [
-        "star_system",
-        "planet",
-        "faction"
-      ]
+      "packs": ["star_system", "planet", "faction"]
     },
     {
       "name": "Tables and Macros",
       "sorting": "m",
-      "packs": [
-        "job_tables",
-        "wanted",
-        "wanted_tables",
-        "macros"
-      ]
+      "packs": ["job_tables", "wanted", "wanted_tables", "macros"]
     }
   ]
 }

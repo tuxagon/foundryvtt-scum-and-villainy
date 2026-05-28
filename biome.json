@@ -9,10 +9,12 @@
     "ignoreUnknown": true,
     "includes": [
       "**",
-      "!**/module/vendor/**",
-      "!**/src/packs/**",
-      "!**/packs/_source/**",
-      "!**/dist/**"
+      "!**/module/vendor",
+      "!**/src/packs",
+      "!**/packs/_source",
+      "!**/dist",
+      "!**/templates",
+      "!**/styles"
     ]
   },
   "formatter": {

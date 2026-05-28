@@ -1,4 +1,3 @@
-import { refreshAllClockSurfaces } from "./clocks/sav-clock-refresh.js";
 import {
   BACKGROUND_STYLES,
   DEFAULT_BACKGROUND_STYLE,
@@ -10,9 +9,9 @@ import {
   SETTING_TONE,
   TONES,
 } from "./clocks/sav-clock-adapter.js";
+import { refreshAllClockSurfaces } from "./clocks/sav-clock-refresh.js";
 
-export const registerSystemSettings = function() {
-
+export const registerSystemSettings = () => {
   /**
    * Track the system version upon which point a migration was last applied
    */
@@ -21,7 +20,7 @@ export const registerSystemSettings = function() {
     scope: "world",
     config: false,
     type: Number,
-    default: 0
+    default: 0,
   });
 
   game.settings.register("scum-and-villainy", "defaultClockTheme", {
@@ -31,8 +30,8 @@ export const registerSystemSettings = function() {
     config: true,
     type: Number,
     choices: game.system.savclocks.themes,
-	  default: 0,
-	  icon: "fas fa-palette"
+    default: 0,
+    icon: "fas fa-palette",
   });
 
   game.settings.register("scum-and-villainy", SETTING_RENDER_STYLE, {
@@ -86,9 +85,9 @@ export const registerSystemSettings = function() {
     range: {
       min: 1,
       max: 12,
-      step: 1
+      step: 1,
     },
-    default: 6
+    default: 6,
   });
 
   game.settings.register("scum-and-villainy", "defaultPlaybookXPBarSize", {
@@ -100,9 +99,9 @@ export const registerSystemSettings = function() {
     range: {
       min: 1,
       max: 12,
-      step: 1
+      step: 1,
     },
-    default: 8
+    default: 8,
   });
 
   game.settings.register("scum-and-villainy", "defaultCrewXPBarSize", {
@@ -114,9 +113,9 @@ export const registerSystemSettings = function() {
     range: {
       min: 1,
       max: 12,
-      step: 1
+      step: 1,
     },
-    default: 8
+    default: 8,
   });
 
   game.settings.register("scum-and-villainy", "logResourceToChat", {
@@ -125,7 +124,7 @@ export const registerSystemSettings = function() {
     scope: "world",
     config: true,
     type: Boolean,
-    default: true
+    default: true,
   });
 
   game.settings.register("scum-and-villainy", "useDropdownsInRollDialog", {
@@ -134,7 +133,7 @@ export const registerSystemSettings = function() {
     scope: "client",
     config: true,
     type: Boolean,
-    default: false
+    default: false,
   });
 
   game.settings.register("scum-and-villainy", "exposeActorName", {
@@ -143,6 +142,6 @@ export const registerSystemSettings = function() {
     scope: "world",
     config: true,
     type: Boolean,
-    default: false
+    default: false,
   });
 };

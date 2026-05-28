@@ -111,7 +111,7 @@ export class SaVClockSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 export default {
   renderTokenHUD: async (_hud, html, token) => {
     log("Render");
-    let t = canvas.tokens.get(token.id);
+    let _t = canvas.tokens.get(token.id);
     const a = game.actors.get(token.actorId);
 
     if (!a?.flags["scum-and-villainy"]?.clocks) {
@@ -128,7 +128,7 @@ export default {
     html.querySelector("div.left").insertAdjacentHTML("beforeend", button1HTML);
     html.querySelector("div.left").addEventListener("click", async (event) => {
       log("HUD Clicked");
-      t = canvas.tokens.get(token.id);
+      _t = canvas.tokens.get(token.id);
 
       const oldClock = new SaVClock(a.flags["scum-and-villainy"]?.clocks);
       let newClock;
@@ -201,7 +201,7 @@ export default {
       .insertAdjacentHTML("beforeend", button2HTML);
     html.querySelector("div.right").addEventListener("click", async (event) => {
       log("HUD Clicked");
-      t = canvas.tokens.get(token.id);
+      _t = canvas.tokens.get(token.id);
 
       const oldClock = new SaVClock(a.flags["scum-and-villainy"]?.clocks);
       let newClock;

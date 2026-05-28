@@ -16,7 +16,9 @@ function findHostDocument(wrap) {
 }
 
 function readByPath(obj, dottedPath) {
-  return dottedPath.split(".").reduce((acc, key) => (acc == null ? acc : acc[key]), obj);
+  return dottedPath
+    .split(".")
+    .reduce((acc, key) => (acc == null ? acc : acc[key]), obj);
 }
 
 async function persistProgress(doc, parameter, next) {
@@ -31,7 +33,12 @@ async function handleClick(event) {
   const wrap = seg.closest(".sav-clock-wrap[data-sav-clock]");
   if (!wrap) return;
 
-  console.log("SaV clock click | segment", seg.dataset.segmentIndex, "wrap", wrap.dataset);
+  console.log(
+    "SaV clock click | segment",
+    seg.dataset.segmentIndex,
+    "wrap",
+    wrap.dataset,
+  );
 
   event.preventDefault();
   event.stopPropagation();
@@ -41,7 +48,10 @@ async function handleClick(event) {
   const progress = parseInt(wrap.dataset.progress, 10) || 0;
   if (!Number.isFinite(index) || !Number.isFinite(size)) return;
 
-  const next = toggleSegment({ segments: size, filled: progress }, index).filled;
+  const next = toggleSegment(
+    { segments: size, filled: progress },
+    index,
+  ).filled;
   if (next === progress) return;
 
   const parameter = wrap.dataset.parameter;
@@ -52,7 +62,10 @@ async function handleClick(event) {
       await persistProgress(doc, parameter, next);
       return;
     } catch (err) {
-      console.error("SaV clock: direct document update failed, falling back to form submission", err);
+      console.error(
+        "SaV clock: direct document update failed, falling back to form submission",
+        err,
+      );
     }
   }
 
