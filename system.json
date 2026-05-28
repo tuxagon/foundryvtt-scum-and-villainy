@@ -11,23 +11,35 @@
       "name": "megastruktur"
     }
   ],
-  "url": "#{URL}#",
+  "url": "https://github.com/tuxagon/foundryvtt-scum-and-villainy",
   "flags": {
     "hotReload": {
-      "extensions": ["css", "html", "json", "js"],
-      "paths": ["dist", "templates", "lang", "styles"]
+      "extensions": [
+        "css",
+        "html",
+        "json",
+        "js"
+      ],
+      "paths": [
+        "dist",
+        "templates",
+        "lang",
+        "styles"
+      ]
     }
   },
-  "version": "#{VERSION}#",
+  "version": "5.0.0",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
   },
   "socket": false,
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
+  "manifest": "https://github.com/tuxagon/foundryvtt-scum-and-villainy/releases/latest/download/system.json",
+  "download": "https://github.com/tuxagon/foundryvtt-scum-and-villainy/releases/download/release-5.0.0/scum-and-villainy-release-5.0.0.zip",
   "protected": false,
-  "esmodules": ["dist/scum-and-villainy.compiled.js"],
+  "esmodules": [
+    "dist/scum-and-villainy.compiled.js"
+  ],
   "documentTypes": {
     "Actor": {
       "character": {},
@@ -56,9 +68,6 @@
     }
   },
   "styles": [
-    "styles/sav.css",
-    "styles/hide-ui.css",
-    "styles/clocks-svg.css",
     "dist/styles.compiled.css"
   ],
   "languages": [
@@ -255,12 +264,21 @@
     {
       "name": "Universe Options",
       "sorting": "m",
-      "packs": ["star_system", "planet", "faction"]
+      "packs": [
+        "star_system",
+        "planet",
+        "faction"
+      ]
     },
     {
       "name": "Tables and Macros",
       "sorting": "m",
-      "packs": ["job_tables", "wanted", "wanted_tables", "macros"]
+      "packs": [
+        "job_tables",
+        "wanted",
+        "wanted_tables",
+        "macros"
+      ]
     }
   ]
 }

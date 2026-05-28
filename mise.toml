@@ -49,6 +49,10 @@ run = "bun build ./module/sav.js --outdir ./dist --entry-naming scum-and-villain
 description = "Rebuild CSS on every save"
 run = "bunx sass styles/index.scss dist/styles.compiled.css --no-source-map --watch"
 
+[tasks.bump]
+description = "Rewrite system.json.version + download URL. Usage: mise run bump 0.2.0"
+run = "bun run ./scripts/bump.js"
+
 [tasks."link:foundry"]
 description = "Symlink Foundry source into ./foundry/ for IDE IntelliSense (reads foundry-config.yaml)"
 run = "bun run ./scripts/link-foundry.js"
