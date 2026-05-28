@@ -1,40 +1,12 @@
-export class SaVHelpers {
-  /**
-   * Identifies duplicate items by type and returns a array of item ids to remove
-   *
-   * @param {Object} item_data
-   * @param {Document} actor
-   * @returns {Array}
-   *
-   */
-  static removeDuplicatedItemType(item_data, actor) {
-    const dupe_list = [];
-    const distinct_types = [
-      "crew_reputation",
-      "class",
-      "background",
-      "vice",
-      "heritage",
-      "ship_size",
-      "crew_type",
-    ];
-    const allowed_types = ["item"];
-    const should_be_distinct = distinct_types.includes(item_data.type);
-    // If the Item has the exact same name - remove it from list.
-    // Remove Duplicate items from the array.
-    actor.items.forEach((i) => {
-      const has_double = item_data.type === i.type;
-      if (
-        (i.name === item_data.name || (should_be_distinct && has_double)) &&
-        !allowed_types.includes(item_data.type) &&
-        item_data._id !== i.id
-      ) {
-        dupe_list.push(i.id);
-      }
-    });
+import * as pure from "./helpers.js";
 
-    return dupe_list;
-  }
+export class SaVHelpers {
+  // Pure helpers delegate to module/helpers.js (no globals reached). Kept on
+  // the class for backwards compat with existing `SaVHelpers.xxx` call sites.
+  static removeDuplicatedItemType = pure.removeDuplicatedItemType;
+  static getNestedProperty = pure.getNestedProperty;
+  static getProperCase = pure.getProperCase;
+  static createListOfClockSizes = pure.createListOfClockSizes;
 
   /**
    * Adds default abilities when class is chosen for character
@@ -101,17 +73,6 @@ export class SaVHelpers {
     });
 
     actor.createEmbeddedDocuments("Item", items_to_add);
-  }
-
-  /**
-   * Get a nested dynamic attribute.
-   * @param {Object} obj
-   * @param {string} property
-   */
-  static getNestedProperty(obj, property) {
-    return property.split(".").reduce((r, e) => {
-      return r[e];
-    }, obj);
   }
 
   /**
@@ -185,12 +146,6 @@ export class SaVHelpers {
   }
 
   /* -------------------------------------------- */
-
-  static getProperCase(name) {
-    return name.charAt(0).toUpperCase() + name.substr(1).toLowerCase();
-  }
-
-  /* -------------------------------------------- */
   /**
    * Returns the label for attribute.
    *
@@ -250,37 +205,6 @@ export class SaVHelpers {
     }
 
     return attribute_labels[attribute_name];
-  }
-
-  /* -------------------------------------------- */
-
-  /**
-   * Creates options for faction clocks.
-   *
-   * @param {int[]} sizes
-   *  array of possible clock sizes
-   * @param {int} default_size
-   *  default clock size
-   * @param {int} current_size
-   *  current clock size
-   * @returns {string}
-   *  html-formatted option string
-   */
-  static createListOfClockSizes(sizes, default_size, current_size) {
-    let text = ``;
-
-    sizes.forEach((size) => {
-      text += `<option value="${size}"`;
-      if (!current_size && size === default_size) {
-        text += ` selected`;
-      } else if (size === current_size) {
-        text += ` selected`;
-      }
-
-      text += `>${size}</option>`;
-    });
-
-    return text;
   }
 
   /* -------------------------------------------- */
