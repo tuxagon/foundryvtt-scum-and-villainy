@@ -9,7 +9,7 @@ export const migrateWorld = async () => {
   );
 
   // Migrate World Actors
-  for (const a of game.actors.entities) {
+  for (const a of game.actors) {
     if (
       a.type === "character" ||
       a.type === "ship" ||
@@ -18,7 +18,7 @@ export const migrateWorld = async () => {
     ) {
       try {
         const updateData = _migrateActor(a);
-        if (!isObjectEmpty(updateData)) {
+        if (!foundry.utils.isEmpty(updateData)) {
           console.log(`Migrating Actor entity ${a.name}`);
           await a.update(updateData, { enforceTypes: false });
         }
@@ -31,7 +31,7 @@ export const migrateWorld = async () => {
     if (a.type === "character" || a.type === "ship") {
       try {
         const updateData = _migrateTokenLink(a);
-        if (!isObjectEmpty(updateData)) {
+        if (!foundry.utils.isEmpty(updateData)) {
           console.log(`Migrating Token Link for ${a.name}`);
           await a.update(updateData, { enforceTypes: false });
         }
@@ -45,7 +45,7 @@ export const migrateWorld = async () => {
   for (const s of game.scenes) {
     try {
       const updateData = _migrateSceneData(s);
-      if (!isObjectEmpty(updateData)) {
+      if (!foundry.utils.isEmpty(updateData)) {
         console.log(`Migrating Scene entity ${s.name}`);
         await s.update(updateData, { enforceTypes: false });
       }
@@ -75,7 +75,7 @@ export const migrateWorld = async () => {
  * @return {Object}       The updateData to apply
  */
 export const _migrateSceneData = (scene) => {
-  const tokens = duplicate(scene.tokens);
+  const tokens = foundry.utils.duplicate(scene.tokens);
   return {
     tokens: tokens.map((t) => {
       t.actorLink = true;
@@ -132,8 +132,9 @@ function _migrateActor(actor) {
     }
   }
 
-  // Migrate Stress to Array
-  if (typeof actor.system.stress[0] !== "undefined") {
+  // Migrate Stress to Array — only applies if stress is still a raw array
+  // (pre-v9 shape). Modern actors store stress as { value, max, ... }.
+  if (Array.isArray(actor.system.stress)) {
     updateData[`system.stress.value`] = actor.system.stress;
     updateData[`system.stress.max`] = 9;
     updateData[`system.stress.max_default`] = 9;
@@ -141,8 +142,12 @@ function _migrateActor(actor) {
     updateData[`system.stress.name`] = "BITD.Stress";
   }
 
-  // Migrate Trauma to Array
-  if (typeof actor.system.trauma === "undefined") {
+  // Migrate Trauma to Array — same caveat: only applies if the modern
+  // trauma object hasn't been written yet AND the old traumas list exists.
+  if (
+    typeof actor.system.trauma === "undefined" &&
+    Array.isArray(actor.system.traumas)
+  ) {
     updateData[`system.trauma.list`] = actor.system.traumas;
     updateData[`system.trauma.value`] = [actor.system.traumas.length];
     updateData[`system.trauma.max`] = 4;
