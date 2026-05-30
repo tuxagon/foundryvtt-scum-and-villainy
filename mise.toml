@@ -2,36 +2,9 @@
 node = "22.14"
 bun = "latest"
 
-[tasks.lint]
-description = "Lint with biome"
-run = "bunx biome check ."
-
-[tasks.format]
-description = "Format JS with biome and SCSS with prettier"
-run = """
-bunx biome format --write .
-bunx prettier --write '**/*.scss'
-"""
-
-[tasks.test]
-description = "Run vitest once"
-run = "bunx vitest run"
-
-[tasks."test:watch"]
-description = "Run vitest in watch mode"
-run = "bunx vitest"
-
-[tasks.pack]
-description = "Compile packs/_source/<pack> -> packs/<pack> (LevelDB)"
-run = "bun run ./scripts/packs.js pack"
-
-[tasks.unpack]
-description = "Extract packs/<pack> (LevelDB) -> packs/_source/<pack>/*.yaml"
-run = "bun run ./scripts/packs.js unpack"
-
 [tasks.build]
-description = "Build code and styles"
-depends = ["build:code", "build:styles"]
+description = "Build code, styles, and compendium packs"
+depends = ["build:code", "build:styles", "pack"]
 
 [tasks."build:code"]
 description = "Bundle module/sav.js + module/ deps -> dist/scum-and-villainy.compiled.js"
@@ -41,18 +14,49 @@ run = "bun build ./module/sav.js --outdir ./dist --entry-naming scum-and-villain
 description = "Compile styles/index.scss -> dist/styles.compiled.css"
 run = "bunx sass styles/index.scss dist/styles.compiled.css --no-source-map"
 
+[tasks.bump]
+description = "Rewrite system.json.version + download URL. Usage: mise run bump 0.2.0"
+run = "bun run ./scripts/bump.js"
+
+[tasks.format]
+description = "Format JS with biome and SCSS with prettier"
+run = """
+bunx biome format --write .
+bunx prettier --write '**/*.scss'
+"""
+
+[tasks."link:foundry"]
+description = "Symlink Foundry source into ./foundry/ for IDE IntelliSense (reads foundry-config.yaml)"
+run = "bun run ./scripts/link-foundry.js"
+
+[tasks.lint]
+description = "Lint with biome"
+run = "bunx biome check ."
+
+[tasks.pack]
+description = "Compile packs/_source/<pack> -> packs/<pack> (LevelDB)"
+run = "bun run ./scripts/packs.js pack"
+
+[tasks.test]
+description = "Run vitest once"
+run = "bunx vitest run"
+
+[tasks."test:watch"]
+description = "Run vitest in watch mode"
+run = "bunx vitest"
+
+[tasks.unpack]
+description = "Extract packs/<pack> (LevelDB) -> packs/_source/<pack>/*.yaml"
+run = "bun run ./scripts/packs.js unpack"
+
 [tasks.watch]
+description = "Rebuild JS and CSS on every save"
+depends = ["watch:code", "watch:styles"]
+
+[tasks."watch:code"]
 description = "Rebuild JS on every save"
 run = "bun build ./module/sav.js --outdir ./dist --entry-naming scum-and-villainy.compiled.js --target browser --sourcemap --watch"
 
 [tasks."watch:styles"]
 description = "Rebuild CSS on every save"
 run = "bunx sass styles/index.scss dist/styles.compiled.css --no-source-map --watch"
-
-[tasks.bump]
-description = "Rewrite system.json.version + download URL. Usage: mise run bump 0.2.0"
-run = "bun run ./scripts/bump.js"
-
-[tasks."link:foundry"]
-description = "Symlink Foundry source into ./foundry/ for IDE IntelliSense (reads foundry-config.yaml)"
-run = "bun run ./scripts/link-foundry.js"
