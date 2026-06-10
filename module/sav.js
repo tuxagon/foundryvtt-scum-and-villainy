@@ -4,47 +4,55 @@
  * Software License: GNU GPLv3
  */
 
-// Import Modules
-import { registerSystemSettings } from "./settings.js";
-import { preloadHandlebarsTemplates } from "./sav-templates.js";
-import { savRoll, simpleRollPopup } from "./sav-roll.js";
-import { SaVHelpers } from "./sav-helpers.js";
-import { SaVActor } from "./sav-actor.js";
-import { SaVItem } from "./sav-item.js";
-import { SaVItemSheet } from "./sav-item-sheet.js";
-import { SaVActorSheet } from "./sav-actor-sheet.js";
-import { SaVNPCSheet } from "./sav-npc-sheet.js";
-import { SaVShipSheet } from "./sav-ship-sheet.js";
-import { SaVFactionStatusSheet } from "./sav-faction-status-sheet.js";
-import { SaVUniverseSheet } from "./sav-universe-sheet.js";
-import * as migrations from "./migration.js";
-/* For Clocks UI */
-import { SaVClockSheet } from "./sav-clock-sheet.js";
-import ClockTiles from "./sav-clock-tiles.js";
-import ClockSheet from "./sav-clock-sheet.js";
-import { log } from "./sav-clock-util.js";
+import { CLOCK_ACTOR_TYPE } from "./clocks/clocks.js";
 import { registerClockHelper } from "./clocks/sav-clock-helper.js";
 import { registerClockInteractions } from "./clocks/sav-clock-interactions.js";
 import { refreshAllClockSurfaces } from "./clocks/sav-clock-refresh.js";
+import * as migrations from "./migration.js";
+import { SaVActor } from "./sav-actor.js";
+import { SaVActorSheet } from "./sav-actor-sheet.js";
 import { SaVClock } from "./sav-clock.js";
-import { CLOCK_ACTOR_TYPE } from "./clocks/clocks.js";
+/* For Clocks UI */
+import ClockSheet, { SaVClockSheet } from "./sav-clock-sheet.js";
+import ClockTiles from "./sav-clock-tiles.js";
+import { log } from "./sav-clock-util.js";
+import { SaVFactionStatusSheet } from "./sav-faction-status-sheet.js";
+import { SaVHelpers } from "./sav-helpers.js";
+import { SaVItem } from "./sav-item.js";
+import { SaVItemSheet } from "./sav-item-sheet.js";
+import { SaVNPCSheet } from "./sav-npc-sheet.js";
+import { savRoll, simpleRollPopup } from "./sav-roll.js";
+import { SaVShipSheet } from "./sav-ship-sheet.js";
+import { preloadHandlebarsTemplates } from "./sav-templates.js";
+import { SaVUniverseSheet } from "./sav-universe-sheet.js";
+// Import Modules
+import { registerSystemSettings } from "./settings.js";
 
 window.SaVHelpers = SaVHelpers;
 
 /* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
 /* -------------------------------------------- */
-Hooks.once("init", async function() {
+Hooks.once("init", async function () {
   console.log(`Initializing Scum and Villainy System`);
 
   game.sav = {
-    dice: savRoll
-  }
+    dice: savRoll,
+  };
   game.system.savclocks = {
     themes: ["blue", "red", "yellow", "green"],
-    sizes: [ 4, 6, 8, 10, 12 ]
+    sizes: [4, 6, 8, 10, 12],
   };
-  game.system.traumas = [ "cold", "haunted", "obsessed", "paranoid", "reckless", "soft", "unstable", "vicious" ];
+  game.system.traumas = [
+    "cold",
+    "haunted",
+    "obsessed",
+    "paranoid",
+    "reckless",
+    "soft",
+    "unstable",
+    "vicious",
+  ];
 
   CONFIG.Item.documentClass = SaVItem;
   CONFIG.Actor.documentClass = SaVActor;
@@ -56,15 +64,41 @@ Hooks.once("init", async function() {
   registerSystemSettings();
 
   // Register sheet application classes
-  foundry.documents.collections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
-  foundry.documents.collections.Actors.registerSheet("scum-and-villainy", SaVActorSheet, { types: ["character"], makeDefault: true });
-  foundry.documents.collections.Actors.registerSheet("scum-and-villainy", SaVNPCSheet, { types: ["npc"], makeDefault: true });
-  foundry.documents.collections.Actors.registerSheet("scum-and-villainy", SaVShipSheet, { types: ["ship"], makeDefault: true });
-  foundry.documents.collections.Actors.registerSheet("scum-and-villainy", SaVClockSheet, { types: ["\uD83D\uDD5B clock"], makeDefault: true });
-  foundry.documents.collections.Actors.registerSheet("scum-and-villainy", SaVUniverseSheet, { types: ["universe"], makeDefault: true });
-  foundry.documents.collections.Actors.registerSheet("scum-and-villainy", SaVFactionStatusSheet, { types: ["faction-status"], makeDefault: true });
-  foundry.documents.collections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
-  foundry.documents.collections.Items.registerSheet("scum-and-villainy", SaVItemSheet, { makeDefault: true });
+  foundry.documents.collections.Actors.registerSheet(
+    "scum-and-villainy",
+    SaVActorSheet,
+    { types: ["character"], makeDefault: true },
+  );
+  foundry.documents.collections.Actors.registerSheet(
+    "scum-and-villainy",
+    SaVNPCSheet,
+    { types: ["npc"], makeDefault: true },
+  );
+  foundry.documents.collections.Actors.registerSheet(
+    "scum-and-villainy",
+    SaVShipSheet,
+    { types: ["ship"], makeDefault: true },
+  );
+  foundry.documents.collections.Actors.registerSheet(
+    "scum-and-villainy",
+    SaVClockSheet,
+    { types: ["\uD83D\uDD5B clock"], makeDefault: true },
+  );
+  foundry.documents.collections.Actors.registerSheet(
+    "scum-and-villainy",
+    SaVUniverseSheet,
+    { types: ["universe"], makeDefault: true },
+  );
+  foundry.documents.collections.Actors.registerSheet(
+    "scum-and-villainy",
+    SaVFactionStatusSheet,
+    { types: ["faction-status"], makeDefault: true },
+  );
+  foundry.documents.collections.Items.registerSheet(
+    "scum-and-villainy",
+    SaVItemSheet,
+    { makeDefault: true },
+  );
   await preloadHandlebarsTemplates();
 
   Handlebars.registerHelper({
@@ -73,25 +107,26 @@ Hooks.once("init", async function() {
     },
     or() {
       return Array.prototype.slice.call(arguments, 0, -1).some(Boolean);
-    }
+    },
   });
 
   // Multiboxes.
-  Handlebars.registerHelper('multiboxes', function(selected, options) {
-
+  Handlebars.registerHelper("multiboxes", function (selected, options) {
     let html = options.fn(this);
 
     // Fix for single non-array values.
-    if ( !Array.isArray(selected) ) {
+    if (!Array.isArray(selected)) {
       selected = [selected];
     }
 
-    if (typeof selected !== 'undefined') {
-      selected.forEach(selected_value => {
+    if (typeof selected !== "undefined") {
+      selected.forEach((selected_value) => {
         if (selected_value !== false) {
-          const escapedValue = RegExp.escape(Handlebars.escapeExpression(selected_value));
-          const rgx = new RegExp(' value=\"' + escapedValue + '\"');
-          html = html.replace(rgx, "$& checked=\"checked\"");
+          const escapedValue = RegExp.escape(
+            Handlebars.escapeExpression(selected_value),
+          );
+          const rgx = new RegExp(` value="${escapedValue}"`);
+          html = html.replace(rgx, '$& checked="checked"');
         }
       });
     }
@@ -99,9 +134,8 @@ Hooks.once("init", async function() {
   });
 
   // Trauma Counter
-  Handlebars.registerHelper('traumacounter', function(selected, max, options) {
-
-    let html = options.fn(this);
+  Handlebars.registerHelper("traumacounter", function (selected, max, options) {
+    const html = options.fn(this);
 
     let count = 0;
     for (const trauma in selected) {
@@ -112,43 +146,43 @@ Hooks.once("init", async function() {
 
     if (count > max) count = max;
 
-    const rgx = new RegExp(' value=\"' + count + '\"');
-    return html.replace(rgx, "$& checked=\"checked\"");
-
+    const rgx = new RegExp(` value="${count}"`);
+    return html.replace(rgx, '$& checked="checked"');
   });
 
   // NotEquals handlebar.
-  Handlebars.registerHelper('noteq', (a, b, options) => {
-    return (a !== b) ? options.fn(this) : '';
+  Handlebars.registerHelper("noteq", (a, b, options) => {
+    return a !== b ? options.fn(this) : "";
   });
 
   //Case-insensitive comparison
-  Handlebars.registerHelper('caseeq', (a, b) => {
-    return (a.toUpperCase() === b.toUpperCase());
+  Handlebars.registerHelper("caseeq", (a, b) => {
+    return a.toUpperCase() === b.toUpperCase();
   });
 
   //Less than comparison
-  Handlebars.registerHelper('lteq', (a, b) => {
-    return (a <= b);
+  Handlebars.registerHelper("lteq", (a, b) => {
+    return a <= b;
   });
 
   //Less than comparison
-  Handlebars.registerHelper('gteq', (a, b) => {
-    return (a >= b);
+  Handlebars.registerHelper("gteq", (a, b) => {
+    return a >= b;
   });
 
-  Handlebars.registerHelper('oneless', (a) => {
-    return (a - 1);
+  Handlebars.registerHelper("oneless", (a) => {
+    return a - 1;
   });
 
   // FACTION SHEET
   // normalize faction -3 to +3
 
-  Handlebars.registerHelper("normalizeFactionValue", function (factionValue) {
-    return factionValue - 4;
-  });
+  Handlebars.registerHelper(
+    "normalizeFactionValue",
+    (factionValue) => factionValue - 4,
+  );
 
-  Handlebars.registerHelper("romanNumeralTier", function (tierValue) {
+  Handlebars.registerHelper("romanNumeralTier", (tierValue) => {
     var romanNumeral = "X";
     switch (String(tierValue)) {
       case "1":
@@ -170,32 +204,41 @@ Hooks.once("init", async function() {
     return romanNumeral;
   });
 
-  Handlebars.registerHelper('crew_vault_coins', (max_coins, options) => {
-
+  Handlebars.registerHelper("crew_vault_coins", (max_coins, options) => {
     let html = options.fn(this);
     for (let i = 1; i <= max_coins; i++) {
-
-      html += "<input type=\"radio\" id=\"crew-coins-vault-" + i + "\" name=\"data.vault.value\" value=\"" + i + "\"><label for=\"crew-coins-vault-" + i + "\"></label>";
+      html +=
+        '<input type="radio" id="crew-coins-vault-' +
+        i +
+        '" name="data.vault.value" value="' +
+        i +
+        '"><label for="crew-coins-vault-' +
+        i +
+        '"></label>';
     }
 
     return html;
   });
 
-  Handlebars.registerHelper('crew_experience', (options) => {
-
+  Handlebars.registerHelper("crew_experience", (options) => {
     let html = options.fn(this);
     for (let i = 1; i <= 10; i++) {
-
-      html += '<input type="radio" id="crew-experience-' + i + '" name="data.experience" value="' + i + '" dtype="Radio"><label for="crew-experience-' + i + '"></label>';
+      html +=
+        '<input type="radio" id="crew-experience-' +
+        i +
+        '" name="data.experience" value="' +
+        i +
+        '" dtype="Radio"><label for="crew-experience-' +
+        i +
+        '"></label>';
     }
 
     return html;
   });
 
   // Enrich the HTML replace /n with <br>
-  Handlebars.registerHelper('html', (options) => {
-
-    let text = options.hash['text'].replace(/\n/g, "<br />");
+  Handlebars.registerHelper("html", (options) => {
+    const text = options.hash.text.replace(/\n/g, "<br />");
 
     return new Handlebars.SafeString(text);
   });
@@ -207,9 +250,8 @@ Hooks.once("init", async function() {
   // {{#times_from 1 10}}
   //   <span>{{this}}</span>
   // {{/times_from}}
-  Handlebars.registerHelper('times_from', function(start, n, block) {
-
-    let accum = '';
+  Handlebars.registerHelper("times_from", (start, n, block) => {
+    let accum = "";
     for (let i = start; i <= n; ++i) {
       accum += block.fn(i);
     }
@@ -219,12 +261,12 @@ Hooks.once("init", async function() {
   // Concat helper
   // https://gist.github.com/adg29/f312d6fab93652944a8a1026142491b1
   // Usage: (concat 'first 'second')
-  Handlebars.registerHelper('concat', function() {
-    let outStr = '';
-    for(let arg in arguments){
-        if(typeof arguments[arg]!='object'){
-            outStr += arguments[arg];
-        }
+  Handlebars.registerHelper("concat", function () {
+    let outStr = "";
+    for (const arg in arguments) {
+      if (typeof arguments[arg] !== "object") {
+        outStr += arguments[arg];
+      }
     }
     return outStr;
   });
@@ -234,58 +276,59 @@ Hooks.once("init", async function() {
    * Takes label from Selected option instead of just plain value.
    */
 
-  Handlebars.registerHelper('selectOptionsWithLabel', function(choices, options) {
-
-    const localize = options.hash['localize'] ?? false;
-    let selected = options.hash['selected'] ?? null;
-    let blank = options.hash['blank'] || null;
-    selected = selected instanceof Array ? selected.map(String) : [String(selected)];
+  Handlebars.registerHelper("selectOptionsWithLabel", (choices, options) => {
+    const localize = options.hash.localize ?? false;
+    let selected = options.hash.selected ?? null;
+    const blank = options.hash.blank || null;
+    selected = Array.isArray(selected)
+      ? selected.map(String)
+      : [String(selected)];
 
     // Create an option
     const option = (key, object) => {
-      if ( localize ) object.label = game.i18n.localize(object.label);
-      let isSelected = selected.includes(key);
-      html += `<option value="${key}" ${isSelected ? "selected" : ""}>${object.label}</option>`
+      if (localize) object.label = game.i18n.localize(object.label);
+      const isSelected = selected.includes(key);
+      html += `<option value="${key}" ${isSelected ? "selected" : ""}>${object.label}</option>`;
     };
 
     // Create the options
     let html = "";
-    if ( blank ) option("", blank);
-    Object.entries(choices).forEach(e => option(...e));
+    if (blank) option("", blank);
+    Object.entries(choices).forEach((e) => option(...e));
 
     return new Handlebars.SafeString(html);
   });
 
-
   registerClockHelper();
   registerClockInteractions();
 
-  Handlebars.registerHelper('pc', function( string ) {
-    return SaVHelpers.getProperCase( string );
-  });
+  Handlebars.registerHelper("pc", (string) => SaVHelpers.getProperCase(string));
 });
 
 /**
  * Once the entire VTT framework is initialized, check to see if we should perform a data migration
  */
-Hooks.once("ready", async function() {
-
+Hooks.once("ready", async () => {
   game.settings.settings.get("core.notesDisplayToggle").default = true;
 
   // Determine whether a system migration is required
-  const currentVersion = game.settings.get("scum-and-villainy", "systemMigrationVersion");
+  const currentVersion = game.settings.get(
+    "scum-and-villainy",
+    "systemMigrationVersion",
+  );
   const NEEDS_MIGRATION_VERSION = 1.0;
 
-  let needMigration = (currentVersion < NEEDS_MIGRATION_VERSION) || (currentVersion === null);
+  const needMigration =
+    currentVersion < NEEDS_MIGRATION_VERSION || currentVersion === null;
 
   // Perform the migration
-  if ( needMigration && game.user.isGM ) {
-    //migrations.migrateWorld();
+  if (needMigration && game.user.isGM) {
+    await migrations.migrateWorld();
   }
 
   // Rebuild any clock actor/token/tile texture.src that still points at the old WebP assets.
   // refreshAllClockSurfaces is idempotent — it skips updates where src is already correct.
-  if ( game.user.isGM ) {
+  if (game.user.isGM) {
     await refreshAllClockSurfaces();
   }
 });
@@ -295,46 +338,48 @@ Hooks.once("ready", async function() {
  */
 
 // Send Ship resource changes to chat
-Hooks.on("preUpdateActor", (actor, data, options, userId) => {
-  if ( ( actor.type === "ship" ) && ( Object.keys(data)[0] === "system" ) ) {
+Hooks.on("preUpdateActor", (actor, data, _options, _userId) => {
+  if (actor.type === "ship" && Object.keys(data)[0] === "system") {
     let item = Object.keys(data.system)[0];
     let item0, item1;
-    if( item === "systems" ){
+    if (item === "systems") {
       item = Object.keys(data.system.systems)[0];
-      if( Object.keys( data.system.systems[item] )[0] === "damage" ){
-        item = item + ".damage";
+      if (Object.keys(data.system.systems[item])[0] === "damage") {
+        item = `${item}.damage`;
       }
     }
-    if( item === "description" ){ return }
-    let actorName = actor.name;
+    if (item === "description") {
+      return;
+    }
+    const actorName = actor.name;
     let resource, newValue, oldValue;
-    switch ( item ) {
+    switch (item) {
       case "coins":
         resource = game.i18n.localize("BITD.Coin");
-        newValue = parseInt( data.system[item] );
-        oldValue = parseInt( actor.system[item] );
+        newValue = parseInt(data.system[item], 10);
+        oldValue = parseInt(actor.system[item], 10);
         break;
       case "debt":
         resource = game.i18n.localize("BITD.Debt");
-        newValue = parseInt( data.system[item] );
-        oldValue = parseInt( actor.system[item] );
+        newValue = parseInt(data.system[item], 10);
+        oldValue = parseInt(actor.system[item], 10);
         break;
       case "gambits":
         resource = game.i18n.localize("BITD.Gambits");
-        newValue = parseInt( data.system[item].value );
-        oldValue = parseInt( actor.system[item].value );
+        newValue = parseInt(data.system[item].value, 10);
+        oldValue = parseInt(actor.system[item].value, 10);
         break;
       case "crew_experience":
         resource = game.i18n.localize("BITD.PExperience");
-        newValue = parseInt( data.system[item] );
-        oldValue = parseInt( actor.system[item] );
+        newValue = parseInt(data.system[item], 10);
+        oldValue = parseInt(actor.system[item], 10);
         break;
       case "upkeep.damage":
-        item0 = item.split('.')[0];
-        item1 = item.split('.')[1];
+        item0 = item.split(".")[0];
+        item1 = item.split(".")[1];
         resource = game.i18n.localize("BITD.SystemsSkips");
-        newValue = parseInt( data.system.systems[item0][item1] );
-        oldValue = parseInt( actor.system.systems[item0][item1] );
+        newValue = parseInt(data.system.systems[item0][item1], 10);
+        oldValue = parseInt(actor.system.systems[item0][item1], 10);
         break;
       case "crew":
       case "engines":
@@ -343,9 +388,11 @@ Hooks.on("preUpdateActor", (actor, data, options, userId) => {
       case "weapons":
       case "shields":
       case "encryptor":
-        resource = game.i18n.localize("BITD.Systems" + SaVHelpers.getProperCase( item ) + "Short" );
-        newValue = parseInt( data.system.systems[item].value );
-        oldValue = parseInt( actor.system.systems[item].value );
+        resource = game.i18n.localize(
+          `BITD.Systems${SaVHelpers.getProperCase(item)}Short`,
+        );
+        newValue = parseInt(data.system.systems[item].value, 10);
+        oldValue = parseInt(actor.system.systems[item].value, 10);
         break;
       case "engines.damage":
       case "hull.damage":
@@ -353,35 +400,43 @@ Hooks.on("preUpdateActor", (actor, data, options, userId) => {
       case "weapons.damage":
       case "shields.damage":
       case "encryptor.damage":
-        item0 = item.split('.')[0];
-        item1 = item.split('.')[1];
-        resource = game.i18n.localize("BITD.Systems" + SaVHelpers.getProperCase( item0 ) + "Short" ) + " " + game.i18n.localize("BITD.SystemsDamage");
-        newValue = parseInt( data.system.systems[item0][item1] );
-        oldValue = parseInt( actor.system.systems[item0][item1] );
+        item0 = item.split(".")[0];
+        item1 = item.split(".")[1];
+        resource =
+          game.i18n.localize(
+            `BITD.Systems${SaVHelpers.getProperCase(item0)}Short`,
+          ) +
+          " " +
+          game.i18n.localize("BITD.SystemsDamage");
+        newValue = parseInt(data.system.systems[item0][item1], 10);
+        oldValue = parseInt(actor.system.systems[item0][item1], 10);
         break;
       default:
         console.log(item, newValue, oldValue);
         break;
     }
-    if ( item !== undefined && game.settings.get("scum-and-villainy", "logResourceToChat") ) {
-      SaVHelpers.chatNotify( actorName, resource, oldValue, newValue );
+    if (
+      item !== undefined &&
+      game.settings.get("scum-and-villainy", "logResourceToChat")
+    ) {
+      SaVHelpers.chatNotify(actorName, resource, oldValue, newValue);
     }
   }
 });
 
-Hooks.on("preUpdateItem", (item, data, options, userId) => {
-  if( data.system !== undefined ){
-    if( Object.keys( data.system )[0] === "is_damaged" ) {
-      let actorName = item.actor.name;
-      let itemName = item.name;
+Hooks.on("preUpdateItem", (item, data, _options, _userId) => {
+  if (data.system !== undefined) {
+    if (Object.keys(data.system)[0] === "is_damaged") {
+      const actorName = item.actor.name;
+      const itemName = item.name;
       let resource;
-      if( data.system.is_damaged === 1 ) {
-        resource = itemName + " " + game.i18n.localize( "BITD.ItemDamaged" );
+      if (data.system.is_damaged === 1) {
+        resource = `${itemName} ${game.i18n.localize("BITD.ItemDamaged")}`;
       } else {
-        resource = itemName + " " + game.i18n.localize( "BITD.ItemRepaired" );
+        resource = `${itemName} ${game.i18n.localize("BITD.ItemRepaired")}`;
       }
-      if( game.settings.get( "scum-and-villainy", "logResourceToChat" ) ) {
-        SaVHelpers.chatNotifyString( actorName, resource );
+      if (game.settings.get("scum-and-villainy", "logResourceToChat")) {
+        SaVHelpers.chatNotifyString(actorName, resource);
       }
     }
   }
@@ -398,7 +453,7 @@ Hooks.on("getSceneControlButtons", async (controls) => {
     title: "Dice Roller",
     icon: "fas fa-dice",
     onChange: () => simpleRollPopup(),
-    button: true
+    button: true,
   };
   await ClockTiles.getSceneControlButtons(controls);
 });
@@ -408,11 +463,11 @@ Hooks.on("renderTileHUD", async (hud, html, tile) => {
 });
 
 Hooks.on("renderTokenHUD", async (hud, html, token) => {
-  let rootElement = document.getElementsByClassName('vtt game')[0];
-  if( await ClockSheet.renderTokenHUD(hud, html, token) ) {
-    rootElement.classList.add('hide-ui');
+  const rootElement = document.getElementsByClassName("vtt game")[0];
+  if (await ClockSheet.renderTokenHUD(hud, html, token)) {
+    rootElement.classList.add("hide-ui");
   } else {
-    rootElement.classList.remove('hide-ui');
+    rootElement.classList.remove("hide-ui");
   }
 });
 
@@ -427,7 +482,8 @@ Hooks.on("updateActor", async (actor, changes, _options, userId) => {
 
   const actorUpdates = {};
   if (actor.img !== src) actorUpdates.img = src;
-  if (actor.prototypeToken?.texture?.src !== src) actorUpdates["prototypeToken.texture.src"] = src;
+  if (actor.prototypeToken?.texture?.src !== src)
+    actorUpdates["prototypeToken.texture.src"] = src;
   if (Object.keys(actorUpdates).length) {
     await actor.update(actorUpdates);
   }
@@ -441,7 +497,10 @@ Hooks.on("updateActor", async (actor, changes, _options, userId) => {
         tokenUpdates.push({ _id: tokenDoc.id, texture: { src } });
       }
       if (tokenUpdates.length) {
-        await scene.updateEmbeddedDocuments("Token", tokenUpdates, { animate: false, animation: { duration: 0 } });
+        await scene.updateEmbeddedDocuments("Token", tokenUpdates, {
+          animate: false,
+          animation: { duration: 0 },
+        });
       }
     }
   }
@@ -461,15 +520,15 @@ Hooks.on("createActor", async (actor, _options, userId) => {
         clocks: {
           theme: clock.theme,
           size: clock.size,
-          progress: clock.progress
-        }
-      }
-    }
+          progress: clock.progress,
+        },
+      },
+    },
   });
 });
 
 Hooks.on("dropCanvasData", async (canvas, data) => {
-  if( data.type === "Item" ){
-    await SaVHelpers.createTile( canvas, data );
+  if (data.type === "Item") {
+    await SaVHelpers.createTile(canvas, data);
   }
 });

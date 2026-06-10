@@ -1,0 +1,98 @@
+_id: 2ASCFbSQJc4sznsv
+name: Stitch
+type: class
+img: systems/scum-and-villainy/styles/assets/icons/Icon.7_84.png
+system:
+  description: Spacefaring healer or scientist
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  def_abilities: (St) I'm a Doctor Not a..., Jackev, Alben, Ditha, Juda, Lynie
+  experience_clues: You addressed a tough challenge with insight or compassion.
+effects:
+  - _id: t5sFbdJBW9rICMoG
+    changes:
+      - key: system.character_class
+        mode: 5
+        value: Stitch
+        priority: null
+      - key: system.attributes.insight.skills.doctor.min
+        mode: 2
+        value: '2'
+        priority: null
+      - key: system.attributes.insight.skills.study.min
+        mode: 2
+        value: '1'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Item.sTF5ugs5QFWOBxvh
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: 1719614824453
+      lastModifiedBy: soXq28xXIcGBjPmX
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Stitch class
+    img: systems/scum-and-villainy/styles/assets/icons/Icon.7_84.png
+    type: base
+    system: {}
+    description: ''
+    statuses: []
+    sort: 0
+    _key: '!items.effects!2ASCFbSQJc4sznsv.t5sFbdJBW9rICMoG'
+folder: null
+sort: 0
+flags:
+  core: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: Compendium.scum-and-villainy.class.1Ly6nRUcjZsH7n6E
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  0qXppfGRqIVi7Lgc: 3
+_key: '!items!2ASCFbSQJc4sznsv'

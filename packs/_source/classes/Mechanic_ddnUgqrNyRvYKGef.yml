@@ -1,0 +1,98 @@
+_id: ddnUgqrNyRvYKGef
+name: Mechanic
+type: class
+img: systems/scum-and-villainy/styles/assets/icons/Icon.3_89.png
+system:
+  description: A gearhead and hacker
+  visible: true
+  logic: ''
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    width: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  uses:
+    value: 0
+    max: 0
+    per: null
+  consume:
+    type: ''
+    target: null
+    amount: null
+  def_abilities: (Me) Tinker, Slice, Nisa, Stev, Len, Kenn
+  experience_clues: You addressed a tough challenge with technical skill or ingenuity.
+effects:
+  - _id: VUiPnhHXZ2qBzXuv
+    changes:
+      - key: system.character_class
+        mode: 5
+        value: Mechanic
+        priority: null
+      - key: system.attributes.insight.skills.rig.min
+        mode: 2
+        value: '2'
+        priority: null
+      - key: system.attributes.insight.skills.study.min
+        mode: 2
+        value: '1'
+        priority: null
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: Item.hfCwbyEETFJHvFTq
+    transfer: true
+    flags: {}
+    tint: '#ffffff'
+    _stats:
+      coreVersion: '13.341'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: 1719614477637
+      lastModifiedBy: soXq28xXIcGBjPmX
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    name: Mechanic class
+    img: systems/scum-and-villainy/styles/assets/icons/Icon.3_89.png
+    type: base
+    system: {}
+    description: ''
+    statuses: []
+    sort: 0
+    _key: '!items.effects!ddnUgqrNyRvYKGef.VUiPnhHXZ2qBzXuv'
+folder: null
+sort: 0
+flags:
+  core: {}
+_stats:
+  coreVersion: '13.341'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: Compendium.scum-and-villainy.class.jYEumqd1vBm5pwQv
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  0qXppfGRqIVi7Lgc: 3
+_key: '!items!ddnUgqrNyRvYKGef'

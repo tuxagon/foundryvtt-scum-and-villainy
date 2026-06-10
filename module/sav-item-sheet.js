@@ -1,68 +1,63 @@
-/**
- * Extend the basic ItemSheet
- * @extends {ItemSheet}
- */
+import { prepareActiveEffectCategories } from "./effects.js";
 
-import {onManageActiveEffect, prepareActiveEffectCategories} from "./effects.js";
+const { HandlebarsApplicationMixin } = foundry.applications.api;
+const { ItemSheetV2 } = foundry.applications.sheets;
 
-export class SaVItemSheet extends foundry.appv1.sheets.ItemSheet {
+const SIMPLE_TYPES = new Set([
+  "background",
+  "heritage",
+  "vice",
+  "crew_reputation",
+  "ship_size",
+]);
 
-  /** @override */
-	static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-			classes: ["scum-and-villainy", "sheet", "item"],
-			width: 900,
-			height: 'auto',
-      tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description"}]
-		});
+export class SaVItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
+  static DEFAULT_OPTIONS = {
+    classes: ["scum-and-villainy", "sheet", "item"],
+    position: { width: 900, height: 700 },
+    window: { resizable: true },
+    form: { submitOnChange: true, closeOnSubmit: false },
+    actions: {},
+  };
+
+  static PARTS = {
+    body: { template: "" },
+  };
+
+  _configureRenderParts(_options) {
+    const parts = foundry.utils.deepClone(this.constructor.PARTS);
+    const key = SIMPLE_TYPES.has(this.item.type) ? "simple" : this.item.type;
+    parts.body.template = `systems/scum-and-villainy/templates/items/${key}.html`;
+    return parts;
   }
 
-  /* -------------------------------------------- */
-
-/** @override */
-  async getData(options) {
-    const superData = super.getData( options );
-    const sheetData = superData.data;
-
-    sheetData.isGM = game.user.isGM;
-    sheetData.owner = superData.owner;
-    sheetData.editable = superData.editable;
-
-    // Prepare Active Effects
-    sheetData.effects = prepareActiveEffectCategories(this.document.effects);
-    sheetData.system.notables = await foundry.applications.ux.TextEditor.implementation.enrichHTML(sheetData.system.notables, {secrets: sheetData.owner, async: true});
-    sheetData.system.description = await foundry.applications.ux.TextEditor.implementation.enrichHTML(sheetData.system.description, {secrets: sheetData.owner, async: true});
-
-		return sheetData;
-  }
-
-  /** @override */
-  get template() {
-    const path = "systems/scum-and-villainy/templates/items";
-    let simple_item_types = ["background", "heritage", "vice", "crew_reputation", "ship_size"];
-    let template_name = `${this.item.type}`;
-
-    if (simple_item_types.indexOf(this.item.type) >= 0) {
-      template_name = "simple";
+  async _prepareContext(options) {
+    const context = await super._prepareContext(options);
+    context.system = this.item.system;
+    context.item = this.item;
+    context.owner = this.item.isOwner;
+    context.editable = this.isEditable;
+    context.isGM = game.user.isGM;
+    context.effects = prepareActiveEffectCategories(this.document.effects);
+    context.enrichedDescription =
+      await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+        context.system.description ?? "",
+        { secrets: context.owner },
+      );
+    if (context.system.notables !== undefined) {
+      context.enrichedNotables =
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+          context.system.notables ?? "",
+          { secrets: context.owner },
+        );
     }
-
-		return `${path}/${template_name}.html`;
+    if (context.system.experience_clues !== undefined) {
+      context.enrichedExperienceClues =
+        await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+          context.system.experience_clues ?? "",
+          { secrets: context.owner },
+        );
+    }
+    return context;
   }
-
-  /* -------------------------------------------- */
-
-  /** @override */
-	activateListeners(html) {
-    super.activateListeners(html);
-
-    // Everything below here is only needed if the sheet is editable
-    if (!this.options.editable) return;
-
-    html.find(".effect-control").click(ev => {
-      if ( this.item.isOwned ) return ui.notifications.warn(game.i18n.localize("BITD.EffectWarning"))
-      onManageActiveEffect(ev, this.item)
-    });
-  }
-
-  /* -------------------------------------------- */
 }

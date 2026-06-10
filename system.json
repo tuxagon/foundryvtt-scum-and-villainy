@@ -11,29 +11,64 @@
       "name": "megastruktur"
     }
   ],
-  "url": "#{URL}#",
+  "url": "https://github.com/tuxagon/foundryvtt-scum-and-villainy",
   "flags": {
     "hotReload": {
-      "extensions": ["css", "html", "json", "js"],
-      "paths": ["dist", "templates", "lang", "styles"]
+      "extensions": [
+        "css",
+        "html",
+        "json",
+        "js"
+      ],
+      "paths": [
+        "dist",
+        "templates",
+        "lang",
+        "styles"
+      ]
     }
   },
-  "version": "#{VERSION}#",
+  "version": "5.0.0",
   "compatibility": {
-    "minimum": 13,
-    "verified": 13.344
+    "minimum": "13",
+    "verified": "14"
   },
   "socket": false,
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
+  "manifest": "https://github.com/tuxagon/foundryvtt-scum-and-villainy/releases/latest/download/system.json",
+  "download": "https://github.com/tuxagon/foundryvtt-scum-and-villainy/releases/download/release-5.0.0/scum-and-villainy-release-5.0.0.zip",
   "protected": false,
   "esmodules": [
     "dist/scum-and-villainy.compiled.js"
   ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {},
+      "ship": {},
+      "🕛 clock": {},
+      "universe": {},
+      "faction-status": {}
+    },
+    "Item": {
+      "item": {},
+      "class": {},
+      "ability": {},
+      "heritage": {},
+      "background": {},
+      "vice": {},
+      "crew_type": {},
+      "crew_reputation": {},
+      "crew_upgrade": {},
+      "crew_ability": {},
+      "star_system": {},
+      "planet": {},
+      "faction": {},
+      "ship_size": {},
+      "friend": {}
+    }
+  },
   "styles": [
-    "styles/sav.css",
-    "styles/hide-ui.css",
-    "styles/clocks-svg.css"
+    "dist/styles.compiled.css"
   ],
   "languages": [
     {

@@ -2,112 +2,127 @@ import { buildClockDataUrl } from "./clocks/sav-clock-image.js";
 
 const nextIndexInArray = (arr, el) => {
   const idx = arr.indexOf(el);
-  return (idx < 0 || idx >= arr.length) ? 0 : idx + 1;
-}
+  return idx < 0 || idx >= arr.length ? 0 : idx + 1;
+};
 
 export class SaVClock {
-  static get sizes () {
-      return game.system.savclocks.sizes;
+  static get sizes() {
+    return game.system.savclocks.sizes;
   }
 
-  static get themes () {
-	  const default_t = game.system.savclocks.themes[ game.settings.get( "scum-and-villainy", "defaultClockTheme" ) ];
-	  let curr_t = game.system.savclocks.themes;
+  static get themes() {
+    const default_t =
+      game.system.savclocks.themes[
+        game.settings.get("scum-and-villainy", "defaultClockTheme")
+      ];
+    let curr_t = game.system.savclocks.themes;
 
-	  if ( curr_t.indexOf( default_t ) !== 0 ) {
-		  curr_t = curr_t.filter( x => x !== default_t );
-	  	curr_t.unshift( default_t );
-	  }
+    if (curr_t.indexOf(default_t) !== 0) {
+      curr_t = curr_t.filter((x) => x !== default_t);
+      curr_t.unshift(default_t);
+    }
 
-	  return curr_t;
+    return curr_t;
   }
 
-  constructor ({ theme, size, progress } = {}) {
-    const isSupportedSize = size && SaVClock.sizes.indexOf(parseInt(size)) >= 0;
-    this._size = isSupportedSize ? parseInt(size) : SaVClock.sizes[0];
+  constructor({ theme, size, progress } = {}) {
+    const isSupportedSize =
+      size && SaVClock.sizes.indexOf(parseInt(size, 10)) >= 0;
+    this._size = isSupportedSize ? parseInt(size, 10) : SaVClock.sizes[0];
 
-    const p = (!progress || progress < 0) ? 0 : progress < this._size ? progress : this._size;
+    const p =
+      !progress || progress < 0
+        ? 0
+        : progress < this._size
+          ? progress
+          : this._size;
     this._progress = p || 0;
 
     this._theme = theme || SaVClock.themes[0];
   }
 
-  get theme () {
+  get theme() {
     return this._theme;
   }
 
-  get size () {
+  get size() {
     return this._size;
   }
 
-  get progress () {
+  get progress() {
     return this._progress;
   }
 
-  get image () {
+  get image() {
     return {
-      texture: { src: buildClockDataUrl({ theme: this.theme, size: this.size, progress: this.progress }) },
+      texture: {
+        src: buildClockDataUrl({
+          theme: this.theme,
+          size: this.size,
+          progress: this.progress,
+        }),
+      },
       widthTile: 200,
       heightTile: 200,
-	    widthSheet: 350,
-	    heightSheet: 350
+      widthSheet: 350,
+      heightSheet: 350,
     };
   }
 
-  get flags () {
+  get flags() {
     return {
       "scum-and-villainy": {
-	    clocks: {
+        clocks: {
           theme: this._theme,
           size: this._size,
-          progress: this._progress
-        }
-	  }
+          progress: this._progress,
+        },
+      },
     };
   }
 
-  cycleSize () {
+  cycleSize() {
     return new SaVClock({
       theme: this.theme,
       size: SaVClock.sizes[nextIndexInArray(SaVClock.sizes, this.size)],
-      progress: this.progress
+      progress: this.progress,
     });
   }
 
-  cycleTheme () {
+  cycleTheme() {
     return new SaVClock({
       theme: SaVClock.themes[nextIndexInArray(SaVClock.themes, this.theme)],
       size: this.size,
-      progress: this.progress
+      progress: this.progress,
     });
   }
 
-  increment () {
-    const old = this;
+  increment() {
     return new SaVClock({
-      theme: old.theme,
-      size: old.size,
-      progress: old.progress + 1
+      theme: this.theme,
+      size: this.size,
+      progress: this.progress + 1,
     });
   }
 
-  decrement () {
-    const old = this;
+  decrement() {
     return new SaVClock({
-      theme: old.theme,
-      size: old.size,
-      progress: old.progress - 1
+      theme: this.theme,
+      size: this.size,
+      progress: this.progress - 1,
     });
   }
 
-  isEqual (clock) {
-    return clock
-      && clock._progress === this._progress
-      && clock._size === this._size
-      && clock._theme === this._theme;
+  isEqual(clock) {
+    return (
+      clock &&
+      clock._progress === this._progress &&
+      clock._size === this._size &&
+      clock._theme === this._theme
+    );
   }
 
-  toString () {
+  toString() {
     return `${this._progress}/${this._size} • ${this._theme}`;
   }
 }

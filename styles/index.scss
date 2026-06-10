@@ -1,0 +1,180 @@
+/*
+ * Compiled to dist/styles.compiled.css, loaded alongside the legacy
+ * styles/sav.css during the v1→V2 transition. Migration in progress —
+ * sav.css will be retired once parity is reached.
+ */
+
+@use "hide-ui";
+@use "clocks-svg";
+@use "legacy";
+
+.scum-and-villainy {
+  .window-content {
+    background:
+      linear-gradient(rgba(216, 227, 230, 0.75), rgba(121, 129, 130, 0.75)),
+      url("../styles/assets/brushed_metal.jpg") repeat;
+    color: var(--color-dark-2);
+    overflow: hidden auto;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--color-dark-2);
+    }
+  }
+
+  // Shared layout/styling across V2 sheets. As more sheets port, add their
+  // type class here. (Avoids applying to v1 sheets that still carry
+  // .scum-and-villainy but render the old DOM.)
+  &.npc,
+  &.item,
+  &.clock,
+  &.universe,
+  &.faction-status,
+  &.ship,
+  &.character {
+    .sheet-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+
+      img {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border: none;
+        flex: 0 0 48px;
+      }
+
+      .header-fields {
+        flex: 1;
+      }
+
+      h1.charname {
+        margin: 0;
+        border-bottom: none;
+
+        input {
+          width: 100%;
+          background: transparent;
+          border: none;
+          color: var(--color-dark-2);
+          font-size: var(--font-size-24);
+          height: auto;
+        }
+      }
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      background: rgba(255, 255, 255, 0.5);
+      color: var(--color-dark-2);
+      border-color: var(--color-dark-4);
+    }
+
+    input[type="checkbox"] {
+      --checkbox-background-color: rgba(255, 255, 255, 0.5);
+      --checkbox-checked-color: var(--color-dark-2);
+    }
+
+    table {
+      background: transparent;
+    }
+
+    // Hide inactive tab content. V2 wires the `.active` class on the
+    // currently-selected tab via _prepareTabs/changeTab.
+    .tab:not(.active) {
+      display: none;
+    }
+
+    // V14 defaults tab text to the warm "emphatic" hue (a light yellow).
+    // Override to the dark heading color for legibility on brushed metal.
+    nav.tabs [data-tab] {
+      color: var(--color-dark-4);
+    }
+    nav.tabs [data-tab]:hover {
+      color: var(--color-dark-2);
+      text-shadow: none;
+    }
+    nav.tabs [data-tab].active {
+      color: var(--color-dark-2);
+      text-shadow: none;
+      font-weight: bold;
+    }
+
+    prose-mirror {
+      &:hover button.toggle:enabled {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &.ship {
+    // Each item row: item-body fills available space, controls sit right.
+    // Inner item-body packs image + name + description from the left.
+    .tab .item.flex-horizontal > .item-body {
+      flex: 1;
+      justify-content: flex-start;
+      gap: 8px;
+    }
+
+    // Override legacy `#abilities .item-description { width: 300px }` etc.
+    // so the description fills the remaining width of item-body.
+    .tab .item.flex-horizontal > .item-body > .item-description {
+      width: auto;
+      flex: 1;
+    }
+
+    .tab .item.flex-horizontal > .item-control {
+      flex: 0 0 auto;
+    }
+
+    // .friend-tracker is a flex row of [status radios] + [.item.flex-horizontal].
+    // Make the item row grow so its inner item-body+controls layout fills the
+    // remaining width, matching the other tabs.
+    .tab .friend-tracker > .item.flex-horizontal {
+      flex: 1;
+    }
+  }
+
+  &.faction-status {
+    // Dark control color so caret arrows show on the brushed-metal background
+    // (v1 used #c1c1c1 which disappears against this background).
+    .fs-control {
+      color: var(--color-dark-2);
+    }
+
+    // Center the arrow controls horizontally above/below the value (v1's
+    // `justify-content: left` is meaningless for column flex).
+    .fs-control-arrows {
+      align-items: center;
+    }
+
+    // "Neutral" status reuses --fs-neutral which is a light gray; override
+    // to a readable dark variant against the brushed-metal background.
+    --fs-neutral: hsl(0, 0%, 30%);
+  }
+
+  &.clock {
+    .clock-name input {
+      font-size: var(--font-size-24);
+      height: auto;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--color-dark-2);
+      width: 100%;
+    }
+
+    .clock-name.editable input:hover,
+    .clock-name.editable input:focus {
+      border: 1px solid var(--color-dark-2);
+    }
+  }
+}

@@ -1,8 +1,8 @@
-<form class="{{cssClass}}" autocomplete="off">
+<div>
   <header class="sheet-header">
-      <img src="{{img}}" data-edit="img" title="{{name}}"/>
+      <img src="{{item.img}}" data-edit="img" data-action="editImage" title="{{item.name}}"/>
       <div class="header-fields">
-          <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="{{localize 'BITD.Faction'}}"/></h1>
+          <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'BITD.Faction'}}"/></h1>
       </div>
   </header>
 
@@ -28,12 +28,12 @@
           <div class="flex-vertical" id="faction-goal-clock">
             <div id="faction-clock">
               {{#if (gt system.status.value 4)}}
-                {{{sav-clock "system.goal_clock.value" system.goal_clock.max system.goal_clock.value id "blue"}}}
+                {{{sav-clock "system.goal_clock.value" system.goal_clock.max system.goal_clock.value item.id "blue"}}}
               {{else}}
                 {{#if (lt system.status.value 4)}}
-                  {{{sav-clock "system.goal_clock.value" system.goal_clock.max system.goal_clock.value id "red"}}}
+                  {{{sav-clock "system.goal_clock.value" system.goal_clock.max system.goal_clock.value item.id "red"}}}
                 {{else}}
-                  {{{sav-clock "system.goal_clock.value" system.goal_clock.max system.goal_clock.value id "yellow"}}}
+                  {{{sav-clock "system.goal_clock.value" system.goal_clock.max system.goal_clock.value item.id "yellow"}}}
                 {{/if}}
               {{/if}}
             </div>
@@ -53,7 +53,7 @@
 
     <div class="flex-vertical">
       <div class="label-stripe">{{localize "BITD.NotableNPCs"}}</div>
-      {{{editor system.notables target="system.notables" engine="prosemirror" button=true owner=owner editable=editable}}}
+      <prose-mirror name="system.notables" value="{{system.notables}}" toggled{{#unless editable}} disabled{{/unless}}>{{{enrichedNotables}}}</prose-mirror>
     </div>
 
     <div class="flex-horizontal">
@@ -85,4 +85,4 @@
     <textarea rows="10" name="system.situation">{{system.situation}}</textarea>
 
   </section>
-</form>
+</div>

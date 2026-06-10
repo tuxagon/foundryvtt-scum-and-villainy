@@ -1,5 +1,5 @@
-import { compilePack, extractPack } from "@foundryvtt/foundryvtt-cli";
 import { readdir } from "node:fs/promises";
+import { compilePack, extractPack } from "@foundryvtt/foundryvtt-cli";
 
 const SRC = "packs/_source";
 const DEST = "packs";

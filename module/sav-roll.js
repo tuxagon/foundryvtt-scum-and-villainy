@@ -7,18 +7,37 @@
  * @param {string} purpose
  * @param {string} speaker_name
  */
-export async function savRoll(dice_amount, attribute_name = "", position = "risky", effect = "standard", purpose = "", speaker_name = "") {
-
+export async function savRoll(
+  dice_amount,
+  attribute_name = "",
+  position = "risky",
+  effect = "standard",
+  purpose = "",
+  speaker_name = "",
+) {
   let zeromode = false;
 
-  if ( dice_amount < 0 ) { dice_amount = 0; }
-  if ( dice_amount === 0 ) { zeromode = true; dice_amount = 2; }
+  if (dice_amount < 0) {
+    dice_amount = 0;
+  }
+  if (dice_amount === 0) {
+    zeromode = true;
+    dice_amount = 2;
+  }
 
-  let r = new Roll( `${dice_amount}d6`, {} );
+  const r = new Roll(`${dice_amount}d6`, {});
 
   await r.evaluate();
 
-  await showChatRollMessage( r, zeromode, attribute_name, position, effect, purpose, speaker_name );
+  await showChatRollMessage(
+    r,
+    zeromode,
+    attribute_name,
+    position,
+    effect,
+    purpose,
+    speaker_name,
+  );
 }
 
 /**
@@ -32,19 +51,28 @@ export async function savRoll(dice_amount, attribute_name = "", position = "risk
  * @param {string} purpose
  * @param {string} speaker_name
  */
-async function showChatRollMessage(r, zeromode, attribute_name = "", position = "", effect = "", purpose = "", speaker_name = "") {
-
-  let speaker = ChatMessage.getSpeaker();
-  if( speaker_name ) { speaker.alias = speaker_name }
-  let rolls = (r.terms)[0].results;
-  let method = {};
-  method.type = (r.terms)[0].method;
-  if( method.type ) {
+async function showChatRollMessage(
+  r,
+  zeromode,
+  attribute_name = "",
+  position = "",
+  effect = "",
+  purpose = "",
+  speaker_name = "",
+) {
+  const speaker = ChatMessage.getSpeaker();
+  if (speaker_name) {
+    speaker.alias = speaker_name;
+  }
+  const rolls = r.terms[0].results;
+  const method = {};
+  method.type = r.terms[0].method;
+  if (method.type) {
     method.icon = CONFIG.Dice.fulfillment.methods[method.type].icon;
     method.label = CONFIG.Dice.fulfillment.methods[method.type].label;
   }
   let attribute_label;
-  if( attribute_name === "fortune"){
+  if (attribute_name === "fortune") {
     attribute_label = game.i18n.localize("BITD.Fortune");
   } else {
     attribute_label = SaVHelpers.getAttributeLabel(attribute_name);
@@ -53,64 +81,77 @@ async function showChatRollMessage(r, zeromode, attribute_name = "", position = 
   // Retrieve Roll status.
   let roll_status;
   const att_obj = game.model.Actor.character.attributes;
-  const resistance_rolls = Object.keys( att_obj );
+  const resistance_rolls = Object.keys(att_obj);
   let stress_result = 0;
   let stress_result_display = 0;
   let vice_result = 0;
 
-
-  if ( attribute_name === "fortune" ) {
-	  roll_status = getSaVFortuneRollStatus(rolls, zeromode);
-  } else if ( resistance_rolls.includes( attribute_name ) ) {
-	  [ roll_status, stress_result ] = getSaVResistRollStatus(rolls, zeromode);
-	  stress_result_display = ( 6 - stress_result );
-	  position = "";
-	  effect = "";
-  } else if ( attribute_name === "vice" ) {
-	  [ roll_status, vice_result ] = getSaVViceRollStatus(rolls, zeromode);
-	  position = "";
-	  effect = "";
-  } else if ( attribute_name === "upkeep" ) {
-	  roll_status = getSaVUpkeepRollStatus(rolls, zeromode);
-	  position = "";
-	  effect = "";
+  if (attribute_name === "fortune") {
+    roll_status = getSaVFortuneRollStatus(rolls, zeromode);
+  } else if (resistance_rolls.includes(attribute_name)) {
+    [roll_status, stress_result] = getSaVResistRollStatus(rolls, zeromode);
+    stress_result_display = 6 - stress_result;
+    position = "";
+    effect = "";
+  } else if (attribute_name === "vice") {
+    [roll_status, vice_result] = getSaVViceRollStatus(rolls, zeromode);
+    position = "";
+    effect = "";
+  } else if (attribute_name === "upkeep") {
+    roll_status = getSaVUpkeepRollStatus(rolls, zeromode);
+    position = "";
+    effect = "";
   } else {
-	  roll_status = getSaVActionRollStatus(rolls, zeromode);
+    roll_status = getSaVActionRollStatus(rolls, zeromode);
   }
 
   let position_localize;
   switch (position) {
-    case 'controlled':
-      position_localize = 'BITD.PositionControlled'
+    case "controlled":
+      position_localize = "BITD.PositionControlled";
       break;
-    case 'desperate':
-      position_localize = 'BITD.PositionDesperate'
+    case "desperate":
+      position_localize = "BITD.PositionDesperate";
       break;
-    case 'risky':
     default:
-      position_localize = 'BITD.PositionRisky'
+      position_localize = "BITD.PositionRisky";
   }
 
   let effect_localize;
   switch (effect) {
-    case 'limited':
-      effect_localize = 'BITD.EffectLimited'
+    case "limited":
+      effect_localize = "BITD.EffectLimited";
       break;
-    case 'great':
-      effect_localize = 'BITD.EffectGreat'
+    case "great":
+      effect_localize = "BITD.EffectGreat";
       break;
-    case 'standard':
     default:
-      effect_localize = 'BITD.EffectStandard'
+      effect_localize = "BITD.EffectStandard";
   }
 
-  let result = await foundry.applications.handlebars.renderTemplate("systems/scum-and-villainy/templates/sav-roll.html", {rolls: rolls, method: method, roll_status: roll_status, attribute_label: attribute_label, position: position, position_localize: position_localize, effect: effect, effect_localize: effect_localize, stress_result_display: stress_result_display, vice_result: vice_result, zeromode: zeromode, purpose: purpose});
+  const result = await foundry.applications.handlebars.renderTemplate(
+    "systems/scum-and-villainy/templates/sav-roll.html",
+    {
+      rolls: rolls,
+      method: method,
+      roll_status: roll_status,
+      attribute_label: attribute_label,
+      position: position,
+      position_localize: position_localize,
+      effect: effect,
+      effect_localize: effect_localize,
+      stress_result_display: stress_result_display,
+      vice_result: vice_result,
+      zeromode: zeromode,
+      purpose: purpose,
+    },
+  );
 
-  let messageData = {
+  const messageData = {
     speaker: speaker,
     content: result,
-    rolls: [r]
-  }
+    rolls: [r],
+  };
 
   await ChatMessage.create(messageData);
 }
@@ -125,9 +166,8 @@ async function showChatRollMessage(r, zeromode, attribute_name = "", position = 
  * @param {Boolean} zeromode
  */
 export function getSaVActionRollStatus(rolls, zeromode = false) {
-
   // Sort roll values from lowest to highest.
-  let sorted_rolls = rolls.map(i => i.result).sort();
+  const sorted_rolls = rolls.map((i) => i.result).sort();
 
   let roll_status;
   let use_die;
@@ -138,7 +178,7 @@ export function getSaVActionRollStatus(rolls, zeromode = false) {
   } else {
     use_die = sorted_rolls[sorted_rolls.length - 1];
     if (sorted_rolls.length - 2 >= 0) {
-      prev_use_die = sorted_rolls[sorted_rolls.length - 2]
+      prev_use_die = sorted_rolls[sorted_rolls.length - 2];
     }
   }
 
@@ -151,7 +191,7 @@ export function getSaVActionRollStatus(rolls, zeromode = false) {
     if (prev_use_die && prev_use_die === 6) {
       roll_status = "critical-success";
     } else {
-    // 6 - success
+      // 6 - success
       roll_status = "success";
     }
   } else {
@@ -163,9 +203,8 @@ export function getSaVActionRollStatus(rolls, zeromode = false) {
 }
 
 export function getSaVFortuneRollStatus(rolls, zeromode = false) {
-
   // Sort roll values from lowest to highest.
-  let sorted_rolls = rolls.map(i => i.result).sort();
+  const sorted_rolls = rolls.map((i) => i.result).sort();
 
   let roll_status;
   let use_die;
@@ -176,7 +215,7 @@ export function getSaVFortuneRollStatus(rolls, zeromode = false) {
   } else {
     use_die = sorted_rolls[sorted_rolls.length - 1];
     if (sorted_rolls.length - 2 >= 0) {
-      prev_use_die = sorted_rolls[sorted_rolls.length - 2]
+      prev_use_die = sorted_rolls[sorted_rolls.length - 2];
     }
   }
 
@@ -198,9 +237,8 @@ export function getSaVFortuneRollStatus(rolls, zeromode = false) {
 }
 
 export function getSaVResistRollStatus(rolls, zeromode = false) {
-
   // Sort roll values from lowest to highest.
-  let sorted_rolls = rolls.map(i => i.result).sort();
+  const sorted_rolls = rolls.map((i) => i.result).sort();
 
   let roll_status;
   let use_die;
@@ -211,7 +249,7 @@ export function getSaVResistRollStatus(rolls, zeromode = false) {
   } else {
     use_die = sorted_rolls[sorted_rolls.length - 1];
     if (sorted_rolls.length - 2 >= 0) {
-      prev_use_die = sorted_rolls[sorted_rolls.length - 2]
+      prev_use_die = sorted_rolls[sorted_rolls.length - 2];
     }
   }
 
@@ -233,11 +271,10 @@ export function getSaVResistRollStatus(rolls, zeromode = false) {
 }
 
 export function getSaVViceRollStatus(rolls, zeromode = false) {
-
   // Sort roll values from lowest to highest.
-  let sorted_rolls = rolls.map(i => i.result).sort();
+  const sorted_rolls = rolls.map((i) => i.result).sort();
 
-  let roll_status = "vice";
+  const roll_status = "vice";
   let use_die;
 
   if (zeromode) {
@@ -250,9 +287,8 @@ export function getSaVViceRollStatus(rolls, zeromode = false) {
 }
 
 export function getSaVUpkeepRollStatus(rolls, zeromode = false) {
-
   // Sort roll values from lowest to highest.
-  let sorted_rolls = rolls.map(i => i.result).sort();
+  const sorted_rolls = rolls.map((i) => i.result).sort();
 
   let roll_status;
   let use_die;
@@ -279,7 +315,6 @@ export function getSaVUpkeepRollStatus(rolls, zeromode = false) {
  * Call a Roll popup.
  */
 export async function simpleRollPopup() {
-
   new Dialog({
     title: `${game.i18n.localize("BITD.FortuneRoll")}`,
     content: `
@@ -291,7 +326,10 @@ export async function simpleRollPopup() {
             <div>
               <label>${game.i18n.localize("BITD.RollNumberOfDice")}:</label>
               <select id="qty" name="qty">
-                ${Array(11).fill().map((item, i) => `<option value="${i}">${i}d</option>`).join('')}
+                ${Array(11)
+                  .fill()
+                  .map((_item, i) => `<option value="${i}">${i}d</option>`)
+                  .join("")}
               </select>
             </div>
             <div>
@@ -307,9 +345,9 @@ export async function simpleRollPopup() {
         icon: "<i class='fas fa-check'></i>",
         label: game.i18n.localize("BITD.Roll"),
         callback: async (html) => {
-          let diceQty = html.find('[name="qty"]')[0].value;
-          let purpose = html.find('[name="purpose"]')[0].value;
-          await savRoll( parseInt(diceQty), "fortune", "", "", purpose );
+          const diceQty = html.find('[name="qty"]')[0].value;
+          const purpose = html.find('[name="purpose"]')[0].value;
+          await savRoll(parseInt(diceQty, 10), "fortune", "", "", purpose);
         },
       },
       no: {
@@ -317,16 +355,25 @@ export async function simpleRollPopup() {
         label: game.i18n.localize("BITD.Cancel"),
       },
     },
-    default: "yes"
+    default: "yes",
   }).render(true);
 }
 
 /**
  * Call a Lifestyle Roll popup.
  */
-export async function lifestyleRollPopup( coins ) {
-  const selected = Math.floor( coins / 10 );
-  const rollArray = Array(11).fill().map((item, i) => {if( i === selected ){ return `<option value="${i}" selected>${i}d</option>` } else { return `<option value="${i}">${i}d</option>` }}).join('');
+export async function lifestyleRollPopup(coins) {
+  const selected = Math.floor(coins / 10);
+  const rollArray = Array(11)
+    .fill()
+    .map((_item, i) => {
+      if (i === selected) {
+        return `<option value="${i}" selected>${i}d</option>`;
+      } else {
+        return `<option value="${i}">${i}d</option>`;
+      }
+    })
+    .join("");
   new Dialog({
     title: `${game.i18n.localize("BITD.FortuneRoll")}`,
     content: `
@@ -345,8 +392,8 @@ export async function lifestyleRollPopup( coins ) {
         icon: "<i class='fas fa-check'></i>",
         label: game.i18n.localize("BITD.Roll"),
         callback: async (html) => {
-          let diceQty = html.find('[name="qty"]')[0].value;
-          await savRoll(parseInt(diceQty), "fortune", "", "");
+          const diceQty = html.find('[name="qty"]')[0].value;
+          await savRoll(parseInt(diceQty, 10), "fortune", "", "");
         },
       },
       no: {
@@ -354,6 +401,6 @@ export async function lifestyleRollPopup( coins ) {
         label: game.i18n.localize("BITD.Cancel"),
       },
     },
-    default: "yes"
+    default: "yes",
   }).render(true);
 }

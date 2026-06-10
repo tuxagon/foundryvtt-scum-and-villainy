@@ -1,6 +1,6 @@
-import { buildClockDataUrl } from "./sav-clock-image.js";
 import { CLOCK_ACTOR_TYPE } from "./clocks.js";
 import { SYSTEM_ID } from "./sav-clock-adapter.js";
+import { buildClockDataUrl } from "./sav-clock-image.js";
 
 function clockFlagsOn(doc) {
   return doc?.flags?.[SYSTEM_ID]?.clocks;
@@ -21,7 +21,10 @@ async function refreshClockTokens() {
       }
     }
     if (updates.length) {
-      await scene.updateEmbeddedDocuments("Token", updates, { animate: false, animation: { duration: 0 } });
+      await scene.updateEmbeddedDocuments("Token", updates, {
+        animate: false,
+        animation: { duration: 0 },
+      });
     }
   }
 }
@@ -35,7 +38,11 @@ async function refreshClockActors() {
     if (!clock) continue;
     const src = buildClockDataUrl(clock);
     if (actor.img !== src) {
-      updates.push({ _id: actor.id, img: src, "prototypeToken.texture.src": src });
+      updates.push({
+        _id: actor.id,
+        img: src,
+        "prototypeToken.texture.src": src,
+      });
     }
   }
   if (updates.length) {
@@ -56,7 +63,10 @@ async function refreshClockTiles() {
       }
     }
     if (updates.length) {
-      await scene.updateEmbeddedDocuments("Tile", updates, { animate: false, animation: { duration: 0 } });
+      await scene.updateEmbeddedDocuments("Tile", updates, {
+        animate: false,
+        animation: { duration: 0 },
+      });
     }
   }
 }

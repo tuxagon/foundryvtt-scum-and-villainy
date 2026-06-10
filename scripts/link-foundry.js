@@ -11,7 +11,9 @@ const fc = await fs.promises.readFile("foundry-config.yaml", "utf-8");
 const foundryConfig = yaml.load(fc);
 
 // Electron installs nest sources under resources/app; Node installs do not.
-const nested = fs.existsSync(path.join(foundryConfig.installPath, "resources", "app"));
+const nested = fs.existsSync(
+  path.join(foundryConfig.installPath, "resources", "app"),
+);
 const fileRoot = nested
   ? path.join(foundryConfig.installPath, "resources", "app")
   : foundryConfig.installPath;
@@ -31,7 +33,10 @@ for (const p of ["client", "common", "tsconfig.json"]) {
 }
 
 try {
-  await fs.promises.symlink(path.join(fileRoot, "public", "lang"), path.join("foundry", "lang"));
+  await fs.promises.symlink(
+    path.join(fileRoot, "public", "lang"),
+    path.join("foundry", "lang"),
+  );
 } catch (e) {
   if (e.code !== "EEXIST") throw e;
 }

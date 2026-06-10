@@ -1,103 +1,63 @@
+import { SaVSheetV2 } from "./sav-sheet-v2.js";
 
-import { SaVSheet } from "./sav-sheet.js";
+export class SaVUniverseSheet extends SaVSheetV2 {
+  static DEFAULT_OPTIONS = {
+    classes: [...SaVSheetV2.DEFAULT_OPTIONS.classes, "universe"],
+    position: { width: 800, height: 700 },
+    actions: {
+      rollWanted: SaVUniverseSheet.onRollWanted,
+    },
+  };
 
-/**
- * @extends {SaVSheet}
- */
-export class SaVUniverseSheet extends SaVSheet {
+  static PARTS = {
+    body: {
+      template: "systems/scum-and-villainy/templates/universe-sheet.html",
+    },
+  };
 
-  /** @override */
-	static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-  	  classes: ["scum-and-villainy", "sheet", "actor"],
-  	  template: "systems/scum-and-villainy/templates/universe-sheet.html",
-      width: 800,
-      height: 'auto',
-      tabs: [{navSelector: ".tabs", contentSelector: ".tab-content"}]
-    });
-  }
-
-	/** @override */
-	async getData( options ) {
-    const superData = super.getData( options );
-    const sheetData = superData.data;
-    //sheetData.document = superData.actor;
-    sheetData.owner = superData.owner;
-    sheetData.editable = superData.editable;
-    sheetData.isGM = game.user.isGM;
-
-    sheetData.system.description = await foundry.applications.ux.TextEditor.implementation.enrichHTML(sheetData.system.description, {secrets: sheetData.owner, async: true});
-
+  async _prepareContext(options) {
+    const context = await super._prepareContext(options);
+    context.items = this.actor.items;
+    context.enrichedDescription =
+      await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+        context.system.description ?? "",
+        { secrets: context.owner },
+      );
     let total = 0;
-    sheetData.items.forEach( i => { if( i.type === "star_system" ){ total += 1 } } );
-    sheetData.totalSystems = total;
-
-    return sheetData;
+    this.actor.items.forEach((i) => {
+      if (i.type === "star_system") total += 1;
+    });
+    context.totalSystems = total;
+    return context;
   }
 
-  /** @override */
-	activateListeners(html) {
-    super.activateListeners(html);
+  static async onRollWanted(_event, target) {
+    const value = parseInt(target.dataset.value, 10);
+    const wantedCompendiums = await game.packs
+      .filter(
+        (p) =>
+          p.metadata.label === "Wanted Tables" &&
+          p.documentName === "RollTable",
+      )[0]
+      .getDocuments();
 
-    // Everything below here is only needed if the sheet is editable
-    if (!this.options.editable) return;
-
-    // Update Inventory Item
-    html.find('.item-body').click(ev => {
-      const element = $(ev.currentTarget).parents(".item");
-      let item = this.actor.items.get(element.data("itemId"));
-      item.sheet.render(true);
-    });
-
-    // Delete Inventory Item
-    html.find('.item-delete').click( async (ev) => {
-      const element = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(element.data("itemId"));
-			await this.actor.deleteEmbeddedDocuments("Item", [item.id]);
-      element.slideUp(200, () => this.render(false));
-    });
-
-    // Post item to chat
-    html.find(".item-post").click((ev) => {
-      const element = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(element.data("itemId"));
-      item.sendToChat();
-    });
-
-    // Modify player visibility
-    html.find(".item-visible").click( async (ev) => {
-      const element = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(element.data("itemId"));
-      const itemVisible = !item.system.visible;
-      await this.actor.updateEmbeddedDocuments("Item", [{ _id: item.id, system:{visible: itemVisible}}]);
-    });
-
-    // Roll on Wanted Table
-    html.find('.wanted').click( async (ev) => {
-      const element = $(ev.currentTarget);
-      const value = element.data("value");
-      let wanted_compendiums = await game.packs.filter( p => ( p.metadata.label === 'Wanted Tables' ) && ( p.documentName === 'RollTable' ) )[0].getDocuments();
-
-      if( value < 4 ){
-        let tableName = 'Wanted ' + value.toString();
-        let table = wanted_compendiums.filter( p => p.name === tableName )[0];
-
-        if (!table) {
-          ui.notifications.warn(`Table ${tableName} not found.`, {});
-          return;
-        }
-        await table.draw();
-      } else {
-        let tableName = 'Wanted 3';
-        let table = wanted_compendiums.filter( p => p.name === tableName )[0];
-
-        if (!table) {
-          ui.notifications.warn(`Table ${tableName} not found.`, {});
-          return;
-        }
-        let r = new Roll("6")
-        await table.draw({roll: r});
+    if (value < 4) {
+      const tableName = `Wanted ${value}`;
+      const table = wantedCompendiums.find((p) => p.name === tableName);
+      if (!table) {
+        ui.notifications.warn(`Table ${tableName} not found.`, {});
+        return;
       }
-    });
-	}
+      await table.draw();
+    } else {
+      const tableName = "Wanted 3";
+      const table = wantedCompendiums.find((p) => p.name === tableName);
+      if (!table) {
+        ui.notifications.warn(`Table ${tableName} not found.`, {});
+        return;
+      }
+      const r = new Roll("6");
+      await table.draw({ roll: r });
+    }
+  }
 }

@@ -3,9 +3,9 @@
     <div id="attributes-{{attribute_name}}" class="attribute">
       <div id="attributes-{{attribute_name}}-title" class="attributes-exp">
         <div class="stripe">
-          <a class="attribute-label roll-die-attribute rollable-text" data-roll-attribute="{{attribute_name}}" data-tooltip="{{{localize attribute.tip}}}">{{localize (concat attribute.label 'Short')}}</a>
+          <a class="attribute-label roll-die-attribute rollable-text" data-action="rollAttribute" data-roll-attribute="{{attribute_name}}" data-tooltip="{{attribute.tip}}">{{localize (concat attribute.label 'Short')}}</a>
           {{#if (eq @root/system.forged 1)}}
-            <span style="font-size: 12px;" data-tooltip="{{{localize "BITD.Forged"}}}"> (+1)</span>
+            <span style="font-size: 12px;" data-tooltip="{{localize 'BITD.Forged'}}"> (+1)</span>
           {{/if}}
         </div>
         <div class="stripe-tooth-body-blue">
@@ -30,7 +30,7 @@
                 <input {{#if (lteq this (oneless skill.min))}}disabled {{/if}}type="radio" id="attributes-{{../../../_id}}-{{skill_name}}-{{this}}" data-dtype="Number" name="system.attributes.{{attribute_name}}.skills.{{skill_name}}.value" value="{{this}}">
                 <label {{#if (and (gt skill.min 0) (lteq this skill.min))}}data-tooltip="{{localize "BITD.DisabledByAE"}}" {{/if}}{{#if (lteq this (oneless skill.min))}}style="filter: unset; opacity: unset; cursor: unset;" {{/if}}for="attributes-{{../../../_id}}-{{skill_name}}-{{this}}"></label>
               {{/times_from}}
-              <div class="attribute-skill-label roll-die-attribute rollable-text" data-roll-attribute="{{skill_name}}" data-tooltip="{{{localize skill.tip}}}">{{localize skill.label}}</div>
+              <div class="attribute-skill-label roll-die-attribute rollable-text" data-action="rollAttribute" data-roll-attribute="{{skill_name}}" data-tooltip="{{skill.tip}}">{{localize skill.label}}</div>
             {{/multiboxes}}
           </div>
         </div>

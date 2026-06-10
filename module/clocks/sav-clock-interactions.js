@@ -7,12 +7,23 @@ function findSegment(target) {
   return target.closest("[data-segment-index]");
 }
 
+function findHostApp(wrap) {
+  // ApplicationV2 sheets: the root element's id is the application id.
+  const v2El = wrap.closest(".application[id]");
+  if (v2El) {
+    const app = foundry.applications.instances.get(v2El.id);
+    if (app) return app;
+  }
+  // Legacy ApplicationV1 sheets.
+  const v1El = wrap.closest(".window-app[data-appid]");
+  if (v1El) return ui.windows?.[v1El.dataset.appid] ?? null;
+  return null;
+}
+
 function findHostDocument(wrap) {
-  const appEl = wrap.closest(".window-app[data-appid]");
-  if (!appEl) return null;
-  const app = ui.windows?.[appEl.dataset.appid];
+  const app = findHostApp(wrap);
   if (!app) return null;
-  const doc = app.actor ?? app.item ?? app.object ?? null;
+  const doc = app.document ?? app.actor ?? app.item ?? app.object ?? null;
 
   // Clocks rendered inside an embedded-item row (e.g. faction clocks on the
   // universe sheet) must persist to the embedded item, not the host actor.

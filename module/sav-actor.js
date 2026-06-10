@@ -1,17 +1,16 @@
-import { savRoll } from "./sav-roll.js";
-import { SaVHelpers } from "./sav-helpers.js";
 import { buildClockDataUrl } from "./clocks/sav-clock-image.js";
+import { SaVHelpers } from "./sav-helpers.js";
+import { savRoll } from "./sav-roll.js";
 
 /**
  * Extend the basic Actor
  * @extends {Actor}
  */
 export class SaVActor extends Actor {
-
   /** @override */
-  static getDefaultArtwork( actorData ){
+  static getDefaultArtwork(actorData) {
     let icon;
-    switch( actorData.type ) {
+    switch (actorData.type) {
       case "universe": {
         icon = "systems/scum-and-villainy/styles/assets/icons/galaxy.png";
         break;
@@ -22,7 +21,8 @@ export class SaVActor extends Actor {
       }
       case "character":
       case "npc": {
-        icon = "systems/scum-and-villainy/styles/assets/icons/astronaut-helmet.png";
+        icon =
+          "systems/scum-and-villainy/styles/assets/icons/astronaut-helmet.png";
         break;
       }
       case "\uD83D\uDD5B clock": {
@@ -34,13 +34,12 @@ export class SaVActor extends Actor {
         break;
       }
     }
-    return { img: icon, texture:{ src: icon } };
+    return { img: icon, texture: { src: icon } };
   }
 
-
   /** @override */
-  static async create(data, options={}) {
-    if( !data.icon || !data.token ) {
+  static async create(data, options = {}) {
+    if (!data.icon || !data.token) {
       data.prototypeToken = data.prototypeToken || {};
       data.prototypeToken.actorLink = true;
       data.prototypeToken.name = data.name;
@@ -53,69 +52,92 @@ export class SaVActor extends Actor {
   /* -------------------------------------------- */
 
   /** @override */
-  async _preCreate( createData, options, userId ) {
-    await super._preCreate( createData, options, userId );
+  async _preCreate(createData, options, userId) {
+    await super._preCreate(createData, options, userId);
     const updateData = {};
 
-    if( createData.type === "character" ) {
-      const playbookXP = game.settings.get( "scum-and-villainy", "defaultPlaybookXPBarSize" );
-      const attributeXP = game.settings.get( "scum-and-villainy", "defaultAttributeXPBarSize" );
+    if (createData.type === "character") {
+      const playbookXP = game.settings.get(
+        "scum-and-villainy",
+        "defaultPlaybookXPBarSize",
+      );
+      const attributeXP = game.settings.get(
+        "scum-and-villainy",
+        "defaultAttributeXPBarSize",
+      );
 
-      if( playbookXP ) {
-        updateData['system.experienceMax'] = playbookXP;
+      if (playbookXP) {
+        updateData["system.experienceMax"] = playbookXP;
       }
-      if( attributeXP ) {
-        const attributes = Object.keys( game.model.Actor.character.attributes );
-        attributes.forEach( a => updateData['system.attributes.'+ a + '.expMax'] = attributeXP );
+      if (attributeXP) {
+        const attributes = Object.keys(game.model.Actor.character.attributes);
+        attributes.forEach(
+          (a) => (updateData[`system.attributes.${a}.expMax`] = attributeXP),
+        );
       }
 
       for (const key of game.system.traumas) {
-        updateData['system.trauma.list.'+ key] = false;
+        updateData[`system.trauma.list.${key}`] = false;
       }
-
     }
 
-    if( createData.type === "ship" ) {
-      const crewXP = game.settings.get( "scum-and-villainy", "defaultCrewXPBarSize" );
+    if (createData.type === "ship") {
+      const crewXP = game.settings.get(
+        "scum-and-villainy",
+        "defaultCrewXPBarSize",
+      );
 
-      if( crewXP ) {
-        updateData['system.crew_experienceMax'] = crewXP;
+      if (crewXP) {
+        updateData["system.crew_experienceMax"] = crewXP;
       }
-
     }
 
-    await this.updateSource( updateData );
+    await this.updateSource(updateData);
   }
 
   /* -------------------------------------------- */
 
   /** @override */
   prepareDerivedData() {
-
-    if ( this.type === "ship" ) {
+    if (this.type === "ship") {
       // calculates upkeep value from (crew quality + engine quality + hull quality + comms quality + weapons quality) / 4, rounded down
-      this.system.systems.upkeep.value = Math.floor((parseInt(this.system.systems.crew.value) + parseInt(this.system.systems.engines.value) + parseInt(this.system.systems.hull.value) + parseInt(this.system.systems.comms.value) + parseInt(this.system.systems.weapons.value)) / 4);
+      this.system.systems.upkeep.value = Math.floor(
+        (parseInt(this.system.systems.crew.value, 10) +
+          parseInt(this.system.systems.engines.value, 10) +
+          parseInt(this.system.systems.hull.value, 10) +
+          parseInt(this.system.systems.comms.value, 10) +
+          parseInt(this.system.systems.weapons.value, 10)) /
+          4,
+      );
     }
 
-    if( this.type === "character" ){
+    if (this.type === "character") {
       // Calculate Load
       let loadout = 0;
-      this.items.forEach( i => { loadout += ( i.type === "item" ) ? parseInt( i.system.load ) : 0 } );
+      this.items.forEach((i) => {
+        loadout += i.type === "item" ? parseInt(i.system.load, 10) : 0;
+      });
       this.system.loadout.current = loadout;
-      let attributes = Object.keys( this.system.attributes );
-      attributes.forEach( a => {
-        let skills = Object.keys( this.system.attributes[a].skills );
-        skills.forEach( s => {
-          if( this.system.attributes[a].skills[s].value <= this.system.attributes[a].skills[s].min ) { this.system.attributes[a].skills[s].value = this.system.attributes[a].skills[s].min; }
+      const attributes = Object.keys(this.system.attributes);
+      attributes.forEach((a) => {
+        const skills = Object.keys(this.system.attributes[a].skills);
+        skills.forEach((s) => {
+          if (
+            this.system.attributes[a].skills[s].value <=
+            this.system.attributes[a].skills[s].min
+          ) {
+            this.system.attributes[a].skills[s].value =
+              this.system.attributes[a].skills[s].min;
+          }
           //if( this.system.attributes[a].skills[s].value > 0 ){
           //  this.system.attributes[a].skills[s].base = this.system.attributes[a].skills[s].value;
           //}
           // this.system.attributes[a].skills[s].display = (this.system.attributes[a].skills[s].base ? this.system.attributes[a].skills[s].base : 0) + (this.system.attributes[a].skills[s].bonus ? this.system.attributes[a].skills[s]?.bonus : 0);
         });
       });
-      let ship_actors = this.getFlag("scum-and-villainy", "ship") || [];
-      let shipActor = game.actors.get( ship_actors[0]?.id );
-      if ( shipActor?.system.installs.stun_inst === 1 ) {
+      const ship_actors = this.getFlag("scum-and-villainy", "ship") || [];
+      const shipActor = game.actors.get(ship_actors[0]?.id);
+      if (shipActor?.system.installs.stun_inst === 1) {
         this.system.stun_weapons = 1;
       } else {
         this.system.stun_weapons = 0;
@@ -123,16 +145,15 @@ export class SaVActor extends Actor {
     }
   }
 
-
   /** @override */
   getRollData() {
     const data = super.getRollData();
     const att_obj = game.model.Actor.character.attributes;
-	  const attributes = Object.keys( att_obj );
+    const attributes = Object.keys(att_obj);
     data.dice_amount = this.getAttributeDiceToThrow();
-    if ( this.type === "character" ) {
-      const attribute_values = attributes.map( a => data.dice_amount[a] );
-      data.dice_amount.vice = Math.min( ...attribute_values );
+    if (this.type === "character") {
+      const attribute_values = attributes.map((a) => data.dice_amount[a]);
+      data.dice_amount.vice = Math.min(...attribute_values);
     }
     return data;
   }
@@ -142,45 +163,50 @@ export class SaVActor extends Actor {
    * Calculate Attribute Dice to throw.
    */
   getAttributeDiceToThrow() {
-
     // Calculate Dice to throw.
-    let dice_amount = {};
+    const dice_amount = {};
 
-	  switch (this.type) {
-	    case 'character':
-	      for (const a in this.system.attributes) {
+    switch (this.type) {
+      case "character":
+        for (const a in this.system.attributes) {
           dice_amount[a] = 0;
-		      // Add +1d to resistance rolls only for Forged item on ship
-		      let ship_actors = this.getFlag("scum-and-villainy", "ship") || [];
-          let actor = game.actors.get( ship_actors[0]?.id );
-		      if (actor?.system.installs.forged_inst === 1) {
-		        dice_amount[a]++;
-		      }
+          // Add +1d to resistance rolls only for Forged item on ship
+          const ship_actors = this.getFlag("scum-and-villainy", "ship") || [];
+          const actor = game.actors.get(ship_actors[0]?.id);
+          if (actor?.system.installs.forged_inst === 1) {
+            dice_amount[a]++;
+          }
 
-		      for (const s in this.system.attributes[a].skills) {
-		        dice_amount[s] = parseInt(this.system.attributes[a].skills[s]['value'])
+          for (const s in this.system.attributes[a].skills) {
+            dice_amount[s] = parseInt(
+              this.system.attributes[a].skills[s].value,
+              10,
+            );
 
-		        // We add a +1d for every skill higher than 0.
-		        if ( dice_amount[s] > 0 ) {
-		          dice_amount[a]++;
-		        }
-		      }
-		    }
-	      break;
+            // We add a +1d for every skill higher than 0.
+            if (dice_amount[s] > 0) {
+              dice_amount[a]++;
+            }
+          }
+        }
+        break;
 
-	    case 'ship':
-	      for (const a in this.system.systems) {
-	        dice_amount[a] = 0;
-		      if ( a === "upkeep" ) {
-		        dice_amount[a] = parseInt(this.system.systems[a]['damage'][0])
-		      }
-		      else {
-		        dice_amount[a] = parseInt(this.system.systems[a]['value'][0]) - parseInt(this.system.systems[a]['damage'][0]);
-		        if (dice_amount[a] < 0) { dice_amount[a] = 0 }
-		      }
-	      }
-	      break;
-	  }
+      case "ship":
+        for (const a in this.system.systems) {
+          dice_amount[a] = 0;
+          if (a === "upkeep") {
+            dice_amount[a] = parseInt(this.system.systems[a].damage[0], 10);
+          } else {
+            dice_amount[a] =
+              parseInt(this.system.systems[a].value[0], 10) -
+              parseInt(this.system.systems[a].damage[0], 10);
+            if (dice_amount[a] < 0) {
+              dice_amount[a] = 0;
+            }
+          }
+        }
+        break;
+    }
 
     return dice_amount;
   }
@@ -188,229 +214,258 @@ export class SaVActor extends Actor {
   /* -------------------------------------------- */
 
   rollActionPopup(attribute_name) {
-
-    let attribute_label = SaVHelpers.getAttributeLabel(attribute_name);
+    const attribute_label = SaVHelpers.getAttributeLabel(attribute_name);
 
     // Calculate Dice Amount for Attributes
     const base_dice = this.getRollData().dice_amount[attribute_name];
-    let total_dice = base_dice;
+    const total_dice = base_dice;
 
-    let dropdowns = game.settings.get("scum-and-villainy", "useDropdownsInRollDialog");
+    const dropdowns = game.settings.get(
+      "scum-and-villainy",
+      "useDropdownsInRollDialog",
+    );
 
-    if( dropdowns ) {
-      new Dialog( {
-        title: `${ game.i18n.localize( 'BITD.Roll' ) } ${ game.i18n.localize( attribute_label ) }`,
+    if (dropdowns) {
+      new Dialog({
+        title: `${game.i18n.localize("BITD.Roll")} ${game.i18n.localize(attribute_label)}`,
         content: `
         <div class="scum-and-villainy" id="skill-roll">
-		      <h2>${ game.i18n.localize( 'BITD.Roll' ) } ${ game.i18n.localize( attribute_label ) } (${ total_dice }d)</h2>
+		      <h2>${game.i18n.localize("BITD.Roll")} ${game.i18n.localize(attribute_label)} (${total_dice}d)</h2>
           <form>
             <div class="form-group roll position">
-              <label>${ game.i18n.localize( 'BITD.Position' ) }:</label>
+              <label>${game.i18n.localize("BITD.Position")}:</label>
               <select id="pos" name="pos">
-                <option value="controlled">${ game.i18n.localize( 'BITD.PositionControlled' ) }</option>
-                <option value="risky" selected>${ game.i18n.localize( 'BITD.PositionRisky' ) }</option>
-                <option value="desperate">${ game.i18n.localize( 'BITD.PositionDesperate' ) }</option>
+                <option value="controlled">${game.i18n.localize("BITD.PositionControlled")}</option>
+                <option value="risky" selected>${game.i18n.localize("BITD.PositionRisky")}</option>
+                <option value="desperate">${game.i18n.localize("BITD.PositionDesperate")}</option>
               </select>
             </div>
             <div class="form-group roll effect">
-              <label>${ game.i18n.localize( 'BITD.Effect' ) }:</label>
+              <label>${game.i18n.localize("BITD.Effect")}:</label>
               <select id="fx" name="fx">
-                <option value="limited">${ game.i18n.localize( 'BITD.EffectLimited' ) }</option>
-                <option value="standard" selected>${ game.i18n.localize( 'BITD.EffectStandard' ) }</option>
-                <option value="great">${ game.i18n.localize( 'BITD.EffectGreat' ) }</option>
+                <option value="limited">${game.i18n.localize("BITD.EffectLimited")}</option>
+                <option value="standard" selected>${game.i18n.localize("BITD.EffectStandard")}</option>
+                <option value="great">${game.i18n.localize("BITD.EffectGreat")}</option>
               </select>
             </div>
             <div class="form-group roll base-dice">
-              <label class="base-dice">${ game.i18n.localize( 'BITD.BaseDice' ) }: </label>
-			        <label>${ base_dice }d</label>
+              <label class="base-dice">${game.i18n.localize("BITD.BaseDice")}: </label>
+			        <label>${base_dice}d</label>
             </div>
             <div class="form-group roll mod">
-              <label>${ game.i18n.localize( 'BITD.Modifier' ) }:</label>
-              <select id="mod" name="mod" data-base-dice="${ base_dice }">
-                ${ this.createListOfDiceMods( -3, +3, 0 ) }
+              <label>${game.i18n.localize("BITD.Modifier")}:</label>
+              <select id="mod" name="mod" data-base-dice="${base_dice}">
+                ${this.createListOfDiceMods(-3, +3, 0)}
               </select>
             </div>
 		        <div class="form-group roll total-rolled">
-              <label class="total-rolled">${ game.i18n.localize( 'BITD.TotalDice' ) }: </label>
-			        <label>${ total_dice }d</label>
+              <label class="total-rolled">${game.i18n.localize("BITD.TotalDice")}: </label>
+			        <label>${total_dice}d</label>
             </div>
           </form>
-		      <h2>${ game.i18n.localize( 'BITD.RollOptions' ) }</h2>
-		      <div class="action-info">${ game.i18n.localize( 'BITD.ActionsHelp' ) }</div>
+		      <h2>${game.i18n.localize("BITD.RollOptions")}</h2>
+		      <div class="action-info">${game.i18n.localize("BITD.ActionsHelp")}</div>
         </div>
       `,
         buttons: {
           yes: {
             icon: "<i class='fas fa-check'></i>",
-            label: game.i18n.localize( 'BITD.Roll' ),
-            callback: async( html ) => {
-              let modifier = parseInt( html.find( '[name="mod"]' )[0].value );
-              let position = html.find( '[name="pos"]' )[0].value;
-              let effect = html.find( '[name="fx"]' )[0].value;
-              await this.rollAttribute( attribute_name, modifier, position, effect );
-            }
+            label: game.i18n.localize("BITD.Roll"),
+            callback: async (html) => {
+              const modifier = parseInt(html.find('[name="mod"]')[0].value, 10);
+              const position = html.find('[name="pos"]')[0].value;
+              const effect = html.find('[name="fx"]')[0].value;
+              await this.rollAttribute(
+                attribute_name,
+                modifier,
+                position,
+                effect,
+              );
+            },
           },
           no: {
             icon: "<i class='fas fa-times'></i>",
-            label: game.i18n.localize( 'Cancel' ),
+            label: game.i18n.localize("Cancel"),
           },
         },
         default: "yes",
-        render: html => {
-          $( "#skill-roll #mod" ).on( "change", this._onDiceModChange );
-        }
-      } ).render( true );
+        render: (_html) => {
+          $("#skill-roll #mod").on("change", this._onDiceModChange);
+        },
+      }).render(true);
     } else {
-      new Dialog( {
-        title: `${ game.i18n.localize( 'BITD.Roll' ) } ${ game.i18n.localize( attribute_label ) }`,
+      new Dialog({
+        title: `${game.i18n.localize("BITD.Roll")} ${game.i18n.localize(attribute_label)}`,
         content: `
         <div class="scum-and-villainy" id="skill-roll">
-		      <h2>${ game.i18n.localize( 'BITD.Roll' ) } ${ game.i18n.localize( attribute_label ) } (${ total_dice }d)</h2>
+		      <h2>${game.i18n.localize("BITD.Roll")} ${game.i18n.localize(attribute_label)} (${total_dice}d)</h2>
           <form>
             <div class="form-group roll position">
-              <label>${ game.i18n.localize( 'BITD.Position' ) }:</label>
+              <label>${game.i18n.localize("BITD.Position")}:</label>
               <div class="rollRadio" id="pos">
                 <input type="radio" id="controlled" name="pos" value="controlled" />
-                <label for="controlled">${ game.i18n.localize( 'BITD.PositionControlled' ) }</label>
+                <label for="controlled">${game.i18n.localize("BITD.PositionControlled")}</label>
                 <input type="radio" id="risky" name="pos" value="risky" checked/>
-                <label for="risky">${ game.i18n.localize( 'BITD.PositionRisky' ) }</label>
+                <label for="risky">${game.i18n.localize("BITD.PositionRisky")}</label>
                 <input type="radio" id="desperate" name="pos" value="desperate" />
-                <label for="desperate">${ game.i18n.localize( 'BITD.PositionDesperate' ) }</label>
+                <label for="desperate">${game.i18n.localize("BITD.PositionDesperate")}</label>
               </div>
             </div>
             <hr>
             <div class="form-group roll effect">
-              <label>${ game.i18n.localize( 'BITD.Effect' ) }:</label>
+              <label>${game.i18n.localize("BITD.Effect")}:</label>
               <div class="rollRadio" id="fx">
                 <input type="radio" id="limited" name="fx" value="limited" />
-                <label for="limited">${ game.i18n.localize( 'BITD.EffectLimited' ) }</label>
+                <label for="limited">${game.i18n.localize("BITD.EffectLimited")}</label>
                 <input type="radio" id="standard" name="fx" value="standard" checked/>
-                <label for="standard">${ game.i18n.localize( 'BITD.EffectStandard' ) }</label>
+                <label for="standard">${game.i18n.localize("BITD.EffectStandard")}</label>
                 <input type="radio" id="great" name="fx" value="great" />
-                <label for="great">${ game.i18n.localize( 'BITD.EffectGreat' ) }</label>
+                <label for="great">${game.i18n.localize("BITD.EffectGreat")}</label>
               </div>
             </div>
             <hr>
             <div class="form-group roll base-dice">
-              <label class="base-dice">${ game.i18n.localize( 'BITD.BaseDice' ) }: </label>
-			        <label>${ base_dice }d</label>
+              <label class="base-dice">${game.i18n.localize("BITD.BaseDice")}: </label>
+			        <label>${base_dice}d</label>
             </div>
             <div class="form-group roll mod">
-              <label>${ game.i18n.localize( 'BITD.Modifier' ) }:</label>
-              <select id="mod" name="mod" data-base-dice="${ base_dice }">
-                ${ this.createListOfDiceMods( -3, +3, 0 ) }
+              <label>${game.i18n.localize("BITD.Modifier")}:</label>
+              <select id="mod" name="mod" data-base-dice="${base_dice}">
+                ${this.createListOfDiceMods(-3, +3, 0)}
               </select>
             </div>
 		        <div class="form-group roll total-rolled">
-              <label class="total-rolled">${ game.i18n.localize( 'BITD.TotalDice' ) }: </label>
-			        <label>${ total_dice }d</label>
+              <label class="total-rolled">${game.i18n.localize("BITD.TotalDice")}: </label>
+			        <label>${total_dice}d</label>
             </div>
             <hr>
           </form>
-		      <h2>${ game.i18n.localize( 'BITD.RollOptions' ) }</h2>
-		      <div class="action-info">${ game.i18n.localize( 'BITD.ActionsHelp' ) }</div>
+		      <h2>${game.i18n.localize("BITD.RollOptions")}</h2>
+		      <div class="action-info">${game.i18n.localize("BITD.ActionsHelp")}</div>
         </div>
       `,
         buttons: {
           yes: {
             icon: "<i class='fas fa-check'></i>",
-            label: game.i18n.localize( 'BITD.Roll' ),
-            callback: async( html ) => {
-              let modifier = parseInt( html.find( '[name="mod"]' )[0].value );
-              let position = html.find( 'input:radio[name="pos"]:checked' )[0].value;
-              let effect = html.find( 'input:radio[name="fx"]:checked' )[0].value;
-              await this.rollAttribute( attribute_name, modifier, position, effect );
-            }
+            label: game.i18n.localize("BITD.Roll"),
+            callback: async (html) => {
+              const modifier = parseInt(html.find('[name="mod"]')[0].value, 10);
+              const position = html.find('input:radio[name="pos"]:checked')[0]
+                .value;
+              const effect = html.find('input:radio[name="fx"]:checked')[0]
+                .value;
+              await this.rollAttribute(
+                attribute_name,
+                modifier,
+                position,
+                effect,
+              );
+            },
           },
           no: {
             icon: "<i class='fas fa-times'></i>",
-            label: game.i18n.localize( 'BITD.Cancel' ),
+            label: game.i18n.localize("BITD.Cancel"),
           },
         },
         default: "yes",
-        render: html => {
-          $( "#skill-roll #mod" ).on( "change", this._onDiceModChange );
-        }
-      } ).render( true );
+        render: (_html) => {
+          $("#skill-roll #mod").on("change", this._onDiceModChange);
+        },
+      }).render(true);
     }
   }
 
   /* -------------------------------------------- */
 
   rollSimplePopup(attribute_name, roll_type) {
-
-    let attribute_label = SaVHelpers.getAttributeLabel(attribute_name);
+    const attribute_label = SaVHelpers.getAttributeLabel(attribute_name);
 
     // Calculate Dice Amount for Attributes
     const base_dice = this.getRollData().dice_amount[attribute_name];
 
-    let total_dice = base_dice;
+    const total_dice = base_dice;
     const proper_attribute_name = SaVHelpers.getProperCase(roll_type);
 
     new Dialog({
-      title: `${game.i18n.localize('BITD.Roll')} ${game.i18n.localize(attribute_label)}`,
+      title: `${game.i18n.localize("BITD.Roll")} ${game.i18n.localize(attribute_label)}`,
       content: `
         <div class="scum-and-villainy" id="skill-roll">
-		      <h2>${game.i18n.localize('BITD.Roll')} ${game.i18n.localize(attribute_label)} (${total_dice}d)</h2>
+		      <h2>${game.i18n.localize("BITD.Roll")} ${game.i18n.localize(attribute_label)} (${total_dice}d)</h2>
           <form>
             <div class="form-group roll base-dice">
-              <label class="base-dice">${game.i18n.localize('BITD.BaseDice')}: </label>
+              <label class="base-dice">${game.i18n.localize("BITD.BaseDice")}: </label>
 			        <label>${base_dice}d</label>
             </div>
             <div class="form-group roll mod">
-              <label>${game.i18n.localize('BITD.Modifier')}:</label>
+              <label>${game.i18n.localize("BITD.Modifier")}:</label>
               <select id="mod" name="mod" data-base-dice="${base_dice}">
-                ${this.createListOfDiceMods(-3,+3,0)}
+                ${this.createListOfDiceMods(-3, +3, 0)}
               </select>
             </div>
 		        <div class="form-group roll total-rolled">
-              <label class="total-rolled">${game.i18n.localize('BITD.TotalDice')}: </label>
+              <label class="total-rolled">${game.i18n.localize("BITD.TotalDice")}: </label>
 			        <label>${total_dice}d</label>
             </div>
-            <h2>${game.i18n.localize('BITD.RollOptions')}</h2>
-		        <div class="action-info">${game.i18n.localize('BITD.' + proper_attribute_name + 'Help')}</div>
+            <h2>${game.i18n.localize("BITD.RollOptions")}</h2>
+		        <div class="action-info">${game.i18n.localize(`BITD.${proper_attribute_name}Help`)}</div>
           </form>
         </div>
       `,
       buttons: {
         yes: {
           icon: "<i class='fas fa-check'></i>",
-          label: game.i18n.localize('BITD.Roll'),
+          label: game.i18n.localize("BITD.Roll"),
           callback: async (html) => {
-            let modifier = parseInt(html.find('[name="mod"]')[0].value);
-            let position = "";
-            let effect = "";
-            await this.rollAttribute(attribute_name, modifier, position, effect);
-          }
+            const modifier = parseInt(html.find('[name="mod"]')[0].value, 10);
+            const position = "";
+            const effect = "";
+            await this.rollAttribute(
+              attribute_name,
+              modifier,
+              position,
+              effect,
+            );
+          },
         },
         no: {
           icon: "<i class='fas fa-times'></i>",
-          label: game.i18n.localize('Cancel'),
+          label: game.i18n.localize("Cancel"),
         },
       },
       default: "yes",
-      render: html => {
-        $("#skill-roll #mod").on( "change", this._onDiceModChange);
-      }
+      render: (_html) => {
+        $("#skill-roll #mod").on("change", this._onDiceModChange);
+      },
     }).render(true);
   }
 
   /* -------------------------------------------- */
 
-  async rollAttribute( attribute_name = "", additional_dice_amount = 0, position, effect ) {
+  async rollAttribute(
+    attribute_name = "",
+    additional_dice_amount = 0,
+    position,
+    effect,
+  ) {
     let dice_amount = 0;
-    let speaker_name = this.name;
+    const speaker_name = this.name;
 
-    if ( attribute_name !== "" ) {
-      let roll_data = this.getRollData();
-	    dice_amount += roll_data.dice_amount[attribute_name];
-    }
-    else {
+    if (attribute_name !== "") {
+      const roll_data = this.getRollData();
+      dice_amount += roll_data.dice_amount[attribute_name];
+    } else {
       dice_amount = 1;
     }
     dice_amount += additional_dice_amount;
 
-    await savRoll( dice_amount, attribute_name, position, effect, "", speaker_name );
+    await savRoll(
+      dice_amount,
+      attribute_name,
+      position,
+      effect,
+      "",
+      speaker_name,
+    );
   }
 
   /* -------------------------------------------- */
@@ -420,24 +475,21 @@ export class SaVActor extends Actor {
    *  which can be performed.
    */
   createListOfActions() {
-
-    let text = '';
+    let text = "";
     const att_obj = game.model.Actor.character.attributes;
-    const attributes = Object.keys( att_obj );
+    const attributes = Object.keys(att_obj);
 
-    for ( let attribute in attributes ) {
-
-      let skills = attributes[attribute].skills;
+    for (const attribute in attributes) {
+      const skills = attributes[attribute].skills;
 
       text += `<optgroup label="${attribute} Actions">`;
       text += `<option value="${attribute}">${attribute} (Resist)</option>`;
 
-      for ( let skill in skills ) {
+      for (const skill in skills) {
         text += `<option value="${skill}">${skill}</option>`;
       }
 
       text += `</optgroup>`;
-
     }
 
     return text;
@@ -455,15 +507,16 @@ export class SaVActor extends Actor {
    * @param {int} s
    *  Selected die
    */
-  createListOfDiceMods( rs, re, s = 0 ) {
-
+  createListOfDiceMods(rs, re, s = 0) {
     let text = ``;
 
-    for ( let i = rs; i <= re; i++ ) {
+    for (let i = rs; i <= re; i++) {
       let plus = "";
-      if ( i >= 0 ) { plus = "+" }
+      if (i >= 0) {
+        plus = "+";
+      }
       text += `<option value="${i}"`;
-      if ( i === s ) {
+      if (i === s) {
         text += ` selected`;
       }
 
@@ -471,7 +524,6 @@ export class SaVActor extends Actor {
     }
 
     return text;
-
   }
 
   /* -------------------------------------------- */
@@ -480,11 +532,12 @@ export class SaVActor extends Actor {
    * Change dice total on display
    * @param {*} event
    */
-  async _onDiceModChange( event ) {
-    let mod = this.value;
-    let base = this.dataset.baseDice;
+  async _onDiceModChange(_event) {
+    const mod = this.value;
+    const base = this.dataset.baseDice;
 
-    $( "#skill-roll .total-rolled label:nth-child(2)" ).text( parseInt( base ) + parseInt( mod ) + "d" );
+    $("#skill-roll .total-rolled label:nth-child(2)").text(
+      `${parseInt(base, 10) + parseInt(mod, 10)}d`,
+    );
   }
-
 }

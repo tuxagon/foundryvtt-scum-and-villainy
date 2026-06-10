@@ -1,63 +1,63 @@
-<form class="{{cssClass}} ship-sheet" autocomplete="off">
+<div>
 
   <section id="name-alias" class="flex-horizontal">
-    <img src="{{img}}" data-edit="img" title="{{name}}" height="100" width="100"/>
+    <img src="{{actor.img}}" data-edit="img" data-action="editImage" title="{{actor.name}}" height="100" width="100"/>
     <div class="grow-two">
       <div id="name">
         <label for="ship-{{_id}}-name">{{localize "BITD.Name"}}</label>
-        <input type="text" id="ship-{{_id}}-name" name="name" value="{{name}}">
+        <input type="text" id="ship-{{_id}}-name" name="name" value="{{actor.name}}">
       </div>
 
       <div id="ship-traits" class="flex-column">
         <div class="item-block flex-horizontal">
-          <div class="item-class-label"><a class="item-add-popup" data-distinct="true" data-item-type="crew_type">{{localize "BITD.CrewType"}}</a></div>
+          <div class="item-class-label"><a class="item-add-popup" data-action="addItemPopup" data-distinct="true" data-item-type="crew_type">{{localize "BITD.CrewType"}}</a></div>
           {{#each items as |item id|}}
             {{#if (eq item.type "crew_type")}}
               <div class="item flex-horizontal" data-item-id="{{item._id}}">
-                <div class="item-body flex-horizontal">
+                <div class="item-body flex-horizontal" data-action="openItem">
                   <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
-                  <div data-tooltip="{{{item.system.description}}}<br />{{localize "BITD.CrewExpClueDescription"}}<br />{{localize "BITD.CrewExpClue2"}}<br />{{localize "BITD.CrewExpClue3"}}<br />{{localize "BITD.CrewExpClue4"}}<br />{{item.system.experience_clues}}">
+                  <div data-tooltip="{{item.system.description}}">
                     <a class="item-name">{{item.name}}</a>
                   </div>
                 </div>
-                <a class="item-control item-delete" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
-                <a class="item-control item-post" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
+                <a class="item-control item-delete" data-action="deleteItem" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
+                <a class="item-control item-post" data-action="postItem" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
               </div>
             {{/if}}
           {{/each}}
         </div>
 
 		    <div class="item-block flex-horizontal">
-          <div class="item-class-label"><a class="item-add-popup" data-distinct="true" data-item-type="ship_size">{{localize "BITD.ShipSize"}}</a></div>
+          <div class="item-class-label"><a class="item-add-popup" data-action="addItemPopup" data-distinct="true" data-item-type="ship_size">{{localize "BITD.ShipSize"}}</a></div>
           {{#each items as |item id|}}
             {{#if (eq item.type "ship_size")}}
               <div class="item flex-horizontal" data-item-id="{{item._id}}">
-                <div class="item-body flex-horizontal">
+                <div class="item-body flex-horizontal" data-action="openItem">
                   <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
-                  <div data-tooltip="{{{item.system.description}}}">
+                  <div data-tooltip="{{item.system.description}}">
                     <a class="item-name">{{item.name}}</a>
                   </div>
                 </div>
-                <a class="item-control item-delete" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
-                <a class="item-control item-post" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
+                <a class="item-control item-delete" data-action="deleteItem" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
+                <a class="item-control item-post" data-action="postItem" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
               </div>
             {{/if}}
           {{/each}}
         </div>
 
 		    <div class="item-block flex-horizontal">
-          <div class="item-class-label"><a class="item-add-popup" data-distinct="true" data-item-type="crew_reputation">{{localize "BITD.CrewReputation"}}</a></div>
+          <div class="item-class-label"><a class="item-add-popup" data-action="addItemPopup" data-distinct="true" data-item-type="crew_reputation">{{localize "BITD.CrewReputation"}}</a></div>
           {{#each items as |item id|}}
             {{#if (eq item.type "crew_reputation")}}
               <div class="item flex-horizontal" data-item-id="{{item._id}}">
-                <div class="item-body flex-horizontal">
+                <div class="item-body flex-horizontal" data-action="openItem">
                   <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
-                  <div data-tooltip="{{{item.system.description}}}">
+                  <div data-tooltip="{{item.system.description}}">
                     <a class="item-name">{{item.name}}</a>
                   </div>
                 </div>
-                <a class="item-control item-delete" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
-                <a class="item-control item-post" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
+                <a class="item-control item-delete" data-action="deleteItem" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
+                <a class="item-control item-post" data-action="postItem" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
               </div>
             {{/if}}
           {{/each}}
@@ -68,7 +68,7 @@
 
     <div class="grow-two">
       <div id="designation">
-        <label for="ship-{{id}}-designation">{{localize "BITD.Designation"}}</label>
+        <label for="ship-{{_id}}-designation">{{localize "BITD.Designation"}}</label>
         <input type="text" id="ship-{{_id}}-designation" name="system.designation" value="{{system.designation}}">
       </div>
 
@@ -152,29 +152,24 @@
   <section class="flex-horizontal">
 
     <div class="tab-content flex-vertical grow-two">
-      {{!-- Nav menu --}}
+
       <nav class="tabs flex-horizontal">
-        <a class="item" data-tab="abilities">{{localize "BITD.SpecialAbilities"}}</a>
-        <a class="item" data-tab="upgrades">{{localize "BITD.Upgrades"}}</a>
-	      <a class="item" data-tab="friends">{{localize "BITD.Contacts"}}</a>
-	      <a class="item" data-tab="character-notes">{{localize "BITD.Notes"}}</a>
+        <a class="item {{tabs.abilities.cssClass}}" data-action="tab" data-group="primary" data-tab="abilities">{{localize tabs.abilities.label}}</a>
+        <a class="item {{tabs.upgrades.cssClass}}" data-action="tab" data-group="primary" data-tab="upgrades">{{localize tabs.upgrades.label}}</a>
+        <a class="item {{tabs.friends.cssClass}}" data-action="tab" data-group="primary" data-tab="friends">{{localize tabs.friends.label}}</a>
+        <a class="item {{tabs.notes.cssClass}}" data-action="tab" data-group="primary" data-tab="notes">{{localize tabs.notes.label}}</a>
         {{#if isGM}}
-          <a class="item" data-tab="effects">{{localize "BITD.Effects"}}</a>
+          <a class="item {{tabs.effects.cssClass}}" data-action="tab" data-group="primary" data-tab="effects">{{localize tabs.effects.label}}</a>
         {{/if}}
-        <a class="item" data-tab="all-character-items">{{localize "BITD.AllItems"}}</a>
+        <a class="item {{tabs.[all-items].cssClass}}" data-action="tab" data-group="primary" data-tab="all-items">{{localize tabs.[all-items].label}}</a>
       </nav>
 
-      <div id="abilities" class="tab flex-vertical" data-tab="abilities">
+      <div id="abilities" class="tab flex-vertical {{tabs.abilities.cssClass}}" data-tab="abilities" data-group="primary">
         <div class="label-stripe">
           <p>{{localize "BITD.SpecialAbilities"}}
-          <a class="item-add-popup" data-item-type="crew_ability" data-limiter=system.ship_class><i class="fas fa-plus-square"></i></a></p>
+          <a class="item-add-popup" data-action="addItemPopup" data-item-type="crew_ability" data-limiter=system.ship_class><i class="fas fa-plus-square"></i></a></p>
           <div id="ship-experience" class="teeth-experience">
-            <label for="ship-{{_id}}-experience-0" data-tooltip="{{localize "BITD.CrewExpClueDescription"}}<br />{{localize "BITD.CrewExpClue2"}}<br />{{localize "BITD.CrewExpClue3"}}<br />{{localize "BITD.CrewExpClue4"}}<br />
-                {{#each items as |item id|}}
-              {{#if (eq item.type "crew_type")}}
-                {{item.system.experience_clues}}
-              {{/if}}
-            {{/each}}">{{localize "BITD.PExperience"}}<i class="fab fa-creative-commons-zero nullifier"></i>
+            <label for="ship-{{_id}}-experience-0" data-tooltip="{{localize 'BITD.CrewExpClueDescription'}}">{{localize "BITD.PExperience"}}<i class="fab fa-creative-commons-zero nullifier"></i>
             </label>
             {{#multiboxes system.crew_experience}}
               <input type="radio" id="ship-{{_id}}-experience-0" name="system.crew_experience" value="0" dtype="Radio">
@@ -190,49 +185,47 @@
           {{#each items as |item id|}}
             {{#if (eq item.type "crew_ability")}}
 		          <div class="item flex-horizontal" data-item-id="{{item._id}}">
-                <div class="item-body flex-horizontal">
+                <div class="item-body flex-horizontal" data-action="openItem">
 				          <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
                   <a class="item-name">{{item.name}}</a>
                   <div class="item-description">{{{item.system.description}}}</div>
                 </div>
-                <a class="item-control item-delete" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
-                <a class="item-control item-post" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
+                <a class="item-control item-delete" data-action="deleteItem" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
+                <a class="item-control item-post" data-action="postItem" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
               </div>
             {{/if}}
           {{/each}}
-          <div class="item-class-label"><a class="item-add-popup" data-item-type="crew_ability">{{localize "BITD.AddAbility"}}</a></div>
+          <div class="item-class-label"><a class="item-add-popup" data-action="addItemPopup" data-item-type="crew_ability">{{localize "BITD.AddAbility"}}</a></div>
         </div>
       </div>
 
-      {{!-- Owned Items Tab --}}
-      <div id="upgrades" class="tab flex-vertical" data-tab="upgrades">
+      <div id="upgrades" class="tab flex-vertical {{tabs.upgrades.cssClass}}" data-tab="upgrades" data-group="primary">
         <div class="label-stripe">
           <p>{{localize "BITD.Upgrades"}}
-          <a class="item-add-popup" data-item-type="crew_upgrade"><i class="fas fa-plus-square"></i></a></p>
+          <a class="item-add-popup" data-action="addItemPopup" data-item-type="crew_upgrade"><i class="fas fa-plus-square"></i></a></p>
         </div>
         <div>
           {{#each items as |item id|}}
             {{#if (eq item.type "crew_upgrade")}}
               <div class="item flex-horizontal" data-item-id="{{item._id}}">
-                <div class="item-body flex-horizontal">
+                <div class="item-body flex-horizontal" data-action="openItem">
                   <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
                   <a class="item-name">{{item.name}}</a>
                   <div class="item-description">{{{item.system.description}}}</div>
                 </div>
-                <a class="item-control item-delete" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
-                <a class="item-control item-post" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
+                <a class="item-control item-delete" data-action="deleteItem" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
+                <a class="item-control item-post" data-action="postItem" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
               </div>
             {{/if}}
           {{/each}}
-          <div class="item-class-label"><a class="item-add-popup" data-item-type="crew_upgrade">{{localize "BITD.AddUpgrade"}}</a></div>
+          <div class="item-class-label"><a class="item-add-popup" data-action="addItemPopup" data-item-type="crew_upgrade">{{localize "BITD.AddUpgrade"}}</a></div>
         </div>
       </div>
 
-	    {{!-- Friends Tab --}}
-      <div id="friends" class="tab flex-vertical" data-tab="friends">
+      <div id="friends" class="tab flex-vertical {{tabs.friends.cssClass}}" data-tab="friends" data-group="primary">
 		    <div class="label-stripe">
 		      <p>{{localize "BITD.Contacts"}}
-          <a class="item-add-popup" data-item-type="friend"><i class="fas fa-plus-square"></i></a></p>
+          <a class="item-add-popup" data-action="addItemPopup" data-item-type="friend"><i class="fas fa-plus-square"></i></a></p>
         </div>
         <div id="friend-list">
           {{#each items as |item id|}}
@@ -240,38 +233,34 @@
 			        <div class="friend-tracker">
 			          {{#multiboxes item.system.status.value}}
 				          {{#times_from 0 2}}
-                    <input class="update-box" data-utype="status" data-item="{{item._id}}" data-value="{{this}}" type="radio" id="friend-{{item._id}}-status-{{this}}" value="{{this}}" dtype="Radio">
+                    <input class="update-box" data-action="updateBox" data-utype="status" data-item="{{item._id}}" data-value="{{this}}" type="radio" id="friend-{{item._id}}-status-{{this}}" value="{{this}}" dtype="Radio">
 				            <label for="friend-{{item._id}}-status-{{this}}"></label>
                   {{/times_from}}
 			          {{/multiboxes}}
                 <div class="item flex-horizontal" data-item-id="{{item._id}}">
-			            <div class="item-body flex-horizontal">
+			            <div class="item-body flex-horizontal" data-action="openItem">
 				            <a class="item-name">{{item.name}}</a>
                     <div class="item-description">{{{item.system.description}}}</div>
                   </div>
-                  <a class="item-control item-delete" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
-                  <a class="item-control item-post" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
+                  <a class="item-control item-delete" data-action="deleteItem" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
+                  <a class="item-control item-post" data-action="postItem" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
                 </div>
 			        </div>
             {{/if}}
           {{/each}}
-          <div class="item-class-label"><a class="item-add-popup" data-item-type="friend">{{localize "BITD.AddFriend"}}</a></div>
+          <div class="item-class-label"><a class="item-add-popup" data-action="addItemPopup" data-item-type="friend">{{localize "BITD.AddFriend"}}</a></div>
         </div>
       </div>
 
-      <div class="tab flex-vertical" data-tab="character-notes">
+      <div class="tab flex-vertical {{tabs.notes.cssClass}}" data-tab="notes" data-group="primary">
         <div class="label-stripe">
           <p>{{localize "BITD.Notes"}}</p>
         </div>
-        {{{editor system.description target="system.description" engine="prosemirror" button=true owner=owner editable=editable}}}
-		    {{#if editable}}
-          <button type="submit" name="submit"><i class="fas fa-feather-alt"></i> {{localize "JOURNAL.Submit"}}</button>
-        {{/if}}
+        <prose-mirror name="system.description" value="{{system.description}}" toggled{{#unless editable}} disabled{{/unless}}>{{{enrichedDescription}}}</prose-mirror>
       </div>
 
-      {{!-- Active Effects --}}
       {{#if isGM}}
-        <div id="effects" class="tab effects flex-vertical" data-tab="effects">
+        <div id="effects" class="tab flex-vertical effects {{tabs.effects.cssClass}}" data-tab="effects" data-group="primary">
           <div class="label-stripe">
             <p>{{localize "BITD.Effects"}}</p>
           </div>
@@ -279,19 +268,18 @@
         </div>
       {{/if}}
 
-      {{!-- Full Item List --}}
-      <div id="all-items" class="tab grow-two flex-vertical" data-tab="all-character-items">
+      <div id="all-items" class="tab grow-two flex-vertical {{tabs.[all-items].cssClass}}" data-tab="all-items" data-group="primary">
         <div class="label-stripe">
           <p><label>{{localize "BITD.AllItems"}}</label></p>
         </div>
         {{#each items as |item id|}}
           <div class="item flex-horizontal" data-item-id="{{item._id}}">
-            <div class="item-body item-sheet-open flex-horizontal">
+            <div class="item-body item-sheet-open flex-horizontal" data-action="openItem">
               <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
               <a class="item-name">{{item.name}}</a>
             </div>
-            <a class="item-control item-delete" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
-            <a class="item-control item-post" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
+            <a class="item-control item-delete" data-action="deleteItem" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
+            <a class="item-control item-post" data-action="postItem" title="{{localize 'BITD.TitlePostItem'}}"><i class="fas fa-comment"></i></a>
           </div>
         {{/each}}
       </div>
@@ -305,21 +293,21 @@
 			      <div id="systems-{{system_name}}-title" class="systems-value">
 		  		    <div class="stripe flex-horizontal system-label">
 	  			      {{#if (eq system_name "upkeep")}}
-	  			        <a class="roll-die-attribute rollable-text" data-tooltip="{{{localize system.tip}}}" data-roll-attribute="{{system_name}}">{{localize (concat system.label 'Short')}}</a>
+	  			        <a class="roll-die-attribute rollable-text" data-action="rollAttribute" data-tooltip="{{system.tip}}" data-roll-attribute="{{system_name}}">{{localize (concat system.label 'Short')}}</a>
                   <span style="margin-right: 5px;"> = {{system.value}} {{localize "BITD.Coin"}}</span>
 	  			      {{/if}}
 	  			      {{#if (eq system_name "shields")}}
-	  			        <span class="system-label" data-tooltip="{{{localize system.tip}}}">{{localize (concat system.label 'Short')}}
+	  			        <span class="system-label" data-tooltip="{{system.tip}}">{{localize (concat system.label 'Short')}}
                   </span>
 		  		      {{/if}}
 		  		      {{#if (eq system_name "encryptor")}}
-		  		        <span class="system-label" data-tooltip="{{{localize system.tip}}}">{{localize (concat system.label 'Short')}}
+		  		        <span class="system-label" data-tooltip="{{system.tip}}">{{localize (concat system.label 'Short')}}
                   </span>
 			  	      {{/if}}
 			  	      {{#unless (eq system_name "upkeep")}}
 			  	        {{#unless (eq system_name "shields")}}
 			  	          {{#unless (eq system_name "encryptor")}}
-			  	            <a class="system-label roll-die-attribute rollable-text" data-tooltip="{{{localize system.tip}}}" data-roll-attribute="{{system_name}}">{{localize (concat system.label 'Short')}}
+			  	            <a class="system-label roll-die-attribute rollable-text" data-action="rollAttribute" data-tooltip="{{system.tip}}" data-roll-attribute="{{system_name}}">{{localize (concat system.label 'Short')}}
                       </a>
 				            {{/unless}}
 				          {{/unless}}
@@ -366,15 +354,15 @@
                       {{!-- Special handling to prevent Quantum Encryptor from showing up as Comms item, translation friendly --}}
                       {{#unless (eq item.effects.[0].changes.[0].key "system.systems.encryptor.max")}}
                         <div class="label-stripe-gray item flex-horizontal system-label" data-item-id="{{item._id}}">
-			  		            <div class="item-body">
+			  		            <div class="item-body" data-action="openItem">
 			  		             <a class="item-name">{{item.name}}</a>
                           </div>
                           <div id="system-subitem" class="stripe-tooth-body-red">
                             <label for="item-{{id}}-0"><i class="fab fa-creative-commons-zero nullifier"></i></label>
                             {{#multiboxes item.system.is_damaged}}
-                              <input class="update-box" data-utype="is_damaged" data-item="{{item._id}}" data-value="0"  type="radio" id="item-{{id}}-0" value="0" dtype="Radio">
+                              <input class="update-box" data-action="updateBox" data-utype="is_damaged" data-item="{{item._id}}" data-value="0"  type="radio" id="item-{{id}}-0" value="0" dtype="Radio">
 					                    {{#times_from 1 1}}
-					      	              <input class="update-box" data-utype="is_damaged" data-item="{{item._id}}" data-value="{{this}}" type="radio" id="item-{{id}}-{{this}}" value="{{this}}" dtype="Radio">
+					      	              <input class="update-box" data-action="updateBox" data-utype="is_damaged" data-item="{{item._id}}" data-value="{{this}}" type="radio" id="item-{{id}}-{{this}}" value="{{this}}" dtype="Radio">
 					  			              <label for="item-{{id}}-{{this}}"></label>
 					  		              {{/times_from}}
 					  		            {{/multiboxes}}
@@ -394,4 +382,4 @@
 	  </div>
   </section>
 
-</form>
+</div>

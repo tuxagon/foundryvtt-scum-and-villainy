@@ -1,14 +1,14 @@
-<form class="{{cssClass}}" autocomplete="off">
+<div>
     <header class="sheet-header">
-        <img src="{{img}}" data-edit="img" title="{{name}}"/>
+        <img src="{{item.img}}" data-edit="img" data-action="editImage" title="{{item.name}}"/>
         <div class="header-fields">
-            <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="{{localize 'BITD.Name'}}"/></h1>
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'BITD.Name'}}"/></h1>
         </div>
     </header>
 
     {{!-- Sheet Body --}}
     <section class="sheet-body">
-      {{{editor system.description target="system.description" engine="prosemirror" button=true owner=owner editable=editable}}}
+      <prose-mirror name="system.description" value="{{system.description}}" toggled{{#unless editable}} disabled{{/unless}}>{{{enrichedDescription}}}</prose-mirror>
     </section>
     <div class="flex-vertical">
       <div class="flex-horizontal">
@@ -37,4 +37,4 @@
         <div id="effects">{{> "systems/scum-and-villainy/templates/parts/active-effects.html"}}</div>
       {{/if}}
     </div>
-</form>
+</div>
