@@ -12,11 +12,22 @@ function findHostDocument(wrap) {
   if (!appEl) return null;
   const app = ui.windows?.[appEl.dataset.appid];
   if (!app) return null;
-  return app.actor ?? app.item ?? app.object ?? null;
+  const doc = app.actor ?? app.item ?? app.object ?? null;
+
+  // Clocks rendered inside an embedded-item row (e.g. faction clocks on the
+  // universe sheet) must persist to the embedded item, not the host actor.
+  const itemEl = wrap.closest("[data-item-id]");
+  if (itemEl && doc?.items) {
+    const item = doc.items.get(itemEl.dataset.itemId);
+    if (item) return item;
+  }
+  return doc;
 }
 
 function readByPath(obj, dottedPath) {
-  return dottedPath.split(".").reduce((acc, key) => (acc == null ? acc : acc[key]), obj);
+  return dottedPath
+    .split(".")
+    .reduce((acc, key) => (acc == null ? acc : acc[key]), obj);
 }
 
 async function persistProgress(doc, parameter, next) {
@@ -31,8 +42,6 @@ async function handleClick(event) {
   const wrap = seg.closest(".sav-clock-wrap[data-sav-clock]");
   if (!wrap) return;
 
-  console.log("SaV clock click | segment", seg.dataset.segmentIndex, "wrap", wrap.dataset);
-
   event.preventDefault();
   event.stopPropagation();
 
@@ -41,7 +50,10 @@ async function handleClick(event) {
   const progress = parseInt(wrap.dataset.progress, 10) || 0;
   if (!Number.isFinite(index) || !Number.isFinite(size)) return;
 
-  const next = toggleSegment({ segments: size, filled: progress }, index).filled;
+  const next = toggleSegment(
+    { segments: size, filled: progress },
+    index,
+  ).filled;
   if (next === progress) return;
 
   const parameter = wrap.dataset.parameter;
@@ -52,7 +64,10 @@ async function handleClick(event) {
       await persistProgress(doc, parameter, next);
       return;
     } catch (err) {
-      console.error("SaV clock: direct document update failed, falling back to form submission", err);
+      console.error(
+        "SaV clock: direct document update failed, falling back to form submission",
+        err,
+      );
     }
   }
 
@@ -67,5 +82,4 @@ export function registerClockInteractions() {
   if (installed) return;
   installed = true;
   document.body.addEventListener("click", handleClick, true);
-  console.log("SaV clock interactions installed");
 }

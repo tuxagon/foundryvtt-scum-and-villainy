@@ -22,7 +22,9 @@ export const BACKGROUND_STYLES = Object.freeze({
 
 export const VALID_TONES = Object.freeze(Object.values(TONES));
 export const VALID_RENDER_STYLES = Object.freeze(Object.values(RENDER_STYLES));
-export const VALID_BACKGROUND_STYLES = Object.freeze(Object.values(BACKGROUND_STYLES));
+export const VALID_BACKGROUND_STYLES = Object.freeze(
+  Object.values(BACKGROUND_STYLES),
+);
 
 export const DEFAULT_TONE = TONES.light;
 export const DEFAULT_RENDER_STYLE = RENDER_STYLES.rough;
@@ -107,7 +109,9 @@ export function paletteFor({
 } = {}) {
   const tonePalette = TONE_PALETTES[tone] ?? TONE_PALETTES[DEFAULT_TONE];
   const empty =
-    backgroundStyle === BACKGROUND_STYLES.transparent ? TRANSPARENT : tonePalette.solidEmpty;
+    backgroundStyle === BACKGROUND_STYLES.transparent
+      ? TRANSPARENT
+      : tonePalette.solidEmpty;
   return {
     empty,
     filled: fillColor,
@@ -115,8 +119,6 @@ export function paletteFor({
     strokeWidth: DEFAULT_STROKE_WIDTH,
   };
 }
-
-export const DEFAULT_CLOCK_COLORS = paletteFor();
 
 function round(value) {
   return Number(value.toFixed(PRECISION));
@@ -131,10 +133,14 @@ function pointOnCircle(angleRadians, radius, cx, cy) {
 
 export function segmentPath({ index, total, radius = 50, cx = 50, cy = 50 }) {
   if (!VALID_SEGMENTS.includes(total)) {
-    throw new Error(`segmentPath: total must be one of ${VALID_SEGMENTS.join(", ")}, got ${total}`);
+    throw new Error(
+      `segmentPath: total must be one of ${VALID_SEGMENTS.join(", ")}, got ${total}`,
+    );
   }
   if (index < 0 || index >= total) {
-    throw new Error(`segmentPath: index ${index} out of range for total ${total}`);
+    throw new Error(
+      `segmentPath: index ${index} out of range for total ${total}`,
+    );
   }
 
   const sweep = (2 * Math.PI) / total;
@@ -159,15 +165,4 @@ export function segmentPaths(clock, geometry = DEFAULT_GEOMETRY) {
     filled: index < clock.filled,
     d: segmentPath({ index, total: clock.segments, radius, cx, cy }),
   }));
-}
-
-export function renderClockSvg(clock, palette = DEFAULT_CLOCK_COLORS) {
-  const resolved = { ...DEFAULT_CLOCK_COLORS, ...palette };
-  const wedges = segmentPaths(clock)
-    .map(
-      ({ d, filled }) =>
-        `<path d="${d}" fill="${filled ? resolved.filled : resolved.empty}" stroke="${resolved.stroke}" stroke-width="${resolved.strokeWidth}"/>`,
-    )
-    .join("");
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">${wedges}</svg>`;
 }

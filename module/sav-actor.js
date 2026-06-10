@@ -1,5 +1,6 @@
 import { savRoll } from "./sav-roll.js";
 import { SaVHelpers } from "./sav-helpers.js";
+import { buildClockDataUrl } from "./clocks/sav-clock-image.js";
 
 /**
  * Extend the basic Actor
@@ -25,7 +26,7 @@ export class SaVActor extends Actor {
         break;
       }
       case "\uD83D\uDD5B clock": {
-        icon = "systems/scum-and-villainy/themes/blue/4clock_0.webp";
+        icon = buildClockDataUrl({ theme: "blue", size: 4, progress: 0 });
         break;
       }
       case "faction-status": {

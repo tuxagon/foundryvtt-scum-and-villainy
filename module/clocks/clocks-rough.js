@@ -1,5 +1,10 @@
 import rough from "../vendor/rough.esm.js";
-import { BACKGROUND_STYLES, DEFAULT_GEOMETRY, RENDER_STYLES, segmentPaths } from "./clocks.js";
+import {
+  BACKGROUND_STYLES,
+  DEFAULT_GEOMETRY,
+  RENDER_STYLES,
+  segmentPaths,
+} from "./clocks.js";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const VIEWBOX_SIZE = 100;
@@ -35,15 +40,21 @@ function ensureSvgRoot(doc) {
   const svg = doc.createElementNS(SVG_NS, "svg");
   svg.setAttribute("xmlns", SVG_NS);
   const p = VIEWBOX_PADDING;
-  svg.setAttribute("viewBox", `${-p} ${-p} ${VIEWBOX_SIZE + p * 2} ${VIEWBOX_SIZE + p * 2}`);
+  svg.setAttribute(
+    "viewBox",
+    `${-p} ${-p} ${VIEWBOX_SIZE + p * 2} ${VIEWBOX_SIZE + p * 2}`,
+  );
   return svg;
 }
 
-function clearChildren(node) {
-  while (node.firstChild) node.removeChild(node.firstChild);
-}
-
-function buildSegmentGroup({ d, index, filled, palette, renderStyle, svgRoot }) {
+function buildSegmentGroup({
+  d,
+  index,
+  filled,
+  palette,
+  renderStyle,
+  svgRoot,
+}) {
   const group = document.createElementNS(SVG_NS, "g");
   group.setAttribute("data-segment-index", String(index));
   group.classList.add("sav-clock-segment");
@@ -72,21 +83,11 @@ function buildSegmentGroup({ d, index, filled, palette, renderStyle, svgRoot }) 
   return group;
 }
 
-export function decorateClockSvg(svgEl, clock, { palette, renderStyle, tone, backgroundStyle }) {
-  if (!svgEl) return;
-  svgEl.dataset.style = renderStyle;
-  if (tone) svgEl.dataset.tone = tone;
-  if (backgroundStyle) svgEl.dataset.background = backgroundStyle;
-  clearChildren(svgEl);
-  const segments = segmentPaths(clock);
-  for (const { d, index, filled } of segments) {
-    svgEl.appendChild(
-      buildSegmentGroup({ d, index, filled, palette, renderStyle, svgRoot: svgEl }),
-    );
-  }
-}
-
-export function buildClockSvgElement(clock, { palette, renderStyle, tone, backgroundStyle }, geometry = DEFAULT_GEOMETRY) {
+export function buildClockSvgElement(
+  clock,
+  { palette, renderStyle, tone, backgroundStyle },
+  geometry = DEFAULT_GEOMETRY,
+) {
   const svg = ensureSvgRoot(document);
   svg.dataset.style = renderStyle;
   if (tone) svg.dataset.tone = tone;
@@ -94,45 +95,27 @@ export function buildClockSvgElement(clock, { palette, renderStyle, tone, backgr
   const segments = segmentPaths(clock, geometry);
   for (const { d, index, filled } of segments) {
     svg.appendChild(
-      buildSegmentGroup({ d, index, filled, palette, renderStyle, svgRoot: svg }),
+      buildSegmentGroup({
+        d,
+        index,
+        filled,
+        palette,
+        renderStyle,
+        svgRoot: svg,
+      }),
     );
   }
   return svg;
 }
 
-export function renderClockSvgString(clock, options, geometry = DEFAULT_GEOMETRY) {
+export function renderClockSvgString(
+  clock,
+  options,
+  geometry = DEFAULT_GEOMETRY,
+) {
   if (typeof document === "undefined") {
     throw new Error("renderClockSvgString requires a DOM environment");
   }
   const svg = buildClockSvgElement(clock, options, geometry);
   return new XMLSerializer().serializeToString(svg);
-}
-
-export function drawClockRoughCanvas(canvas, clock, palette) {
-  if (!canvas) throw new Error("drawClockRoughCanvas requires a canvas element");
-  const ctx = canvas.getContext("2d");
-  if (!ctx) throw new Error("drawClockRoughCanvas requires a 2D rendering context");
-
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  const scaleX = canvas.width / VIEWBOX_SIZE;
-  const scaleY = canvas.height / VIEWBOX_SIZE;
-  ctx.save();
-  ctx.scale(scaleX, scaleY);
-
-  if (!isTransparentPaint(palette.empty)) {
-    ctx.fillStyle = palette.empty;
-    ctx.beginPath();
-    ctx.arc(VIEWBOX_SIZE / 2, VIEWBOX_SIZE / 2, VIEWBOX_SIZE / 2, 0, Math.PI * 2);
-    ctx.fill();
-  }
-
-  const rc = rough.canvas(canvas);
-  const segments = segmentPaths(clock);
-  for (const { d, index, filled } of segments) {
-    rc.path(d, roughOptionsFor({ palette, index, filled }));
-  }
-
-  ctx.restore();
-  return canvas;
 }
