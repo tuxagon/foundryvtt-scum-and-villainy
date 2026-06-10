@@ -1,6 +1,20 @@
 .sav-clock-wrap {
   display: inline-block;
   line-height: 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* Universe sheet faction list clocks (legacy: 60px) */
+#faction-list .sav-clock-wrap {
+  width: 60px;
+  height: 60px;
+}
+
+/* Character healing clock (legacy: 88px) */
+#character-health-clock .sav-clock-wrap {
+  width: 88px;
+  height: 88px;
 }
 
 .sav-clock-wrap .sav-clock-svg {

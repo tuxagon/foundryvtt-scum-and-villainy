@@ -39,6 +39,7 @@ function roughOptionsFor({ palette, index, filled }) {
 function ensureSvgRoot(doc) {
   const svg = doc.createElementNS(SVG_NS, "svg");
   svg.setAttribute("xmlns", SVG_NS);
+  svg.classList.add("sav-clock-svg");
   const p = VIEWBOX_PADDING;
   svg.setAttribute(
     "viewBox",
