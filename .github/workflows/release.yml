@@ -1,0 +1,78 @@
+name: Release
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      # mise installs Node + Bun per mise.toml; no separate setup-node step.
+      - uses: jdx/mise-action@v2
+
+      - name: Resolve names
+        run: |
+          TAG=${GITHUB_REF#refs/tags/}
+          VERSION=${TAG#v}
+          ID=$(bun -e "console.log(require('./system.json').id)")
+          echo "TAG=$TAG" >> $GITHUB_ENV
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "ID=$ID" >> $GITHUB_ENV
+          echo "ZIP=$ID-$TAG.zip" >> $GITHUB_ENV
+          echo "DOWNLOAD_URL=https://github.com/${{ github.repository }}/releases/download/$TAG/$ID-$TAG.zip" >> $GITHUB_ENV
+
+      - name: Validate manifest
+        run: |
+          MANIFEST_VERSION=$(bun -e "console.log(require('./system.json').version)")
+          MANIFEST_DOWNLOAD=$(bun -e "console.log(require('./system.json').download)")
+          [ "$MANIFEST_VERSION" = "$VERSION" ] || { echo "version mismatch: tag=$VERSION manifest=$MANIFEST_VERSION"; exit 1; }
+          [ "$MANIFEST_DOWNLOAD" = "$DOWNLOAD_URL" ] || { echo "download url mismatch"; exit 1; }
+
+      - name: Install
+        run: bun install --frozen-lockfile
+
+      - name: Build
+        run: mise run build
+
+      - name: Compute archive contents
+        id: archive
+        run: |
+          FILES=$(bun -e '
+            const fs = require("node:fs");
+            const path = require("node:path");
+            const candidates = [
+              "system.json",
+              "template.json",
+              "README.md",
+              "LICENSE.txt",
+              "CHANGELOG.txt",
+              "dist",
+              "templates",
+              "lang",
+              "styles/assets",
+            ];
+            const packDirs = fs
+              .readdirSync("packs", { withFileTypes: true })
+              .filter((d) => d.isDirectory() && d.name !== "_source")
+              .map((d) => path.join("packs", d.name));
+            const out = [...candidates, ...packDirs].filter((p) => fs.existsSync(p));
+            console.log(out.join(" "));
+          ')
+          echo "files=$FILES" >> $GITHUB_OUTPUT
+
+      - name: Zip
+        run: zip -r "$ZIP" ${{ steps.archive.outputs.files }}
+
+      - name: Upload release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          makeLatest: true
+          tag: ${{ env.TAG }}
+          name: ${{ env.TAG }}
+          artifacts: "./system.json,./${{ env.ZIP }}"
+          token: ${{ secrets.GITHUB_TOKEN }}

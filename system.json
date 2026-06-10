@@ -35,7 +35,7 @@
   },
   "socket": false,
   "manifest": "https://github.com/tuxagon/foundryvtt-scum-and-villainy/releases/latest/download/system.json",
-  "download": "https://github.com/tuxagon/foundryvtt-scum-and-villainy/releases/download/release-5.1.0/scum-and-villainy-release-5.1.0.zip",
+  "download": "https://github.com/tuxagon/foundryvtt-scum-and-villainy/releases/download/v5.1.0/scum-and-villainy-v5.1.0.zip",
   "protected": false,
   "esmodules": [
     "dist/scum-and-villainy.compiled.js"
