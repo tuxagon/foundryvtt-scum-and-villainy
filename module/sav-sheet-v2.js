@@ -241,7 +241,10 @@ export class SaVSheetV2 extends HandlebarsApplicationMixin(ActorSheetV2) {
               .map((id) => items.find((e) => e._id === id))
               .filter(Boolean);
             if (this.actor.isOwner && itemsToAdd.length) {
-              await Item.create(itemsToAdd, { parent: this.actor });
+              await this.actor.createEmbeddedDocuments(
+                "Item",
+                itemsToAdd.map((i) => i.toObject()),
+              );
             }
           },
         },

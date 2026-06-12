@@ -1717,13 +1717,35 @@
 * #items-to-add.scum-and-villainy input[type="checkbox"] {
   display: none;
 }
+* #items-to-add.scum-and-villainy div.new-item label,
+* #items-to-add.scum-and-villainy > label:not(.label-stripe-gray) {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+* #items-to-add.scum-and-villainy div.new-item label:hover,
+* #items-to-add.scum-and-villainy > label:not(.label-stripe-gray):hover {
+  color: #04578f;
+  text-decoration: underline;
+}
 * #items-to-add.scum-and-villainy input[type="radio"]:checked + label,
 * #items-to-add.scum-and-villainy input[type="checkbox"]:checked + label {
   font-weight: bolder;
   text-transform: uppercase;
 }
+* #items-to-add.scum-and-villainy div.new-item input:checked + label::before,
+* #items-to-add.scum-and-villainy
+  > input:not([disabled]):checked
+  + label::before {
+  font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00c";
+  margin-right: 4px;
+}
 * #items-to-add.scum-and-villainy div.flex {
-  height: 20px;
+  min-height: 20px;
 }
 * .scum-and-villainy .sav-die-tooltip .die {
   font-weight: bold;

@@ -46,7 +46,7 @@ export class SaVActor extends Actor {
       data.prototypeToken.displayName = 50;
     }
 
-    await super.create(data, options);
+    return super.create(data, options);
   }
 
   /* -------------------------------------------- */

@@ -105,7 +105,12 @@ export class SaVHelpers {
           return e;
         }) || [];
     const pack = game.packs.find((e) => e.metadata.name === item_type);
-    const compendium_content = await pack.getDocuments();
+    if (!pack) {
+      ui.notifications.error(
+        `Compendium pack "${item_type}" not found or not accessible.`,
+      );
+    }
+    const compendium_content = pack ? await pack.getDocuments() : [];
 
     let compendium_items =
       compendium_content.map((k) => {
