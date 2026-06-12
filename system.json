@@ -28,14 +28,14 @@
       ]
     }
   },
-  "version": "5.1.0",
+  "version": "5.1.1",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
   },
   "socket": false,
   "manifest": "https://github.com/tuxagon/foundryvtt-scum-and-villainy/releases/latest/download/system.json",
-  "download": "https://github.com/tuxagon/foundryvtt-scum-and-villainy/releases/download/v5.1.0/scum-and-villainy-v5.1.0.zip",
+  "download": "https://github.com/tuxagon/foundryvtt-scum-and-villainy/releases/download/v5.1.1/scum-and-villainy-v5.1.1.zip",
   "protected": false,
   "esmodules": [
     "dist/scum-and-villainy.compiled.js"
